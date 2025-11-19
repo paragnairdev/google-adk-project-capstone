@@ -3,6 +3,26 @@ import numpy as np
 import pandas as pd
 from .data_loader import matches_df
 
+def player_name_exists(player_name: str) -> bool:
+    """Check if the player name exists in the dataset."""
+    return player_name in matches_df["player_name"].values
+
+def opponent_name_exists(opponent_name: str) -> bool:
+    """Check if the opponent name exists in the dataset."""
+    return opponent_name in matches_df["opponent_name"].values
+
+def game_format_exists(game_format: str) -> bool:
+    """Check if the game format exists in the dataset."""
+    return game_format in matches_df["format"].values
+
+def pitch_type_exists(pitch_type: str) -> bool:
+    """Check if the pitch type exists in the dataset."""
+    return pitch_type in matches_df["pitch_type"].values
+
+def difficulty_exists(difficulty: str) -> bool:
+    """Check if the difficulty exists in the dataset."""
+    return difficulty in matches_df["difficulty"].values
+
 def get_player_history(player_name: str, opponent_name: Optional[str] = None, game_format: Optional[str] = None) -> pd.DataFrame:
     """Get match history for a specific player, optionally filtered by opponent and format."""
     print(f"DEBUG: get_player_history called with player={player_name}, opponent={opponent_name}, format={game_format}")
@@ -96,8 +116,8 @@ def brief_stats_text(player_name: str) -> str:
         return f"I couldn't find any innings for {player_name} in the dataset."
 
     return (
-        f"{player_name} has played {m['innings']} innings.\n"
+        f"You has played {m['innings']} innings.\n"
         f"- Average runs: {m['avg_runs']}\n"
         f"- Average run rate: {m['avg_runrate']} runs/over\n"
-        f"- Average runs per wicket: {m['avg_runs_per_wicket']}"
+        f"- Average runs per wicket: {m['avg_runs_per_wicket']}\n"
     )

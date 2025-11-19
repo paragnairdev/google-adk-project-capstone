@@ -33,7 +33,6 @@ from google.adk.agents import LlmAgent
 from google.adk.models.google_llm import Gemini
 from google.adk.apps.app import App
 from google.adk.tools import load_memory, preload_memory
-
 from .config import MODEL_NAME, APP_NAME, retry_config
 from .tools import get_matchup_stats
 from .sub_agents import (
@@ -41,7 +40,7 @@ from .sub_agents import (
     intent_tool,
     toss_tool,
     target_tool,
-    generic_tool
+    generic_tool,
 )
 
 # Root Agent - Orchestrator demonstrating Serial, Parallel, and Loop workflows
@@ -70,7 +69,6 @@ Step 1a: Read what IdentityAgent returned
   - Look at the text in IdentityAgent's response
   
 Step 1b: Generate YOUR response based on what IdentityAgent said:
-  
   CASE A: IdentityAgent says anything OTHER than "identity_confirmed"
     → Take that text and make it YOUR message to the user
     → Do NOT call any other tools
@@ -201,14 +199,13 @@ async def auto_save_to_memory(callback_context):
         callback_context._invocation_context.session
     )
 
-
 # Attach after-turn callback
 root_agent.after_agent_callback = auto_save_to_memory
 
 # Wrap root agent in App
 cricket_coach_app = App(
     name=APP_NAME,
-    root_agent=root_agent,
+    root_agent=root_agent   # Pass the instantiated service objects
 )
 
 # Export for ADK web command

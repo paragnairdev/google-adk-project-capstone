@@ -49,5 +49,5 @@ echo "Press Ctrl+C to stop the server"
 echo ""
 
 # Run the ADK web command directly
-adk web agents --port 8000 --host 0.0.0.0 > server.log 2>&1
+adk web agents --port 8000 --host 0.0.0.0 > server.log 2>&1 --session_service_uri "sqlite:///cricket_coach_sessions.db"
 
