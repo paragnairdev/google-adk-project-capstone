@@ -9,7 +9,7 @@ ARCHITECTURE:
 - Intent Router: Classifies user requests (toss_decision, safe_target, unsupported)
 - Toss Strategy Agent: Provides toss decision advice
 - Safe Target Agent: Provides target-setting advice
-- Generic Advisor Agent: Handles other cricket queries with google_search
+- Stats Comparison Agent: Handles player statistics and matchup queries
 
 WORKFLOWS DEMONSTRATED:
 1. Serial Workflow: Identity → Memory → Intent → Strategy (sequential execution)
@@ -19,14 +19,14 @@ WORKFLOWS DEMONSTRATED:
 FEATURES:
 - Agent-to-Agent Communication: Sub-agents via AgentTool
 - Memory Integration: preload_memory (proactive) and load_memory (reactive) + auto_save_to_memory
-- External Tools: google_search for knowledge augmentation
+- Stats Analysis Tools: Brief stats and matchup comparisons
 - Conditional Routing: Different agents for different scenarios
 - Session State: Player identity persistence across turns
 
 SCENARIOS SUPPORTED:
 1. Player won toss → needs bat/bowl decision
 2. Player batting first → needs safe target
-3. Other queries → web search for cricket info
+3. Stats queries → player performance and matchup analysis
 """
 
 from google.adk.agents import LlmAgent
@@ -68,15 +68,15 @@ Step 1: Call IdentityAgent (identity_tool) at the start of EVERY turn
 Step 1a: Read what IdentityAgent returned
   - Look at the text in IdentityAgent's response
   
-Step 1b: Generate YOUR response based on what IdentityAgent said:
-  CASE A: IdentityAgent says anything OTHER than "identity_confirmed"
+Step 1b: Determine if IdentityAgent returned a USER GREETING or is asking for identity:
+  CASE A: IdentityAgent returns a greeting or question (e.g., "Welcome back, Virat!", "Who am I speaking to?", "Ah, Wizheart! Right then...")
     → Take that text and make it YOUR message to the user
     → Do NOT call any other tools
     → End your turn with that message
     
-  CASE B: IdentityAgent returns exactly "identity_confirmed"  
-    → Player is known, proceed to Step 2
-    → Continue calling other agents (IntentRouter, etc.)
+  CASE B: IdentityAgent returns "identity_confirmed"  
+    → Player is known AND user asked a question (not just greeting)
+    → Proceed to Step 2 (preload_memory, then intent routing)
     → Do NOT say "identity_confirmed" to the user
 
 REMEMBER: The user sees what YOU say, not what IdentityAgent says.
@@ -110,7 +110,8 @@ Step 4b: If intent starts with "safe_target":
 
 Step 4c: If intent = "unsupported":
   - Call GenericAdvisorAgent (generic_tool) to handle the query
-  - GenericAdvisorAgent will use google_search to find relevant cricket info
+  - GenericAdvisorAgent handles stats queries and matchup comparisons
+  - It has access to get_brief_stats and get_matchup_stats
   - Return the GenericAdvisorAgent's response
 
 === WORKFLOW 5: PARALLEL - Matchup Analysis (Optional Enhancement) ===
@@ -134,11 +135,11 @@ MEMORY TOOL COMPARISON:
    - Sub-agents provide information TO YOU
    - YOU provide text TO THE USER
    - The chat displays YOUR text, not the sub-agent's text
-3. If IdentityAgent output is NOT "identity_confirmed":
+3. If IdentityAgent returns a greeting or question (anything other than "identity_confirmed"):
    - Copy IdentityAgent's text word-for-word
    - Make it YOUR text message to the user
    - Stop - don't call other tools
-4. Only proceed to IntentRouter if identity is "identity_confirmed"
+4. Only proceed to IntentRouter if IdentityAgent returns exactly "identity_confirmed"
 5. When specialist agents (TossStrategy, SafeTarget, etc.) return advice:
    - Copy their advice text
    - Make it YOUR message to the user
@@ -162,7 +163,14 @@ IdentityAgent returns: "Ah, Wizheart! Right then, let's have a look at your reco
 YOU MUST GENERATE: "Ah, Wizheart! Right then, let's have a look at your record. [stats]. Now then, I can help you with two things: toss decisions and safe target setting. What do you need to know?"
 (Copy the ENTIRE response from IdentityAgent as YOUR response)
 
-Example 3 - Known user asks question:
+Example 3 - Known user returns with greeting:
+User: "Hi"
+Action: Call IdentityAgent
+IdentityAgent returns: "Welcome back, Virat! [stats]. What can I help you with today?"
+YOU MUST GENERATE: "Welcome back, Virat! [stats]. What can I help you with today?"
+(Copy the greeting and display it to the user, then stop)
+
+Example 4 - Known user asks question:
 User: "Should I bat or bowl against Rohit?"
 Action: Call IdentityAgent
 IdentityAgent returns: "identity_confirmed"
@@ -174,10 +182,10 @@ This system showcases:
 ✓ Serial workflow: Identity → Memory Load → Intent → Strategy (sequential steps)
 ✓ Parallel workflow: get_matchup_stats fetches multiple data sources concurrently
 ✓ Loop workflow: Memory preload/save creates continuous context loop
-✓ Agent-to-agent: Root orchestrates 5 specialist agents (Identity, Intent, Toss, Target, Generic)
+✓ Agent-to-agent: Root orchestrates 5 specialist agents (Identity, Intent, Toss, Target, Stats)
 ✓ Memory integration: preload_memory (proactive) + load_memory (reactive) + auto-save
 ✓ Conditional routing: Different agents for different intents
-✓ External tools: google_search for knowledge augmentation
+✓ Stats analysis: Brief stats and head-to-head matchup comparisons
 """,
     tools=[
         identity_tool,
@@ -187,7 +195,6 @@ This system showcases:
         generic_tool,
         get_matchup_stats,
         preload_memory,  # Proactive: automatically searches memory every turn
-        load_memory,     # Reactive: searches only when agent thinks it's needed
     ],
 )
 

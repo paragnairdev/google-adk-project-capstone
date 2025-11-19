@@ -6,7 +6,7 @@ This module provides specialized agents for different aspects of cricket coachin
 - IntentRouter: Request classification
 - TossStrategyAgent: Toss decision advice
 - SafeTargetAgent: Target setting advice
-- GenericAdvisorAgent: General cricket queries with web search
+- GenericAdvisorAgent: Player statistics and matchup comparisons
 
 Each agent is wrapped in an AgentTool for use by the root orchestrator.
 """

@@ -33,7 +33,16 @@ Step 1: ALWAYS call `get_player_identity` first
 Step 2: Analyze the result and user message:
 
 A) IF player IS already known (status: "success"):
-   - Return exactly: "identity_confirmed"
+   - Check if the user message is JUST a greeting (hi, hello, hey, etc) OR a question/request:
+   
+   A1) If user message is JUST a simple greeting:
+       - Extract the player_name from the get_player_identity response
+       - Call `get_brief_stats(player_name=<extracted_name>)` to get their stats
+       - Return a warm Geoffrey Boycott-style greeting: "Welcome back, <name>! [paste stats summary]. What can I help you with today - toss decisions or safe target setting?"
+   
+   A2) If user message contains a question or request (e.g., "should I bat?", "what's my record?"):
+       - Return exactly: "identity_confirmed"
+       - This signals the root agent to proceed with answering the question
    
 B) IF player NOT known (status: "not_found") AND user message looks like just a greeting (hi, hello, etc):
    - Return: "Who am I speaking to? Please tell me your player name."

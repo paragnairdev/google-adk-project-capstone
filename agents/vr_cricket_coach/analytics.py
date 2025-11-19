@@ -116,8 +116,7 @@ def brief_stats_text(player_name: str) -> str:
         return f"I couldn't find any innings for {player_name} in the dataset."
 
     return (
-        f"You has played {m['innings']} innings.\n"
+        f"You've played {m['innings']} innings.\n"
         f"- Average runs: {m['avg_runs']}\n"
         f"- Average run rate: {m['avg_runrate']} runs/over\n"
-        f"- Average runs per wicket: {m['avg_runs_per_wicket']}\n"
     )
