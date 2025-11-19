@@ -1,1001 +1,1001 @@
-match_id,date,format,pitch_type,difficulty,innings_number,player_name,opponent_name,runs,overs,wickets,is_chasing,result,hundreds,double_hundreds,triple_hundreds,quadruple_hundreds,quintuple_hundreds,ducks
-1,2024-11-24,T20,Bouncy,Ultra Insane,1,Karthik,Sid,124,15.0,0,False,Loss,0,0,0,0,0,0
-1,2024-11-24,T20,Bouncy,Ultra Insane,2,Sid,Karthik,218,10.0,2,True,Win,0,0,0,0,0,0
-2,2024-09-20,T20,Dry,Medium,1,Ragz,Nikita,188,15.0,0,False,Win,0,0,0,0,0,0
-2,2024-09-20,T20,Dry,Medium,2,Nikita,Ragz,148,20.0,1,True,Loss,0,0,0,0,0,0
-3,2024-04-15,ODI,Dry,Hard,1,Karthik,Anya,370,50.0,1,False,Win,0,0,0,0,0,0
-3,2024-04-15,ODI,Dry,Hard,2,Anya,Karthik,337,40.0,5,True,Loss,0,0,0,0,0,0
-4,2024-08-04,Test,Normal,Ultra Insane,1,Zafi,Anya,213,60.0,2,False,Loss,0,0,0,0,0,0
-4,2024-08-04,Test,Normal,Ultra Insane,2,Anya,Zafi,330,30.0,2,True,Win,0,0,0,0,0,0
-5,2024-05-18,ODI,Dry,Medium,1,Leo,Sid,365,40.0,1,False,Loss,0,0,0,0,0,0
-5,2024-05-18,ODI,Dry,Medium,2,Sid,Leo,400,40.0,3,True,Win,0,0,0,0,0,0
-6,2024-02-02,T20,Normal,Ultra Insane,1,Zafi,Vikram,232,20.0,4,False,Win,0,0,0,0,0,0
-6,2024-02-02,T20,Normal,Ultra Insane,2,Vikram,Zafi,166,15.0,5,True,Loss,0,0,0,0,0,0
-7,2024-01-15,ODI,Dry,Hard,1,Leo,Zafi,315,30.0,3,False,Win,0,0,0,0,0,0
-7,2024-01-15,ODI,Dry,Hard,2,Zafi,Leo,297,20.0,3,True,Loss,0,0,0,0,0,0
-8,2024-08-30,Test,Bouncy,Insane,1,Zafi,Karthik,357,40.0,1,False,Loss,0,0,0,0,0,0
-8,2024-08-30,Test,Bouncy,Insane,2,Karthik,Zafi,447,60.0,3,True,Win,0,0,0,0,0,0
-9,2024-12-13,Test,Green,Insane,1,Sid,Sara,342,30.0,1,False,Loss,0,0,0,0,0,0
-9,2024-12-13,Test,Green,Insane,2,Sara,Sid,435,60.0,2,True,Win,0,0,0,0,0,0
-10,2024-05-16,ODI,Bouncy,Insane,1,Anya,Karthik,255,30.0,2,False,Loss,0,0,0,0,0,0
-10,2024-05-16,ODI,Bouncy,Insane,2,Karthik,Anya,330,50.0,2,True,Win,0,0,0,0,0,0
-11,2024-02-21,T20,Dry,Medium,1,Rohan,Sara,204,20.0,1,False,Win,0,0,0,0,0,0
-11,2024-02-21,T20,Dry,Medium,2,Sara,Rohan,198,5.0,2,True,Loss,0,0,0,0,0,0
-12,2024-12-08,Test,Bouncy,Hard,1,Sid,Nikita,468,30.0,3,False,Win,1,0,0,0,0,0
-12,2024-12-08,Test,Bouncy,Hard,2,Nikita,Sid,273,50.0,3,True,Loss,0,0,0,0,0,0
-13,2024-10-06,ODI,Bouncy,Insane,1,Wizheart,Karthik,450,20.0,2,False,Win,1,0,0,0,0,0
-13,2024-10-06,ODI,Bouncy,Insane,2,Karthik,Wizheart,397,50.0,3,True,Loss,0,0,0,0,0,0
-14,2024-12-11,Test,Dry,Ultra Insane,1,Arjun,Zafi,279,50.0,3,False,Loss,0,0,0,0,0,0
-14,2024-12-11,Test,Dry,Ultra Insane,2,Zafi,Arjun,387,60.0,2,True,Win,0,0,0,0,0,0
-15,2024-05-30,Test,Dry,Hard,1,Sara,Sid,471,50.0,4,False,Win,1,0,0,0,0,0
-15,2024-05-30,Test,Dry,Hard,2,Sid,Sara,432,60.0,3,True,Loss,0,0,0,0,0,0
-16,2024-08-20,ODI,Green,Hard,1,Arjun,Ragz,330,40.0,7,False,Loss,0,0,0,0,0,0
-16,2024-08-20,ODI,Green,Hard,2,Ragz,Arjun,345,50.0,0,True,Win,0,0,0,0,0,0
-17,2024-04-08,Test,Dry,Ultra Insane,1,Rohan,Nikita,411,30.0,3,False,Win,0,0,0,0,0,0
-17,2024-04-08,Test,Dry,Ultra Insane,2,Nikita,Rohan,360,30.0,3,True,Loss,0,0,0,0,0,0
-18,2024-05-07,ODI,Bouncy,Hard,1,Vikram,Sid,390,20.0,1,False,Loss,0,0,0,0,0,0
-18,2024-05-07,ODI,Bouncy,Hard,2,Sid,Vikram,470,30.0,5,True,Win,1,0,0,0,0,0
-19,2024-10-10,Test,Normal,Medium,1,Ragz,Sara,321,50.0,1,False,Loss,0,0,0,0,0,0
-19,2024-10-10,Test,Normal,Medium,2,Sara,Ragz,525,50.0,1,True,Win,1,0,0,0,0,0
-20,2024-06-20,Test,Green,Medium,1,Nikita,Leo,273,60.0,4,False,Loss,0,0,0,0,0,0
-20,2024-06-20,Test,Green,Medium,2,Leo,Nikita,366,50.0,3,True,Win,0,0,0,0,0,0
-21,2024-06-09,T20,Green,Insane,1,Vikram,Wizheart,150,20.0,3,False,Loss,0,0,0,0,0,0
-21,2024-06-09,T20,Green,Insane,2,Wizheart,Vikram,212,10.0,3,True,Win,0,0,0,0,0,0
-22,2024-09-29,T20,Normal,Insane,1,Sara,Anya,260,20.0,3,False,Win,0,0,0,0,0,0
-22,2024-09-29,T20,Normal,Insane,2,Anya,Sara,208,5.0,1,True,Loss,0,0,0,0,0,0
-23,2024-11-08,Test,Dry,Ultra Insane,1,Ragz,Sid,354,60.0,4,False,Loss,0,0,0,0,0,0
-23,2024-11-08,Test,Dry,Ultra Insane,2,Sid,Ragz,405,40.0,3,True,Win,0,0,0,0,0,0
-24,2024-07-08,Test,Dry,Hard,1,Vikram,Zafi,453,30.0,1,False,Win,1,0,0,0,0,0
-24,2024-07-08,Test,Dry,Hard,2,Zafi,Vikram,372,50.0,1,True,Loss,0,0,0,0,0,0
-25,2024-09-20,T20,Dry,Hard,1,Ragz,Anya,236,5.0,1,False,Win,0,0,0,0,0,0
-25,2024-09-20,T20,Dry,Hard,2,Anya,Ragz,164,15.0,4,True,Loss,0,0,0,0,0,0
-26,2024-05-24,Test,Normal,Insane,1,Sid,Wizheart,354,60.0,0,False,Win,0,0,0,0,0,0
-26,2024-05-24,Test,Normal,Insane,2,Wizheart,Sid,345,30.0,1,True,Loss,0,0,0,0,0,0
-27,2024-05-06,Test,Dry,Insane,1,Karthik,Wizheart,384,30.0,2,False,Loss,0,0,0,0,0,0
-27,2024-05-06,Test,Dry,Insane,2,Wizheart,Karthik,465,40.0,6,True,Win,1,0,0,0,0,0
-28,2024-09-03,Test,Normal,Medium,1,Leo,Sid,342,50.0,1,False,Loss,0,0,0,0,0,0
-28,2024-09-03,Test,Normal,Medium,2,Sid,Leo,369,40.0,0,True,Win,0,0,0,0,0,0
-29,2024-02-16,Test,Bouncy,Hard,1,Sara,Sid,525,30.0,2,False,Win,1,0,0,0,0,0
-29,2024-02-16,Test,Bouncy,Hard,2,Sid,Sara,435,40.0,2,True,Loss,0,0,0,0,0,0
-30,2024-08-10,T20,Bouncy,Insane,1,Vikram,Rohan,210,10.0,2,False,Loss,0,0,0,0,0,0
-30,2024-08-10,T20,Bouncy,Insane,2,Rohan,Vikram,252,20.0,7,True,Win,0,0,0,0,0,0
-31,2024-06-27,ODI,Bouncy,Hard,1,Leo,Arjun,305,40.0,3,False,Loss,0,0,0,0,0,0
-31,2024-06-27,ODI,Bouncy,Hard,2,Arjun,Leo,322,40.0,1,True,Win,0,0,0,0,0,0
-32,2024-08-29,ODI,Dry,Ultra Insane,1,Vikram,Sid,365,40.0,2,False,Win,0,0,0,0,0,0
-32,2024-08-29,ODI,Dry,Ultra Insane,2,Sid,Vikram,252,40.0,1,True,Loss,0,0,0,0,0,0
-33,2024-04-23,Test,Bouncy,Hard,1,Zafi,Anya,390,30.0,3,False,Win,0,0,0,0,0,0
-33,2024-04-23,Test,Bouncy,Hard,2,Anya,Zafi,315,50.0,1,True,Loss,0,0,0,0,0,0
-34,2024-04-05,Test,Bouncy,Hard,1,Wizheart,Zafi,504,60.0,3,False,Win,1,0,0,0,0,0
-34,2024-04-05,Test,Bouncy,Hard,2,Zafi,Wizheart,432,40.0,5,True,Loss,0,0,0,0,0,0
-35,2024-08-20,T20,Normal,Hard,1,Zafi,Wizheart,174,15.0,5,False,Loss,0,0,0,0,0,0
-35,2024-08-20,T20,Normal,Hard,2,Wizheart,Zafi,214,5.0,4,True,Win,0,0,0,0,0,0
-36,2024-06-29,ODI,Normal,Hard,1,Arjun,Sara,362,30.0,6,False,Loss,0,0,0,0,0,0
-36,2024-06-29,ODI,Normal,Hard,2,Sara,Arjun,415,20.0,2,True,Win,0,0,0,0,0,0
-37,2024-06-13,ODI,Bouncy,Hard,1,Leo,Rohan,357,30.0,4,False,Win,0,0,0,0,0,0
-37,2024-06-13,ODI,Bouncy,Hard,2,Rohan,Leo,310,20.0,2,True,Loss,0,0,0,0,0,0
-38,2024-01-19,T20,Green,Hard,1,Sid,Nikita,152,15.0,3,False,Loss,0,0,0,0,0,0
-38,2024-01-19,T20,Green,Hard,2,Nikita,Sid,172,15.0,5,True,Win,0,0,0,0,0,0
-39,2024-11-07,Test,Normal,Medium,1,Sara,Nikita,537,30.0,0,False,Win,1,0,0,0,0,0
-39,2024-11-07,Test,Normal,Medium,2,Nikita,Sara,402,50.0,1,True,Loss,0,0,0,0,0,0
-40,2024-02-16,ODI,Green,Ultra Insane,1,Sid,Wizheart,277,20.0,6,False,Loss,0,0,0,0,0,0
-40,2024-02-16,ODI,Green,Ultra Insane,2,Wizheart,Sid,297,30.0,3,True,Win,0,0,0,0,0,0
-41,2024-03-30,T20,Normal,Medium,1,Nikita,Anya,252,20.0,0,False,Win,0,0,0,0,0,0
-41,2024-03-30,T20,Normal,Medium,2,Anya,Nikita,0,5.0,0,True,Loss,0,0,0,0,0,1
-42,2024-05-24,Test,Bouncy,Hard,1,Karthik,Vikram,480,30.0,1,False,Win,1,0,0,0,0,0
-42,2024-05-24,Test,Bouncy,Hard,2,Vikram,Karthik,426,40.0,0,True,Loss,0,0,0,0,0,0
-43,2024-03-22,ODI,Bouncy,Ultra Insane,1,Ragz,Arjun,325,40.0,3,False,Win,0,0,0,0,0,0
-43,2024-03-22,ODI,Bouncy,Ultra Insane,2,Arjun,Ragz,322,40.0,6,True,Loss,0,0,0,0,0,0
-44,2024-11-10,ODI,Bouncy,Medium,1,Sid,Vikram,332,40.0,0,False,Loss,0,0,0,0,0,0
-44,2024-11-10,ODI,Bouncy,Medium,2,Vikram,Sid,395,40.0,0,True,Win,0,0,0,0,0,0
-45,2024-11-06,Test,Normal,Medium,1,Zafi,Karthik,408,40.0,5,False,Loss,0,0,0,0,0,0
-45,2024-11-06,Test,Normal,Medium,2,Karthik,Zafi,558,30.0,1,True,Win,1,0,0,0,0,0
-46,2024-02-20,Test,Green,Ultra Insane,1,Sid,Karthik,279,30.0,3,False,Loss,0,0,0,0,0,0
-46,2024-02-20,Test,Green,Ultra Insane,2,Karthik,Sid,396,40.0,3,True,Win,0,0,0,0,0,0
-47,2024-02-23,ODI,Normal,Hard,1,Nikita,Wizheart,387,50.0,1,False,Loss,0,0,0,0,0,0
-47,2024-02-23,ODI,Normal,Hard,2,Wizheart,Nikita,407,40.0,7,True,Win,0,0,0,0,0,0
-48,2024-12-03,ODI,Dry,Ultra Insane,1,Arjun,Nikita,247,30.0,5,False,Loss,0,0,0,0,0,0
-48,2024-12-03,ODI,Dry,Ultra Insane,2,Nikita,Arjun,300,20.0,4,True,Win,0,0,0,0,0,0
-49,2024-03-09,T20,Green,Hard,1,Karthik,Arjun,166,10.0,1,False,Loss,0,0,0,0,0,0
-49,2024-03-09,T20,Green,Hard,2,Arjun,Karthik,210,15.0,0,True,Win,0,0,0,0,0,0
-50,2024-09-05,Test,Normal,Medium,1,Leo,Anya,396,50.0,1,False,Win,0,0,0,0,0,0
-50,2024-09-05,Test,Normal,Medium,2,Anya,Leo,279,50.0,3,True,Loss,0,0,0,0,0,0
-51,2024-02-20,Test,Normal,Ultra Insane,1,Vikram,Leo,360,50.0,1,False,Win,0,0,0,0,0,0
-51,2024-02-20,Test,Normal,Ultra Insane,2,Leo,Vikram,357,40.0,2,True,Loss,0,0,0,0,0,0
-52,2024-02-03,Test,Normal,Medium,1,Ragz,Zafi,507,30.0,0,False,Win,1,0,0,0,0,0
-52,2024-02-03,Test,Normal,Medium,2,Zafi,Ragz,387,30.0,2,True,Loss,0,0,0,0,0,0
-53,2024-04-16,T20,Normal,Hard,1,Nikita,Zafi,202,15.0,3,False,Win,0,0,0,0,0,0
-53,2024-04-16,T20,Normal,Hard,2,Zafi,Nikita,188,10.0,2,True,Loss,0,0,0,0,0,0
-54,2024-11-07,T20,Bouncy,Medium,1,Rohan,Zafi,222,15.0,2,False,Win,0,0,0,0,0,0
-54,2024-11-07,T20,Bouncy,Medium,2,Zafi,Rohan,210,10.0,1,True,Loss,0,0,0,0,0,0
-55,2024-07-10,ODI,Dry,Insane,1,Karthik,Sara,310,20.0,2,False,Loss,0,0,0,0,0,0
-55,2024-07-10,ODI,Dry,Insane,2,Sara,Karthik,397,30.0,2,True,Win,0,0,0,0,0,0
-56,2024-03-08,T20,Dry,Hard,1,Arjun,Nikita,178,10.0,1,False,Loss,0,0,0,0,0,0
-56,2024-03-08,T20,Dry,Hard,2,Nikita,Arjun,264,10.0,3,True,Win,0,0,0,0,0,0
-57,2024-04-10,Test,Dry,Ultra Insane,1,Anya,Zafi,297,40.0,2,False,Loss,0,0,0,0,0,0
-57,2024-04-10,Test,Dry,Ultra Insane,2,Zafi,Anya,369,30.0,1,True,Win,0,0,0,0,0,0
-58,2024-07-16,Test,Green,Medium,1,Zafi,Vikram,342,40.0,0,False,Loss,0,0,0,0,0,0
-58,2024-07-16,Test,Green,Medium,2,Vikram,Zafi,462,40.0,1,True,Win,1,0,0,0,0,0
-59,2024-05-16,Test,Dry,Hard,1,Anya,Zafi,333,50.0,1,False,Loss,0,0,0,0,0,0
-59,2024-05-16,Test,Dry,Hard,2,Zafi,Anya,423,40.0,1,True,Win,0,0,0,0,0,0
-60,2024-03-02,Test,Dry,Insane,1,Ragz,Sid,366,30.0,2,False,Loss,0,0,0,0,0,0
-60,2024-03-02,Test,Dry,Insane,2,Sid,Ragz,465,40.0,2,True,Win,1,0,0,0,0,0
-61,2024-04-22,T20,Dry,Medium,1,Sara,Vikram,264,20.0,1,False,Win,0,0,0,0,0,0
-61,2024-04-22,T20,Dry,Medium,2,Vikram,Sara,212,15.0,1,True,Loss,0,0,0,0,0,0
-62,2024-09-15,ODI,Normal,Hard,1,Arjun,Zafi,280,20.0,2,False,Win,0,0,0,0,0,0
-62,2024-09-15,ODI,Normal,Hard,2,Zafi,Arjun,197,50.0,4,True,Loss,0,0,0,0,0,0
-63,2024-02-07,Test,Bouncy,Insane,1,Arjun,Rohan,315,50.0,5,False,Loss,0,0,0,0,0,0
-63,2024-02-07,Test,Bouncy,Insane,2,Rohan,Arjun,360,50.0,0,True,Win,0,0,0,0,0,0
-64,2024-10-22,Test,Dry,Hard,1,Sara,Leo,549,60.0,2,False,Win,1,0,0,0,0,0
-64,2024-10-22,Test,Dry,Hard,2,Leo,Sara,366,40.0,2,True,Loss,0,0,0,0,0,0
-65,2024-03-18,ODI,Green,Insane,1,Wizheart,Zafi,360,30.0,6,False,Win,0,0,0,0,0,0
-65,2024-03-18,ODI,Green,Insane,2,Zafi,Wizheart,335,40.0,3,True,Loss,0,0,0,0,0,0
-66,2024-11-04,T20,Green,Insane,1,Wizheart,Leo,234,20.0,4,False,Win,0,0,0,0,0,0
-66,2024-11-04,T20,Green,Insane,2,Leo,Wizheart,126,15.0,4,True,Loss,0,0,0,0,0,0
-67,2024-04-06,ODI,Bouncy,Insane,1,Ragz,Sid,345,20.0,0,False,Win,0,0,0,0,0,0
-67,2024-04-06,ODI,Bouncy,Insane,2,Sid,Ragz,290,30.0,3,True,Loss,0,0,0,0,0,0
-68,2024-06-07,T20,Green,Medium,1,Zafi,Leo,254,15.0,0,False,Win,0,0,0,0,0,0
-68,2024-06-07,T20,Green,Medium,2,Leo,Zafi,178,15.0,2,True,Loss,0,0,0,0,0,0
-69,2024-04-24,T20,Bouncy,Medium,1,Anya,Rohan,252,15.0,3,False,Win,0,0,0,0,0,0
-69,2024-04-24,T20,Bouncy,Medium,2,Rohan,Anya,220,10.0,1,True,Loss,0,0,0,0,0,0
-70,2024-10-28,T20,Bouncy,Ultra Insane,1,Ragz,Wizheart,182,15.0,2,False,Win,0,0,0,0,0,0
-70,2024-10-28,T20,Bouncy,Ultra Insane,2,Wizheart,Ragz,160,20.0,4,True,Loss,0,0,0,0,0,0
-71,2024-05-06,ODI,Dry,Medium,1,Anya,Karthik,270,30.0,0,False,Loss,0,0,0,0,0,0
-71,2024-05-06,ODI,Dry,Medium,2,Karthik,Anya,435,40.0,3,True,Win,1,0,0,0,0,0
-72,2024-10-28,T20,Bouncy,Medium,1,Anya,Vikram,180,5.0,1,False,Loss,0,0,0,0,0,0
-72,2024-10-28,T20,Bouncy,Medium,2,Vikram,Anya,262,5.0,1,True,Win,0,0,0,0,0,0
-73,2024-11-08,ODI,Bouncy,Hard,1,Ragz,Leo,280,20.0,3,False,Loss,0,0,0,0,0,0
-73,2024-11-08,ODI,Bouncy,Hard,2,Leo,Ragz,320,40.0,3,True,Win,0,0,0,0,0,0
-74,2024-06-27,ODI,Normal,Hard,1,Leo,Anya,310,30.0,4,False,Win,0,0,0,0,0,0
-74,2024-06-27,ODI,Normal,Hard,2,Anya,Leo,217,50.0,1,True,Loss,0,0,0,0,0,0
-75,2024-12-02,ODI,Bouncy,Insane,1,Ragz,Zafi,412,50.0,2,False,Win,0,0,0,0,0,0
-75,2024-12-02,ODI,Bouncy,Insane,2,Zafi,Ragz,210,40.0,1,True,Loss,0,0,0,0,0,0
-76,2024-08-02,ODI,Normal,Ultra Insane,1,Karthik,Leo,330,40.0,1,False,Win,0,0,0,0,0,0
-76,2024-08-02,ODI,Normal,Ultra Insane,2,Leo,Karthik,275,20.0,5,True,Loss,0,0,0,0,0,0
-77,2024-04-22,ODI,Dry,Insane,1,Karthik,Leo,405,30.0,0,False,Win,0,0,0,0,0,0
-77,2024-04-22,ODI,Dry,Insane,2,Leo,Karthik,295,50.0,5,True,Loss,0,0,0,0,0,0
-78,2024-03-27,Test,Bouncy,Ultra Insane,1,Anya,Arjun,315,50.0,1,False,Win,0,0,0,0,0,0
-78,2024-03-27,Test,Bouncy,Ultra Insane,2,Arjun,Anya,270,50.0,2,True,Loss,0,0,0,0,0,0
-79,2024-11-23,Test,Dry,Insane,1,Sara,Vikram,492,40.0,9,False,Win,1,0,0,0,0,0
-79,2024-11-23,Test,Dry,Insane,2,Vikram,Sara,342,40.0,2,True,Loss,0,0,0,0,0,0
-80,2024-09-19,ODI,Dry,Medium,1,Zafi,Arjun,347,20.0,3,False,Win,0,0,0,0,0,0
-80,2024-09-19,ODI,Dry,Medium,2,Arjun,Zafi,277,30.0,2,True,Loss,0,0,0,0,0,0
-81,2024-01-20,Test,Dry,Medium,1,Zafi,Rohan,465,30.0,2,False,Win,1,0,0,0,0,0
-81,2024-01-20,Test,Dry,Medium,2,Rohan,Zafi,375,40.0,1,True,Loss,0,0,0,0,0,0
-82,2024-07-20,ODI,Dry,Insane,1,Nikita,Rohan,367,30.0,2,False,Win,0,0,0,0,0,0
-82,2024-07-20,ODI,Dry,Insane,2,Rohan,Nikita,310,30.0,3,True,Loss,0,0,0,0,0,0
-83,2024-10-04,T20,Normal,Ultra Insane,1,Rohan,Karthik,142,15.0,7,False,Loss,0,0,0,0,0,0
-83,2024-10-04,T20,Normal,Ultra Insane,2,Karthik,Rohan,182,5.0,3,True,Win,0,0,0,0,0,0
-84,2024-01-27,ODI,Normal,Ultra Insane,1,Wizheart,Vikram,400,20.0,5,False,Win,0,0,0,0,0,0
-84,2024-01-27,ODI,Normal,Ultra Insane,2,Vikram,Wizheart,300,30.0,1,True,Loss,0,0,0,0,0,0
-85,2024-11-05,T20,Bouncy,Insane,1,Nikita,Zafi,172,15.0,6,False,Loss,0,0,0,0,0,0
-85,2024-11-05,T20,Bouncy,Insane,2,Zafi,Nikita,230,20.0,1,True,Win,0,0,0,0,0,0
-86,2024-05-27,T20,Dry,Insane,1,Sara,Zafi,204,15.0,4,False,Win,0,0,0,0,0,0
-86,2024-05-27,T20,Dry,Insane,2,Zafi,Sara,182,5.0,3,True,Loss,0,0,0,0,0,0
-87,2024-01-25,T20,Dry,Insane,1,Sara,Nikita,256,15.0,4,False,Win,0,0,0,0,0,0
-87,2024-01-25,T20,Dry,Insane,2,Nikita,Sara,154,20.0,6,True,Loss,0,0,0,0,0,0
-88,2024-03-29,ODI,Green,Insane,1,Vikram,Ragz,362,50.0,1,False,Win,0,0,0,0,0,0
-88,2024-03-29,ODI,Green,Insane,2,Ragz,Vikram,317,30.0,1,True,Loss,0,0,0,0,0,0
-89,2024-01-07,Test,Green,Ultra Insane,1,Sara,Ragz,405,30.0,3,False,Win,0,0,0,0,0,0
-89,2024-01-07,Test,Green,Ultra Insane,2,Ragz,Sara,315,50.0,2,True,Loss,0,0,0,0,0,0
-90,2024-06-07,T20,Dry,Ultra Insane,1,Vikram,Wizheart,184,20.0,0,False,Loss,0,0,0,0,0,0
-90,2024-06-07,T20,Dry,Ultra Insane,2,Wizheart,Vikram,196,5.0,5,True,Win,0,0,0,0,0,0
-91,2024-07-28,ODI,Dry,Hard,1,Nikita,Rohan,342,20.0,1,False,Loss,0,0,0,0,0,0
-91,2024-07-28,ODI,Dry,Hard,2,Rohan,Nikita,360,30.0,1,True,Win,0,0,0,0,0,0
-92,2024-09-25,T20,Dry,Ultra Insane,1,Sid,Leo,202,5.0,1,False,Win,0,0,0,0,0,0
-92,2024-09-25,T20,Dry,Ultra Insane,2,Leo,Sid,160,5.0,8,True,Loss,0,0,0,0,0,0
-93,2024-03-05,T20,Bouncy,Ultra Insane,1,Leo,Ragz,164,10.0,6,False,Loss,0,0,0,0,0,0
-93,2024-03-05,T20,Bouncy,Ultra Insane,2,Ragz,Leo,166,15.0,2,True,Win,0,0,0,0,0,0
-94,2024-10-19,T20,Normal,Insane,1,Vikram,Sara,222,5.0,6,False,Win,0,0,0,0,0,0
-94,2024-10-19,T20,Normal,Insane,2,Sara,Vikram,172,20.0,4,True,Loss,0,0,0,0,0,0
-95,2024-08-13,T20,Dry,Medium,1,Karthik,Sara,208,5.0,1,False,Loss,0,0,0,0,0,0
-95,2024-08-13,T20,Dry,Medium,2,Sara,Karthik,236,5.0,1,True,Win,0,0,0,0,0,0
-96,2024-01-09,ODI,Bouncy,Hard,1,Ragz,Wizheart,352,40.0,1,False,Loss,0,0,0,0,0,0
-96,2024-01-09,ODI,Bouncy,Hard,2,Wizheart,Ragz,480,30.0,3,True,Win,1,0,0,0,0,0
-97,2024-04-29,Test,Bouncy,Ultra Insane,1,Rohan,Zafi,432,30.0,2,False,Win,0,0,0,0,0,0
-97,2024-04-29,Test,Bouncy,Ultra Insane,2,Zafi,Rohan,378,50.0,2,True,Loss,0,0,0,0,0,0
-98,2024-08-13,ODI,Green,Hard,1,Leo,Nikita,307,50.0,3,False,Loss,0,0,0,0,0,0
-98,2024-08-13,ODI,Green,Hard,2,Nikita,Leo,315,30.0,2,True,Win,0,0,0,0,0,0
-99,2024-02-06,ODI,Green,Hard,1,Ragz,Sara,325,50.0,4,False,Loss,0,0,0,0,0,0
-99,2024-02-06,ODI,Green,Hard,2,Sara,Ragz,440,20.0,8,True,Win,1,0,0,0,0,0
-100,2024-07-09,T20,Normal,Medium,1,Nikita,Karthik,172,15.0,2,False,Loss,0,0,0,0,0,0
-100,2024-07-09,T20,Normal,Medium,2,Karthik,Nikita,244,15.0,0,True,Win,0,0,0,0,0,0
-101,2024-06-08,Test,Green,Medium,1,Vikram,Karthik,489,50.0,0,False,Win,1,0,0,0,0,0
-101,2024-06-08,Test,Green,Medium,2,Karthik,Vikram,459,40.0,2,True,Loss,1,0,0,0,0,0
-102,2024-08-11,Test,Green,Hard,1,Sid,Sara,414,30.0,2,False,Loss,0,0,0,0,0,0
-102,2024-08-11,Test,Green,Hard,2,Sara,Sid,492,60.0,1,True,Win,1,0,0,0,0,0
-103,2024-03-14,T20,Dry,Ultra Insane,1,Rohan,Vikram,170,5.0,4,False,Loss,0,0,0,0,0,0
-103,2024-03-14,T20,Dry,Ultra Insane,2,Vikram,Rohan,200,10.0,3,True,Win,0,0,0,0,0,0
-104,2024-07-11,ODI,Green,Hard,1,Leo,Sid,292,30.0,5,False,Loss,0,0,0,0,0,0
-104,2024-07-11,ODI,Green,Hard,2,Sid,Leo,347,40.0,0,True,Win,0,0,0,0,0,0
-105,2024-02-02,ODI,Dry,Hard,1,Sara,Arjun,445,30.0,1,False,Win,1,0,0,0,0,0
-105,2024-02-02,ODI,Dry,Hard,2,Arjun,Sara,290,30.0,3,True,Loss,0,0,0,0,0,0
-106,2024-02-08,T20,Green,Hard,1,Arjun,Sid,196,15.0,1,False,Loss,0,0,0,0,0,0
-106,2024-02-08,T20,Green,Hard,2,Sid,Arjun,238,10.0,1,True,Win,0,0,0,0,0,0
-107,2024-07-13,Test,Dry,Hard,1,Arjun,Anya,360,30.0,5,False,Win,0,0,0,0,0,0
-107,2024-07-13,Test,Dry,Hard,2,Anya,Arjun,336,40.0,1,True,Loss,0,0,0,0,0,0
-108,2024-11-15,ODI,Normal,Hard,1,Ragz,Karthik,265,20.0,3,False,Loss,0,0,0,0,0,0
-108,2024-11-15,ODI,Normal,Hard,2,Karthik,Ragz,420,20.0,0,True,Win,0,0,0,0,0,0
-109,2024-01-08,ODI,Bouncy,Hard,1,Zafi,Nikita,405,40.0,0,False,Win,0,0,0,0,0,0
-109,2024-01-08,ODI,Bouncy,Hard,2,Nikita,Zafi,0,20.0,1,True,Loss,0,0,0,0,0,1
-110,2024-11-11,ODI,Dry,Ultra Insane,1,Nikita,Wizheart,367,30.0,2,False,Loss,0,0,0,0,0,0
-110,2024-11-11,ODI,Dry,Ultra Insane,2,Wizheart,Nikita,377,50.0,3,True,Win,0,0,0,0,0,0
-111,2024-08-01,Test,Green,Ultra Insane,1,Rohan,Wizheart,366,40.0,3,False,Win,0,0,0,0,0,0
-111,2024-08-01,Test,Green,Ultra Insane,2,Wizheart,Rohan,303,40.0,4,True,Loss,0,0,0,0,0,0
-112,2024-10-15,T20,Green,Ultra Insane,1,Wizheart,Anya,166,20.0,3,False,Win,0,0,0,0,0,0
-112,2024-10-15,T20,Green,Ultra Insane,2,Anya,Wizheart,152,10.0,1,True,Loss,0,0,0,0,0,0
-113,2024-08-29,ODI,Green,Ultra Insane,1,Vikram,Leo,330,50.0,1,False,Win,0,0,0,0,0,0
-113,2024-08-29,ODI,Green,Ultra Insane,2,Leo,Vikram,250,20.0,2,True,Loss,0,0,0,0,0,0
-114,2024-12-24,T20,Bouncy,Ultra Insane,1,Karthik,Arjun,222,10.0,1,False,Win,0,0,0,0,0,0
-114,2024-12-24,T20,Bouncy,Ultra Insane,2,Arjun,Karthik,178,5.0,5,True,Loss,0,0,0,0,0,0
-115,2024-02-10,ODI,Green,Medium,1,Nikita,Anya,417,30.0,3,False,Win,0,0,0,0,0,0
-115,2024-02-10,ODI,Green,Medium,2,Anya,Nikita,332,30.0,2,True,Loss,0,0,0,0,0,0
-116,2024-10-23,T20,Green,Hard,1,Sid,Ragz,192,20.0,0,False,Loss,0,0,0,0,0,0
-116,2024-10-23,T20,Green,Hard,2,Ragz,Sid,198,15.0,3,True,Win,0,0,0,0,0,0
-117,2024-08-25,T20,Normal,Ultra Insane,1,Rohan,Leo,190,20.0,1,False,Win,0,0,0,0,0,0
-117,2024-08-25,T20,Normal,Ultra Insane,2,Leo,Rohan,176,20.0,6,True,Loss,0,0,0,0,0,0
-118,2024-02-04,T20,Normal,Medium,1,Sara,Nikita,246,5.0,3,False,Win,0,0,0,0,0,0
-118,2024-02-04,T20,Normal,Medium,2,Nikita,Sara,124,20.0,3,True,Loss,0,0,0,0,0,0
-119,2024-04-05,Test,Green,Hard,1,Wizheart,Arjun,603,30.0,4,False,Win,1,0,0,0,0,0
-119,2024-04-05,Test,Green,Hard,2,Arjun,Wizheart,327,50.0,2,True,Loss,0,0,0,0,0,0
-120,2024-01-18,ODI,Dry,Hard,1,Sid,Anya,322,50.0,3,False,Draw,0,0,0,0,0,0
-120,2024-01-18,ODI,Dry,Hard,2,Anya,Sid,322,30.0,2,True,Draw,0,0,0,0,0,0
-121,2024-02-10,ODI,Green,Insane,1,Nikita,Arjun,297,30.0,3,False,Win,0,0,0,0,0,0
-121,2024-02-10,ODI,Green,Insane,2,Arjun,Nikita,262,20.0,4,True,Loss,0,0,0,0,0,0
-122,2024-06-12,Test,Green,Medium,1,Leo,Vikram,342,30.0,2,False,Loss,0,0,0,0,0,0
-122,2024-06-12,Test,Green,Medium,2,Vikram,Leo,450,30.0,1,True,Win,1,0,0,0,0,0
-123,2024-09-13,Test,Dry,Hard,1,Sara,Zafi,522,30.0,2,False,Win,1,0,0,0,0,0
-123,2024-09-13,Test,Dry,Hard,2,Zafi,Sara,270,30.0,3,True,Loss,0,0,0,0,0,0
-124,2024-04-29,T20,Normal,Medium,1,Karthik,Leo,264,20.0,2,False,Win,0,0,0,0,0,0
-124,2024-04-29,T20,Normal,Medium,2,Leo,Karthik,188,10.0,0,True,Loss,0,0,0,0,0,0
-125,2024-10-19,Test,Bouncy,Hard,1,Ragz,Sid,381,60.0,1,False,Draw,0,0,0,0,0,0
-125,2024-10-19,Test,Bouncy,Hard,2,Sid,Ragz,381,50.0,2,True,Draw,0,0,0,0,0,0
-126,2024-10-02,T20,Normal,Hard,1,Sid,Arjun,270,5.0,0,False,Win,0,0,0,0,0,0
-126,2024-10-02,T20,Normal,Hard,2,Arjun,Sid,174,5.0,4,True,Loss,0,0,0,0,0,0
-127,2024-10-20,ODI,Bouncy,Medium,1,Ragz,Arjun,305,50.0,0,False,Loss,0,0,0,0,0,0
-127,2024-10-20,ODI,Bouncy,Medium,2,Arjun,Ragz,335,40.0,3,True,Win,0,0,0,0,0,0
-128,2024-10-16,Test,Normal,Insane,1,Rohan,Sara,351,30.0,3,False,Loss,0,0,0,0,0,0
-128,2024-10-16,Test,Normal,Insane,2,Sara,Rohan,552,60.0,7,True,Win,1,0,0,0,0,0
-129,2024-07-10,ODI,Green,Hard,1,Zafi,Rohan,360,30.0,2,False,Win,0,0,0,0,0,0
-129,2024-07-10,ODI,Green,Hard,2,Rohan,Zafi,312,40.0,3,True,Loss,0,0,0,0,0,0
-130,2024-04-11,T20,Bouncy,Medium,1,Leo,Arjun,212,15.0,3,False,Win,0,0,0,0,0,0
-130,2024-04-11,T20,Bouncy,Medium,2,Arjun,Leo,206,10.0,2,True,Loss,0,0,0,0,0,0
-131,2024-07-17,T20,Normal,Medium,1,Anya,Vikram,140,15.0,1,False,Loss,0,0,0,0,0,0
-131,2024-07-17,T20,Normal,Medium,2,Vikram,Anya,274,5.0,1,True,Win,0,0,0,0,0,0
-132,2024-09-23,ODI,Dry,Medium,1,Vikram,Sara,405,40.0,2,False,Win,0,0,0,0,0,0
-132,2024-09-23,ODI,Dry,Medium,2,Sara,Vikram,377,50.0,2,True,Loss,0,0,0,0,0,0
-133,2024-06-02,ODI,Normal,Ultra Insane,1,Sid,Zafi,250,20.0,7,False,Win,0,0,0,0,0,0
-133,2024-06-02,ODI,Normal,Ultra Insane,2,Zafi,Sid,192,40.0,2,True,Loss,0,0,0,0,0,0
-134,2024-10-07,ODI,Dry,Ultra Insane,1,Leo,Ragz,275,50.0,2,False,Loss,0,0,0,0,0,0
-134,2024-10-07,ODI,Dry,Ultra Insane,2,Ragz,Leo,317,50.0,4,True,Win,0,0,0,0,0,0
-135,2024-06-06,ODI,Bouncy,Insane,1,Rohan,Vikram,322,30.0,2,False,Loss,0,0,0,0,0,0
-135,2024-06-06,ODI,Bouncy,Insane,2,Vikram,Rohan,347,50.0,1,True,Win,0,0,0,0,0,0
-136,2024-03-11,ODI,Green,Ultra Insane,1,Leo,Rohan,287,40.0,5,False,Win,0,0,0,0,0,0
-136,2024-03-11,ODI,Green,Ultra Insane,2,Rohan,Leo,260,30.0,1,True,Loss,0,0,0,0,0,0
-137,2024-04-27,ODI,Dry,Hard,1,Zafi,Arjun,300,20.0,2,False,Loss,0,0,0,0,0,0
-137,2024-04-27,ODI,Dry,Hard,2,Arjun,Zafi,317,20.0,4,True,Win,0,0,0,0,0,0
-138,2024-05-31,ODI,Bouncy,Ultra Insane,1,Rohan,Leo,310,40.0,3,False,Loss,0,0,0,0,0,0
-138,2024-05-31,ODI,Bouncy,Ultra Insane,2,Leo,Rohan,317,20.0,3,True,Win,0,0,0,0,0,0
-139,2024-05-29,T20,Green,Insane,1,Wizheart,Sid,178,20.0,2,False,Win,0,0,0,0,0,0
-139,2024-05-29,T20,Green,Insane,2,Sid,Wizheart,168,5.0,3,True,Loss,0,0,0,0,0,0
-140,2024-03-25,ODI,Bouncy,Ultra Insane,1,Karthik,Anya,262,30.0,3,False,Win,0,0,0,0,0,0
-140,2024-03-25,ODI,Bouncy,Ultra Insane,2,Anya,Karthik,0,40.0,4,True,Loss,0,0,0,0,0,1
-141,2024-08-16,ODI,Dry,Insane,1,Rohan,Arjun,250,20.0,3,False,Loss,0,0,0,0,0,0
-141,2024-08-16,ODI,Dry,Insane,2,Arjun,Rohan,340,50.0,2,True,Win,0,0,0,0,0,0
-142,2024-05-28,T20,Normal,Hard,1,Zafi,Karthik,202,20.0,2,False,Loss,0,0,0,0,0,0
-142,2024-05-28,T20,Normal,Hard,2,Karthik,Zafi,244,10.0,0,True,Win,0,0,0,0,0,0
-143,2024-06-20,T20,Green,Ultra Insane,1,Vikram,Karthik,146,10.0,1,False,Loss,0,0,0,0,0,0
-143,2024-06-20,T20,Green,Ultra Insane,2,Karthik,Vikram,170,5.0,2,True,Win,0,0,0,0,0,0
-144,2024-07-26,T20,Green,Ultra Insane,1,Sid,Wizheart,178,10.0,5,False,Win,0,0,0,0,0,0
-144,2024-07-26,T20,Green,Ultra Insane,2,Wizheart,Sid,170,20.0,1,True,Loss,0,0,0,0,0,0
-145,2024-12-25,Test,Dry,Hard,1,Nikita,Karthik,465,60.0,2,False,Win,1,0,0,0,0,0
-145,2024-12-25,Test,Dry,Hard,2,Karthik,Nikita,441,50.0,3,True,Loss,0,0,0,0,0,0
-146,2024-05-21,ODI,Dry,Ultra Insane,1,Vikram,Leo,295,50.0,1,False,Win,0,0,0,0,0,0
-146,2024-05-21,ODI,Dry,Ultra Insane,2,Leo,Vikram,247,40.0,5,True,Loss,0,0,0,0,0,0
-147,2024-09-18,ODI,Green,Insane,1,Anya,Sid,297,40.0,2,False,Loss,0,0,0,0,0,0
-147,2024-09-18,ODI,Green,Insane,2,Sid,Anya,382,20.0,1,True,Win,0,0,0,0,0,0
-148,2024-10-17,ODI,Dry,Insane,1,Karthik,Zafi,365,30.0,1,False,Win,0,0,0,0,0,0
-148,2024-10-17,ODI,Dry,Insane,2,Zafi,Karthik,332,20.0,0,True,Loss,0,0,0,0,0,0
-149,2024-12-12,T20,Bouncy,Insane,1,Zafi,Vikram,208,10.0,3,False,Loss,0,0,0,0,0,0
-149,2024-12-12,T20,Bouncy,Insane,2,Vikram,Zafi,210,5.0,2,True,Win,0,0,0,0,0,0
-150,2024-01-25,T20,Bouncy,Hard,1,Karthik,Sid,196,5.0,0,False,Loss,0,0,0,0,0,0
-150,2024-01-25,T20,Bouncy,Hard,2,Sid,Karthik,198,5.0,1,True,Win,0,0,0,0,0,0
-151,2024-01-12,ODI,Dry,Medium,1,Karthik,Arjun,392,50.0,2,False,Win,0,0,0,0,0,0
-151,2024-01-12,ODI,Dry,Medium,2,Arjun,Karthik,287,40.0,1,True,Loss,0,0,0,0,0,0
-152,2024-09-10,Test,Dry,Hard,1,Arjun,Wizheart,306,40.0,0,False,Loss,0,0,0,0,0,0
-152,2024-09-10,Test,Dry,Hard,2,Wizheart,Arjun,519,50.0,1,True,Win,1,0,0,0,0,0
-153,2024-09-23,T20,Bouncy,Insane,1,Wizheart,Leo,230,10.0,2,False,Win,0,0,0,0,0,0
-153,2024-09-23,T20,Bouncy,Insane,2,Leo,Wizheart,164,5.0,2,True,Loss,0,0,0,0,0,0
-154,2024-09-08,T20,Dry,Hard,1,Sara,Sid,244,5.0,3,False,Win,0,0,0,0,0,0
-154,2024-09-08,T20,Dry,Hard,2,Sid,Sara,204,20.0,4,True,Loss,0,0,0,0,0,0
-155,2024-01-07,Test,Normal,Insane,1,Sid,Leo,438,50.0,2,False,Win,0,0,0,0,0,0
-155,2024-01-07,Test,Normal,Insane,2,Leo,Sid,315,40.0,3,True,Loss,0,0,0,0,0,0
-156,2024-11-09,ODI,Dry,Hard,1,Wizheart,Arjun,317,50.0,0,False,Win,0,0,0,0,0,0
-156,2024-11-09,ODI,Dry,Hard,2,Arjun,Wizheart,310,30.0,2,True,Loss,0,0,0,0,0,0
-157,2024-06-08,ODI,Normal,Medium,1,Nikita,Sid,257,50.0,2,False,Loss,0,0,0,0,0,0
-157,2024-06-08,ODI,Normal,Medium,2,Sid,Nikita,330,20.0,1,True,Win,0,0,0,0,0,0
-158,2024-02-21,Test,Normal,Hard,1,Ragz,Rohan,363,60.0,1,False,Loss,0,0,0,0,0,0
-158,2024-02-21,Test,Normal,Hard,2,Rohan,Ragz,453,40.0,2,True,Win,1,0,0,0,0,0
-159,2024-07-10,ODI,Normal,Hard,1,Zafi,Vikram,340,20.0,1,False,Loss,0,0,0,0,0,0
-159,2024-07-10,ODI,Normal,Hard,2,Vikram,Zafi,375,20.0,1,True,Win,0,0,0,0,0,0
-160,2024-08-19,ODI,Bouncy,Ultra Insane,1,Sid,Leo,305,20.0,2,False,Loss,0,0,0,0,0,0
-160,2024-08-19,ODI,Bouncy,Ultra Insane,2,Leo,Sid,332,20.0,2,True,Win,0,0,0,0,0,0
-161,2024-03-27,ODI,Green,Insane,1,Rohan,Leo,340,20.0,2,False,Loss,0,0,0,0,0,0
-161,2024-03-27,ODI,Green,Insane,2,Leo,Rohan,345,50.0,3,True,Win,0,0,0,0,0,0
-162,2024-07-29,Test,Normal,Hard,1,Sara,Karthik,459,50.0,3,False,Loss,1,0,0,0,0,0
-162,2024-07-29,Test,Normal,Hard,2,Karthik,Sara,492,40.0,0,True,Win,1,0,0,0,0,0
-163,2024-08-07,ODI,Normal,Hard,1,Karthik,Ragz,402,20.0,2,False,Win,0,0,0,0,0,0
-163,2024-08-07,ODI,Normal,Hard,2,Ragz,Karthik,287,20.0,1,True,Loss,0,0,0,0,0,0
-164,2024-04-14,T20,Normal,Hard,1,Wizheart,Nikita,238,5.0,2,False,Win,0,0,0,0,0,0
-164,2024-04-14,T20,Normal,Hard,2,Nikita,Wizheart,220,15.0,6,True,Loss,0,0,0,0,0,0
-165,2024-09-27,ODI,Green,Insane,1,Wizheart,Karthik,317,20.0,4,False,Win,0,0,0,0,0,0
-165,2024-09-27,ODI,Green,Insane,2,Karthik,Wizheart,262,50.0,1,True,Loss,0,0,0,0,0,0
-166,2024-05-01,ODI,Dry,Ultra Insane,1,Zafi,Sara,327,50.0,3,False,Loss,0,0,0,0,0,0
-166,2024-05-01,ODI,Dry,Ultra Insane,2,Sara,Zafi,332,30.0,5,True,Win,0,0,0,0,0,0
-167,2024-08-22,Test,Dry,Hard,1,Nikita,Zafi,369,30.0,3,False,Win,0,0,0,0,0,0
-167,2024-08-22,Test,Dry,Hard,2,Zafi,Nikita,357,60.0,3,True,Loss,0,0,0,0,0,0
-168,2024-01-03,T20,Bouncy,Hard,1,Arjun,Ragz,184,15.0,2,False,Win,0,0,0,0,0,0
-168,2024-01-03,T20,Bouncy,Hard,2,Ragz,Arjun,160,10.0,0,True,Loss,0,0,0,0,0,0
-169,2024-05-08,Test,Normal,Hard,1,Arjun,Rohan,336,60.0,3,False,Loss,0,0,0,0,0,0
-169,2024-05-08,Test,Normal,Hard,2,Rohan,Arjun,342,50.0,3,True,Win,0,0,0,0,0,0
-170,2024-03-26,T20,Dry,Ultra Insane,1,Zafi,Sid,132,10.0,3,False,Loss,0,0,0,0,0,0
-170,2024-03-26,T20,Dry,Ultra Insane,2,Sid,Zafi,202,15.0,2,True,Win,0,0,0,0,0,0
-171,2024-04-20,T20,Dry,Ultra Insane,1,Arjun,Vikram,192,5.0,1,False,Loss,0,0,0,0,0,0
-171,2024-04-20,T20,Dry,Ultra Insane,2,Vikram,Arjun,210,10.0,2,True,Win,0,0,0,0,0,0
-172,2024-02-07,T20,Green,Ultra Insane,1,Zafi,Rohan,218,10.0,2,False,Win,0,0,0,0,0,0
-172,2024-02-07,T20,Green,Ultra Insane,2,Rohan,Zafi,156,10.0,2,True,Loss,0,0,0,0,0,0
-173,2024-09-10,Test,Green,Insane,1,Rohan,Arjun,399,60.0,3,False,Win,0,0,0,0,0,0
-173,2024-09-10,Test,Green,Insane,2,Arjun,Rohan,345,40.0,5,True,Loss,0,0,0,0,0,0
-174,2024-06-21,Test,Normal,Hard,1,Sara,Rohan,507,60.0,1,False,Win,1,0,0,0,0,0
-174,2024-06-21,Test,Normal,Hard,2,Rohan,Sara,354,30.0,5,True,Loss,0,0,0,0,0,0
-175,2024-09-16,T20,Normal,Insane,1,Rohan,Wizheart,174,20.0,3,False,Loss,0,0,0,0,0,0
-175,2024-09-16,T20,Normal,Insane,2,Wizheart,Rohan,236,20.0,3,True,Win,0,0,0,0,0,0
-176,2024-04-16,Test,Green,Ultra Insane,1,Arjun,Ragz,366,30.0,3,False,Loss,0,0,0,0,0,0
-176,2024-04-16,Test,Green,Ultra Insane,2,Ragz,Arjun,417,50.0,3,True,Win,0,0,0,0,0,0
-177,2024-02-18,T20,Green,Ultra Insane,1,Zafi,Sid,114,5.0,1,False,Win,0,0,0,0,0,0
-177,2024-02-18,T20,Green,Ultra Insane,2,Sid,Zafi,0,15.0,3,True,Loss,0,0,0,0,0,1
-178,2024-10-23,ODI,Green,Insane,1,Anya,Sara,252,30.0,3,False,Loss,0,0,0,0,0,0
-178,2024-10-23,ODI,Green,Insane,2,Sara,Anya,357,50.0,0,True,Win,0,0,0,0,0,0
-179,2024-12-07,Test,Bouncy,Insane,1,Nikita,Sid,282,60.0,5,False,Loss,0,0,0,0,0,0
-179,2024-12-07,Test,Bouncy,Insane,2,Sid,Nikita,330,30.0,1,True,Win,0,0,0,0,0,0
-180,2024-03-24,ODI,Green,Medium,1,Sid,Zafi,260,30.0,2,False,Loss,0,0,0,0,0,0
-180,2024-03-24,ODI,Green,Medium,2,Zafi,Sid,380,50.0,1,True,Win,0,0,0,0,0,0
-181,2024-07-17,ODI,Dry,Insane,1,Zafi,Nikita,295,20.0,3,False,Win,0,0,0,0,0,0
-181,2024-07-17,ODI,Dry,Insane,2,Nikita,Zafi,272,40.0,2,True,Loss,0,0,0,0,0,0
-182,2024-12-10,T20,Normal,Ultra Insane,1,Nikita,Wizheart,0,5.0,1,False,Loss,0,0,0,0,0,1
-182,2024-12-10,T20,Normal,Ultra Insane,2,Wizheart,Nikita,260,20.0,2,True,Win,0,0,0,0,0,0
-183,2024-10-15,Test,Dry,Ultra Insane,1,Sara,Sid,465,30.0,5,False,Win,1,0,0,0,0,0
-183,2024-10-15,Test,Dry,Ultra Insane,2,Sid,Sara,234,30.0,6,True,Loss,0,0,0,0,0,0
-184,2024-12-09,Test,Bouncy,Insane,1,Vikram,Ragz,465,50.0,1,False,Win,1,0,0,0,0,0
-184,2024-12-09,Test,Bouncy,Insane,2,Ragz,Vikram,351,50.0,3,True,Loss,0,0,0,0,0,0
-185,2024-03-08,ODI,Green,Ultra Insane,1,Zafi,Wizheart,305,30.0,3,False,Draw,0,0,0,0,0,0
-185,2024-03-08,ODI,Green,Ultra Insane,2,Wizheart,Zafi,305,50.0,1,True,Draw,0,0,0,0,0,0
-186,2024-09-04,T20,Bouncy,Hard,1,Arjun,Vikram,146,10.0,3,False,Loss,0,0,0,0,0,0
-186,2024-09-04,T20,Bouncy,Hard,2,Vikram,Arjun,198,15.0,3,True,Win,0,0,0,0,0,0
-187,2024-03-14,Test,Green,Medium,1,Karthik,Zafi,510,60.0,3,False,Win,1,0,0,0,0,0
-187,2024-03-14,Test,Green,Medium,2,Zafi,Karthik,342,60.0,3,True,Loss,0,0,0,0,0,0
-188,2024-09-19,ODI,Normal,Hard,1,Sid,Arjun,330,50.0,2,False,Win,0,0,0,0,0,0
-188,2024-09-19,ODI,Normal,Hard,2,Arjun,Sid,290,40.0,4,True,Loss,0,0,0,0,0,0
-189,2024-10-28,T20,Dry,Ultra Insane,1,Sid,Leo,178,15.0,4,False,Draw,0,0,0,0,0,0
-189,2024-10-28,T20,Dry,Ultra Insane,2,Leo,Sid,178,15.0,3,True,Draw,0,0,0,0,0,0
-190,2024-07-14,Test,Green,Hard,1,Nikita,Karthik,342,30.0,3,False,Loss,0,0,0,0,0,0
-190,2024-07-14,Test,Green,Hard,2,Karthik,Nikita,462,40.0,2,True,Win,1,0,0,0,0,0
-191,2024-12-29,T20,Bouncy,Medium,1,Arjun,Nikita,160,20.0,3,False,Loss,0,0,0,0,0,0
-191,2024-12-29,T20,Bouncy,Medium,2,Nikita,Arjun,162,20.0,1,True,Win,0,0,0,0,0,0
-192,2024-06-11,ODI,Dry,Medium,1,Arjun,Leo,325,50.0,1,False,Loss,0,0,0,0,0,0
-192,2024-06-11,ODI,Dry,Medium,2,Leo,Arjun,342,40.0,3,True,Win,0,0,0,0,0,0
-193,2024-09-27,T20,Green,Hard,1,Sid,Vikram,174,15.0,3,False,Loss,0,0,0,0,0,0
-193,2024-09-27,T20,Green,Hard,2,Vikram,Sid,230,15.0,0,True,Win,0,0,0,0,0,0
-194,2024-05-27,ODI,Dry,Insane,1,Vikram,Leo,342,50.0,2,False,Win,0,0,0,0,0,0
-194,2024-05-27,ODI,Dry,Insane,2,Leo,Vikram,272,20.0,0,True,Loss,0,0,0,0,0,0
-195,2024-04-26,ODI,Green,Insane,1,Karthik,Leo,362,20.0,4,False,Win,0,0,0,0,0,0
-195,2024-04-26,ODI,Green,Insane,2,Leo,Karthik,302,20.0,1,True,Loss,0,0,0,0,0,0
-196,2024-03-31,T20,Green,Hard,1,Nikita,Wizheart,110,10.0,4,False,Loss,0,0,0,0,0,0
-196,2024-03-31,T20,Green,Hard,2,Wizheart,Nikita,140,20.0,0,True,Win,0,0,0,0,0,0
-197,2024-12-09,ODI,Green,Ultra Insane,1,Nikita,Sara,280,30.0,5,False,Loss,0,0,0,0,0,0
-197,2024-12-09,ODI,Green,Ultra Insane,2,Sara,Nikita,367,40.0,5,True,Win,0,0,0,0,0,0
-198,2024-04-29,T20,Bouncy,Ultra Insane,1,Wizheart,Ragz,134,10.0,2,False,Loss,0,0,0,0,0,0
-198,2024-04-29,T20,Bouncy,Ultra Insane,2,Ragz,Wizheart,190,10.0,1,True,Win,0,0,0,0,0,0
-199,2024-03-08,T20,Dry,Medium,1,Sid,Zafi,230,20.0,2,False,Loss,0,0,0,0,0,0
-199,2024-03-08,T20,Dry,Medium,2,Zafi,Sid,236,15.0,2,True,Win,0,0,0,0,0,0
-200,2024-09-24,T20,Green,Medium,1,Leo,Ragz,220,15.0,2,False,Win,0,0,0,0,0,0
-200,2024-09-24,T20,Green,Medium,2,Ragz,Leo,176,5.0,1,True,Loss,0,0,0,0,0,0
-201,2024-07-19,ODI,Bouncy,Medium,1,Sid,Arjun,315,20.0,1,False,Draw,0,0,0,0,0,0
-201,2024-07-19,ODI,Bouncy,Medium,2,Arjun,Sid,315,30.0,3,True,Draw,0,0,0,0,0,0
-202,2024-05-11,ODI,Green,Medium,1,Anya,Sara,250,40.0,1,False,Loss,0,0,0,0,0,0
-202,2024-05-11,ODI,Green,Medium,2,Sara,Anya,422,30.0,1,True,Win,0,0,0,0,0,0
-203,2024-12-12,T20,Green,Insane,1,Sara,Sid,254,15.0,0,False,Win,0,0,0,0,0,0
-203,2024-12-12,T20,Green,Insane,2,Sid,Sara,186,5.0,1,True,Loss,0,0,0,0,0,0
-204,2024-05-15,T20,Normal,Medium,1,Karthik,Sara,222,15.0,0,False,Win,0,0,0,0,0,0
-204,2024-05-15,T20,Normal,Medium,2,Sara,Karthik,184,15.0,2,True,Loss,0,0,0,0,0,0
-205,2024-07-07,T20,Dry,Hard,1,Leo,Zafi,192,10.0,2,False,Loss,0,0,0,0,0,0
-205,2024-07-07,T20,Dry,Hard,2,Zafi,Leo,200,20.0,3,True,Win,0,0,0,0,0,0
-206,2024-02-06,ODI,Normal,Medium,1,Sid,Ragz,325,20.0,1,False,Loss,0,0,0,0,0,0
-206,2024-02-06,ODI,Normal,Medium,2,Ragz,Sid,352,20.0,0,True,Win,0,0,0,0,0,0
-207,2024-07-10,T20,Dry,Medium,1,Wizheart,Anya,252,15.0,1,False,Win,0,0,0,0,0,0
-207,2024-07-10,T20,Dry,Medium,2,Anya,Wizheart,152,20.0,1,True,Loss,0,0,0,0,0,0
-208,2024-04-18,Test,Dry,Insane,1,Anya,Nikita,225,60.0,4,False,Loss,0,0,0,0,0,0
-208,2024-04-18,Test,Dry,Insane,2,Nikita,Anya,426,40.0,1,True,Win,0,0,0,0,0,0
-209,2024-06-23,Test,Bouncy,Ultra Insane,1,Rohan,Sara,297,60.0,3,False,Loss,0,0,0,0,0,0
-209,2024-06-23,Test,Bouncy,Ultra Insane,2,Sara,Rohan,432,60.0,5,True,Win,0,0,0,0,0,0
-210,2024-10-11,Test,Bouncy,Hard,1,Zafi,Rohan,414,30.0,2,False,Win,0,0,0,0,0,0
-210,2024-10-11,Test,Bouncy,Hard,2,Rohan,Zafi,393,30.0,3,True,Loss,0,0,0,0,0,0
-211,2024-01-02,ODI,Bouncy,Ultra Insane,1,Rohan,Ragz,295,20.0,1,False,Win,0,0,0,0,0,0
-211,2024-01-02,ODI,Bouncy,Ultra Insane,2,Ragz,Rohan,257,30.0,2,True,Loss,0,0,0,0,0,0
-212,2024-12-22,Test,Green,Insane,1,Sid,Arjun,348,30.0,2,False,Win,0,0,0,0,0,0
-212,2024-12-22,Test,Green,Insane,2,Arjun,Sid,345,30.0,4,True,Loss,0,0,0,0,0,0
-213,2024-05-01,T20,Normal,Ultra Insane,1,Arjun,Sara,198,10.0,6,False,Loss,0,0,0,0,0,0
-213,2024-05-01,T20,Normal,Ultra Insane,2,Sara,Arjun,200,5.0,0,True,Win,0,0,0,0,0,0
-214,2024-06-15,T20,Bouncy,Medium,1,Sid,Anya,208,10.0,0,False,Win,0,0,0,0,0,0
-214,2024-06-15,T20,Bouncy,Medium,2,Anya,Sid,124,20.0,2,True,Loss,0,0,0,0,0,0
-215,2024-07-20,T20,Dry,Ultra Insane,1,Leo,Arjun,204,20.0,4,False,Win,0,0,0,0,0,0
-215,2024-07-20,T20,Dry,Ultra Insane,2,Arjun,Leo,148,20.0,4,True,Loss,0,0,0,0,0,0
-216,2024-12-09,ODI,Dry,Hard,1,Nikita,Sid,257,40.0,1,False,Loss,0,0,0,0,0,0
-216,2024-12-09,ODI,Dry,Hard,2,Sid,Nikita,347,40.0,1,True,Win,0,0,0,0,0,0
-217,2024-11-01,Test,Bouncy,Ultra Insane,1,Rohan,Anya,318,40.0,2,False,Loss,0,0,0,0,0,0
-217,2024-11-01,Test,Bouncy,Ultra Insane,2,Anya,Rohan,387,40.0,4,True,Win,0,0,0,0,0,0
-218,2024-10-11,T20,Dry,Insane,1,Wizheart,Sara,178,5.0,0,False,Loss,0,0,0,0,0,0
-218,2024-10-11,T20,Dry,Insane,2,Sara,Wizheart,234,20.0,2,True,Win,0,0,0,0,0,0
-219,2024-10-31,ODI,Dry,Medium,1,Rohan,Sara,400,20.0,2,False,Loss,0,0,0,0,0,0
-219,2024-10-31,ODI,Dry,Medium,2,Sara,Rohan,432,50.0,1,True,Win,1,0,0,0,0,0
-220,2024-12-06,T20,Normal,Ultra Insane,1,Arjun,Karthik,132,10.0,5,False,Loss,0,0,0,0,0,0
-220,2024-12-06,T20,Normal,Ultra Insane,2,Karthik,Arjun,214,10.0,5,True,Win,0,0,0,0,0,0
-221,2024-09-06,T20,Dry,Hard,1,Sara,Karthik,224,15.0,0,False,Win,0,0,0,0,0,0
-221,2024-09-06,T20,Dry,Hard,2,Karthik,Sara,174,5.0,2,True,Loss,0,0,0,0,0,0
-222,2024-03-31,T20,Dry,Hard,1,Sara,Zafi,182,5.0,1,False,Loss,0,0,0,0,0,0
-222,2024-03-31,T20,Dry,Hard,2,Zafi,Sara,238,10.0,2,True,Win,0,0,0,0,0,0
-223,2024-01-20,T20,Normal,Insane,1,Sid,Wizheart,188,5.0,4,False,Win,0,0,0,0,0,0
-223,2024-01-20,T20,Normal,Insane,2,Wizheart,Sid,174,10.0,5,True,Loss,0,0,0,0,0,0
-224,2024-06-27,T20,Dry,Hard,1,Zafi,Arjun,184,5.0,4,False,Loss,0,0,0,0,0,0
-224,2024-06-27,T20,Dry,Hard,2,Arjun,Zafi,186,5.0,0,True,Win,0,0,0,0,0,0
-225,2024-12-02,ODI,Green,Hard,1,Karthik,Ragz,385,20.0,2,False,Win,0,0,0,0,0,0
-225,2024-12-02,ODI,Green,Hard,2,Ragz,Karthik,187,50.0,1,True,Loss,0,0,0,0,0,0
-226,2024-11-18,T20,Dry,Insane,1,Ragz,Arjun,264,10.0,4,False,Win,0,0,0,0,0,0
-226,2024-11-18,T20,Dry,Insane,2,Arjun,Ragz,182,10.0,0,True,Loss,0,0,0,0,0,0
-227,2024-01-19,ODI,Dry,Insane,1,Zafi,Sid,352,30.0,1,False,Win,0,0,0,0,0,0
-227,2024-01-19,ODI,Dry,Insane,2,Sid,Zafi,347,20.0,2,True,Loss,0,0,0,0,0,0
-228,2024-05-20,Test,Bouncy,Hard,1,Sara,Leo,498,60.0,1,False,Win,1,0,0,0,0,0
-228,2024-05-20,Test,Bouncy,Hard,2,Leo,Sara,360,50.0,1,True,Loss,0,0,0,0,0,0
-229,2024-09-16,ODI,Dry,Medium,1,Nikita,Wizheart,467,30.0,2,False,Win,1,0,0,0,0,0
-229,2024-09-16,ODI,Dry,Medium,2,Wizheart,Nikita,465,40.0,1,True,Loss,1,0,0,0,0,0
-230,2024-05-24,ODI,Normal,Ultra Insane,1,Anya,Sara,240,40.0,1,False,Loss,0,0,0,0,0,0
-230,2024-05-24,ODI,Normal,Ultra Insane,2,Sara,Anya,375,30.0,2,True,Win,0,0,0,0,0,0
-231,2024-10-21,T20,Dry,Ultra Insane,1,Sara,Anya,236,15.0,2,False,Win,0,0,0,0,0,0
-231,2024-10-21,T20,Dry,Ultra Insane,2,Anya,Sara,146,5.0,1,True,Loss,0,0,0,0,0,0
-232,2024-02-22,Test,Bouncy,Ultra Insane,1,Wizheart,Rohan,360,50.0,5,False,Win,0,0,0,0,0,0
-232,2024-02-22,Test,Bouncy,Ultra Insane,2,Rohan,Wizheart,342,60.0,3,True,Loss,0,0,0,0,0,0
-233,2024-11-30,T20,Dry,Hard,1,Sara,Zafi,204,10.0,3,False,Win,0,0,0,0,0,0
-233,2024-11-30,T20,Dry,Hard,2,Zafi,Sara,194,10.0,1,True,Loss,0,0,0,0,0,0
-234,2024-03-15,T20,Green,Insane,1,Sara,Nikita,196,5.0,0,False,Loss,0,0,0,0,0,0
-234,2024-03-15,T20,Green,Insane,2,Nikita,Sara,236,10.0,6,True,Win,0,0,0,0,0,0
-235,2024-11-15,Test,Bouncy,Medium,1,Wizheart,Arjun,543,30.0,5,False,Win,1,0,0,0,0,0
-235,2024-11-15,Test,Bouncy,Medium,2,Arjun,Wizheart,324,60.0,1,True,Loss,0,0,0,0,0,0
-236,2024-07-04,ODI,Normal,Medium,1,Karthik,Vikram,282,40.0,2,False,Loss,0,0,0,0,0,0
-236,2024-07-04,ODI,Normal,Medium,2,Vikram,Karthik,387,40.0,0,True,Win,0,0,0,0,0,0
-237,2024-08-22,Test,Green,Ultra Insane,1,Anya,Sara,246,30.0,3,False,Loss,0,0,0,0,0,0
-237,2024-08-22,Test,Green,Ultra Insane,2,Sara,Anya,372,60.0,2,True,Win,0,0,0,0,0,0
-238,2024-04-10,T20,Green,Hard,1,Nikita,Sara,192,10.0,2,False,Loss,0,0,0,0,0,0
-238,2024-04-10,T20,Green,Hard,2,Sara,Nikita,260,10.0,1,True,Win,0,0,0,0,0,0
-239,2024-01-13,Test,Green,Ultra Insane,1,Arjun,Wizheart,216,40.0,7,False,Loss,0,0,0,0,0,0
-239,2024-01-13,Test,Green,Ultra Insane,2,Wizheart,Arjun,504,30.0,3,True,Win,1,0,0,0,0,0
-240,2024-05-28,T20,Dry,Hard,1,Sid,Leo,174,20.0,2,False,Loss,0,0,0,0,0,0
-240,2024-05-28,T20,Dry,Hard,2,Leo,Sid,204,5.0,3,True,Win,0,0,0,0,0,0
-241,2024-03-14,Test,Dry,Medium,1,Sara,Anya,543,40.0,3,False,Win,1,0,0,0,0,0
-241,2024-03-14,Test,Dry,Medium,2,Anya,Sara,327,50.0,1,True,Loss,0,0,0,0,0,0
-242,2024-06-30,T20,Dry,Medium,1,Nikita,Arjun,202,20.0,3,False,Win,0,0,0,0,0,0
-242,2024-06-30,T20,Dry,Medium,2,Arjun,Nikita,182,20.0,1,True,Loss,0,0,0,0,0,0
-243,2024-04-01,Test,Normal,Ultra Insane,1,Zafi,Sara,330,40.0,1,False,Loss,0,0,0,0,0,0
-243,2024-04-01,Test,Normal,Ultra Insane,2,Sara,Zafi,468,30.0,1,True,Win,1,0,0,0,0,0
-244,2024-08-11,Test,Normal,Medium,1,Anya,Karthik,423,30.0,0,False,Loss,0,0,0,0,0,0
-244,2024-08-11,Test,Normal,Medium,2,Karthik,Anya,426,30.0,1,True,Win,0,0,0,0,0,0
-245,2024-02-12,Test,Bouncy,Medium,1,Vikram,Karthik,486,30.0,1,False,Win,1,0,0,0,0,0
-245,2024-02-12,Test,Bouncy,Medium,2,Karthik,Vikram,468,50.0,2,True,Loss,1,0,0,0,0,0
-246,2024-02-14,T20,Bouncy,Hard,1,Anya,Ragz,184,10.0,2,False,Loss,0,0,0,0,0,0
-246,2024-02-14,T20,Bouncy,Hard,2,Ragz,Anya,196,20.0,0,True,Win,0,0,0,0,0,0
-247,2024-03-30,T20,Normal,Insane,1,Ragz,Leo,182,20.0,1,False,Draw,0,0,0,0,0,0
-247,2024-03-30,T20,Normal,Insane,2,Leo,Ragz,182,5.0,5,True,Draw,0,0,0,0,0,0
-248,2024-12-04,T20,Dry,Hard,1,Zafi,Sara,188,15.0,2,False,Loss,0,0,0,0,0,0
-248,2024-12-04,T20,Dry,Hard,2,Sara,Zafi,252,5.0,2,True,Win,0,0,0,0,0,0
-249,2024-07-06,Test,Bouncy,Medium,1,Anya,Karthik,363,30.0,0,False,Loss,0,0,0,0,0,0
-249,2024-07-06,Test,Bouncy,Medium,2,Karthik,Anya,495,30.0,2,True,Win,1,0,0,0,0,0
-250,2024-09-04,T20,Dry,Medium,1,Ragz,Arjun,140,10.0,1,False,Loss,0,0,0,0,0,0
-250,2024-09-04,T20,Dry,Medium,2,Arjun,Ragz,170,10.0,1,True,Win,0,0,0,0,0,0
-251,2024-10-20,Test,Bouncy,Ultra Insane,1,Vikram,Zafi,372,40.0,2,False,Loss,0,0,0,0,0,0
-251,2024-10-20,Test,Bouncy,Ultra Insane,2,Zafi,Vikram,405,40.0,4,True,Win,0,0,0,0,0,0
-252,2024-11-26,T20,Normal,Ultra Insane,1,Sid,Anya,102,5.0,2,False,Loss,0,0,0,0,0,0
-252,2024-11-26,T20,Normal,Ultra Insane,2,Anya,Sid,180,20.0,5,True,Win,0,0,0,0,0,0
-253,2024-01-19,T20,Normal,Ultra Insane,1,Vikram,Karthik,198,15.0,6,False,Win,0,0,0,0,0,0
-253,2024-01-19,T20,Normal,Ultra Insane,2,Karthik,Vikram,168,10.0,4,True,Loss,0,0,0,0,0,0
-254,2024-04-03,T20,Normal,Insane,1,Sid,Sara,242,5.0,6,False,Win,0,0,0,0,0,0
-254,2024-04-03,T20,Normal,Insane,2,Sara,Sid,216,20.0,2,True,Loss,0,0,0,0,0,0
-255,2024-09-08,Test,Normal,Ultra Insane,1,Nikita,Leo,360,60.0,2,False,Win,0,0,0,0,0,0
-255,2024-09-08,Test,Normal,Ultra Insane,2,Leo,Nikita,342,50.0,1,True,Loss,0,0,0,0,0,0
-256,2024-08-15,T20,Normal,Ultra Insane,1,Leo,Sid,164,5.0,3,False,Loss,0,0,0,0,0,0
-256,2024-08-15,T20,Normal,Ultra Insane,2,Sid,Leo,202,10.0,5,True,Win,0,0,0,0,0,0
-257,2024-06-29,Test,Normal,Insane,1,Rohan,Ragz,402,50.0,3,False,Win,0,0,0,0,0,0
-257,2024-06-29,Test,Normal,Insane,2,Ragz,Rohan,333,50.0,1,True,Loss,0,0,0,0,0,0
-258,2024-07-11,Test,Bouncy,Insane,1,Rohan,Sara,372,30.0,2,False,Loss,0,0,0,0,0,0
-258,2024-07-11,Test,Bouncy,Insane,2,Sara,Rohan,408,60.0,3,True,Win,0,0,0,0,0,0
-259,2024-07-06,T20,Dry,Ultra Insane,1,Rohan,Vikram,168,15.0,3,False,Loss,0,0,0,0,0,0
-259,2024-07-06,T20,Dry,Ultra Insane,2,Vikram,Rohan,216,5.0,1,True,Win,0,0,0,0,0,0
-260,2024-04-21,ODI,Green,Ultra Insane,1,Zafi,Leo,290,40.0,4,False,Win,0,0,0,0,0,0
-260,2024-04-21,ODI,Green,Ultra Insane,2,Leo,Zafi,270,40.0,5,True,Loss,0,0,0,0,0,0
-261,2024-06-29,T20,Bouncy,Ultra Insane,1,Sid,Karthik,194,20.0,4,False,Win,0,0,0,0,0,0
-261,2024-06-29,T20,Bouncy,Ultra Insane,2,Karthik,Sid,184,10.0,0,True,Loss,0,0,0,0,0,0
-262,2024-05-17,ODI,Dry,Ultra Insane,1,Nikita,Leo,250,50.0,2,False,Win,0,0,0,0,0,0
-262,2024-05-17,ODI,Dry,Ultra Insane,2,Leo,Nikita,240,40.0,4,True,Loss,0,0,0,0,0,0
-263,2024-12-08,T20,Normal,Insane,1,Nikita,Anya,132,10.0,3,False,Win,0,0,0,0,0,0
-263,2024-12-08,T20,Normal,Insane,2,Anya,Nikita,110,15.0,2,True,Loss,0,0,0,0,0,0
-264,2024-01-22,T20,Dry,Insane,1,Ragz,Sara,138,5.0,2,False,Loss,0,0,0,0,0,0
-264,2024-01-22,T20,Dry,Insane,2,Sara,Ragz,228,20.0,4,True,Win,0,0,0,0,0,0
-265,2024-09-29,ODI,Normal,Medium,1,Zafi,Leo,337,50.0,0,False,Loss,0,0,0,0,0,0
-265,2024-09-29,ODI,Normal,Medium,2,Leo,Zafi,345,20.0,0,True,Win,0,0,0,0,0,0
-266,2024-11-16,ODI,Normal,Insane,1,Ragz,Vikram,200,40.0,6,False,Loss,0,0,0,0,0,0
-266,2024-11-16,ODI,Normal,Insane,2,Vikram,Ragz,352,40.0,2,True,Win,0,0,0,0,0,0
-267,2024-06-17,Test,Dry,Medium,1,Nikita,Anya,375,30.0,1,False,Win,0,0,0,0,0,0
-267,2024-06-17,Test,Dry,Medium,2,Anya,Nikita,309,30.0,3,True,Loss,0,0,0,0,0,0
-268,2024-03-05,T20,Green,Medium,1,Arjun,Rohan,160,5.0,3,False,Loss,0,0,0,0,0,0
-268,2024-03-05,T20,Green,Medium,2,Rohan,Arjun,192,20.0,0,True,Win,0,0,0,0,0,0
-269,2024-03-18,ODI,Dry,Medium,1,Rohan,Vikram,382,30.0,0,False,Loss,0,0,0,0,0,0
-269,2024-03-18,ODI,Dry,Medium,2,Vikram,Rohan,402,50.0,3,True,Win,0,0,0,0,0,0
-270,2024-12-04,Test,Bouncy,Ultra Insane,1,Karthik,Zafi,459,30.0,3,False,Win,1,0,0,0,0,0
-270,2024-12-04,Test,Bouncy,Ultra Insane,2,Zafi,Karthik,318,60.0,5,True,Loss,0,0,0,0,0,0
-271,2024-01-22,ODI,Dry,Medium,1,Arjun,Rohan,292,40.0,4,False,Loss,0,0,0,0,0,0
-271,2024-01-22,ODI,Dry,Medium,2,Rohan,Arjun,342,50.0,1,True,Win,0,0,0,0,0,0
-272,2024-04-22,Test,Green,Medium,1,Rohan,Sara,360,60.0,1,False,Loss,0,0,0,0,0,0
-272,2024-04-22,Test,Green,Medium,2,Sara,Rohan,471,30.0,3,True,Win,1,0,0,0,0,0
-273,2024-02-02,T20,Dry,Medium,1,Ragz,Arjun,192,10.0,1,False,Win,0,0,0,0,0,0
-273,2024-02-02,T20,Dry,Medium,2,Arjun,Ragz,172,10.0,3,True,Loss,0,0,0,0,0,0
-274,2024-03-19,T20,Dry,Insane,1,Anya,Wizheart,146,15.0,1,False,Loss,0,0,0,0,0,0
-274,2024-03-19,T20,Dry,Insane,2,Wizheart,Anya,166,5.0,3,True,Win,0,0,0,0,0,0
-275,2024-03-02,Test,Bouncy,Ultra Insane,1,Zafi,Ragz,339,30.0,3,False,Win,0,0,0,0,0,0
-275,2024-03-02,Test,Bouncy,Ultra Insane,2,Ragz,Zafi,327,30.0,2,True,Loss,0,0,0,0,0,0
-276,2024-12-10,T20,Normal,Medium,1,Leo,Vikram,164,15.0,3,False,Loss,0,0,0,0,0,0
-276,2024-12-10,T20,Normal,Medium,2,Vikram,Leo,210,5.0,1,True,Win,0,0,0,0,0,0
-277,2024-02-10,Test,Green,Ultra Insane,1,Sid,Anya,327,40.0,1,False,Loss,0,0,0,0,0,0
-277,2024-02-10,Test,Green,Ultra Insane,2,Anya,Sid,405,30.0,0,True,Win,0,0,0,0,0,0
-278,2024-11-18,Test,Dry,Insane,1,Leo,Anya,369,40.0,3,False,Win,0,0,0,0,0,0
-278,2024-11-18,Test,Dry,Insane,2,Anya,Leo,228,60.0,0,True,Loss,0,0,0,0,0,0
-279,2024-03-05,T20,Normal,Medium,1,Ragz,Leo,194,15.0,2,False,Loss,0,0,0,0,0,0
-279,2024-03-05,T20,Normal,Medium,2,Leo,Ragz,202,20.0,3,True,Win,0,0,0,0,0,0
-280,2024-03-23,T20,Normal,Medium,1,Arjun,Sid,206,5.0,2,False,Win,0,0,0,0,0,0
-280,2024-03-23,T20,Normal,Medium,2,Sid,Arjun,186,10.0,0,True,Loss,0,0,0,0,0,0
-281,2024-10-09,T20,Green,Ultra Insane,1,Rohan,Sid,194,10.0,3,False,Win,0,0,0,0,0,0
-281,2024-10-09,T20,Green,Ultra Insane,2,Sid,Rohan,170,15.0,1,True,Loss,0,0,0,0,0,0
-282,2024-09-04,ODI,Dry,Hard,1,Vikram,Zafi,417,50.0,1,False,Win,0,0,0,0,0,0
-282,2024-09-04,ODI,Dry,Hard,2,Zafi,Vikram,387,50.0,2,True,Loss,0,0,0,0,0,0
-283,2024-02-16,ODI,Green,Medium,1,Arjun,Sara,292,50.0,1,False,Loss,0,0,0,0,0,0
-283,2024-02-16,ODI,Green,Medium,2,Sara,Arjun,392,50.0,1,True,Win,0,0,0,0,0,0
-284,2024-11-13,T20,Green,Insane,1,Wizheart,Karthik,280,10.0,3,False,Win,0,0,0,0,0,0
-284,2024-11-13,T20,Green,Insane,2,Karthik,Wizheart,256,20.0,2,True,Loss,0,0,0,0,0,0
-285,2024-12-23,ODI,Normal,Medium,1,Karthik,Arjun,422,20.0,1,False,Win,0,0,0,0,0,0
-285,2024-12-23,ODI,Normal,Medium,2,Arjun,Karthik,295,40.0,1,True,Loss,0,0,0,0,0,0
-286,2024-10-10,Test,Bouncy,Insane,1,Arjun,Anya,333,30.0,4,False,Loss,0,0,0,0,0,0
-286,2024-10-10,Test,Bouncy,Insane,2,Anya,Arjun,348,40.0,2,True,Win,0,0,0,0,0,0
-287,2024-11-30,Test,Normal,Ultra Insane,1,Leo,Nikita,309,60.0,4,False,Win,0,0,0,0,0,0
-287,2024-11-30,Test,Normal,Ultra Insane,2,Nikita,Leo,0,50.0,3,True,Loss,0,0,0,0,0,1
-288,2024-08-29,Test,Bouncy,Ultra Insane,1,Vikram,Karthik,354,30.0,1,False,Win,0,0,0,0,0,0
-288,2024-08-29,Test,Bouncy,Ultra Insane,2,Karthik,Vikram,345,40.0,6,True,Loss,0,0,0,0,0,0
-289,2024-05-19,T20,Dry,Medium,1,Nikita,Wizheart,280,20.0,1,False,Win,0,0,0,0,0,0
-289,2024-05-19,T20,Dry,Medium,2,Wizheart,Nikita,168,10.0,5,True,Loss,0,0,0,0,0,0
-290,2024-06-25,ODI,Normal,Ultra Insane,1,Zafi,Anya,235,30.0,2,False,Win,0,0,0,0,0,0
-290,2024-06-25,ODI,Normal,Ultra Insane,2,Anya,Zafi,222,20.0,3,True,Loss,0,0,0,0,0,0
-291,2024-03-16,T20,Green,Ultra Insane,1,Leo,Sara,0,15.0,0,False,Loss,0,0,0,0,0,1
-291,2024-03-16,T20,Green,Ultra Insane,2,Sara,Leo,172,5.0,2,True,Win,0,0,0,0,0,0
-292,2024-02-15,ODI,Dry,Medium,1,Nikita,Wizheart,317,50.0,0,False,Loss,0,0,0,0,0,0
-292,2024-02-15,ODI,Dry,Medium,2,Wizheart,Nikita,407,50.0,3,True,Win,0,0,0,0,0,0
-293,2024-09-02,ODI,Bouncy,Ultra Insane,1,Leo,Anya,242,20.0,5,False,Win,0,0,0,0,0,0
-293,2024-09-02,ODI,Bouncy,Ultra Insane,2,Anya,Leo,0,30.0,2,True,Loss,0,0,0,0,0,1
-294,2024-09-02,Test,Green,Medium,1,Karthik,Nikita,429,50.0,3,False,Win,0,0,0,0,0,0
-294,2024-09-02,Test,Green,Medium,2,Nikita,Karthik,351,40.0,3,True,Loss,0,0,0,0,0,0
-295,2024-12-19,T20,Green,Medium,1,Nikita,Arjun,280,15.0,0,False,Win,1,0,0,0,0,0
-295,2024-12-19,T20,Green,Medium,2,Arjun,Nikita,224,15.0,0,True,Loss,0,0,0,0,0,0
-296,2024-09-01,T20,Dry,Hard,1,Anya,Ragz,166,20.0,2,False,Loss,0,0,0,0,0,0
-296,2024-09-01,T20,Dry,Hard,2,Ragz,Anya,218,10.0,2,True,Win,0,0,0,0,0,0
-297,2024-11-04,Test,Normal,Hard,1,Anya,Leo,318,30.0,3,False,Draw,0,0,0,0,0,0
-297,2024-11-04,Test,Normal,Hard,2,Leo,Anya,318,30.0,5,True,Draw,0,0,0,0,0,0
-298,2024-12-29,T20,Bouncy,Hard,1,Zafi,Ragz,198,15.0,3,False,Win,0,0,0,0,0,0
-298,2024-12-29,T20,Bouncy,Hard,2,Ragz,Zafi,124,15.0,0,True,Loss,0,0,0,0,0,0
-299,2024-01-30,ODI,Bouncy,Hard,1,Rohan,Ragz,317,20.0,2,False,Loss,0,0,0,0,0,0
-299,2024-01-30,ODI,Bouncy,Hard,2,Ragz,Rohan,367,20.0,4,True,Win,0,0,0,0,0,0
-300,2024-08-08,T20,Normal,Hard,1,Sara,Sid,236,15.0,0,False,Win,0,0,0,0,0,0
-300,2024-08-08,T20,Normal,Hard,2,Sid,Sara,186,10.0,1,True,Loss,0,0,0,0,0,0
-301,2024-03-02,ODI,Green,Insane,1,Sara,Anya,447,50.0,2,False,Win,1,0,0,0,0,0
-301,2024-03-02,ODI,Green,Insane,2,Anya,Sara,262,40.0,4,True,Loss,0,0,0,0,0,0
-302,2024-07-25,Test,Green,Medium,1,Sid,Leo,504,60.0,3,False,Win,1,0,0,0,0,0
-302,2024-07-25,Test,Green,Medium,2,Leo,Sid,396,30.0,1,True,Loss,0,0,0,0,0,0
-303,2024-02-28,T20,Dry,Insane,1,Rohan,Wizheart,148,15.0,1,False,Loss,0,0,0,0,0,0
-303,2024-02-28,T20,Dry,Insane,2,Wizheart,Rohan,280,20.0,6,True,Win,0,0,0,0,0,0
-304,2024-06-18,ODI,Normal,Insane,1,Sid,Leo,285,20.0,1,False,Loss,0,0,0,0,0,0
-304,2024-06-18,ODI,Normal,Insane,2,Leo,Sid,332,50.0,7,True,Win,0,0,0,0,0,0
-305,2024-12-11,Test,Normal,Insane,1,Arjun,Zafi,366,50.0,2,False,Loss,0,0,0,0,0,0
-305,2024-12-11,Test,Normal,Insane,2,Zafi,Arjun,378,40.0,4,True,Win,0,0,0,0,0,0
-306,2024-04-19,T20,Normal,Ultra Insane,1,Sid,Rohan,216,5.0,0,False,Win,0,0,0,0,0,0
-306,2024-04-19,T20,Normal,Ultra Insane,2,Rohan,Sid,188,5.0,4,True,Loss,0,0,0,0,0,0
-307,2024-12-22,T20,Normal,Ultra Insane,1,Rohan,Sara,144,20.0,0,False,Win,0,0,0,0,0,0
-307,2024-12-22,T20,Normal,Ultra Insane,2,Sara,Rohan,142,15.0,5,True,Loss,0,0,0,0,0,0
-308,2024-06-24,Test,Dry,Ultra Insane,1,Vikram,Ragz,330,40.0,4,False,Win,0,0,0,0,0,0
-308,2024-06-24,Test,Dry,Ultra Insane,2,Ragz,Vikram,306,60.0,2,True,Loss,0,0,0,0,0,0
-309,2024-06-24,Test,Green,Medium,1,Anya,Zafi,390,50.0,2,False,Loss,0,0,0,0,0,0
-309,2024-06-24,Test,Green,Medium,2,Zafi,Anya,426,50.0,1,True,Win,0,0,0,0,0,0
-310,2024-10-17,T20,Bouncy,Medium,1,Karthik,Sid,222,20.0,0,False,Win,0,0,0,0,0,0
-310,2024-10-17,T20,Bouncy,Medium,2,Sid,Karthik,214,5.0,0,True,Loss,0,0,0,0,0,0
-311,2024-06-14,ODI,Bouncy,Insane,1,Anya,Arjun,310,40.0,1,False,Loss,0,0,0,0,0,0
-311,2024-06-14,ODI,Bouncy,Insane,2,Arjun,Anya,332,40.0,1,True,Win,0,0,0,0,0,0
-312,2024-01-03,ODI,Green,Insane,1,Sara,Rohan,300,50.0,1,False,Win,0,0,0,0,0,0
-312,2024-01-03,ODI,Green,Insane,2,Rohan,Sara,255,20.0,4,True,Loss,0,0,0,0,0,0
-313,2024-07-29,Test,Dry,Medium,1,Anya,Zafi,363,50.0,0,False,Win,0,0,0,0,0,0
-313,2024-07-29,Test,Dry,Medium,2,Zafi,Anya,246,50.0,2,True,Loss,0,0,0,0,0,0
-314,2024-06-18,T20,Green,Insane,1,Arjun,Sara,170,20.0,4,False,Loss,0,0,0,0,0,0
-314,2024-06-18,T20,Green,Insane,2,Sara,Arjun,248,15.0,2,True,Win,0,0,0,0,0,0
-315,2024-12-10,T20,Bouncy,Insane,1,Zafi,Rohan,180,5.0,3,False,Win,0,0,0,0,0,0
-315,2024-12-10,T20,Bouncy,Insane,2,Rohan,Zafi,162,10.0,3,True,Loss,0,0,0,0,0,0
-316,2024-04-21,T20,Bouncy,Insane,1,Arjun,Sara,210,5.0,6,False,Loss,0,0,0,0,0,0
-316,2024-04-21,T20,Bouncy,Insane,2,Sara,Arjun,252,5.0,2,True,Win,0,0,0,0,0,0
-317,2024-03-15,T20,Green,Hard,1,Rohan,Zafi,200,20.0,1,False,Win,0,0,0,0,0,0
-317,2024-03-15,T20,Green,Hard,2,Zafi,Rohan,150,10.0,0,True,Loss,0,0,0,0,0,0
-318,2024-05-07,ODI,Green,Insane,1,Ragz,Sara,255,50.0,3,False,Loss,0,0,0,0,0,0
-318,2024-05-07,ODI,Green,Insane,2,Sara,Ragz,400,50.0,2,True,Win,0,0,0,0,0,0
-319,2024-10-19,T20,Normal,Ultra Insane,1,Vikram,Anya,216,10.0,3,False,Loss,0,0,0,0,0,0
-319,2024-10-19,T20,Normal,Ultra Insane,2,Anya,Vikram,224,20.0,0,True,Win,0,0,0,0,0,0
-320,2024-04-28,Test,Dry,Insane,1,Ragz,Karthik,369,60.0,1,False,Loss,0,0,0,0,0,0
-320,2024-04-28,Test,Dry,Insane,2,Karthik,Ragz,417,50.0,2,True,Win,0,0,0,0,0,0
-321,2024-09-07,ODI,Green,Hard,1,Karthik,Ragz,357,50.0,2,False,Win,0,0,0,0,0,0
-321,2024-09-07,ODI,Green,Hard,2,Ragz,Karthik,287,50.0,1,True,Loss,0,0,0,0,0,0
-322,2024-12-25,Test,Normal,Insane,1,Zafi,Vikram,258,50.0,1,False,Loss,0,0,0,0,0,0
-322,2024-12-25,Test,Normal,Insane,2,Vikram,Zafi,375,50.0,1,True,Win,0,0,0,0,0,0
-323,2024-01-13,T20,Normal,Insane,1,Rohan,Ragz,190,20.0,0,False,Loss,0,0,0,0,0,0
-323,2024-01-13,T20,Normal,Insane,2,Ragz,Rohan,192,20.0,1,True,Win,0,0,0,0,0,0
-324,2024-05-09,T20,Green,Hard,1,Ragz,Leo,212,15.0,1,False,Win,0,0,0,0,0,0
-324,2024-05-09,T20,Green,Hard,2,Leo,Ragz,128,10.0,3,True,Loss,0,0,0,0,0,0
-325,2024-11-11,T20,Bouncy,Ultra Insane,1,Wizheart,Nikita,202,10.0,5,False,Loss,0,0,0,0,0,0
-325,2024-11-11,T20,Bouncy,Ultra Insane,2,Nikita,Wizheart,222,5.0,6,True,Win,0,0,0,0,0,0
-326,2024-12-02,ODI,Bouncy,Ultra Insane,1,Rohan,Arjun,282,50.0,3,False,Loss,0,0,0,0,0,0
-326,2024-12-02,ODI,Bouncy,Ultra Insane,2,Arjun,Rohan,302,50.0,4,True,Win,0,0,0,0,0,0
-327,2024-10-21,T20,Green,Hard,1,Vikram,Karthik,232,20.0,5,False,Win,0,0,0,0,0,0
-327,2024-10-21,T20,Green,Hard,2,Karthik,Vikram,130,10.0,1,True,Loss,0,0,0,0,0,0
-328,2024-02-08,ODI,Green,Hard,1,Anya,Sara,370,50.0,0,False,Win,0,0,0,0,0,0
-328,2024-02-08,ODI,Green,Hard,2,Sara,Anya,347,30.0,3,True,Loss,0,0,0,0,0,0
-329,2024-09-02,T20,Green,Ultra Insane,1,Arjun,Nikita,166,10.0,4,False,Loss,0,0,0,0,0,0
-329,2024-09-02,T20,Green,Ultra Insane,2,Nikita,Arjun,212,10.0,1,True,Win,0,0,0,0,0,0
-330,2024-06-25,T20,Green,Hard,1,Karthik,Rohan,230,15.0,1,False,Win,0,0,0,0,0,0
-330,2024-06-25,T20,Green,Hard,2,Rohan,Karthik,208,5.0,2,True,Loss,0,0,0,0,0,0
-331,2024-01-13,Test,Dry,Medium,1,Sara,Sid,543,30.0,2,False,Win,1,0,0,0,0,0
-331,2024-01-13,Test,Dry,Medium,2,Sid,Sara,453,30.0,1,True,Loss,1,0,0,0,0,0
-332,2024-02-27,ODI,Normal,Medium,1,Arjun,Zafi,287,50.0,2,False,Loss,0,0,0,0,0,0
-332,2024-02-27,ODI,Normal,Medium,2,Zafi,Arjun,292,20.0,4,True,Win,0,0,0,0,0,0
-333,2024-10-12,Test,Dry,Ultra Insane,1,Vikram,Ragz,375,50.0,4,False,Win,0,0,0,0,0,0
-333,2024-10-12,Test,Dry,Ultra Insane,2,Ragz,Vikram,357,30.0,4,True,Loss,0,0,0,0,0,0
-334,2024-06-28,ODI,Normal,Hard,1,Sid,Anya,257,30.0,1,False,Loss,0,0,0,0,0,0
-334,2024-06-28,ODI,Normal,Hard,2,Anya,Sid,382,40.0,2,True,Win,0,0,0,0,0,0
-335,2024-05-19,Test,Green,Medium,1,Nikita,Vikram,411,30.0,0,False,Loss,0,0,0,0,0,0
-335,2024-05-19,Test,Green,Medium,2,Vikram,Nikita,483,50.0,0,True,Win,1,0,0,0,0,0
-336,2024-11-16,ODI,Bouncy,Ultra Insane,1,Zafi,Anya,260,40.0,3,False,Loss,0,0,0,0,0,0
-336,2024-11-16,ODI,Bouncy,Ultra Insane,2,Anya,Zafi,332,20.0,4,True,Win,0,0,0,0,0,0
-337,2024-07-10,Test,Normal,Insane,1,Zafi,Sara,441,50.0,2,False,Loss,0,0,0,0,0,0
-337,2024-07-10,Test,Normal,Insane,2,Sara,Zafi,459,50.0,1,True,Win,1,0,0,0,0,0
-338,2024-12-24,ODI,Bouncy,Hard,1,Wizheart,Arjun,480,50.0,1,False,Win,1,0,0,0,0,0
-338,2024-12-24,ODI,Bouncy,Hard,2,Arjun,Wizheart,337,30.0,4,True,Loss,0,0,0,0,0,0
-339,2024-02-27,ODI,Bouncy,Ultra Insane,1,Sid,Rohan,342,20.0,3,False,Loss,0,0,0,0,0,0
-339,2024-02-27,ODI,Bouncy,Ultra Insane,2,Rohan,Sid,347,40.0,3,True,Win,0,0,0,0,0,0
-340,2024-07-26,Test,Normal,Medium,1,Arjun,Karthik,324,40.0,3,False,Loss,0,0,0,0,0,0
-340,2024-07-26,Test,Normal,Medium,2,Karthik,Arjun,480,40.0,0,True,Win,1,0,0,0,0,0
-341,2024-03-13,Test,Green,Medium,1,Arjun,Karthik,315,40.0,0,False,Loss,0,0,0,0,0,0
-341,2024-03-13,Test,Green,Medium,2,Karthik,Arjun,507,60.0,2,True,Win,1,0,0,0,0,0
-342,2024-09-27,ODI,Normal,Medium,1,Karthik,Nikita,407,40.0,1,False,Win,0,0,0,0,0,0
-342,2024-09-27,ODI,Normal,Medium,2,Nikita,Karthik,275,40.0,2,True,Loss,0,0,0,0,0,0
-343,2024-06-24,T20,Green,Medium,1,Zafi,Sid,190,15.0,5,False,Win,0,0,0,0,0,0
-343,2024-06-24,T20,Green,Medium,2,Sid,Zafi,184,5.0,1,True,Loss,0,0,0,0,0,0
-344,2024-05-22,T20,Normal,Hard,1,Leo,Ragz,208,10.0,1,False,Win,0,0,0,0,0,0
-344,2024-05-22,T20,Normal,Hard,2,Ragz,Leo,132,5.0,1,True,Loss,0,0,0,0,0,0
-345,2024-12-28,ODI,Green,Medium,1,Rohan,Anya,310,50.0,3,False,Loss,0,0,0,0,0,0
-345,2024-12-28,ODI,Green,Medium,2,Anya,Rohan,312,30.0,1,True,Win,0,0,0,0,0,0
-346,2024-07-21,Test,Green,Hard,1,Sara,Leo,477,30.0,0,False,Win,1,0,0,0,0,0
-346,2024-07-21,Test,Green,Hard,2,Leo,Sara,363,30.0,2,True,Loss,0,0,0,0,0,0
-347,2024-03-13,Test,Dry,Medium,1,Vikram,Leo,537,50.0,0,False,Win,1,0,0,0,0,0
-347,2024-03-13,Test,Dry,Medium,2,Leo,Vikram,405,40.0,3,True,Loss,0,0,0,0,0,0
-348,2024-08-07,T20,Normal,Ultra Insane,1,Sid,Wizheart,158,10.0,1,False,Loss,0,0,0,0,0,0
-348,2024-08-07,T20,Normal,Ultra Insane,2,Wizheart,Sid,242,5.0,4,True,Win,0,0,0,0,0,0
-349,2024-07-09,T20,Green,Insane,1,Arjun,Wizheart,198,10.0,3,False,Loss,0,0,0,0,0,0
-349,2024-07-09,T20,Green,Insane,2,Wizheart,Arjun,204,15.0,1,True,Win,0,0,0,0,0,0
-350,2024-05-20,ODI,Normal,Insane,1,Karthik,Sara,322,20.0,2,False,Loss,0,0,0,0,0,0
-350,2024-05-20,ODI,Normal,Insane,2,Sara,Karthik,417,50.0,4,True,Win,0,0,0,0,0,0
-351,2024-06-11,T20,Normal,Insane,1,Ragz,Wizheart,194,20.0,0,False,Loss,0,0,0,0,0,0
-351,2024-06-11,T20,Normal,Insane,2,Wizheart,Ragz,280,5.0,3,True,Win,1,0,0,0,0,0
-352,2024-09-29,ODI,Dry,Hard,1,Sara,Sid,382,20.0,1,False,Win,0,0,0,0,0,0
-352,2024-09-29,ODI,Dry,Hard,2,Sid,Sara,350,40.0,1,True,Loss,0,0,0,0,0,0
-353,2024-12-02,T20,Green,Hard,1,Ragz,Zafi,218,15.0,3,False,Win,0,0,0,0,0,0
-353,2024-12-02,T20,Green,Hard,2,Zafi,Ragz,0,5.0,5,True,Loss,0,0,0,0,0,1
-354,2024-08-26,T20,Green,Medium,1,Arjun,Karthik,178,10.0,1,False,Loss,0,0,0,0,0,0
-354,2024-08-26,T20,Green,Medium,2,Karthik,Arjun,218,5.0,0,True,Win,0,0,0,0,0,0
-355,2024-12-17,Test,Bouncy,Medium,1,Anya,Arjun,306,30.0,2,False,Loss,0,0,0,0,0,0
-355,2024-12-17,Test,Bouncy,Medium,2,Arjun,Anya,375,50.0,3,True,Win,0,0,0,0,0,0
-356,2024-05-04,T20,Green,Ultra Insane,1,Arjun,Wizheart,148,5.0,1,False,Loss,0,0,0,0,0,0
-356,2024-05-04,T20,Green,Ultra Insane,2,Wizheart,Arjun,198,5.0,5,True,Win,0,0,0,0,0,0
-357,2024-05-01,T20,Bouncy,Insane,1,Anya,Wizheart,0,5.0,3,False,Loss,0,0,0,0,0,1
-357,2024-05-01,T20,Bouncy,Insane,2,Wizheart,Anya,176,20.0,4,True,Win,0,0,0,0,0,0
-358,2024-04-15,T20,Dry,Insane,1,Zafi,Anya,222,15.0,2,False,Win,0,0,0,0,0,0
-358,2024-04-15,T20,Dry,Insane,2,Anya,Zafi,210,20.0,5,True,Loss,0,0,0,0,0,0
-359,2024-09-07,ODI,Green,Ultra Insane,1,Nikita,Anya,297,30.0,4,False,Win,0,0,0,0,0,0
-359,2024-09-07,ODI,Green,Ultra Insane,2,Anya,Nikita,247,40.0,5,True,Loss,0,0,0,0,0,0
-360,2024-09-04,Test,Green,Ultra Insane,1,Anya,Vikram,375,60.0,4,False,Win,0,0,0,0,0,0
-360,2024-09-04,Test,Green,Ultra Insane,2,Vikram,Anya,369,50.0,2,True,Loss,0,0,0,0,0,0
-361,2024-01-11,ODI,Normal,Ultra Insane,1,Zafi,Nikita,265,20.0,3,False,Win,0,0,0,0,0,0
-361,2024-01-11,ODI,Normal,Ultra Insane,2,Nikita,Zafi,262,40.0,1,True,Loss,0,0,0,0,0,0
-362,2024-07-05,T20,Bouncy,Insane,1,Anya,Zafi,114,10.0,3,False,Loss,0,0,0,0,0,0
-362,2024-07-05,T20,Bouncy,Insane,2,Zafi,Anya,140,10.0,2,True,Win,0,0,0,0,0,0
-363,2024-09-19,Test,Dry,Insane,1,Arjun,Sid,354,50.0,0,False,Win,0,0,0,0,0,0
-363,2024-09-19,Test,Dry,Insane,2,Sid,Arjun,270,60.0,1,True,Loss,0,0,0,0,0,0
-364,2024-03-03,T20,Green,Hard,1,Leo,Sid,148,5.0,1,False,Loss,0,0,0,0,0,0
-364,2024-03-03,T20,Green,Hard,2,Sid,Leo,176,20.0,2,True,Win,0,0,0,0,0,0
-365,2024-05-30,ODI,Green,Medium,1,Leo,Anya,372,50.0,5,False,Win,0,0,0,0,0,0
-365,2024-05-30,ODI,Green,Medium,2,Anya,Leo,232,20.0,3,True,Loss,0,0,0,0,0,0
-366,2024-05-27,T20,Green,Insane,1,Sara,Wizheart,196,5.0,2,False,Win,0,0,0,0,0,0
-366,2024-05-27,T20,Green,Insane,2,Wizheart,Sara,166,20.0,3,True,Loss,0,0,0,0,0,0
-367,2024-08-08,Test,Green,Insane,1,Vikram,Sara,375,60.0,1,False,Loss,0,0,0,0,0,0
-367,2024-08-08,Test,Green,Insane,2,Sara,Vikram,414,50.0,2,True,Win,0,0,0,0,0,0
-368,2024-02-19,Test,Normal,Hard,1,Rohan,Sara,384,40.0,1,False,Loss,0,0,0,0,0,0
-368,2024-02-19,Test,Normal,Hard,2,Sara,Rohan,471,60.0,1,True,Win,1,0,0,0,0,0
-369,2024-10-24,ODI,Normal,Hard,1,Zafi,Karthik,365,20.0,3,False,Loss,0,0,0,0,0,0
-369,2024-10-24,ODI,Normal,Hard,2,Karthik,Zafi,435,50.0,3,True,Win,1,0,0,0,0,0
-370,2024-01-16,T20,Dry,Insane,1,Nikita,Rohan,180,10.0,1,False,Win,0,0,0,0,0,0
-370,2024-01-16,T20,Dry,Insane,2,Rohan,Nikita,172,5.0,1,True,Loss,0,0,0,0,0,0
-371,2024-11-01,Test,Bouncy,Ultra Insane,1,Anya,Leo,327,60.0,2,False,Win,0,0,0,0,0,0
-371,2024-11-01,Test,Bouncy,Ultra Insane,2,Leo,Anya,273,40.0,3,True,Loss,0,0,0,0,0,0
-372,2024-07-13,ODI,Normal,Hard,1,Vikram,Anya,390,30.0,2,False,Win,0,0,0,0,0,0
-372,2024-07-13,ODI,Normal,Hard,2,Anya,Vikram,287,40.0,0,True,Loss,0,0,0,0,0,0
-373,2024-07-26,ODI,Dry,Insane,1,Karthik,Zafi,385,20.0,0,False,Win,0,0,0,0,0,0
-373,2024-07-26,ODI,Dry,Insane,2,Zafi,Karthik,317,20.0,3,True,Loss,0,0,0,0,0,0
-374,2024-03-13,Test,Bouncy,Ultra Insane,1,Vikram,Nikita,384,60.0,6,False,Win,0,0,0,0,0,0
-374,2024-03-13,Test,Bouncy,Ultra Insane,2,Nikita,Vikram,303,40.0,2,True,Loss,0,0,0,0,0,0
-375,2024-01-12,T20,Normal,Insane,1,Arjun,Sid,212,5.0,1,False,Loss,0,0,0,0,0,0
-375,2024-01-12,T20,Normal,Insane,2,Sid,Arjun,258,10.0,2,True,Win,0,0,0,0,0,0
-376,2024-11-09,Test,Dry,Ultra Insane,1,Karthik,Zafi,378,60.0,7,False,Win,0,0,0,0,0,0
-376,2024-11-09,Test,Dry,Ultra Insane,2,Zafi,Karthik,306,40.0,1,True,Loss,0,0,0,0,0,0
-377,2024-05-02,Test,Normal,Ultra Insane,1,Ragz,Sid,360,60.0,2,False,Win,0,0,0,0,0,0
-377,2024-05-02,Test,Normal,Ultra Insane,2,Sid,Ragz,291,40.0,3,True,Loss,0,0,0,0,0,0
-378,2024-02-15,Test,Dry,Insane,1,Leo,Zafi,327,60.0,4,False,Win,0,0,0,0,0,0
-378,2024-02-15,Test,Dry,Insane,2,Zafi,Leo,0,50.0,0,True,Loss,0,0,0,0,0,1
-379,2024-10-13,T20,Dry,Insane,1,Ragz,Sara,134,15.0,0,False,Loss,0,0,0,0,0,0
-379,2024-10-13,T20,Dry,Insane,2,Sara,Ragz,198,15.0,7,True,Win,0,0,0,0,0,0
-380,2024-11-20,Test,Dry,Hard,1,Zafi,Karthik,324,60.0,1,False,Loss,0,0,0,0,0,0
-380,2024-11-20,Test,Dry,Hard,2,Karthik,Zafi,369,60.0,2,True,Win,0,0,0,0,0,0
-381,2024-02-23,Test,Bouncy,Ultra Insane,1,Wizheart,Anya,288,40.0,5,False,Win,0,0,0,0,0,0
-381,2024-02-23,Test,Bouncy,Ultra Insane,2,Anya,Wizheart,258,30.0,2,True,Loss,0,0,0,0,0,0
-382,2024-07-22,T20,Dry,Ultra Insane,1,Vikram,Ragz,220,20.0,4,False,Win,0,0,0,0,0,0
-382,2024-07-22,T20,Dry,Ultra Insane,2,Ragz,Vikram,202,20.0,4,True,Loss,0,0,0,0,0,0
-383,2024-07-18,T20,Normal,Medium,1,Arjun,Nikita,142,10.0,1,False,Loss,0,0,0,0,0,0
-383,2024-07-18,T20,Normal,Medium,2,Nikita,Arjun,212,5.0,0,True,Win,0,0,0,0,0,0
-384,2024-07-29,T20,Green,Ultra Insane,1,Nikita,Rohan,182,20.0,4,False,Win,0,0,0,0,0,0
-384,2024-07-29,T20,Green,Ultra Insane,2,Rohan,Nikita,146,15.0,3,True,Loss,0,0,0,0,0,0
-385,2024-08-07,Test,Bouncy,Insane,1,Sara,Zafi,453,30.0,2,False,Win,1,0,0,0,0,0
-385,2024-08-07,Test,Bouncy,Insane,2,Zafi,Sara,366,50.0,3,True,Loss,0,0,0,0,0,0
-386,2024-02-20,ODI,Green,Insane,1,Ragz,Vikram,387,20.0,7,False,Win,0,0,0,0,0,0
-386,2024-02-20,ODI,Green,Insane,2,Vikram,Ragz,355,30.0,2,True,Loss,0,0,0,0,0,0
-387,2024-10-05,T20,Bouncy,Hard,1,Nikita,Vikram,214,10.0,1,False,Loss,0,0,0,0,0,0
-387,2024-10-05,T20,Bouncy,Hard,2,Vikram,Nikita,224,15.0,0,True,Win,0,0,0,0,0,0
-388,2024-09-26,Test,Normal,Hard,1,Arjun,Ragz,345,40.0,1,False,Win,0,0,0,0,0,0
-388,2024-09-26,Test,Normal,Hard,2,Ragz,Arjun,333,60.0,1,True,Loss,0,0,0,0,0,0
-389,2024-08-04,Test,Dry,Hard,1,Anya,Vikram,267,50.0,2,False,Loss,0,0,0,0,0,0
-389,2024-08-04,Test,Dry,Hard,2,Vikram,Anya,528,50.0,2,True,Win,1,0,0,0,0,0
-390,2024-05-17,ODI,Normal,Insane,1,Karthik,Sara,400,20.0,2,False,Loss,0,0,0,0,0,0
-390,2024-05-17,ODI,Normal,Insane,2,Sara,Karthik,450,20.0,1,True,Win,1,0,0,0,0,0
-391,2024-05-11,T20,Dry,Hard,1,Sara,Arjun,206,15.0,0,False,Win,0,0,0,0,0,0
-391,2024-05-11,T20,Dry,Hard,2,Arjun,Sara,196,10.0,4,True,Loss,0,0,0,0,0,0
-392,2024-05-02,T20,Normal,Hard,1,Rohan,Leo,218,15.0,1,False,Win,0,0,0,0,0,0
-392,2024-05-02,T20,Normal,Hard,2,Leo,Rohan,188,20.0,4,True,Loss,0,0,0,0,0,0
-393,2024-02-08,Test,Bouncy,Insane,1,Rohan,Wizheart,453,30.0,4,False,Win,1,0,0,0,0,0
-393,2024-02-08,Test,Bouncy,Insane,2,Wizheart,Rohan,426,40.0,5,True,Loss,0,0,0,0,0,0
-394,2024-04-04,Test,Normal,Medium,1,Sara,Rohan,537,40.0,3,False,Win,1,0,0,0,0,0
-394,2024-04-04,Test,Normal,Medium,2,Rohan,Sara,426,30.0,1,True,Loss,0,0,0,0,0,0
-395,2024-01-29,ODI,Bouncy,Ultra Insane,1,Rohan,Sara,222,20.0,1,False,Loss,0,0,0,0,0,0
-395,2024-01-29,ODI,Bouncy,Ultra Insane,2,Sara,Rohan,385,50.0,1,True,Win,0,0,0,0,0,0
-396,2024-06-19,Test,Green,Insane,1,Sara,Arjun,387,40.0,1,False,Win,0,0,0,0,0,0
-396,2024-06-19,Test,Green,Insane,2,Arjun,Sara,303,40.0,2,True,Loss,0,0,0,0,0,0
-397,2024-04-07,ODI,Bouncy,Ultra Insane,1,Arjun,Sid,275,20.0,1,False,Loss,0,0,0,0,0,0
-397,2024-04-07,ODI,Bouncy,Ultra Insane,2,Sid,Arjun,337,40.0,4,True,Win,0,0,0,0,0,0
-398,2024-09-21,Test,Normal,Hard,1,Sid,Nikita,474,40.0,1,False,Win,1,0,0,0,0,0
-398,2024-09-21,Test,Normal,Hard,2,Nikita,Sid,417,50.0,2,True,Loss,0,0,0,0,0,0
-399,2024-12-04,ODI,Green,Hard,1,Anya,Rohan,262,30.0,0,False,Loss,0,0,0,0,0,0
-399,2024-12-04,ODI,Green,Hard,2,Rohan,Anya,280,40.0,4,True,Win,0,0,0,0,0,0
-400,2024-06-23,Test,Dry,Insane,1,Leo,Anya,381,60.0,3,False,Loss,0,0,0,0,0,0
-400,2024-06-23,Test,Dry,Insane,2,Anya,Leo,483,50.0,0,True,Win,1,0,0,0,0,0
-401,2024-04-11,ODI,Bouncy,Insane,1,Vikram,Leo,355,30.0,1,False,Win,0,0,0,0,0,0
-401,2024-04-11,ODI,Bouncy,Insane,2,Leo,Vikram,242,40.0,8,True,Loss,0,0,0,0,0,0
-402,2024-10-05,Test,Dry,Hard,1,Sid,Zafi,459,50.0,0,False,Win,1,0,0,0,0,0
-402,2024-10-05,Test,Dry,Hard,2,Zafi,Sid,423,40.0,2,True,Loss,0,0,0,0,0,0
-403,2024-11-14,ODI,Green,Hard,1,Ragz,Zafi,315,20.0,3,False,Win,0,0,0,0,0,0
-403,2024-11-14,ODI,Green,Hard,2,Zafi,Ragz,292,50.0,1,True,Loss,0,0,0,0,0,0
-404,2024-11-18,Test,Dry,Ultra Insane,1,Rohan,Nikita,396,40.0,2,False,Win,0,0,0,0,0,0
-404,2024-11-18,Test,Dry,Ultra Insane,2,Nikita,Rohan,375,30.0,1,True,Loss,0,0,0,0,0,0
-405,2024-12-03,Test,Bouncy,Insane,1,Rohan,Anya,312,40.0,3,False,Loss,0,0,0,0,0,0
-405,2024-12-03,Test,Bouncy,Insane,2,Anya,Rohan,315,50.0,5,True,Win,0,0,0,0,0,0
-406,2024-08-20,Test,Bouncy,Ultra Insane,1,Vikram,Sid,393,30.0,2,False,Win,0,0,0,0,0,0
-406,2024-08-20,Test,Bouncy,Ultra Insane,2,Sid,Vikram,345,50.0,3,True,Loss,0,0,0,0,0,0
-407,2024-06-28,ODI,Dry,Ultra Insane,1,Wizheart,Zafi,367,20.0,4,False,Win,0,0,0,0,0,0
-407,2024-06-28,ODI,Dry,Ultra Insane,2,Zafi,Wizheart,327,50.0,2,True,Loss,0,0,0,0,0,0
-408,2024-08-23,ODI,Green,Hard,1,Karthik,Rohan,337,40.0,2,False,Win,0,0,0,0,0,0
-408,2024-08-23,ODI,Green,Hard,2,Rohan,Karthik,285,30.0,2,True,Loss,0,0,0,0,0,0
-409,2024-11-08,ODI,Normal,Medium,1,Arjun,Sid,385,40.0,1,False,Loss,0,0,0,0,0,0
-409,2024-11-08,ODI,Normal,Medium,2,Sid,Arjun,427,50.0,0,True,Win,0,0,0,0,0,0
-410,2024-05-14,T20,Green,Insane,1,Vikram,Wizheart,208,10.0,2,False,Loss,0,0,0,0,0,0
-410,2024-05-14,T20,Green,Insane,2,Wizheart,Vikram,220,5.0,3,True,Win,0,0,0,0,0,0
-411,2024-04-10,Test,Green,Hard,1,Arjun,Anya,414,40.0,2,False,Win,0,0,0,0,0,0
-411,2024-04-10,Test,Green,Hard,2,Anya,Arjun,225,40.0,2,True,Loss,0,0,0,0,0,0
-412,2024-03-15,ODI,Dry,Medium,1,Nikita,Wizheart,302,30.0,0,False,Loss,0,0,0,0,0,0
-412,2024-03-15,ODI,Dry,Medium,2,Wizheart,Nikita,430,50.0,2,True,Win,1,0,0,0,0,0
-413,2024-07-08,T20,Bouncy,Insane,1,Vikram,Arjun,214,5.0,5,False,Win,0,0,0,0,0,0
-413,2024-07-08,T20,Bouncy,Insane,2,Arjun,Vikram,198,5.0,2,True,Loss,0,0,0,0,0,0
-414,2024-12-25,Test,Green,Ultra Insane,1,Vikram,Arjun,339,50.0,2,False,Win,0,0,0,0,0,0
-414,2024-12-25,Test,Green,Ultra Insane,2,Arjun,Vikram,222,30.0,1,True,Loss,0,0,0,0,0,0
-415,2024-01-10,T20,Normal,Hard,1,Zafi,Nikita,214,10.0,0,False,Loss,0,0,0,0,0,0
-415,2024-01-10,T20,Normal,Hard,2,Nikita,Zafi,272,5.0,1,True,Win,0,0,0,0,0,0
-416,2024-07-09,ODI,Dry,Insane,1,Ragz,Karthik,357,50.0,1,False,Loss,0,0,0,0,0,0
-416,2024-07-09,ODI,Dry,Insane,2,Karthik,Ragz,365,40.0,6,True,Win,0,0,0,0,0,0
-417,2024-04-18,T20,Green,Medium,1,Wizheart,Leo,238,10.0,2,False,Win,0,0,0,0,0,0
-417,2024-04-18,T20,Green,Medium,2,Leo,Wizheart,182,10.0,1,True,Loss,0,0,0,0,0,0
-418,2024-10-24,Test,Dry,Ultra Insane,1,Vikram,Sid,366,30.0,2,False,Win,0,0,0,0,0,0
-418,2024-10-24,Test,Dry,Ultra Insane,2,Sid,Vikram,279,50.0,2,True,Loss,0,0,0,0,0,0
-419,2024-10-22,Test,Bouncy,Insane,1,Rohan,Anya,378,60.0,5,False,Win,0,0,0,0,0,0
-419,2024-10-22,Test,Bouncy,Insane,2,Anya,Rohan,315,30.0,2,True,Loss,0,0,0,0,0,0
-420,2024-08-07,Test,Green,Insane,1,Rohan,Anya,318,40.0,1,False,Loss,0,0,0,0,0,0
-420,2024-08-07,Test,Green,Insane,2,Anya,Rohan,393,60.0,2,True,Win,0,0,0,0,0,0
-421,2024-11-13,T20,Green,Insane,1,Sid,Wizheart,208,20.0,3,False,Loss,0,0,0,0,0,0
-421,2024-11-13,T20,Green,Insane,2,Wizheart,Sid,244,15.0,3,True,Win,0,0,0,0,0,0
-422,2024-04-20,ODI,Dry,Medium,1,Nikita,Rohan,325,30.0,3,False,Loss,0,0,0,0,0,0
-422,2024-04-20,ODI,Dry,Medium,2,Rohan,Nikita,327,20.0,2,True,Win,0,0,0,0,0,0
-423,2024-01-06,ODI,Normal,Ultra Insane,1,Arjun,Sara,262,50.0,3,False,Loss,0,0,0,0,0,0
-423,2024-01-06,ODI,Normal,Ultra Insane,2,Sara,Arjun,342,50.0,4,True,Win,0,0,0,0,0,0
-424,2024-07-02,T20,Bouncy,Medium,1,Rohan,Sid,226,15.0,3,False,Loss,0,0,0,0,0,0
-424,2024-07-02,T20,Bouncy,Medium,2,Sid,Rohan,236,5.0,1,True,Win,0,0,0,0,0,0
-425,2024-07-14,Test,Green,Hard,1,Sara,Karthik,486,50.0,0,False,Win,1,0,0,0,0,0
-425,2024-07-14,Test,Green,Hard,2,Karthik,Sara,438,50.0,2,True,Loss,0,0,0,0,0,0
-426,2024-03-27,Test,Normal,Hard,1,Wizheart,Sid,528,30.0,3,False,Win,1,0,0,0,0,0
-426,2024-03-27,Test,Normal,Hard,2,Sid,Wizheart,453,30.0,4,True,Loss,1,0,0,0,0,0
-427,2024-04-25,ODI,Green,Hard,1,Nikita,Karthik,397,30.0,3,False,Loss,0,0,0,0,0,0
-427,2024-04-25,ODI,Green,Hard,2,Karthik,Nikita,405,30.0,1,True,Win,0,0,0,0,0,0
-428,2024-03-19,ODI,Green,Medium,1,Leo,Ragz,362,30.0,2,False,Win,0,0,0,0,0,0
-428,2024-03-19,ODI,Green,Medium,2,Ragz,Leo,322,20.0,0,True,Loss,0,0,0,0,0,0
-429,2024-12-17,T20,Bouncy,Insane,1,Sara,Sid,238,5.0,2,False,Win,0,0,0,0,0,0
-429,2024-12-17,T20,Bouncy,Insane,2,Sid,Sara,194,10.0,1,True,Loss,0,0,0,0,0,0
-430,2024-07-10,T20,Green,Insane,1,Ragz,Sid,156,5.0,2,False,Loss,0,0,0,0,0,0
-430,2024-07-10,T20,Green,Insane,2,Sid,Ragz,188,5.0,3,True,Win,0,0,0,0,0,0
-431,2024-10-17,T20,Dry,Insane,1,Sara,Leo,240,5.0,2,False,Win,0,0,0,0,0,0
-431,2024-10-17,T20,Dry,Insane,2,Leo,Sara,208,10.0,5,True,Loss,0,0,0,0,0,0
-432,2024-01-16,T20,Dry,Ultra Insane,1,Karthik,Leo,144,15.0,0,False,Loss,0,0,0,0,0,0
-432,2024-01-16,T20,Dry,Ultra Insane,2,Leo,Karthik,152,20.0,7,True,Win,0,0,0,0,0,0
-433,2024-01-01,ODI,Dry,Hard,1,Arjun,Leo,270,50.0,0,False,Loss,0,0,0,0,0,0
-433,2024-01-01,ODI,Dry,Hard,2,Leo,Arjun,280,40.0,2,True,Win,0,0,0,0,0,0
-434,2024-08-15,T20,Bouncy,Ultra Insane,1,Anya,Sid,150,20.0,4,False,Loss,0,0,0,0,0,0
-434,2024-08-15,T20,Bouncy,Ultra Insane,2,Sid,Anya,166,15.0,2,True,Win,0,0,0,0,0,0
-435,2024-12-19,ODI,Dry,Insane,1,Zafi,Rohan,335,30.0,5,False,Win,0,0,0,0,0,0
-435,2024-12-19,ODI,Dry,Insane,2,Rohan,Zafi,242,30.0,1,True,Loss,0,0,0,0,0,0
-436,2024-11-27,T20,Green,Ultra Insane,1,Anya,Ragz,184,10.0,2,False,Win,0,0,0,0,0,0
-436,2024-11-27,T20,Green,Ultra Insane,2,Ragz,Anya,150,5.0,2,True,Loss,0,0,0,0,0,0
-437,2024-03-23,ODI,Normal,Insane,1,Leo,Zafi,225,30.0,5,False,Loss,0,0,0,0,0,0
-437,2024-03-23,ODI,Normal,Insane,2,Zafi,Leo,325,30.0,5,True,Win,0,0,0,0,0,0
-438,2024-07-25,ODI,Green,Insane,1,Leo,Sid,305,30.0,2,False,Loss,0,0,0,0,0,0
-438,2024-07-25,ODI,Green,Insane,2,Sid,Leo,342,30.0,2,True,Win,0,0,0,0,0,0
-439,2024-11-16,Test,Bouncy,Insane,1,Vikram,Arjun,477,50.0,1,False,Win,1,0,0,0,0,0
-439,2024-11-16,Test,Bouncy,Insane,2,Arjun,Vikram,315,40.0,0,True,Loss,0,0,0,0,0,0
-440,2024-12-01,Test,Normal,Hard,1,Karthik,Wizheart,426,60.0,1,False,Loss,0,0,0,0,0,0
-440,2024-12-01,Test,Normal,Hard,2,Wizheart,Karthik,507,40.0,5,True,Win,1,0,0,0,0,0
-441,2024-03-21,T20,Bouncy,Hard,1,Wizheart,Zafi,260,5.0,2,False,Win,0,0,0,0,0,0
-441,2024-03-21,T20,Bouncy,Hard,2,Zafi,Wizheart,232,10.0,0,True,Loss,0,0,0,0,0,0
-442,2024-02-14,ODI,Dry,Ultra Insane,1,Zafi,Sara,262,20.0,3,False,Loss,0,0,0,0,0,0
-442,2024-02-14,ODI,Dry,Ultra Insane,2,Sara,Zafi,342,40.0,6,True,Win,0,0,0,0,0,0
-443,2024-02-03,Test,Normal,Hard,1,Nikita,Sara,396,30.0,1,False,Loss,0,0,0,0,0,0
-443,2024-02-03,Test,Normal,Hard,2,Sara,Nikita,534,30.0,6,True,Win,1,0,0,0,0,0
-444,2024-07-27,ODI,Green,Hard,1,Arjun,Anya,285,20.0,3,False,Win,0,0,0,0,0,0
-444,2024-07-27,ODI,Green,Hard,2,Anya,Arjun,250,40.0,2,True,Loss,0,0,0,0,0,0
-445,2024-07-05,ODI,Normal,Medium,1,Sara,Rohan,325,30.0,2,False,Draw,0,0,0,0,0,0
-445,2024-07-05,ODI,Normal,Medium,2,Rohan,Sara,325,50.0,0,True,Draw,0,0,0,0,0,0
-446,2024-07-21,Test,Normal,Hard,1,Nikita,Ragz,318,40.0,0,False,Loss,0,0,0,0,0,0
-446,2024-07-21,Test,Normal,Hard,2,Ragz,Nikita,450,30.0,0,True,Win,1,0,0,0,0,0
-447,2024-04-29,Test,Green,Ultra Insane,1,Ragz,Arjun,324,30.0,1,False,Win,0,0,0,0,0,0
-447,2024-04-29,Test,Green,Ultra Insane,2,Arjun,Ragz,291,30.0,3,True,Loss,0,0,0,0,0,0
-448,2024-12-06,Test,Normal,Insane,1,Rohan,Leo,279,30.0,1,False,Loss,0,0,0,0,0,0
-448,2024-12-06,Test,Normal,Insane,2,Leo,Rohan,309,40.0,3,True,Win,0,0,0,0,0,0
-449,2024-06-05,Test,Dry,Insane,1,Sid,Sara,378,50.0,2,False,Loss,0,0,0,0,0,0
-449,2024-06-05,Test,Dry,Insane,2,Sara,Sid,444,30.0,2,True,Win,0,0,0,0,0,0
-450,2024-01-19,T20,Green,Hard,1,Vikram,Sid,218,10.0,2,False,Loss,0,0,0,0,0,0
-450,2024-01-19,T20,Green,Hard,2,Sid,Vikram,230,5.0,2,True,Win,0,0,0,0,0,0
-451,2024-03-16,ODI,Bouncy,Medium,1,Anya,Ragz,362,20.0,5,False,Win,0,0,0,0,0,0
-451,2024-03-16,ODI,Bouncy,Medium,2,Ragz,Anya,295,50.0,2,True,Loss,0,0,0,0,0,0
-452,2024-02-18,T20,Green,Insane,1,Leo,Ragz,226,5.0,4,False,Win,0,0,0,0,0,0
-452,2024-02-18,T20,Green,Insane,2,Ragz,Leo,146,5.0,1,True,Loss,0,0,0,0,0,0
-453,2024-11-29,Test,Dry,Insane,1,Rohan,Sara,333,50.0,1,False,Loss,0,0,0,0,0,0
-453,2024-11-29,Test,Dry,Insane,2,Sara,Rohan,450,60.0,5,True,Win,1,0,0,0,0,0
-454,2024-09-25,Test,Bouncy,Ultra Insane,1,Nikita,Vikram,300,40.0,1,False,Loss,0,0,0,0,0,0
-454,2024-09-25,Test,Bouncy,Ultra Insane,2,Vikram,Nikita,321,60.0,0,True,Win,0,0,0,0,0,0
-455,2024-08-21,ODI,Normal,Ultra Insane,1,Sara,Zafi,290,20.0,2,False,Win,0,0,0,0,0,0
-455,2024-08-21,ODI,Normal,Ultra Insane,2,Zafi,Sara,220,50.0,7,True,Loss,0,0,0,0,0,0
-456,2024-05-13,Test,Bouncy,Ultra Insane,1,Anya,Karthik,348,30.0,4,False,Win,0,0,0,0,0,0
-456,2024-05-13,Test,Bouncy,Ultra Insane,2,Karthik,Anya,345,50.0,1,True,Loss,0,0,0,0,0,0
-457,2024-05-14,Test,Dry,Ultra Insane,1,Karthik,Sid,315,50.0,3,False,Loss,0,0,0,0,0,0
-457,2024-05-14,Test,Dry,Ultra Insane,2,Sid,Karthik,393,50.0,1,True,Win,0,0,0,0,0,0
-458,2024-11-23,ODI,Dry,Insane,1,Rohan,Leo,330,20.0,3,False,Draw,0,0,0,0,0,0
-458,2024-11-23,ODI,Dry,Insane,2,Leo,Rohan,330,30.0,3,True,Draw,0,0,0,0,0,0
-459,2024-05-01,Test,Dry,Insane,1,Leo,Karthik,315,30.0,3,False,Loss,0,0,0,0,0,0
-459,2024-05-01,Test,Dry,Insane,2,Karthik,Leo,369,40.0,3,True,Win,0,0,0,0,0,0
-460,2024-01-12,Test,Normal,Ultra Insane,1,Arjun,Ragz,270,30.0,2,False,Loss,0,0,0,0,0,0
-460,2024-01-12,Test,Normal,Ultra Insane,2,Ragz,Arjun,357,60.0,2,True,Win,0,0,0,0,0,0
-461,2024-11-04,ODI,Dry,Medium,1,Sara,Arjun,445,50.0,0,False,Win,1,0,0,0,0,0
-461,2024-11-04,ODI,Dry,Medium,2,Arjun,Sara,300,20.0,2,True,Loss,0,0,0,0,0,0
-462,2024-08-29,ODI,Bouncy,Hard,1,Ragz,Sid,307,20.0,0,False,Loss,0,0,0,0,0,0
-462,2024-08-29,ODI,Bouncy,Hard,2,Sid,Ragz,355,50.0,3,True,Win,0,0,0,0,0,0
-463,2024-09-02,Test,Green,Insane,1,Nikita,Vikram,201,30.0,1,False,Loss,0,0,0,0,0,0
-463,2024-09-02,Test,Green,Insane,2,Vikram,Nikita,402,30.0,1,True,Win,0,0,0,0,0,0
-464,2024-02-20,ODI,Bouncy,Hard,1,Sara,Rohan,347,30.0,1,False,Loss,0,0,0,0,0,0
-464,2024-02-20,ODI,Bouncy,Hard,2,Rohan,Sara,372,40.0,2,True,Win,0,0,0,0,0,0
-465,2024-11-08,Test,Green,Insane,1,Zafi,Rohan,306,60.0,3,False,Loss,0,0,0,0,0,0
-465,2024-11-08,Test,Green,Insane,2,Rohan,Zafi,381,40.0,3,True,Win,0,0,0,0,0,0
-466,2024-12-08,Test,Normal,Hard,1,Rohan,Vikram,396,30.0,2,False,Loss,0,0,0,0,0,0
-466,2024-12-08,Test,Normal,Hard,2,Vikram,Rohan,510,30.0,0,True,Win,1,0,0,0,0,0
-467,2024-10-17,Test,Bouncy,Insane,1,Vikram,Sid,477,50.0,1,False,Win,1,0,0,0,0,0
-467,2024-10-17,Test,Bouncy,Insane,2,Sid,Vikram,468,30.0,2,True,Loss,1,0,0,0,0,0
-468,2024-06-25,Test,Bouncy,Ultra Insane,1,Zafi,Vikram,327,50.0,5,False,Loss,0,0,0,0,0,0
-468,2024-06-25,Test,Bouncy,Ultra Insane,2,Vikram,Zafi,420,40.0,2,True,Win,0,0,0,0,0,0
-469,2024-10-06,ODI,Normal,Ultra Insane,1,Ragz,Vikram,290,30.0,3,False,Loss,0,0,0,0,0,0
-469,2024-10-06,ODI,Normal,Ultra Insane,2,Vikram,Ragz,305,20.0,2,True,Win,0,0,0,0,0,0
-470,2024-09-11,ODI,Green,Medium,1,Vikram,Sid,397,50.0,3,False,Win,0,0,0,0,0,0
-470,2024-09-11,ODI,Green,Medium,2,Sid,Vikram,377,40.0,2,True,Loss,0,0,0,0,0,0
-471,2024-09-10,T20,Dry,Medium,1,Nikita,Arjun,182,20.0,1,False,Loss,0,0,0,0,0,0
-471,2024-09-10,T20,Dry,Medium,2,Arjun,Nikita,198,20.0,1,True,Win,0,0,0,0,0,0
-472,2024-06-26,Test,Bouncy,Medium,1,Wizheart,Nikita,579,50.0,1,False,Win,1,0,0,0,0,0
-472,2024-06-26,Test,Bouncy,Medium,2,Nikita,Wizheart,483,30.0,1,True,Loss,1,0,0,0,0,0
-473,2024-04-17,ODI,Normal,Medium,1,Zafi,Sid,240,30.0,2,False,Loss,0,0,0,0,0,0
-473,2024-04-17,ODI,Normal,Medium,2,Sid,Zafi,347,40.0,0,True,Win,0,0,0,0,0,0
-474,2024-07-07,Test,Dry,Ultra Insane,1,Ragz,Leo,417,50.0,0,False,Win,0,0,0,0,0,0
-474,2024-07-07,Test,Dry,Ultra Insane,2,Leo,Ragz,219,30.0,0,True,Loss,0,0,0,0,0,0
-475,2024-03-30,T20,Green,Insane,1,Nikita,Sid,0,5.0,2,False,Loss,0,0,0,0,0,1
-475,2024-03-30,T20,Green,Insane,2,Sid,Nikita,198,10.0,6,True,Win,0,0,0,0,0,0
-476,2024-02-02,ODI,Green,Medium,1,Sara,Leo,465,40.0,1,False,Win,1,0,0,0,0,0
-476,2024-02-02,ODI,Green,Medium,2,Leo,Sara,355,20.0,1,True,Loss,0,0,0,0,0,0
-477,2024-08-08,T20,Bouncy,Insane,1,Zafi,Ragz,144,15.0,2,False,Loss,0,0,0,0,0,0
-477,2024-08-08,T20,Bouncy,Insane,2,Ragz,Zafi,158,20.0,4,True,Win,0,0,0,0,0,0
-478,2024-05-25,T20,Green,Hard,1,Leo,Karthik,220,15.0,4,False,Win,0,0,0,0,0,0
-478,2024-05-25,T20,Green,Hard,2,Karthik,Leo,190,20.0,1,True,Loss,0,0,0,0,0,0
-479,2024-01-01,Test,Normal,Insane,1,Sid,Sara,336,50.0,4,False,Loss,0,0,0,0,0,0
-479,2024-01-01,Test,Normal,Insane,2,Sara,Sid,468,40.0,4,True,Win,1,0,0,0,0,0
-480,2024-02-18,T20,Green,Ultra Insane,1,Karthik,Leo,200,20.0,3,False,Win,0,0,0,0,0,0
-480,2024-02-18,T20,Green,Ultra Insane,2,Leo,Karthik,154,15.0,7,True,Loss,0,0,0,0,0,0
-481,2024-07-13,ODI,Dry,Hard,1,Arjun,Karthik,330,30.0,2,False,Loss,0,0,0,0,0,0
-481,2024-07-13,ODI,Dry,Hard,2,Karthik,Arjun,377,20.0,2,True,Win,0,0,0,0,0,0
-482,2024-12-08,T20,Normal,Medium,1,Sara,Nikita,232,10.0,2,False,Win,0,0,0,0,0,0
-482,2024-12-08,T20,Normal,Medium,2,Nikita,Sara,208,10.0,3,True,Loss,0,0,0,0,0,0
-483,2024-12-21,T20,Normal,Hard,1,Karthik,Zafi,212,20.0,1,False,Loss,0,0,0,0,0,0
-483,2024-12-21,T20,Normal,Hard,2,Zafi,Karthik,254,20.0,2,True,Win,0,0,0,0,0,0
-484,2024-02-11,Test,Normal,Ultra Insane,1,Rohan,Sara,408,30.0,1,False,Win,0,0,0,0,0,0
-484,2024-02-11,Test,Normal,Ultra Insane,2,Sara,Rohan,396,60.0,4,True,Loss,0,0,0,0,0,0
-485,2024-05-24,T20,Normal,Hard,1,Leo,Wizheart,204,5.0,3,False,Loss,0,0,0,0,0,0
-485,2024-05-24,T20,Normal,Hard,2,Wizheart,Leo,234,20.0,4,True,Win,0,0,0,0,0,0
-486,2024-09-18,ODI,Green,Hard,1,Vikram,Karthik,360,20.0,4,False,Loss,0,0,0,0,0,0
-486,2024-09-18,ODI,Green,Hard,2,Karthik,Vikram,392,30.0,2,True,Win,0,0,0,0,0,0
-487,2024-07-16,Test,Bouncy,Insane,1,Karthik,Rohan,369,30.0,1,False,Win,0,0,0,0,0,0
-487,2024-07-16,Test,Bouncy,Insane,2,Rohan,Karthik,285,30.0,3,True,Loss,0,0,0,0,0,0
-488,2024-02-24,ODI,Dry,Hard,1,Arjun,Ragz,285,50.0,4,False,Loss,0,0,0,0,0,0
-488,2024-02-24,ODI,Dry,Hard,2,Ragz,Arjun,312,40.0,5,True,Win,0,0,0,0,0,0
-489,2024-11-10,T20,Bouncy,Ultra Insane,1,Arjun,Leo,210,20.0,4,False,Win,0,0,0,0,0,0
-489,2024-11-10,T20,Bouncy,Ultra Insane,2,Leo,Arjun,176,15.0,5,True,Loss,0,0,0,0,0,0
-490,2024-07-14,Test,Bouncy,Ultra Insane,1,Vikram,Sid,369,50.0,0,False,Win,0,0,0,0,0,0
-490,2024-07-14,Test,Bouncy,Ultra Insane,2,Sid,Vikram,318,50.0,3,True,Loss,0,0,0,0,0,0
-491,2024-07-27,Test,Dry,Ultra Insane,1,Vikram,Anya,348,30.0,4,False,Win,0,0,0,0,0,0
-491,2024-07-27,Test,Dry,Ultra Insane,2,Anya,Vikram,159,60.0,3,True,Loss,0,0,0,0,0,0
-492,2024-11-10,T20,Green,Ultra Insane,1,Ragz,Arjun,176,20.0,4,False,Loss,0,0,0,0,0,0
-492,2024-11-10,T20,Green,Ultra Insane,2,Arjun,Ragz,218,5.0,4,True,Win,0,0,0,0,0,0
-493,2024-02-07,ODI,Bouncy,Ultra Insane,1,Karthik,Leo,362,40.0,3,False,Win,0,0,0,0,0,0
-493,2024-02-07,ODI,Bouncy,Ultra Insane,2,Leo,Karthik,270,50.0,5,True,Loss,0,0,0,0,0,0
-494,2024-06-07,ODI,Bouncy,Ultra Insane,1,Wizheart,Vikram,332,40.0,2,False,Win,0,0,0,0,0,0
-494,2024-06-07,ODI,Bouncy,Ultra Insane,2,Vikram,Wizheart,315,40.0,2,True,Loss,0,0,0,0,0,0
-495,2024-06-26,ODI,Green,Hard,1,Nikita,Karthik,245,30.0,3,False,Loss,0,0,0,0,0,0
-495,2024-06-26,ODI,Green,Hard,2,Karthik,Nikita,275,40.0,2,True,Win,0,0,0,0,0,0
-496,2024-06-10,ODI,Bouncy,Insane,1,Sara,Zafi,387,30.0,3,False,Win,0,0,0,0,0,0
-496,2024-06-10,ODI,Bouncy,Insane,2,Zafi,Sara,300,20.0,2,True,Loss,0,0,0,0,0,0
-497,2024-03-14,ODI,Dry,Medium,1,Vikram,Karthik,427,40.0,1,False,Win,0,0,0,0,0,0
-497,2024-03-14,ODI,Dry,Medium,2,Karthik,Vikram,320,40.0,1,True,Loss,0,0,0,0,0,0
-498,2024-07-29,Test,Dry,Ultra Insane,1,Sara,Rohan,357,30.0,4,False,Win,0,0,0,0,0,0
-498,2024-07-29,Test,Dry,Ultra Insane,2,Rohan,Sara,330,60.0,2,True,Loss,0,0,0,0,0,0
-499,2024-10-22,T20,Normal,Medium,1,Karthik,Rohan,232,5.0,1,False,Win,0,0,0,0,0,0
-499,2024-10-22,T20,Normal,Medium,2,Rohan,Karthik,208,20.0,1,True,Loss,0,0,0,0,0,0
-500,2024-09-14,T20,Bouncy,Ultra Insane,1,Karthik,Anya,168,5.0,2,False,Loss,0,0,0,0,0,0
-500,2024-09-14,T20,Bouncy,Ultra Insane,2,Anya,Karthik,184,15.0,3,True,Win,0,0,0,0,0,0
+match_id,date,format,pitch_type,stadium,difficulty,innings_number,player_name,opponent_name,runs,overs,wickets,is_chasing,result,hundreds,double_hundreds,triple_hundreds,quadruple_hundreds,quintuple_hundreds,ducks
+1,2024-11-24,T20,Bouncy,1,Ultra Insane,1,Karthik,Sid,124,15.0,0,False,Loss,0,0,0,0,0,0
+1,2024-11-24,T20,Bouncy,1,Ultra Insane,2,Sid,Karthik,218,10.0,2,True,Win,0,0,0,0,0,0
+2,2024-09-20,T20,Dry,2,Medium,1,Ragz,Nikita,188,15.0,0,False,Win,0,0,0,0,0,0
+2,2024-09-20,T20,Dry,2,Medium,2,Nikita,Ragz,148,20.0,1,True,Loss,0,0,0,0,0,0
+3,2024-04-15,ODI,Dry,3,Hard,1,Karthik,Anya,370,50.0,1,False,Win,0,0,0,0,0,0
+3,2024-04-15,ODI,Dry,3,Hard,2,Anya,Karthik,337,40.0,5,True,Loss,0,0,0,0,0,0
+4,2024-08-04,Test,Normal,4,Ultra Insane,1,Zafi,Anya,213,60.0,2,False,Loss,0,0,0,0,0,0
+4,2024-08-04,Test,Normal,4,Ultra Insane,2,Anya,Zafi,330,30.0,2,True,Win,0,0,0,0,0,0
+5,2024-05-18,ODI,Dry,5,Medium,1,Leo,Sid,365,40.0,1,False,Loss,0,0,0,0,0,0
+5,2024-05-18,ODI,Dry,5,Medium,2,Sid,Leo,400,40.0,3,True,Win,0,0,0,0,0,0
+6,2024-02-02,T20,Normal,6,Ultra Insane,1,Zafi,Vikram,232,20.0,4,False,Win,0,0,0,0,0,0
+6,2024-02-02,T20,Normal,6,Ultra Insane,2,Vikram,Zafi,166,15.0,5,True,Loss,0,0,0,0,0,0
+7,2024-01-15,ODI,Dry,7,Hard,1,Leo,Zafi,315,30.0,3,False,Win,0,0,0,0,0,0
+7,2024-01-15,ODI,Dry,7,Hard,2,Zafi,Leo,297,20.0,3,True,Loss,0,0,0,0,0,0
+8,2024-08-30,Test,Bouncy,8,Insane,1,Zafi,Karthik,357,40.0,1,False,Loss,0,0,0,0,0,0
+8,2024-08-30,Test,Bouncy,8,Insane,2,Karthik,Zafi,447,60.0,3,True,Win,0,0,0,0,0,0
+9,2024-12-13,Test,Green,9,Insane,1,Sid,Sara,342,30.0,1,False,Loss,0,0,0,0,0,0
+9,2024-12-13,Test,Green,9,Insane,2,Sara,Sid,435,60.0,2,True,Win,0,0,0,0,0,0
+10,2024-05-16,ODI,Bouncy,10,Insane,1,Anya,Karthik,255,30.0,2,False,Loss,0,0,0,0,0,0
+10,2024-05-16,ODI,Bouncy,10,Insane,2,Karthik,Anya,330,50.0,2,True,Win,0,0,0,0,0,0
+11,2024-02-21,T20,Dry,11,Medium,1,Rohan,Sara,204,20.0,1,False,Win,0,0,0,0,0,0
+11,2024-02-21,T20,Dry,11,Medium,2,Sara,Rohan,198,5.0,2,True,Loss,0,0,0,0,0,0
+12,2024-12-08,Test,Bouncy,12,Hard,1,Sid,Nikita,468,30.0,3,False,Win,1,0,0,0,0,0
+12,2024-12-08,Test,Bouncy,12,Hard,2,Nikita,Sid,273,50.0,3,True,Loss,0,0,0,0,0,0
+13,2024-10-06,ODI,Bouncy,13,Insane,1,Wizheart,Karthik,450,20.0,2,False,Win,1,0,0,0,0,0
+13,2024-10-06,ODI,Bouncy,13,Insane,2,Karthik,Wizheart,397,50.0,3,True,Loss,0,0,0,0,0,0
+14,2024-12-11,Test,Dry,1,Ultra Insane,1,Arjun,Zafi,279,50.0,3,False,Loss,0,0,0,0,0,0
+14,2024-12-11,Test,Dry,1,Ultra Insane,2,Zafi,Arjun,387,60.0,2,True,Win,0,0,0,0,0,0
+15,2024-05-30,Test,Dry,2,Hard,1,Sara,Sid,471,50.0,4,False,Win,1,0,0,0,0,0
+15,2024-05-30,Test,Dry,2,Hard,2,Sid,Sara,432,60.0,3,True,Loss,0,0,0,0,0,0
+16,2024-08-20,ODI,Green,3,Hard,1,Arjun,Ragz,330,40.0,7,False,Loss,0,0,0,0,0,0
+16,2024-08-20,ODI,Green,3,Hard,2,Ragz,Arjun,345,50.0,0,True,Win,0,0,0,0,0,0
+17,2024-04-08,Test,Dry,4,Ultra Insane,1,Rohan,Nikita,411,30.0,3,False,Win,0,0,0,0,0,0
+17,2024-04-08,Test,Dry,4,Ultra Insane,2,Nikita,Rohan,360,30.0,3,True,Loss,0,0,0,0,0,0
+18,2024-05-07,ODI,Bouncy,5,Hard,1,Vikram,Sid,390,20.0,1,False,Loss,0,0,0,0,0,0
+18,2024-05-07,ODI,Bouncy,5,Hard,2,Sid,Vikram,470,30.0,5,True,Win,1,0,0,0,0,0
+19,2024-10-10,Test,Normal,6,Medium,1,Ragz,Sara,321,50.0,1,False,Loss,0,0,0,0,0,0
+19,2024-10-10,Test,Normal,6,Medium,2,Sara,Ragz,525,50.0,1,True,Win,1,0,0,0,0,0
+20,2024-06-20,Test,Green,7,Medium,1,Nikita,Leo,273,60.0,4,False,Loss,0,0,0,0,0,0
+20,2024-06-20,Test,Green,7,Medium,2,Leo,Nikita,366,50.0,3,True,Win,0,0,0,0,0,0
+21,2024-06-09,T20,Green,8,Insane,1,Vikram,Wizheart,150,20.0,3,False,Loss,0,0,0,0,0,0
+21,2024-06-09,T20,Green,8,Insane,2,Wizheart,Vikram,212,10.0,3,True,Win,0,0,0,0,0,0
+22,2024-09-29,T20,Normal,9,Insane,1,Sara,Anya,260,20.0,3,False,Win,0,0,0,0,0,0
+22,2024-09-29,T20,Normal,9,Insane,2,Anya,Sara,208,5.0,1,True,Loss,0,0,0,0,0,0
+23,2024-11-08,Test,Dry,10,Ultra Insane,1,Ragz,Sid,354,60.0,4,False,Loss,0,0,0,0,0,0
+23,2024-11-08,Test,Dry,10,Ultra Insane,2,Sid,Ragz,405,40.0,3,True,Win,0,0,0,0,0,0
+24,2024-07-08,Test,Dry,11,Hard,1,Vikram,Zafi,453,30.0,1,False,Win,1,0,0,0,0,0
+24,2024-07-08,Test,Dry,11,Hard,2,Zafi,Vikram,372,50.0,1,True,Loss,0,0,0,0,0,0
+25,2024-09-20,T20,Dry,12,Hard,1,Ragz,Anya,236,5.0,1,False,Win,0,0,0,0,0,0
+25,2024-09-20,T20,Dry,12,Hard,2,Anya,Ragz,164,15.0,4,True,Loss,0,0,0,0,0,0
+26,2024-05-24,Test,Normal,13,Insane,1,Sid,Wizheart,354,60.0,0,False,Win,0,0,0,0,0,0
+26,2024-05-24,Test,Normal,13,Insane,2,Wizheart,Sid,345,30.0,1,True,Loss,0,0,0,0,0,0
+27,2024-05-06,Test,Dry,1,Insane,1,Karthik,Wizheart,384,30.0,2,False,Loss,0,0,0,0,0,0
+27,2024-05-06,Test,Dry,1,Insane,2,Wizheart,Karthik,465,40.0,6,True,Win,1,0,0,0,0,0
+28,2024-09-03,Test,Normal,2,Medium,1,Leo,Sid,342,50.0,1,False,Loss,0,0,0,0,0,0
+28,2024-09-03,Test,Normal,2,Medium,2,Sid,Leo,369,40.0,0,True,Win,0,0,0,0,0,0
+29,2024-02-16,Test,Bouncy,3,Hard,1,Sara,Sid,525,30.0,2,False,Win,1,0,0,0,0,0
+29,2024-02-16,Test,Bouncy,3,Hard,2,Sid,Sara,435,40.0,2,True,Loss,0,0,0,0,0,0
+30,2024-08-10,T20,Bouncy,4,Insane,1,Vikram,Rohan,210,10.0,2,False,Loss,0,0,0,0,0,0
+30,2024-08-10,T20,Bouncy,4,Insane,2,Rohan,Vikram,252,20.0,7,True,Win,0,0,0,0,0,0
+31,2024-06-27,ODI,Bouncy,5,Hard,1,Leo,Arjun,305,40.0,3,False,Loss,0,0,0,0,0,0
+31,2024-06-27,ODI,Bouncy,5,Hard,2,Arjun,Leo,322,40.0,1,True,Win,0,0,0,0,0,0
+32,2024-08-29,ODI,Dry,6,Ultra Insane,1,Vikram,Sid,365,40.0,2,False,Win,0,0,0,0,0,0
+32,2024-08-29,ODI,Dry,6,Ultra Insane,2,Sid,Vikram,252,40.0,1,True,Loss,0,0,0,0,0,0
+33,2024-04-23,Test,Bouncy,7,Hard,1,Zafi,Anya,390,30.0,3,False,Win,0,0,0,0,0,0
+33,2024-04-23,Test,Bouncy,7,Hard,2,Anya,Zafi,315,50.0,1,True,Loss,0,0,0,0,0,0
+34,2024-04-05,Test,Bouncy,8,Hard,1,Wizheart,Zafi,504,60.0,3,False,Win,1,0,0,0,0,0
+34,2024-04-05,Test,Bouncy,8,Hard,2,Zafi,Wizheart,432,40.0,5,True,Loss,0,0,0,0,0,0
+35,2024-08-20,T20,Normal,9,Hard,1,Zafi,Wizheart,174,15.0,5,False,Loss,0,0,0,0,0,0
+35,2024-08-20,T20,Normal,9,Hard,2,Wizheart,Zafi,214,5.0,4,True,Win,0,0,0,0,0,0
+36,2024-06-29,ODI,Normal,10,Hard,1,Arjun,Sara,362,30.0,6,False,Loss,0,0,0,0,0,0
+36,2024-06-29,ODI,Normal,10,Hard,2,Sara,Arjun,415,20.0,2,True,Win,0,0,0,0,0,0
+37,2024-06-13,ODI,Bouncy,11,Hard,1,Leo,Rohan,357,30.0,4,False,Win,0,0,0,0,0,0
+37,2024-06-13,ODI,Bouncy,11,Hard,2,Rohan,Leo,310,20.0,2,True,Loss,0,0,0,0,0,0
+38,2024-01-19,T20,Green,12,Hard,1,Sid,Nikita,152,15.0,3,False,Loss,0,0,0,0,0,0
+38,2024-01-19,T20,Green,12,Hard,2,Nikita,Sid,172,15.0,5,True,Win,0,0,0,0,0,0
+39,2024-11-07,Test,Normal,13,Medium,1,Sara,Nikita,537,30.0,0,False,Win,1,0,0,0,0,0
+39,2024-11-07,Test,Normal,13,Medium,2,Nikita,Sara,402,50.0,1,True,Loss,0,0,0,0,0,0
+40,2024-02-16,ODI,Green,1,Ultra Insane,1,Sid,Wizheart,277,20.0,6,False,Loss,0,0,0,0,0,0
+40,2024-02-16,ODI,Green,1,Ultra Insane,2,Wizheart,Sid,297,30.0,3,True,Win,0,0,0,0,0,0
+41,2024-03-30,T20,Normal,2,Medium,1,Nikita,Anya,252,20.0,0,False,Win,0,0,0,0,0,0
+41,2024-03-30,T20,Normal,2,Medium,2,Anya,Nikita,0,5.0,0,True,Loss,0,0,0,0,0,1
+42,2024-05-24,Test,Bouncy,3,Hard,1,Karthik,Vikram,480,30.0,1,False,Win,1,0,0,0,0,0
+42,2024-05-24,Test,Bouncy,3,Hard,2,Vikram,Karthik,426,40.0,0,True,Loss,0,0,0,0,0,0
+43,2024-03-22,ODI,Bouncy,4,Ultra Insane,1,Ragz,Arjun,325,40.0,3,False,Win,0,0,0,0,0,0
+43,2024-03-22,ODI,Bouncy,4,Ultra Insane,2,Arjun,Ragz,322,40.0,6,True,Loss,0,0,0,0,0,0
+44,2024-11-10,ODI,Bouncy,5,Medium,1,Sid,Vikram,332,40.0,0,False,Loss,0,0,0,0,0,0
+44,2024-11-10,ODI,Bouncy,5,Medium,2,Vikram,Sid,395,40.0,0,True,Win,0,0,0,0,0,0
+45,2024-11-06,Test,Normal,6,Medium,1,Zafi,Karthik,408,40.0,5,False,Loss,0,0,0,0,0,0
+45,2024-11-06,Test,Normal,6,Medium,2,Karthik,Zafi,558,30.0,1,True,Win,1,0,0,0,0,0
+46,2024-02-20,Test,Green,7,Ultra Insane,1,Sid,Karthik,279,30.0,3,False,Loss,0,0,0,0,0,0
+46,2024-02-20,Test,Green,7,Ultra Insane,2,Karthik,Sid,396,40.0,3,True,Win,0,0,0,0,0,0
+47,2024-02-23,ODI,Normal,8,Hard,1,Nikita,Wizheart,387,50.0,1,False,Loss,0,0,0,0,0,0
+47,2024-02-23,ODI,Normal,8,Hard,2,Wizheart,Nikita,407,40.0,7,True,Win,0,0,0,0,0,0
+48,2024-12-03,ODI,Dry,9,Ultra Insane,1,Arjun,Nikita,247,30.0,5,False,Loss,0,0,0,0,0,0
+48,2024-12-03,ODI,Dry,9,Ultra Insane,2,Nikita,Arjun,300,20.0,4,True,Win,0,0,0,0,0,0
+49,2024-03-09,T20,Green,10,Hard,1,Karthik,Arjun,166,10.0,1,False,Loss,0,0,0,0,0,0
+49,2024-03-09,T20,Green,10,Hard,2,Arjun,Karthik,210,15.0,0,True,Win,0,0,0,0,0,0
+50,2024-09-05,Test,Normal,11,Medium,1,Leo,Anya,396,50.0,1,False,Win,0,0,0,0,0,0
+50,2024-09-05,Test,Normal,11,Medium,2,Anya,Leo,279,50.0,3,True,Loss,0,0,0,0,0,0
+51,2024-02-20,Test,Normal,12,Ultra Insane,1,Vikram,Leo,360,50.0,1,False,Win,0,0,0,0,0,0
+51,2024-02-20,Test,Normal,12,Ultra Insane,2,Leo,Vikram,357,40.0,2,True,Loss,0,0,0,0,0,0
+52,2024-02-03,Test,Normal,13,Medium,1,Ragz,Zafi,507,30.0,0,False,Win,1,0,0,0,0,0
+52,2024-02-03,Test,Normal,13,Medium,2,Zafi,Ragz,387,30.0,2,True,Loss,0,0,0,0,0,0
+53,2024-04-16,T20,Normal,1,Hard,1,Nikita,Zafi,202,15.0,3,False,Win,0,0,0,0,0,0
+53,2024-04-16,T20,Normal,1,Hard,2,Zafi,Nikita,188,10.0,2,True,Loss,0,0,0,0,0,0
+54,2024-11-07,T20,Bouncy,2,Medium,1,Rohan,Zafi,222,15.0,2,False,Win,0,0,0,0,0,0
+54,2024-11-07,T20,Bouncy,2,Medium,2,Zafi,Rohan,210,10.0,1,True,Loss,0,0,0,0,0,0
+55,2024-07-10,ODI,Dry,3,Insane,1,Karthik,Sara,310,20.0,2,False,Loss,0,0,0,0,0,0
+55,2024-07-10,ODI,Dry,3,Insane,2,Sara,Karthik,397,30.0,2,True,Win,0,0,0,0,0,0
+56,2024-03-08,T20,Dry,4,Hard,1,Arjun,Nikita,178,10.0,1,False,Loss,0,0,0,0,0,0
+56,2024-03-08,T20,Dry,4,Hard,2,Nikita,Arjun,264,10.0,3,True,Win,0,0,0,0,0,0
+57,2024-04-10,Test,Dry,5,Ultra Insane,1,Anya,Zafi,297,40.0,2,False,Loss,0,0,0,0,0,0
+57,2024-04-10,Test,Dry,5,Ultra Insane,2,Zafi,Anya,369,30.0,1,True,Win,0,0,0,0,0,0
+58,2024-07-16,Test,Green,6,Medium,1,Zafi,Vikram,342,40.0,0,False,Loss,0,0,0,0,0,0
+58,2024-07-16,Test,Green,6,Medium,2,Vikram,Zafi,462,40.0,1,True,Win,1,0,0,0,0,0
+59,2024-05-16,Test,Dry,7,Hard,1,Anya,Zafi,333,50.0,1,False,Loss,0,0,0,0,0,0
+59,2024-05-16,Test,Dry,7,Hard,2,Zafi,Anya,423,40.0,1,True,Win,0,0,0,0,0,0
+60,2024-03-02,Test,Dry,8,Insane,1,Ragz,Sid,366,30.0,2,False,Loss,0,0,0,0,0,0
+60,2024-03-02,Test,Dry,8,Insane,2,Sid,Ragz,465,40.0,2,True,Win,1,0,0,0,0,0
+61,2024-04-22,T20,Dry,9,Medium,1,Sara,Vikram,264,20.0,1,False,Win,0,0,0,0,0,0
+61,2024-04-22,T20,Dry,9,Medium,2,Vikram,Sara,212,15.0,1,True,Loss,0,0,0,0,0,0
+62,2024-09-15,ODI,Normal,10,Hard,1,Arjun,Zafi,280,20.0,2,False,Win,0,0,0,0,0,0
+62,2024-09-15,ODI,Normal,10,Hard,2,Zafi,Arjun,197,50.0,4,True,Loss,0,0,0,0,0,0
+63,2024-02-07,Test,Bouncy,11,Insane,1,Arjun,Rohan,315,50.0,5,False,Loss,0,0,0,0,0,0
+63,2024-02-07,Test,Bouncy,11,Insane,2,Rohan,Arjun,360,50.0,0,True,Win,0,0,0,0,0,0
+64,2024-10-22,Test,Dry,12,Hard,1,Sara,Leo,549,60.0,2,False,Win,1,0,0,0,0,0
+64,2024-10-22,Test,Dry,12,Hard,2,Leo,Sara,366,40.0,2,True,Loss,0,0,0,0,0,0
+65,2024-03-18,ODI,Green,13,Insane,1,Wizheart,Zafi,360,30.0,6,False,Win,0,0,0,0,0,0
+65,2024-03-18,ODI,Green,13,Insane,2,Zafi,Wizheart,335,40.0,3,True,Loss,0,0,0,0,0,0
+66,2024-11-04,T20,Green,1,Insane,1,Wizheart,Leo,234,20.0,4,False,Win,0,0,0,0,0,0
+66,2024-11-04,T20,Green,1,Insane,2,Leo,Wizheart,126,15.0,4,True,Loss,0,0,0,0,0,0
+67,2024-04-06,ODI,Bouncy,2,Insane,1,Ragz,Sid,345,20.0,0,False,Win,0,0,0,0,0,0
+67,2024-04-06,ODI,Bouncy,2,Insane,2,Sid,Ragz,290,30.0,3,True,Loss,0,0,0,0,0,0
+68,2024-06-07,T20,Green,3,Medium,1,Zafi,Leo,254,15.0,0,False,Win,0,0,0,0,0,0
+68,2024-06-07,T20,Green,3,Medium,2,Leo,Zafi,178,15.0,2,True,Loss,0,0,0,0,0,0
+69,2024-04-24,T20,Bouncy,4,Medium,1,Anya,Rohan,252,15.0,3,False,Win,0,0,0,0,0,0
+69,2024-04-24,T20,Bouncy,4,Medium,2,Rohan,Anya,220,10.0,1,True,Loss,0,0,0,0,0,0
+70,2024-10-28,T20,Bouncy,5,Ultra Insane,1,Ragz,Wizheart,182,15.0,2,False,Win,0,0,0,0,0,0
+70,2024-10-28,T20,Bouncy,5,Ultra Insane,2,Wizheart,Ragz,160,20.0,4,True,Loss,0,0,0,0,0,0
+71,2024-05-06,ODI,Dry,6,Medium,1,Anya,Karthik,270,30.0,0,False,Loss,0,0,0,0,0,0
+71,2024-05-06,ODI,Dry,6,Medium,2,Karthik,Anya,435,40.0,3,True,Win,1,0,0,0,0,0
+72,2024-10-28,T20,Bouncy,7,Medium,1,Anya,Vikram,180,5.0,1,False,Loss,0,0,0,0,0,0
+72,2024-10-28,T20,Bouncy,7,Medium,2,Vikram,Anya,262,5.0,1,True,Win,0,0,0,0,0,0
+73,2024-11-08,ODI,Bouncy,8,Hard,1,Ragz,Leo,280,20.0,3,False,Loss,0,0,0,0,0,0
+73,2024-11-08,ODI,Bouncy,8,Hard,2,Leo,Ragz,320,40.0,3,True,Win,0,0,0,0,0,0
+74,2024-06-27,ODI,Normal,9,Hard,1,Leo,Anya,310,30.0,4,False,Win,0,0,0,0,0,0
+74,2024-06-27,ODI,Normal,9,Hard,2,Anya,Leo,217,50.0,1,True,Loss,0,0,0,0,0,0
+75,2024-12-02,ODI,Bouncy,10,Insane,1,Ragz,Zafi,412,50.0,2,False,Win,0,0,0,0,0,0
+75,2024-12-02,ODI,Bouncy,10,Insane,2,Zafi,Ragz,210,40.0,1,True,Loss,0,0,0,0,0,0
+76,2024-08-02,ODI,Normal,11,Ultra Insane,1,Karthik,Leo,330,40.0,1,False,Win,0,0,0,0,0,0
+76,2024-08-02,ODI,Normal,11,Ultra Insane,2,Leo,Karthik,275,20.0,5,True,Loss,0,0,0,0,0,0
+77,2024-04-22,ODI,Dry,12,Insane,1,Karthik,Leo,405,30.0,0,False,Win,0,0,0,0,0,0
+77,2024-04-22,ODI,Dry,12,Insane,2,Leo,Karthik,295,50.0,5,True,Loss,0,0,0,0,0,0
+78,2024-03-27,Test,Bouncy,13,Ultra Insane,1,Anya,Arjun,315,50.0,1,False,Win,0,0,0,0,0,0
+78,2024-03-27,Test,Bouncy,13,Ultra Insane,2,Arjun,Anya,270,50.0,2,True,Loss,0,0,0,0,0,0
+79,2024-11-23,Test,Dry,1,Insane,1,Sara,Vikram,492,40.0,9,False,Win,1,0,0,0,0,0
+79,2024-11-23,Test,Dry,1,Insane,2,Vikram,Sara,342,40.0,2,True,Loss,0,0,0,0,0,0
+80,2024-09-19,ODI,Dry,2,Medium,1,Zafi,Arjun,347,20.0,3,False,Win,0,0,0,0,0,0
+80,2024-09-19,ODI,Dry,2,Medium,2,Arjun,Zafi,277,30.0,2,True,Loss,0,0,0,0,0,0
+81,2024-01-20,Test,Dry,3,Medium,1,Zafi,Rohan,465,30.0,2,False,Win,1,0,0,0,0,0
+81,2024-01-20,Test,Dry,3,Medium,2,Rohan,Zafi,375,40.0,1,True,Loss,0,0,0,0,0,0
+82,2024-07-20,ODI,Dry,4,Insane,1,Nikita,Rohan,367,30.0,2,False,Win,0,0,0,0,0,0
+82,2024-07-20,ODI,Dry,4,Insane,2,Rohan,Nikita,310,30.0,3,True,Loss,0,0,0,0,0,0
+83,2024-10-04,T20,Normal,5,Ultra Insane,1,Rohan,Karthik,142,15.0,7,False,Loss,0,0,0,0,0,0
+83,2024-10-04,T20,Normal,5,Ultra Insane,2,Karthik,Rohan,182,5.0,3,True,Win,0,0,0,0,0,0
+84,2024-01-27,ODI,Normal,6,Ultra Insane,1,Wizheart,Vikram,400,20.0,5,False,Win,0,0,0,0,0,0
+84,2024-01-27,ODI,Normal,6,Ultra Insane,2,Vikram,Wizheart,300,30.0,1,True,Loss,0,0,0,0,0,0
+85,2024-11-05,T20,Bouncy,7,Insane,1,Nikita,Zafi,172,15.0,6,False,Loss,0,0,0,0,0,0
+85,2024-11-05,T20,Bouncy,7,Insane,2,Zafi,Nikita,230,20.0,1,True,Win,0,0,0,0,0,0
+86,2024-05-27,T20,Dry,8,Insane,1,Sara,Zafi,204,15.0,4,False,Win,0,0,0,0,0,0
+86,2024-05-27,T20,Dry,8,Insane,2,Zafi,Sara,182,5.0,3,True,Loss,0,0,0,0,0,0
+87,2024-01-25,T20,Dry,9,Insane,1,Sara,Nikita,256,15.0,4,False,Win,0,0,0,0,0,0
+87,2024-01-25,T20,Dry,9,Insane,2,Nikita,Sara,154,20.0,6,True,Loss,0,0,0,0,0,0
+88,2024-03-29,ODI,Green,10,Insane,1,Vikram,Ragz,362,50.0,1,False,Win,0,0,0,0,0,0
+88,2024-03-29,ODI,Green,10,Insane,2,Ragz,Vikram,317,30.0,1,True,Loss,0,0,0,0,0,0
+89,2024-01-07,Test,Green,11,Ultra Insane,1,Sara,Ragz,405,30.0,3,False,Win,0,0,0,0,0,0
+89,2024-01-07,Test,Green,11,Ultra Insane,2,Ragz,Sara,315,50.0,2,True,Loss,0,0,0,0,0,0
+90,2024-06-07,T20,Dry,12,Ultra Insane,1,Vikram,Wizheart,184,20.0,0,False,Loss,0,0,0,0,0,0
+90,2024-06-07,T20,Dry,12,Ultra Insane,2,Wizheart,Vikram,196,5.0,5,True,Win,0,0,0,0,0,0
+91,2024-07-28,ODI,Dry,13,Hard,1,Nikita,Rohan,342,20.0,1,False,Loss,0,0,0,0,0,0
+91,2024-07-28,ODI,Dry,13,Hard,2,Rohan,Nikita,360,30.0,1,True,Win,0,0,0,0,0,0
+92,2024-09-25,T20,Dry,1,Ultra Insane,1,Sid,Leo,202,5.0,1,False,Win,0,0,0,0,0,0
+92,2024-09-25,T20,Dry,1,Ultra Insane,2,Leo,Sid,160,5.0,8,True,Loss,0,0,0,0,0,0
+93,2024-03-05,T20,Bouncy,2,Ultra Insane,1,Leo,Ragz,164,10.0,6,False,Loss,0,0,0,0,0,0
+93,2024-03-05,T20,Bouncy,2,Ultra Insane,2,Ragz,Leo,166,15.0,2,True,Win,0,0,0,0,0,0
+94,2024-10-19,T20,Normal,3,Insane,1,Vikram,Sara,222,5.0,6,False,Win,0,0,0,0,0,0
+94,2024-10-19,T20,Normal,3,Insane,2,Sara,Vikram,172,20.0,4,True,Loss,0,0,0,0,0,0
+95,2024-08-13,T20,Dry,4,Medium,1,Karthik,Sara,208,5.0,1,False,Loss,0,0,0,0,0,0
+95,2024-08-13,T20,Dry,4,Medium,2,Sara,Karthik,236,5.0,1,True,Win,0,0,0,0,0,0
+96,2024-01-09,ODI,Bouncy,5,Hard,1,Ragz,Wizheart,352,40.0,1,False,Loss,0,0,0,0,0,0
+96,2024-01-09,ODI,Bouncy,5,Hard,2,Wizheart,Ragz,480,30.0,3,True,Win,1,0,0,0,0,0
+97,2024-04-29,Test,Bouncy,6,Ultra Insane,1,Rohan,Zafi,432,30.0,2,False,Win,0,0,0,0,0,0
+97,2024-04-29,Test,Bouncy,6,Ultra Insane,2,Zafi,Rohan,378,50.0,2,True,Loss,0,0,0,0,0,0
+98,2024-08-13,ODI,Green,7,Hard,1,Leo,Nikita,307,50.0,3,False,Loss,0,0,0,0,0,0
+98,2024-08-13,ODI,Green,7,Hard,2,Nikita,Leo,315,30.0,2,True,Win,0,0,0,0,0,0
+99,2024-02-06,ODI,Green,8,Hard,1,Ragz,Sara,325,50.0,4,False,Loss,0,0,0,0,0,0
+99,2024-02-06,ODI,Green,8,Hard,2,Sara,Ragz,440,20.0,8,True,Win,1,0,0,0,0,0
+100,2024-07-09,T20,Normal,9,Medium,1,Nikita,Karthik,172,15.0,2,False,Loss,0,0,0,0,0,0
+100,2024-07-09,T20,Normal,9,Medium,2,Karthik,Nikita,244,15.0,0,True,Win,0,0,0,0,0,0
+101,2024-06-08,Test,Green,10,Medium,1,Vikram,Karthik,489,50.0,0,False,Win,1,0,0,0,0,0
+101,2024-06-08,Test,Green,10,Medium,2,Karthik,Vikram,459,40.0,2,True,Loss,1,0,0,0,0,0
+102,2024-08-11,Test,Green,11,Hard,1,Sid,Sara,414,30.0,2,False,Loss,0,0,0,0,0,0
+102,2024-08-11,Test,Green,11,Hard,2,Sara,Sid,492,60.0,1,True,Win,1,0,0,0,0,0
+103,2024-03-14,T20,Dry,12,Ultra Insane,1,Rohan,Vikram,170,5.0,4,False,Loss,0,0,0,0,0,0
+103,2024-03-14,T20,Dry,12,Ultra Insane,2,Vikram,Rohan,200,10.0,3,True,Win,0,0,0,0,0,0
+104,2024-07-11,ODI,Green,13,Hard,1,Leo,Sid,292,30.0,5,False,Loss,0,0,0,0,0,0
+104,2024-07-11,ODI,Green,13,Hard,2,Sid,Leo,347,40.0,0,True,Win,0,0,0,0,0,0
+105,2024-02-02,ODI,Dry,1,Hard,1,Sara,Arjun,445,30.0,1,False,Win,1,0,0,0,0,0
+105,2024-02-02,ODI,Dry,1,Hard,2,Arjun,Sara,290,30.0,3,True,Loss,0,0,0,0,0,0
+106,2024-02-08,T20,Green,2,Hard,1,Arjun,Sid,196,15.0,1,False,Loss,0,0,0,0,0,0
+106,2024-02-08,T20,Green,2,Hard,2,Sid,Arjun,238,10.0,1,True,Win,0,0,0,0,0,0
+107,2024-07-13,Test,Dry,3,Hard,1,Arjun,Anya,360,30.0,5,False,Win,0,0,0,0,0,0
+107,2024-07-13,Test,Dry,3,Hard,2,Anya,Arjun,336,40.0,1,True,Loss,0,0,0,0,0,0
+108,2024-11-15,ODI,Normal,4,Hard,1,Ragz,Karthik,265,20.0,3,False,Loss,0,0,0,0,0,0
+108,2024-11-15,ODI,Normal,4,Hard,2,Karthik,Ragz,420,20.0,0,True,Win,0,0,0,0,0,0
+109,2024-01-08,ODI,Bouncy,5,Hard,1,Zafi,Nikita,405,40.0,0,False,Win,0,0,0,0,0,0
+109,2024-01-08,ODI,Bouncy,5,Hard,2,Nikita,Zafi,0,20.0,1,True,Loss,0,0,0,0,0,1
+110,2024-11-11,ODI,Dry,6,Ultra Insane,1,Nikita,Wizheart,367,30.0,2,False,Loss,0,0,0,0,0,0
+110,2024-11-11,ODI,Dry,6,Ultra Insane,2,Wizheart,Nikita,377,50.0,3,True,Win,0,0,0,0,0,0
+111,2024-08-01,Test,Green,7,Ultra Insane,1,Rohan,Wizheart,366,40.0,3,False,Win,0,0,0,0,0,0
+111,2024-08-01,Test,Green,7,Ultra Insane,2,Wizheart,Rohan,303,40.0,4,True,Loss,0,0,0,0,0,0
+112,2024-10-15,T20,Green,8,Ultra Insane,1,Wizheart,Anya,166,20.0,3,False,Win,0,0,0,0,0,0
+112,2024-10-15,T20,Green,8,Ultra Insane,2,Anya,Wizheart,152,10.0,1,True,Loss,0,0,0,0,0,0
+113,2024-08-29,ODI,Green,9,Ultra Insane,1,Vikram,Leo,330,50.0,1,False,Win,0,0,0,0,0,0
+113,2024-08-29,ODI,Green,9,Ultra Insane,2,Leo,Vikram,250,20.0,2,True,Loss,0,0,0,0,0,0
+114,2024-12-24,T20,Bouncy,10,Ultra Insane,1,Karthik,Arjun,222,10.0,1,False,Win,0,0,0,0,0,0
+114,2024-12-24,T20,Bouncy,10,Ultra Insane,2,Arjun,Karthik,178,5.0,5,True,Loss,0,0,0,0,0,0
+115,2024-02-10,ODI,Green,11,Medium,1,Nikita,Anya,417,30.0,3,False,Win,0,0,0,0,0,0
+115,2024-02-10,ODI,Green,11,Medium,2,Anya,Nikita,332,30.0,2,True,Loss,0,0,0,0,0,0
+116,2024-10-23,T20,Green,12,Hard,1,Sid,Ragz,192,20.0,0,False,Loss,0,0,0,0,0,0
+116,2024-10-23,T20,Green,12,Hard,2,Ragz,Sid,198,15.0,3,True,Win,0,0,0,0,0,0
+117,2024-08-25,T20,Normal,13,Ultra Insane,1,Rohan,Leo,190,20.0,1,False,Win,0,0,0,0,0,0
+117,2024-08-25,T20,Normal,13,Ultra Insane,2,Leo,Rohan,176,20.0,6,True,Loss,0,0,0,0,0,0
+118,2024-02-04,T20,Normal,1,Medium,1,Sara,Nikita,246,5.0,3,False,Win,0,0,0,0,0,0
+118,2024-02-04,T20,Normal,1,Medium,2,Nikita,Sara,124,20.0,3,True,Loss,0,0,0,0,0,0
+119,2024-04-05,Test,Green,2,Hard,1,Wizheart,Arjun,603,30.0,4,False,Win,1,0,0,0,0,0
+119,2024-04-05,Test,Green,2,Hard,2,Arjun,Wizheart,327,50.0,2,True,Loss,0,0,0,0,0,0
+120,2024-01-18,ODI,Dry,3,Hard,1,Sid,Anya,322,50.0,3,False,Draw,0,0,0,0,0,0
+120,2024-01-18,ODI,Dry,3,Hard,2,Anya,Sid,322,30.0,2,True,Draw,0,0,0,0,0,0
+121,2024-02-10,ODI,Green,4,Insane,1,Nikita,Arjun,297,30.0,3,False,Win,0,0,0,0,0,0
+121,2024-02-10,ODI,Green,4,Insane,2,Arjun,Nikita,262,20.0,4,True,Loss,0,0,0,0,0,0
+122,2024-06-12,Test,Green,5,Medium,1,Leo,Vikram,342,30.0,2,False,Loss,0,0,0,0,0,0
+122,2024-06-12,Test,Green,5,Medium,2,Vikram,Leo,450,30.0,1,True,Win,1,0,0,0,0,0
+123,2024-09-13,Test,Dry,6,Hard,1,Sara,Zafi,522,30.0,2,False,Win,1,0,0,0,0,0
+123,2024-09-13,Test,Dry,6,Hard,2,Zafi,Sara,270,30.0,3,True,Loss,0,0,0,0,0,0
+124,2024-04-29,T20,Normal,7,Medium,1,Karthik,Leo,264,20.0,2,False,Win,0,0,0,0,0,0
+124,2024-04-29,T20,Normal,7,Medium,2,Leo,Karthik,188,10.0,0,True,Loss,0,0,0,0,0,0
+125,2024-10-19,Test,Bouncy,8,Hard,1,Ragz,Sid,381,60.0,1,False,Draw,0,0,0,0,0,0
+125,2024-10-19,Test,Bouncy,8,Hard,2,Sid,Ragz,381,50.0,2,True,Draw,0,0,0,0,0,0
+126,2024-10-02,T20,Normal,9,Hard,1,Sid,Arjun,270,5.0,0,False,Win,0,0,0,0,0,0
+126,2024-10-02,T20,Normal,9,Hard,2,Arjun,Sid,174,5.0,4,True,Loss,0,0,0,0,0,0
+127,2024-10-20,ODI,Bouncy,10,Medium,1,Ragz,Arjun,305,50.0,0,False,Loss,0,0,0,0,0,0
+127,2024-10-20,ODI,Bouncy,10,Medium,2,Arjun,Ragz,335,40.0,3,True,Win,0,0,0,0,0,0
+128,2024-10-16,Test,Normal,11,Insane,1,Rohan,Sara,351,30.0,3,False,Loss,0,0,0,0,0,0
+128,2024-10-16,Test,Normal,11,Insane,2,Sara,Rohan,552,60.0,7,True,Win,1,0,0,0,0,0
+129,2024-07-10,ODI,Green,12,Hard,1,Zafi,Rohan,360,30.0,2,False,Win,0,0,0,0,0,0
+129,2024-07-10,ODI,Green,12,Hard,2,Rohan,Zafi,312,40.0,3,True,Loss,0,0,0,0,0,0
+130,2024-04-11,T20,Bouncy,13,Medium,1,Leo,Arjun,212,15.0,3,False,Win,0,0,0,0,0,0
+130,2024-04-11,T20,Bouncy,13,Medium,2,Arjun,Leo,206,10.0,2,True,Loss,0,0,0,0,0,0
+131,2024-07-17,T20,Normal,1,Medium,1,Anya,Vikram,140,15.0,1,False,Loss,0,0,0,0,0,0
+131,2024-07-17,T20,Normal,1,Medium,2,Vikram,Anya,274,5.0,1,True,Win,0,0,0,0,0,0
+132,2024-09-23,ODI,Dry,2,Medium,1,Vikram,Sara,405,40.0,2,False,Win,0,0,0,0,0,0
+132,2024-09-23,ODI,Dry,2,Medium,2,Sara,Vikram,377,50.0,2,True,Loss,0,0,0,0,0,0
+133,2024-06-02,ODI,Normal,3,Ultra Insane,1,Sid,Zafi,250,20.0,7,False,Win,0,0,0,0,0,0
+133,2024-06-02,ODI,Normal,3,Ultra Insane,2,Zafi,Sid,192,40.0,2,True,Loss,0,0,0,0,0,0
+134,2024-10-07,ODI,Dry,4,Ultra Insane,1,Leo,Ragz,275,50.0,2,False,Loss,0,0,0,0,0,0
+134,2024-10-07,ODI,Dry,4,Ultra Insane,2,Ragz,Leo,317,50.0,4,True,Win,0,0,0,0,0,0
+135,2024-06-06,ODI,Bouncy,5,Insane,1,Rohan,Vikram,322,30.0,2,False,Loss,0,0,0,0,0,0
+135,2024-06-06,ODI,Bouncy,5,Insane,2,Vikram,Rohan,347,50.0,1,True,Win,0,0,0,0,0,0
+136,2024-03-11,ODI,Green,6,Ultra Insane,1,Leo,Rohan,287,40.0,5,False,Win,0,0,0,0,0,0
+136,2024-03-11,ODI,Green,6,Ultra Insane,2,Rohan,Leo,260,30.0,1,True,Loss,0,0,0,0,0,0
+137,2024-04-27,ODI,Dry,7,Hard,1,Zafi,Arjun,300,20.0,2,False,Loss,0,0,0,0,0,0
+137,2024-04-27,ODI,Dry,7,Hard,2,Arjun,Zafi,317,20.0,4,True,Win,0,0,0,0,0,0
+138,2024-05-31,ODI,Bouncy,8,Ultra Insane,1,Rohan,Leo,310,40.0,3,False,Loss,0,0,0,0,0,0
+138,2024-05-31,ODI,Bouncy,8,Ultra Insane,2,Leo,Rohan,317,20.0,3,True,Win,0,0,0,0,0,0
+139,2024-05-29,T20,Green,9,Insane,1,Wizheart,Sid,178,20.0,2,False,Win,0,0,0,0,0,0
+139,2024-05-29,T20,Green,9,Insane,2,Sid,Wizheart,168,5.0,3,True,Loss,0,0,0,0,0,0
+140,2024-03-25,ODI,Bouncy,10,Ultra Insane,1,Karthik,Anya,262,30.0,3,False,Win,0,0,0,0,0,0
+140,2024-03-25,ODI,Bouncy,10,Ultra Insane,2,Anya,Karthik,0,40.0,4,True,Loss,0,0,0,0,0,1
+141,2024-08-16,ODI,Dry,11,Insane,1,Rohan,Arjun,250,20.0,3,False,Loss,0,0,0,0,0,0
+141,2024-08-16,ODI,Dry,11,Insane,2,Arjun,Rohan,340,50.0,2,True,Win,0,0,0,0,0,0
+142,2024-05-28,T20,Normal,12,Hard,1,Zafi,Karthik,202,20.0,2,False,Loss,0,0,0,0,0,0
+142,2024-05-28,T20,Normal,12,Hard,2,Karthik,Zafi,244,10.0,0,True,Win,0,0,0,0,0,0
+143,2024-06-20,T20,Green,13,Ultra Insane,1,Vikram,Karthik,146,10.0,1,False,Loss,0,0,0,0,0,0
+143,2024-06-20,T20,Green,13,Ultra Insane,2,Karthik,Vikram,170,5.0,2,True,Win,0,0,0,0,0,0
+144,2024-07-26,T20,Green,1,Ultra Insane,1,Sid,Wizheart,178,10.0,5,False,Win,0,0,0,0,0,0
+144,2024-07-26,T20,Green,1,Ultra Insane,2,Wizheart,Sid,170,20.0,1,True,Loss,0,0,0,0,0,0
+145,2024-12-25,Test,Dry,2,Hard,1,Nikita,Karthik,465,60.0,2,False,Win,1,0,0,0,0,0
+145,2024-12-25,Test,Dry,2,Hard,2,Karthik,Nikita,441,50.0,3,True,Loss,0,0,0,0,0,0
+146,2024-05-21,ODI,Dry,3,Ultra Insane,1,Vikram,Leo,295,50.0,1,False,Win,0,0,0,0,0,0
+146,2024-05-21,ODI,Dry,3,Ultra Insane,2,Leo,Vikram,247,40.0,5,True,Loss,0,0,0,0,0,0
+147,2024-09-18,ODI,Green,4,Insane,1,Anya,Sid,297,40.0,2,False,Loss,0,0,0,0,0,0
+147,2024-09-18,ODI,Green,4,Insane,2,Sid,Anya,382,20.0,1,True,Win,0,0,0,0,0,0
+148,2024-10-17,ODI,Dry,5,Insane,1,Karthik,Zafi,365,30.0,1,False,Win,0,0,0,0,0,0
+148,2024-10-17,ODI,Dry,5,Insane,2,Zafi,Karthik,332,20.0,0,True,Loss,0,0,0,0,0,0
+149,2024-12-12,T20,Bouncy,6,Insane,1,Zafi,Vikram,208,10.0,3,False,Loss,0,0,0,0,0,0
+149,2024-12-12,T20,Bouncy,6,Insane,2,Vikram,Zafi,210,5.0,2,True,Win,0,0,0,0,0,0
+150,2024-01-25,T20,Bouncy,7,Hard,1,Karthik,Sid,196,5.0,0,False,Loss,0,0,0,0,0,0
+150,2024-01-25,T20,Bouncy,7,Hard,2,Sid,Karthik,198,5.0,1,True,Win,0,0,0,0,0,0
+151,2024-01-12,ODI,Dry,8,Medium,1,Karthik,Arjun,392,50.0,2,False,Win,0,0,0,0,0,0
+151,2024-01-12,ODI,Dry,8,Medium,2,Arjun,Karthik,287,40.0,1,True,Loss,0,0,0,0,0,0
+152,2024-09-10,Test,Dry,9,Hard,1,Arjun,Wizheart,306,40.0,0,False,Loss,0,0,0,0,0,0
+152,2024-09-10,Test,Dry,9,Hard,2,Wizheart,Arjun,519,50.0,1,True,Win,1,0,0,0,0,0
+153,2024-09-23,T20,Bouncy,10,Insane,1,Wizheart,Leo,230,10.0,2,False,Win,0,0,0,0,0,0
+153,2024-09-23,T20,Bouncy,10,Insane,2,Leo,Wizheart,164,5.0,2,True,Loss,0,0,0,0,0,0
+154,2024-09-08,T20,Dry,11,Hard,1,Sara,Sid,244,5.0,3,False,Win,0,0,0,0,0,0
+154,2024-09-08,T20,Dry,11,Hard,2,Sid,Sara,204,20.0,4,True,Loss,0,0,0,0,0,0
+155,2024-01-07,Test,Normal,12,Insane,1,Sid,Leo,438,50.0,2,False,Win,0,0,0,0,0,0
+155,2024-01-07,Test,Normal,12,Insane,2,Leo,Sid,315,40.0,3,True,Loss,0,0,0,0,0,0
+156,2024-11-09,ODI,Dry,13,Hard,1,Wizheart,Arjun,317,50.0,0,False,Win,0,0,0,0,0,0
+156,2024-11-09,ODI,Dry,13,Hard,2,Arjun,Wizheart,310,30.0,2,True,Loss,0,0,0,0,0,0
+157,2024-06-08,ODI,Normal,1,Medium,1,Nikita,Sid,257,50.0,2,False,Loss,0,0,0,0,0,0
+157,2024-06-08,ODI,Normal,1,Medium,2,Sid,Nikita,330,20.0,1,True,Win,0,0,0,0,0,0
+158,2024-02-21,Test,Normal,2,Hard,1,Ragz,Rohan,363,60.0,1,False,Loss,0,0,0,0,0,0
+158,2024-02-21,Test,Normal,2,Hard,2,Rohan,Ragz,453,40.0,2,True,Win,1,0,0,0,0,0
+159,2024-07-10,ODI,Normal,3,Hard,1,Zafi,Vikram,340,20.0,1,False,Loss,0,0,0,0,0,0
+159,2024-07-10,ODI,Normal,3,Hard,2,Vikram,Zafi,375,20.0,1,True,Win,0,0,0,0,0,0
+160,2024-08-19,ODI,Bouncy,4,Ultra Insane,1,Sid,Leo,305,20.0,2,False,Loss,0,0,0,0,0,0
+160,2024-08-19,ODI,Bouncy,4,Ultra Insane,2,Leo,Sid,332,20.0,2,True,Win,0,0,0,0,0,0
+161,2024-03-27,ODI,Green,5,Insane,1,Rohan,Leo,340,20.0,2,False,Loss,0,0,0,0,0,0
+161,2024-03-27,ODI,Green,5,Insane,2,Leo,Rohan,345,50.0,3,True,Win,0,0,0,0,0,0
+162,2024-07-29,Test,Normal,6,Hard,1,Sara,Karthik,459,50.0,3,False,Loss,1,0,0,0,0,0
+162,2024-07-29,Test,Normal,6,Hard,2,Karthik,Sara,492,40.0,0,True,Win,1,0,0,0,0,0
+163,2024-08-07,ODI,Normal,7,Hard,1,Karthik,Ragz,402,20.0,2,False,Win,0,0,0,0,0,0
+163,2024-08-07,ODI,Normal,7,Hard,2,Ragz,Karthik,287,20.0,1,True,Loss,0,0,0,0,0,0
+164,2024-04-14,T20,Normal,8,Hard,1,Wizheart,Nikita,238,5.0,2,False,Win,0,0,0,0,0,0
+164,2024-04-14,T20,Normal,8,Hard,2,Nikita,Wizheart,220,15.0,6,True,Loss,0,0,0,0,0,0
+165,2024-09-27,ODI,Green,9,Insane,1,Wizheart,Karthik,317,20.0,4,False,Win,0,0,0,0,0,0
+165,2024-09-27,ODI,Green,9,Insane,2,Karthik,Wizheart,262,50.0,1,True,Loss,0,0,0,0,0,0
+166,2024-05-01,ODI,Dry,10,Ultra Insane,1,Zafi,Sara,327,50.0,3,False,Loss,0,0,0,0,0,0
+166,2024-05-01,ODI,Dry,10,Ultra Insane,2,Sara,Zafi,332,30.0,5,True,Win,0,0,0,0,0,0
+167,2024-08-22,Test,Dry,11,Hard,1,Nikita,Zafi,369,30.0,3,False,Win,0,0,0,0,0,0
+167,2024-08-22,Test,Dry,11,Hard,2,Zafi,Nikita,357,60.0,3,True,Loss,0,0,0,0,0,0
+168,2024-01-03,T20,Bouncy,12,Hard,1,Arjun,Ragz,184,15.0,2,False,Win,0,0,0,0,0,0
+168,2024-01-03,T20,Bouncy,12,Hard,2,Ragz,Arjun,160,10.0,0,True,Loss,0,0,0,0,0,0
+169,2024-05-08,Test,Normal,13,Hard,1,Arjun,Rohan,336,60.0,3,False,Loss,0,0,0,0,0,0
+169,2024-05-08,Test,Normal,13,Hard,2,Rohan,Arjun,342,50.0,3,True,Win,0,0,0,0,0,0
+170,2024-03-26,T20,Dry,1,Ultra Insane,1,Zafi,Sid,132,10.0,3,False,Loss,0,0,0,0,0,0
+170,2024-03-26,T20,Dry,1,Ultra Insane,2,Sid,Zafi,202,15.0,2,True,Win,0,0,0,0,0,0
+171,2024-04-20,T20,Dry,2,Ultra Insane,1,Arjun,Vikram,192,5.0,1,False,Loss,0,0,0,0,0,0
+171,2024-04-20,T20,Dry,2,Ultra Insane,2,Vikram,Arjun,210,10.0,2,True,Win,0,0,0,0,0,0
+172,2024-02-07,T20,Green,3,Ultra Insane,1,Zafi,Rohan,218,10.0,2,False,Win,0,0,0,0,0,0
+172,2024-02-07,T20,Green,3,Ultra Insane,2,Rohan,Zafi,156,10.0,2,True,Loss,0,0,0,0,0,0
+173,2024-09-10,Test,Green,4,Insane,1,Rohan,Arjun,399,60.0,3,False,Win,0,0,0,0,0,0
+173,2024-09-10,Test,Green,4,Insane,2,Arjun,Rohan,345,40.0,5,True,Loss,0,0,0,0,0,0
+174,2024-06-21,Test,Normal,5,Hard,1,Sara,Rohan,507,60.0,1,False,Win,1,0,0,0,0,0
+174,2024-06-21,Test,Normal,5,Hard,2,Rohan,Sara,354,30.0,5,True,Loss,0,0,0,0,0,0
+175,2024-09-16,T20,Normal,6,Insane,1,Rohan,Wizheart,174,20.0,3,False,Loss,0,0,0,0,0,0
+175,2024-09-16,T20,Normal,6,Insane,2,Wizheart,Rohan,236,20.0,3,True,Win,0,0,0,0,0,0
+176,2024-04-16,Test,Green,7,Ultra Insane,1,Arjun,Ragz,366,30.0,3,False,Loss,0,0,0,0,0,0
+176,2024-04-16,Test,Green,7,Ultra Insane,2,Ragz,Arjun,417,50.0,3,True,Win,0,0,0,0,0,0
+177,2024-02-18,T20,Green,8,Ultra Insane,1,Zafi,Sid,114,5.0,1,False,Win,0,0,0,0,0,0
+177,2024-02-18,T20,Green,8,Ultra Insane,2,Sid,Zafi,0,15.0,3,True,Loss,0,0,0,0,0,1
+178,2024-10-23,ODI,Green,9,Insane,1,Anya,Sara,252,30.0,3,False,Loss,0,0,0,0,0,0
+178,2024-10-23,ODI,Green,9,Insane,2,Sara,Anya,357,50.0,0,True,Win,0,0,0,0,0,0
+179,2024-12-07,Test,Bouncy,10,Insane,1,Nikita,Sid,282,60.0,5,False,Loss,0,0,0,0,0,0
+179,2024-12-07,Test,Bouncy,10,Insane,2,Sid,Nikita,330,30.0,1,True,Win,0,0,0,0,0,0
+180,2024-03-24,ODI,Green,11,Medium,1,Sid,Zafi,260,30.0,2,False,Loss,0,0,0,0,0,0
+180,2024-03-24,ODI,Green,11,Medium,2,Zafi,Sid,380,50.0,1,True,Win,0,0,0,0,0,0
+181,2024-07-17,ODI,Dry,12,Insane,1,Zafi,Nikita,295,20.0,3,False,Win,0,0,0,0,0,0
+181,2024-07-17,ODI,Dry,12,Insane,2,Nikita,Zafi,272,40.0,2,True,Loss,0,0,0,0,0,0
+182,2024-12-10,T20,Normal,13,Ultra Insane,1,Nikita,Wizheart,0,5.0,1,False,Loss,0,0,0,0,0,1
+182,2024-12-10,T20,Normal,13,Ultra Insane,2,Wizheart,Nikita,260,20.0,2,True,Win,0,0,0,0,0,0
+183,2024-10-15,Test,Dry,1,Ultra Insane,1,Sara,Sid,465,30.0,5,False,Win,1,0,0,0,0,0
+183,2024-10-15,Test,Dry,1,Ultra Insane,2,Sid,Sara,234,30.0,6,True,Loss,0,0,0,0,0,0
+184,2024-12-09,Test,Bouncy,2,Insane,1,Vikram,Ragz,465,50.0,1,False,Win,1,0,0,0,0,0
+184,2024-12-09,Test,Bouncy,2,Insane,2,Ragz,Vikram,351,50.0,3,True,Loss,0,0,0,0,0,0
+185,2024-03-08,ODI,Green,3,Ultra Insane,1,Zafi,Wizheart,305,30.0,3,False,Draw,0,0,0,0,0,0
+185,2024-03-08,ODI,Green,3,Ultra Insane,2,Wizheart,Zafi,305,50.0,1,True,Draw,0,0,0,0,0,0
+186,2024-09-04,T20,Bouncy,4,Hard,1,Arjun,Vikram,146,10.0,3,False,Loss,0,0,0,0,0,0
+186,2024-09-04,T20,Bouncy,4,Hard,2,Vikram,Arjun,198,15.0,3,True,Win,0,0,0,0,0,0
+187,2024-03-14,Test,Green,5,Medium,1,Karthik,Zafi,510,60.0,3,False,Win,1,0,0,0,0,0
+187,2024-03-14,Test,Green,5,Medium,2,Zafi,Karthik,342,60.0,3,True,Loss,0,0,0,0,0,0
+188,2024-09-19,ODI,Normal,6,Hard,1,Sid,Arjun,330,50.0,2,False,Win,0,0,0,0,0,0
+188,2024-09-19,ODI,Normal,6,Hard,2,Arjun,Sid,290,40.0,4,True,Loss,0,0,0,0,0,0
+189,2024-10-28,T20,Dry,7,Ultra Insane,1,Sid,Leo,178,15.0,4,False,Draw,0,0,0,0,0,0
+189,2024-10-28,T20,Dry,7,Ultra Insane,2,Leo,Sid,178,15.0,3,True,Draw,0,0,0,0,0,0
+190,2024-07-14,Test,Green,8,Hard,1,Nikita,Karthik,342,30.0,3,False,Loss,0,0,0,0,0,0
+190,2024-07-14,Test,Green,8,Hard,2,Karthik,Nikita,462,40.0,2,True,Win,1,0,0,0,0,0
+191,2024-12-29,T20,Bouncy,9,Medium,1,Arjun,Nikita,160,20.0,3,False,Loss,0,0,0,0,0,0
+191,2024-12-29,T20,Bouncy,9,Medium,2,Nikita,Arjun,162,20.0,1,True,Win,0,0,0,0,0,0
+192,2024-06-11,ODI,Dry,10,Medium,1,Arjun,Leo,325,50.0,1,False,Loss,0,0,0,0,0,0
+192,2024-06-11,ODI,Dry,10,Medium,2,Leo,Arjun,342,40.0,3,True,Win,0,0,0,0,0,0
+193,2024-09-27,T20,Green,11,Hard,1,Sid,Vikram,174,15.0,3,False,Loss,0,0,0,0,0,0
+193,2024-09-27,T20,Green,11,Hard,2,Vikram,Sid,230,15.0,0,True,Win,0,0,0,0,0,0
+194,2024-05-27,ODI,Dry,12,Insane,1,Vikram,Leo,342,50.0,2,False,Win,0,0,0,0,0,0
+194,2024-05-27,ODI,Dry,12,Insane,2,Leo,Vikram,272,20.0,0,True,Loss,0,0,0,0,0,0
+195,2024-04-26,ODI,Green,13,Insane,1,Karthik,Leo,362,20.0,4,False,Win,0,0,0,0,0,0
+195,2024-04-26,ODI,Green,13,Insane,2,Leo,Karthik,302,20.0,1,True,Loss,0,0,0,0,0,0
+196,2024-03-31,T20,Green,1,Hard,1,Nikita,Wizheart,110,10.0,4,False,Loss,0,0,0,0,0,0
+196,2024-03-31,T20,Green,1,Hard,2,Wizheart,Nikita,140,20.0,0,True,Win,0,0,0,0,0,0
+197,2024-12-09,ODI,Green,2,Ultra Insane,1,Nikita,Sara,280,30.0,5,False,Loss,0,0,0,0,0,0
+197,2024-12-09,ODI,Green,2,Ultra Insane,2,Sara,Nikita,367,40.0,5,True,Win,0,0,0,0,0,0
+198,2024-04-29,T20,Bouncy,3,Ultra Insane,1,Wizheart,Ragz,134,10.0,2,False,Loss,0,0,0,0,0,0
+198,2024-04-29,T20,Bouncy,3,Ultra Insane,2,Ragz,Wizheart,190,10.0,1,True,Win,0,0,0,0,0,0
+199,2024-03-08,T20,Dry,4,Medium,1,Sid,Zafi,230,20.0,2,False,Loss,0,0,0,0,0,0
+199,2024-03-08,T20,Dry,4,Medium,2,Zafi,Sid,236,15.0,2,True,Win,0,0,0,0,0,0
+200,2024-09-24,T20,Green,5,Medium,1,Leo,Ragz,220,15.0,2,False,Win,0,0,0,0,0,0
+200,2024-09-24,T20,Green,5,Medium,2,Ragz,Leo,176,5.0,1,True,Loss,0,0,0,0,0,0
+201,2024-07-19,ODI,Bouncy,6,Medium,1,Sid,Arjun,315,20.0,1,False,Draw,0,0,0,0,0,0
+201,2024-07-19,ODI,Bouncy,6,Medium,2,Arjun,Sid,315,30.0,3,True,Draw,0,0,0,0,0,0
+202,2024-05-11,ODI,Green,7,Medium,1,Anya,Sara,250,40.0,1,False,Loss,0,0,0,0,0,0
+202,2024-05-11,ODI,Green,7,Medium,2,Sara,Anya,422,30.0,1,True,Win,0,0,0,0,0,0
+203,2024-12-12,T20,Green,8,Insane,1,Sara,Sid,254,15.0,0,False,Win,0,0,0,0,0,0
+203,2024-12-12,T20,Green,8,Insane,2,Sid,Sara,186,5.0,1,True,Loss,0,0,0,0,0,0
+204,2024-05-15,T20,Normal,9,Medium,1,Karthik,Sara,222,15.0,0,False,Win,0,0,0,0,0,0
+204,2024-05-15,T20,Normal,9,Medium,2,Sara,Karthik,184,15.0,2,True,Loss,0,0,0,0,0,0
+205,2024-07-07,T20,Dry,10,Hard,1,Leo,Zafi,192,10.0,2,False,Loss,0,0,0,0,0,0
+205,2024-07-07,T20,Dry,10,Hard,2,Zafi,Leo,200,20.0,3,True,Win,0,0,0,0,0,0
+206,2024-02-06,ODI,Normal,11,Medium,1,Sid,Ragz,325,20.0,1,False,Loss,0,0,0,0,0,0
+206,2024-02-06,ODI,Normal,11,Medium,2,Ragz,Sid,352,20.0,0,True,Win,0,0,0,0,0,0
+207,2024-07-10,T20,Dry,12,Medium,1,Wizheart,Anya,252,15.0,1,False,Win,0,0,0,0,0,0
+207,2024-07-10,T20,Dry,12,Medium,2,Anya,Wizheart,152,20.0,1,True,Loss,0,0,0,0,0,0
+208,2024-04-18,Test,Dry,13,Insane,1,Anya,Nikita,225,60.0,4,False,Loss,0,0,0,0,0,0
+208,2024-04-18,Test,Dry,13,Insane,2,Nikita,Anya,426,40.0,1,True,Win,0,0,0,0,0,0
+209,2024-06-23,Test,Bouncy,1,Ultra Insane,1,Rohan,Sara,297,60.0,3,False,Loss,0,0,0,0,0,0
+209,2024-06-23,Test,Bouncy,1,Ultra Insane,2,Sara,Rohan,432,60.0,5,True,Win,0,0,0,0,0,0
+210,2024-10-11,Test,Bouncy,2,Hard,1,Zafi,Rohan,414,30.0,2,False,Win,0,0,0,0,0,0
+210,2024-10-11,Test,Bouncy,2,Hard,2,Rohan,Zafi,393,30.0,3,True,Loss,0,0,0,0,0,0
+211,2024-01-02,ODI,Bouncy,3,Ultra Insane,1,Rohan,Ragz,295,20.0,1,False,Win,0,0,0,0,0,0
+211,2024-01-02,ODI,Bouncy,3,Ultra Insane,2,Ragz,Rohan,257,30.0,2,True,Loss,0,0,0,0,0,0
+212,2024-12-22,Test,Green,4,Insane,1,Sid,Arjun,348,30.0,2,False,Win,0,0,0,0,0,0
+212,2024-12-22,Test,Green,4,Insane,2,Arjun,Sid,345,30.0,4,True,Loss,0,0,0,0,0,0
+213,2024-05-01,T20,Normal,5,Ultra Insane,1,Arjun,Sara,198,10.0,6,False,Loss,0,0,0,0,0,0
+213,2024-05-01,T20,Normal,5,Ultra Insane,2,Sara,Arjun,200,5.0,0,True,Win,0,0,0,0,0,0
+214,2024-06-15,T20,Bouncy,6,Medium,1,Sid,Anya,208,10.0,0,False,Win,0,0,0,0,0,0
+214,2024-06-15,T20,Bouncy,6,Medium,2,Anya,Sid,124,20.0,2,True,Loss,0,0,0,0,0,0
+215,2024-07-20,T20,Dry,7,Ultra Insane,1,Leo,Arjun,204,20.0,4,False,Win,0,0,0,0,0,0
+215,2024-07-20,T20,Dry,7,Ultra Insane,2,Arjun,Leo,148,20.0,4,True,Loss,0,0,0,0,0,0
+216,2024-12-09,ODI,Dry,8,Hard,1,Nikita,Sid,257,40.0,1,False,Loss,0,0,0,0,0,0
+216,2024-12-09,ODI,Dry,8,Hard,2,Sid,Nikita,347,40.0,1,True,Win,0,0,0,0,0,0
+217,2024-11-01,Test,Bouncy,9,Ultra Insane,1,Rohan,Anya,318,40.0,2,False,Loss,0,0,0,0,0,0
+217,2024-11-01,Test,Bouncy,9,Ultra Insane,2,Anya,Rohan,387,40.0,4,True,Win,0,0,0,0,0,0
+218,2024-10-11,T20,Dry,10,Insane,1,Wizheart,Sara,178,5.0,0,False,Loss,0,0,0,0,0,0
+218,2024-10-11,T20,Dry,10,Insane,2,Sara,Wizheart,234,20.0,2,True,Win,0,0,0,0,0,0
+219,2024-10-31,ODI,Dry,11,Medium,1,Rohan,Sara,400,20.0,2,False,Loss,0,0,0,0,0,0
+219,2024-10-31,ODI,Dry,11,Medium,2,Sara,Rohan,432,50.0,1,True,Win,1,0,0,0,0,0
+220,2024-12-06,T20,Normal,12,Ultra Insane,1,Arjun,Karthik,132,10.0,5,False,Loss,0,0,0,0,0,0
+220,2024-12-06,T20,Normal,12,Ultra Insane,2,Karthik,Arjun,214,10.0,5,True,Win,0,0,0,0,0,0
+221,2024-09-06,T20,Dry,13,Hard,1,Sara,Karthik,224,15.0,0,False,Win,0,0,0,0,0,0
+221,2024-09-06,T20,Dry,13,Hard,2,Karthik,Sara,174,5.0,2,True,Loss,0,0,0,0,0,0
+222,2024-03-31,T20,Dry,1,Hard,1,Sara,Zafi,182,5.0,1,False,Loss,0,0,0,0,0,0
+222,2024-03-31,T20,Dry,1,Hard,2,Zafi,Sara,238,10.0,2,True,Win,0,0,0,0,0,0
+223,2024-01-20,T20,Normal,2,Insane,1,Sid,Wizheart,188,5.0,4,False,Win,0,0,0,0,0,0
+223,2024-01-20,T20,Normal,2,Insane,2,Wizheart,Sid,174,10.0,5,True,Loss,0,0,0,0,0,0
+224,2024-06-27,T20,Dry,3,Hard,1,Zafi,Arjun,184,5.0,4,False,Loss,0,0,0,0,0,0
+224,2024-06-27,T20,Dry,3,Hard,2,Arjun,Zafi,186,5.0,0,True,Win,0,0,0,0,0,0
+225,2024-12-02,ODI,Green,4,Hard,1,Karthik,Ragz,385,20.0,2,False,Win,0,0,0,0,0,0
+225,2024-12-02,ODI,Green,4,Hard,2,Ragz,Karthik,187,50.0,1,True,Loss,0,0,0,0,0,0
+226,2024-11-18,T20,Dry,5,Insane,1,Ragz,Arjun,264,10.0,4,False,Win,0,0,0,0,0,0
+226,2024-11-18,T20,Dry,5,Insane,2,Arjun,Ragz,182,10.0,0,True,Loss,0,0,0,0,0,0
+227,2024-01-19,ODI,Dry,6,Insane,1,Zafi,Sid,352,30.0,1,False,Win,0,0,0,0,0,0
+227,2024-01-19,ODI,Dry,6,Insane,2,Sid,Zafi,347,20.0,2,True,Loss,0,0,0,0,0,0
+228,2024-05-20,Test,Bouncy,7,Hard,1,Sara,Leo,498,60.0,1,False,Win,1,0,0,0,0,0
+228,2024-05-20,Test,Bouncy,7,Hard,2,Leo,Sara,360,50.0,1,True,Loss,0,0,0,0,0,0
+229,2024-09-16,ODI,Dry,8,Medium,1,Nikita,Wizheart,467,30.0,2,False,Win,1,0,0,0,0,0
+229,2024-09-16,ODI,Dry,8,Medium,2,Wizheart,Nikita,465,40.0,1,True,Loss,1,0,0,0,0,0
+230,2024-05-24,ODI,Normal,9,Ultra Insane,1,Anya,Sara,240,40.0,1,False,Loss,0,0,0,0,0,0
+230,2024-05-24,ODI,Normal,9,Ultra Insane,2,Sara,Anya,375,30.0,2,True,Win,0,0,0,0,0,0
+231,2024-10-21,T20,Dry,10,Ultra Insane,1,Sara,Anya,236,15.0,2,False,Win,0,0,0,0,0,0
+231,2024-10-21,T20,Dry,10,Ultra Insane,2,Anya,Sara,146,5.0,1,True,Loss,0,0,0,0,0,0
+232,2024-02-22,Test,Bouncy,11,Ultra Insane,1,Wizheart,Rohan,360,50.0,5,False,Win,0,0,0,0,0,0
+232,2024-02-22,Test,Bouncy,11,Ultra Insane,2,Rohan,Wizheart,342,60.0,3,True,Loss,0,0,0,0,0,0
+233,2024-11-30,T20,Dry,12,Hard,1,Sara,Zafi,204,10.0,3,False,Win,0,0,0,0,0,0
+233,2024-11-30,T20,Dry,12,Hard,2,Zafi,Sara,194,10.0,1,True,Loss,0,0,0,0,0,0
+234,2024-03-15,T20,Green,13,Insane,1,Sara,Nikita,196,5.0,0,False,Loss,0,0,0,0,0,0
+234,2024-03-15,T20,Green,13,Insane,2,Nikita,Sara,236,10.0,6,True,Win,0,0,0,0,0,0
+235,2024-11-15,Test,Bouncy,1,Medium,1,Wizheart,Arjun,543,30.0,5,False,Win,1,0,0,0,0,0
+235,2024-11-15,Test,Bouncy,1,Medium,2,Arjun,Wizheart,324,60.0,1,True,Loss,0,0,0,0,0,0
+236,2024-07-04,ODI,Normal,2,Medium,1,Karthik,Vikram,282,40.0,2,False,Loss,0,0,0,0,0,0
+236,2024-07-04,ODI,Normal,2,Medium,2,Vikram,Karthik,387,40.0,0,True,Win,0,0,0,0,0,0
+237,2024-08-22,Test,Green,3,Ultra Insane,1,Anya,Sara,246,30.0,3,False,Loss,0,0,0,0,0,0
+237,2024-08-22,Test,Green,3,Ultra Insane,2,Sara,Anya,372,60.0,2,True,Win,0,0,0,0,0,0
+238,2024-04-10,T20,Green,4,Hard,1,Nikita,Sara,192,10.0,2,False,Loss,0,0,0,0,0,0
+238,2024-04-10,T20,Green,4,Hard,2,Sara,Nikita,260,10.0,1,True,Win,0,0,0,0,0,0
+239,2024-01-13,Test,Green,5,Ultra Insane,1,Arjun,Wizheart,216,40.0,7,False,Loss,0,0,0,0,0,0
+239,2024-01-13,Test,Green,5,Ultra Insane,2,Wizheart,Arjun,504,30.0,3,True,Win,1,0,0,0,0,0
+240,2024-05-28,T20,Dry,6,Hard,1,Sid,Leo,174,20.0,2,False,Loss,0,0,0,0,0,0
+240,2024-05-28,T20,Dry,6,Hard,2,Leo,Sid,204,5.0,3,True,Win,0,0,0,0,0,0
+241,2024-03-14,Test,Dry,7,Medium,1,Sara,Anya,543,40.0,3,False,Win,1,0,0,0,0,0
+241,2024-03-14,Test,Dry,7,Medium,2,Anya,Sara,327,50.0,1,True,Loss,0,0,0,0,0,0
+242,2024-06-30,T20,Dry,8,Medium,1,Nikita,Arjun,202,20.0,3,False,Win,0,0,0,0,0,0
+242,2024-06-30,T20,Dry,8,Medium,2,Arjun,Nikita,182,20.0,1,True,Loss,0,0,0,0,0,0
+243,2024-04-01,Test,Normal,9,Ultra Insane,1,Zafi,Sara,330,40.0,1,False,Loss,0,0,0,0,0,0
+243,2024-04-01,Test,Normal,9,Ultra Insane,2,Sara,Zafi,468,30.0,1,True,Win,1,0,0,0,0,0
+244,2024-08-11,Test,Normal,10,Medium,1,Anya,Karthik,423,30.0,0,False,Loss,0,0,0,0,0,0
+244,2024-08-11,Test,Normal,10,Medium,2,Karthik,Anya,426,30.0,1,True,Win,0,0,0,0,0,0
+245,2024-02-12,Test,Bouncy,11,Medium,1,Vikram,Karthik,486,30.0,1,False,Win,1,0,0,0,0,0
+245,2024-02-12,Test,Bouncy,11,Medium,2,Karthik,Vikram,468,50.0,2,True,Loss,1,0,0,0,0,0
+246,2024-02-14,T20,Bouncy,12,Hard,1,Anya,Ragz,184,10.0,2,False,Loss,0,0,0,0,0,0
+246,2024-02-14,T20,Bouncy,12,Hard,2,Ragz,Anya,196,20.0,0,True,Win,0,0,0,0,0,0
+247,2024-03-30,T20,Normal,13,Insane,1,Ragz,Leo,182,20.0,1,False,Draw,0,0,0,0,0,0
+247,2024-03-30,T20,Normal,13,Insane,2,Leo,Ragz,182,5.0,5,True,Draw,0,0,0,0,0,0
+248,2024-12-04,T20,Dry,1,Hard,1,Zafi,Sara,188,15.0,2,False,Loss,0,0,0,0,0,0
+248,2024-12-04,T20,Dry,1,Hard,2,Sara,Zafi,252,5.0,2,True,Win,0,0,0,0,0,0
+249,2024-07-06,Test,Bouncy,2,Medium,1,Anya,Karthik,363,30.0,0,False,Loss,0,0,0,0,0,0
+249,2024-07-06,Test,Bouncy,2,Medium,2,Karthik,Anya,495,30.0,2,True,Win,1,0,0,0,0,0
+250,2024-09-04,T20,Dry,3,Medium,1,Ragz,Arjun,140,10.0,1,False,Loss,0,0,0,0,0,0
+250,2024-09-04,T20,Dry,3,Medium,2,Arjun,Ragz,170,10.0,1,True,Win,0,0,0,0,0,0
+251,2024-10-20,Test,Bouncy,4,Ultra Insane,1,Vikram,Zafi,372,40.0,2,False,Loss,0,0,0,0,0,0
+251,2024-10-20,Test,Bouncy,4,Ultra Insane,2,Zafi,Vikram,405,40.0,4,True,Win,0,0,0,0,0,0
+252,2024-11-26,T20,Normal,5,Ultra Insane,1,Sid,Anya,102,5.0,2,False,Loss,0,0,0,0,0,0
+252,2024-11-26,T20,Normal,5,Ultra Insane,2,Anya,Sid,180,20.0,5,True,Win,0,0,0,0,0,0
+253,2024-01-19,T20,Normal,6,Ultra Insane,1,Vikram,Karthik,198,15.0,6,False,Win,0,0,0,0,0,0
+253,2024-01-19,T20,Normal,6,Ultra Insane,2,Karthik,Vikram,168,10.0,4,True,Loss,0,0,0,0,0,0
+254,2024-04-03,T20,Normal,7,Insane,1,Sid,Sara,242,5.0,6,False,Win,0,0,0,0,0,0
+254,2024-04-03,T20,Normal,7,Insane,2,Sara,Sid,216,20.0,2,True,Loss,0,0,0,0,0,0
+255,2024-09-08,Test,Normal,8,Ultra Insane,1,Nikita,Leo,360,60.0,2,False,Win,0,0,0,0,0,0
+255,2024-09-08,Test,Normal,8,Ultra Insane,2,Leo,Nikita,342,50.0,1,True,Loss,0,0,0,0,0,0
+256,2024-08-15,T20,Normal,9,Ultra Insane,1,Leo,Sid,164,5.0,3,False,Loss,0,0,0,0,0,0
+256,2024-08-15,T20,Normal,9,Ultra Insane,2,Sid,Leo,202,10.0,5,True,Win,0,0,0,0,0,0
+257,2024-06-29,Test,Normal,10,Insane,1,Rohan,Ragz,402,50.0,3,False,Win,0,0,0,0,0,0
+257,2024-06-29,Test,Normal,10,Insane,2,Ragz,Rohan,333,50.0,1,True,Loss,0,0,0,0,0,0
+258,2024-07-11,Test,Bouncy,11,Insane,1,Rohan,Sara,372,30.0,2,False,Loss,0,0,0,0,0,0
+258,2024-07-11,Test,Bouncy,11,Insane,2,Sara,Rohan,408,60.0,3,True,Win,0,0,0,0,0,0
+259,2024-07-06,T20,Dry,12,Ultra Insane,1,Rohan,Vikram,168,15.0,3,False,Loss,0,0,0,0,0,0
+259,2024-07-06,T20,Dry,12,Ultra Insane,2,Vikram,Rohan,216,5.0,1,True,Win,0,0,0,0,0,0
+260,2024-04-21,ODI,Green,13,Ultra Insane,1,Zafi,Leo,290,40.0,4,False,Win,0,0,0,0,0,0
+260,2024-04-21,ODI,Green,13,Ultra Insane,2,Leo,Zafi,270,40.0,5,True,Loss,0,0,0,0,0,0
+261,2024-06-29,T20,Bouncy,1,Ultra Insane,1,Sid,Karthik,194,20.0,4,False,Win,0,0,0,0,0,0
+261,2024-06-29,T20,Bouncy,1,Ultra Insane,2,Karthik,Sid,184,10.0,0,True,Loss,0,0,0,0,0,0
+262,2024-05-17,ODI,Dry,2,Ultra Insane,1,Nikita,Leo,250,50.0,2,False,Win,0,0,0,0,0,0
+262,2024-05-17,ODI,Dry,2,Ultra Insane,2,Leo,Nikita,240,40.0,4,True,Loss,0,0,0,0,0,0
+263,2024-12-08,T20,Normal,3,Insane,1,Nikita,Anya,132,10.0,3,False,Win,0,0,0,0,0,0
+263,2024-12-08,T20,Normal,3,Insane,2,Anya,Nikita,110,15.0,2,True,Loss,0,0,0,0,0,0
+264,2024-01-22,T20,Dry,4,Insane,1,Ragz,Sara,138,5.0,2,False,Loss,0,0,0,0,0,0
+264,2024-01-22,T20,Dry,4,Insane,2,Sara,Ragz,228,20.0,4,True,Win,0,0,0,0,0,0
+265,2024-09-29,ODI,Normal,5,Medium,1,Zafi,Leo,337,50.0,0,False,Loss,0,0,0,0,0,0
+265,2024-09-29,ODI,Normal,5,Medium,2,Leo,Zafi,345,20.0,0,True,Win,0,0,0,0,0,0
+266,2024-11-16,ODI,Normal,6,Insane,1,Ragz,Vikram,200,40.0,6,False,Loss,0,0,0,0,0,0
+266,2024-11-16,ODI,Normal,6,Insane,2,Vikram,Ragz,352,40.0,2,True,Win,0,0,0,0,0,0
+267,2024-06-17,Test,Dry,7,Medium,1,Nikita,Anya,375,30.0,1,False,Win,0,0,0,0,0,0
+267,2024-06-17,Test,Dry,7,Medium,2,Anya,Nikita,309,30.0,3,True,Loss,0,0,0,0,0,0
+268,2024-03-05,T20,Green,8,Medium,1,Arjun,Rohan,160,5.0,3,False,Loss,0,0,0,0,0,0
+268,2024-03-05,T20,Green,8,Medium,2,Rohan,Arjun,192,20.0,0,True,Win,0,0,0,0,0,0
+269,2024-03-18,ODI,Dry,9,Medium,1,Rohan,Vikram,382,30.0,0,False,Loss,0,0,0,0,0,0
+269,2024-03-18,ODI,Dry,9,Medium,2,Vikram,Rohan,402,50.0,3,True,Win,0,0,0,0,0,0
+270,2024-12-04,Test,Bouncy,10,Ultra Insane,1,Karthik,Zafi,459,30.0,3,False,Win,1,0,0,0,0,0
+270,2024-12-04,Test,Bouncy,10,Ultra Insane,2,Zafi,Karthik,318,60.0,5,True,Loss,0,0,0,0,0,0
+271,2024-01-22,ODI,Dry,11,Medium,1,Arjun,Rohan,292,40.0,4,False,Loss,0,0,0,0,0,0
+271,2024-01-22,ODI,Dry,11,Medium,2,Rohan,Arjun,342,50.0,1,True,Win,0,0,0,0,0,0
+272,2024-04-22,Test,Green,12,Medium,1,Rohan,Sara,360,60.0,1,False,Loss,0,0,0,0,0,0
+272,2024-04-22,Test,Green,12,Medium,2,Sara,Rohan,471,30.0,3,True,Win,1,0,0,0,0,0
+273,2024-02-02,T20,Dry,13,Medium,1,Ragz,Arjun,192,10.0,1,False,Win,0,0,0,0,0,0
+273,2024-02-02,T20,Dry,13,Medium,2,Arjun,Ragz,172,10.0,3,True,Loss,0,0,0,0,0,0
+274,2024-03-19,T20,Dry,1,Insane,1,Anya,Wizheart,146,15.0,1,False,Loss,0,0,0,0,0,0
+274,2024-03-19,T20,Dry,1,Insane,2,Wizheart,Anya,166,5.0,3,True,Win,0,0,0,0,0,0
+275,2024-03-02,Test,Bouncy,2,Ultra Insane,1,Zafi,Ragz,339,30.0,3,False,Win,0,0,0,0,0,0
+275,2024-03-02,Test,Bouncy,2,Ultra Insane,2,Ragz,Zafi,327,30.0,2,True,Loss,0,0,0,0,0,0
+276,2024-12-10,T20,Normal,3,Medium,1,Leo,Vikram,164,15.0,3,False,Loss,0,0,0,0,0,0
+276,2024-12-10,T20,Normal,3,Medium,2,Vikram,Leo,210,5.0,1,True,Win,0,0,0,0,0,0
+277,2024-02-10,Test,Green,4,Ultra Insane,1,Sid,Anya,327,40.0,1,False,Loss,0,0,0,0,0,0
+277,2024-02-10,Test,Green,4,Ultra Insane,2,Anya,Sid,405,30.0,0,True,Win,0,0,0,0,0,0
+278,2024-11-18,Test,Dry,5,Insane,1,Leo,Anya,369,40.0,3,False,Win,0,0,0,0,0,0
+278,2024-11-18,Test,Dry,5,Insane,2,Anya,Leo,228,60.0,0,True,Loss,0,0,0,0,0,0
+279,2024-03-05,T20,Normal,6,Medium,1,Ragz,Leo,194,15.0,2,False,Loss,0,0,0,0,0,0
+279,2024-03-05,T20,Normal,6,Medium,2,Leo,Ragz,202,20.0,3,True,Win,0,0,0,0,0,0
+280,2024-03-23,T20,Normal,7,Medium,1,Arjun,Sid,206,5.0,2,False,Win,0,0,0,0,0,0
+280,2024-03-23,T20,Normal,7,Medium,2,Sid,Arjun,186,10.0,0,True,Loss,0,0,0,0,0,0
+281,2024-10-09,T20,Green,8,Ultra Insane,1,Rohan,Sid,194,10.0,3,False,Win,0,0,0,0,0,0
+281,2024-10-09,T20,Green,8,Ultra Insane,2,Sid,Rohan,170,15.0,1,True,Loss,0,0,0,0,0,0
+282,2024-09-04,ODI,Dry,9,Hard,1,Vikram,Zafi,417,50.0,1,False,Win,0,0,0,0,0,0
+282,2024-09-04,ODI,Dry,9,Hard,2,Zafi,Vikram,387,50.0,2,True,Loss,0,0,0,0,0,0
+283,2024-02-16,ODI,Green,10,Medium,1,Arjun,Sara,292,50.0,1,False,Loss,0,0,0,0,0,0
+283,2024-02-16,ODI,Green,10,Medium,2,Sara,Arjun,392,50.0,1,True,Win,0,0,0,0,0,0
+284,2024-11-13,T20,Green,11,Insane,1,Wizheart,Karthik,280,10.0,3,False,Win,0,0,0,0,0,0
+284,2024-11-13,T20,Green,11,Insane,2,Karthik,Wizheart,256,20.0,2,True,Loss,0,0,0,0,0,0
+285,2024-12-23,ODI,Normal,12,Medium,1,Karthik,Arjun,422,20.0,1,False,Win,0,0,0,0,0,0
+285,2024-12-23,ODI,Normal,12,Medium,2,Arjun,Karthik,295,40.0,1,True,Loss,0,0,0,0,0,0
+286,2024-10-10,Test,Bouncy,13,Insane,1,Arjun,Anya,333,30.0,4,False,Loss,0,0,0,0,0,0
+286,2024-10-10,Test,Bouncy,13,Insane,2,Anya,Arjun,348,40.0,2,True,Win,0,0,0,0,0,0
+287,2024-11-30,Test,Normal,1,Ultra Insane,1,Leo,Nikita,309,60.0,4,False,Win,0,0,0,0,0,0
+287,2024-11-30,Test,Normal,1,Ultra Insane,2,Nikita,Leo,0,50.0,3,True,Loss,0,0,0,0,0,1
+288,2024-08-29,Test,Bouncy,2,Ultra Insane,1,Vikram,Karthik,354,30.0,1,False,Win,0,0,0,0,0,0
+288,2024-08-29,Test,Bouncy,2,Ultra Insane,2,Karthik,Vikram,345,40.0,6,True,Loss,0,0,0,0,0,0
+289,2024-05-19,T20,Dry,3,Medium,1,Nikita,Wizheart,280,20.0,1,False,Win,0,0,0,0,0,0
+289,2024-05-19,T20,Dry,3,Medium,2,Wizheart,Nikita,168,10.0,5,True,Loss,0,0,0,0,0,0
+290,2024-06-25,ODI,Normal,4,Ultra Insane,1,Zafi,Anya,235,30.0,2,False,Win,0,0,0,0,0,0
+290,2024-06-25,ODI,Normal,4,Ultra Insane,2,Anya,Zafi,222,20.0,3,True,Loss,0,0,0,0,0,0
+291,2024-03-16,T20,Green,5,Ultra Insane,1,Leo,Sara,0,15.0,0,False,Loss,0,0,0,0,0,1
+291,2024-03-16,T20,Green,5,Ultra Insane,2,Sara,Leo,172,5.0,2,True,Win,0,0,0,0,0,0
+292,2024-02-15,ODI,Dry,6,Medium,1,Nikita,Wizheart,317,50.0,0,False,Loss,0,0,0,0,0,0
+292,2024-02-15,ODI,Dry,6,Medium,2,Wizheart,Nikita,407,50.0,3,True,Win,0,0,0,0,0,0
+293,2024-09-02,ODI,Bouncy,7,Ultra Insane,1,Leo,Anya,242,20.0,5,False,Win,0,0,0,0,0,0
+293,2024-09-02,ODI,Bouncy,7,Ultra Insane,2,Anya,Leo,0,30.0,2,True,Loss,0,0,0,0,0,1
+294,2024-09-02,Test,Green,8,Medium,1,Karthik,Nikita,429,50.0,3,False,Win,0,0,0,0,0,0
+294,2024-09-02,Test,Green,8,Medium,2,Nikita,Karthik,351,40.0,3,True,Loss,0,0,0,0,0,0
+295,2024-12-19,T20,Green,9,Medium,1,Nikita,Arjun,280,15.0,0,False,Win,1,0,0,0,0,0
+295,2024-12-19,T20,Green,9,Medium,2,Arjun,Nikita,224,15.0,0,True,Loss,0,0,0,0,0,0
+296,2024-09-01,T20,Dry,10,Hard,1,Anya,Ragz,166,20.0,2,False,Loss,0,0,0,0,0,0
+296,2024-09-01,T20,Dry,10,Hard,2,Ragz,Anya,218,10.0,2,True,Win,0,0,0,0,0,0
+297,2024-11-04,Test,Normal,11,Hard,1,Anya,Leo,318,30.0,3,False,Draw,0,0,0,0,0,0
+297,2024-11-04,Test,Normal,11,Hard,2,Leo,Anya,318,30.0,5,True,Draw,0,0,0,0,0,0
+298,2024-12-29,T20,Bouncy,12,Hard,1,Zafi,Ragz,198,15.0,3,False,Win,0,0,0,0,0,0
+298,2024-12-29,T20,Bouncy,12,Hard,2,Ragz,Zafi,124,15.0,0,True,Loss,0,0,0,0,0,0
+299,2024-01-30,ODI,Bouncy,13,Hard,1,Rohan,Ragz,317,20.0,2,False,Loss,0,0,0,0,0,0
+299,2024-01-30,ODI,Bouncy,13,Hard,2,Ragz,Rohan,367,20.0,4,True,Win,0,0,0,0,0,0
+300,2024-08-08,T20,Normal,1,Hard,1,Sara,Sid,236,15.0,0,False,Win,0,0,0,0,0,0
+300,2024-08-08,T20,Normal,1,Hard,2,Sid,Sara,186,10.0,1,True,Loss,0,0,0,0,0,0
+301,2024-03-02,ODI,Green,2,Insane,1,Sara,Anya,447,50.0,2,False,Win,1,0,0,0,0,0
+301,2024-03-02,ODI,Green,2,Insane,2,Anya,Sara,262,40.0,4,True,Loss,0,0,0,0,0,0
+302,2024-07-25,Test,Green,3,Medium,1,Sid,Leo,504,60.0,3,False,Win,1,0,0,0,0,0
+302,2024-07-25,Test,Green,3,Medium,2,Leo,Sid,396,30.0,1,True,Loss,0,0,0,0,0,0
+303,2024-02-28,T20,Dry,4,Insane,1,Rohan,Wizheart,148,15.0,1,False,Loss,0,0,0,0,0,0
+303,2024-02-28,T20,Dry,4,Insane,2,Wizheart,Rohan,280,20.0,6,True,Win,0,0,0,0,0,0
+304,2024-06-18,ODI,Normal,5,Insane,1,Sid,Leo,285,20.0,1,False,Loss,0,0,0,0,0,0
+304,2024-06-18,ODI,Normal,5,Insane,2,Leo,Sid,332,50.0,7,True,Win,0,0,0,0,0,0
+305,2024-12-11,Test,Normal,6,Insane,1,Arjun,Zafi,366,50.0,2,False,Loss,0,0,0,0,0,0
+305,2024-12-11,Test,Normal,6,Insane,2,Zafi,Arjun,378,40.0,4,True,Win,0,0,0,0,0,0
+306,2024-04-19,T20,Normal,7,Ultra Insane,1,Sid,Rohan,216,5.0,0,False,Win,0,0,0,0,0,0
+306,2024-04-19,T20,Normal,7,Ultra Insane,2,Rohan,Sid,188,5.0,4,True,Loss,0,0,0,0,0,0
+307,2024-12-22,T20,Normal,8,Ultra Insane,1,Rohan,Sara,144,20.0,0,False,Win,0,0,0,0,0,0
+307,2024-12-22,T20,Normal,8,Ultra Insane,2,Sara,Rohan,142,15.0,5,True,Loss,0,0,0,0,0,0
+308,2024-06-24,Test,Dry,9,Ultra Insane,1,Vikram,Ragz,330,40.0,4,False,Win,0,0,0,0,0,0
+308,2024-06-24,Test,Dry,9,Ultra Insane,2,Ragz,Vikram,306,60.0,2,True,Loss,0,0,0,0,0,0
+309,2024-06-24,Test,Green,10,Medium,1,Anya,Zafi,390,50.0,2,False,Loss,0,0,0,0,0,0
+309,2024-06-24,Test,Green,10,Medium,2,Zafi,Anya,426,50.0,1,True,Win,0,0,0,0,0,0
+310,2024-10-17,T20,Bouncy,11,Medium,1,Karthik,Sid,222,20.0,0,False,Win,0,0,0,0,0,0
+310,2024-10-17,T20,Bouncy,11,Medium,2,Sid,Karthik,214,5.0,0,True,Loss,0,0,0,0,0,0
+311,2024-06-14,ODI,Bouncy,12,Insane,1,Anya,Arjun,310,40.0,1,False,Loss,0,0,0,0,0,0
+311,2024-06-14,ODI,Bouncy,12,Insane,2,Arjun,Anya,332,40.0,1,True,Win,0,0,0,0,0,0
+312,2024-01-03,ODI,Green,13,Insane,1,Sara,Rohan,300,50.0,1,False,Win,0,0,0,0,0,0
+312,2024-01-03,ODI,Green,13,Insane,2,Rohan,Sara,255,20.0,4,True,Loss,0,0,0,0,0,0
+313,2024-07-29,Test,Dry,1,Medium,1,Anya,Zafi,363,50.0,0,False,Win,0,0,0,0,0,0
+313,2024-07-29,Test,Dry,1,Medium,2,Zafi,Anya,246,50.0,2,True,Loss,0,0,0,0,0,0
+314,2024-06-18,T20,Green,2,Insane,1,Arjun,Sara,170,20.0,4,False,Loss,0,0,0,0,0,0
+314,2024-06-18,T20,Green,2,Insane,2,Sara,Arjun,248,15.0,2,True,Win,0,0,0,0,0,0
+315,2024-12-10,T20,Bouncy,3,Insane,1,Zafi,Rohan,180,5.0,3,False,Win,0,0,0,0,0,0
+315,2024-12-10,T20,Bouncy,3,Insane,2,Rohan,Zafi,162,10.0,3,True,Loss,0,0,0,0,0,0
+316,2024-04-21,T20,Bouncy,4,Insane,1,Arjun,Sara,210,5.0,6,False,Loss,0,0,0,0,0,0
+316,2024-04-21,T20,Bouncy,4,Insane,2,Sara,Arjun,252,5.0,2,True,Win,0,0,0,0,0,0
+317,2024-03-15,T20,Green,5,Hard,1,Rohan,Zafi,200,20.0,1,False,Win,0,0,0,0,0,0
+317,2024-03-15,T20,Green,5,Hard,2,Zafi,Rohan,150,10.0,0,True,Loss,0,0,0,0,0,0
+318,2024-05-07,ODI,Green,6,Insane,1,Ragz,Sara,255,50.0,3,False,Loss,0,0,0,0,0,0
+318,2024-05-07,ODI,Green,6,Insane,2,Sara,Ragz,400,50.0,2,True,Win,0,0,0,0,0,0
+319,2024-10-19,T20,Normal,7,Ultra Insane,1,Vikram,Anya,216,10.0,3,False,Loss,0,0,0,0,0,0
+319,2024-10-19,T20,Normal,7,Ultra Insane,2,Anya,Vikram,224,20.0,0,True,Win,0,0,0,0,0,0
+320,2024-04-28,Test,Dry,8,Insane,1,Ragz,Karthik,369,60.0,1,False,Loss,0,0,0,0,0,0
+320,2024-04-28,Test,Dry,8,Insane,2,Karthik,Ragz,417,50.0,2,True,Win,0,0,0,0,0,0
+321,2024-09-07,ODI,Green,9,Hard,1,Karthik,Ragz,357,50.0,2,False,Win,0,0,0,0,0,0
+321,2024-09-07,ODI,Green,9,Hard,2,Ragz,Karthik,287,50.0,1,True,Loss,0,0,0,0,0,0
+322,2024-12-25,Test,Normal,10,Insane,1,Zafi,Vikram,258,50.0,1,False,Loss,0,0,0,0,0,0
+322,2024-12-25,Test,Normal,10,Insane,2,Vikram,Zafi,375,50.0,1,True,Win,0,0,0,0,0,0
+323,2024-01-13,T20,Normal,11,Insane,1,Rohan,Ragz,190,20.0,0,False,Loss,0,0,0,0,0,0
+323,2024-01-13,T20,Normal,11,Insane,2,Ragz,Rohan,192,20.0,1,True,Win,0,0,0,0,0,0
+324,2024-05-09,T20,Green,12,Hard,1,Ragz,Leo,212,15.0,1,False,Win,0,0,0,0,0,0
+324,2024-05-09,T20,Green,12,Hard,2,Leo,Ragz,128,10.0,3,True,Loss,0,0,0,0,0,0
+325,2024-11-11,T20,Bouncy,13,Ultra Insane,1,Wizheart,Nikita,202,10.0,5,False,Loss,0,0,0,0,0,0
+325,2024-11-11,T20,Bouncy,13,Ultra Insane,2,Nikita,Wizheart,222,5.0,6,True,Win,0,0,0,0,0,0
+326,2024-12-02,ODI,Bouncy,1,Ultra Insane,1,Rohan,Arjun,282,50.0,3,False,Loss,0,0,0,0,0,0
+326,2024-12-02,ODI,Bouncy,1,Ultra Insane,2,Arjun,Rohan,302,50.0,4,True,Win,0,0,0,0,0,0
+327,2024-10-21,T20,Green,2,Hard,1,Vikram,Karthik,232,20.0,5,False,Win,0,0,0,0,0,0
+327,2024-10-21,T20,Green,2,Hard,2,Karthik,Vikram,130,10.0,1,True,Loss,0,0,0,0,0,0
+328,2024-02-08,ODI,Green,3,Hard,1,Anya,Sara,370,50.0,0,False,Win,0,0,0,0,0,0
+328,2024-02-08,ODI,Green,3,Hard,2,Sara,Anya,347,30.0,3,True,Loss,0,0,0,0,0,0
+329,2024-09-02,T20,Green,4,Ultra Insane,1,Arjun,Nikita,166,10.0,4,False,Loss,0,0,0,0,0,0
+329,2024-09-02,T20,Green,4,Ultra Insane,2,Nikita,Arjun,212,10.0,1,True,Win,0,0,0,0,0,0
+330,2024-06-25,T20,Green,5,Hard,1,Karthik,Rohan,230,15.0,1,False,Win,0,0,0,0,0,0
+330,2024-06-25,T20,Green,5,Hard,2,Rohan,Karthik,208,5.0,2,True,Loss,0,0,0,0,0,0
+331,2024-01-13,Test,Dry,6,Medium,1,Sara,Sid,543,30.0,2,False,Win,1,0,0,0,0,0
+331,2024-01-13,Test,Dry,6,Medium,2,Sid,Sara,453,30.0,1,True,Loss,1,0,0,0,0,0
+332,2024-02-27,ODI,Normal,7,Medium,1,Arjun,Zafi,287,50.0,2,False,Loss,0,0,0,0,0,0
+332,2024-02-27,ODI,Normal,7,Medium,2,Zafi,Arjun,292,20.0,4,True,Win,0,0,0,0,0,0
+333,2024-10-12,Test,Dry,8,Ultra Insane,1,Vikram,Ragz,375,50.0,4,False,Win,0,0,0,0,0,0
+333,2024-10-12,Test,Dry,8,Ultra Insane,2,Ragz,Vikram,357,30.0,4,True,Loss,0,0,0,0,0,0
+334,2024-06-28,ODI,Normal,9,Hard,1,Sid,Anya,257,30.0,1,False,Loss,0,0,0,0,0,0
+334,2024-06-28,ODI,Normal,9,Hard,2,Anya,Sid,382,40.0,2,True,Win,0,0,0,0,0,0
+335,2024-05-19,Test,Green,10,Medium,1,Nikita,Vikram,411,30.0,0,False,Loss,0,0,0,0,0,0
+335,2024-05-19,Test,Green,10,Medium,2,Vikram,Nikita,483,50.0,0,True,Win,1,0,0,0,0,0
+336,2024-11-16,ODI,Bouncy,11,Ultra Insane,1,Zafi,Anya,260,40.0,3,False,Loss,0,0,0,0,0,0
+336,2024-11-16,ODI,Bouncy,11,Ultra Insane,2,Anya,Zafi,332,20.0,4,True,Win,0,0,0,0,0,0
+337,2024-07-10,Test,Normal,12,Insane,1,Zafi,Sara,441,50.0,2,False,Loss,0,0,0,0,0,0
+337,2024-07-10,Test,Normal,12,Insane,2,Sara,Zafi,459,50.0,1,True,Win,1,0,0,0,0,0
+338,2024-12-24,ODI,Bouncy,13,Hard,1,Wizheart,Arjun,480,50.0,1,False,Win,1,0,0,0,0,0
+338,2024-12-24,ODI,Bouncy,13,Hard,2,Arjun,Wizheart,337,30.0,4,True,Loss,0,0,0,0,0,0
+339,2024-02-27,ODI,Bouncy,1,Ultra Insane,1,Sid,Rohan,342,20.0,3,False,Loss,0,0,0,0,0,0
+339,2024-02-27,ODI,Bouncy,1,Ultra Insane,2,Rohan,Sid,347,40.0,3,True,Win,0,0,0,0,0,0
+340,2024-07-26,Test,Normal,2,Medium,1,Arjun,Karthik,324,40.0,3,False,Loss,0,0,0,0,0,0
+340,2024-07-26,Test,Normal,2,Medium,2,Karthik,Arjun,480,40.0,0,True,Win,1,0,0,0,0,0
+341,2024-03-13,Test,Green,3,Medium,1,Arjun,Karthik,315,40.0,0,False,Loss,0,0,0,0,0,0
+341,2024-03-13,Test,Green,3,Medium,2,Karthik,Arjun,507,60.0,2,True,Win,1,0,0,0,0,0
+342,2024-09-27,ODI,Normal,4,Medium,1,Karthik,Nikita,407,40.0,1,False,Win,0,0,0,0,0,0
+342,2024-09-27,ODI,Normal,4,Medium,2,Nikita,Karthik,275,40.0,2,True,Loss,0,0,0,0,0,0
+343,2024-06-24,T20,Green,5,Medium,1,Zafi,Sid,190,15.0,5,False,Win,0,0,0,0,0,0
+343,2024-06-24,T20,Green,5,Medium,2,Sid,Zafi,184,5.0,1,True,Loss,0,0,0,0,0,0
+344,2024-05-22,T20,Normal,6,Hard,1,Leo,Ragz,208,10.0,1,False,Win,0,0,0,0,0,0
+344,2024-05-22,T20,Normal,6,Hard,2,Ragz,Leo,132,5.0,1,True,Loss,0,0,0,0,0,0
+345,2024-12-28,ODI,Green,7,Medium,1,Rohan,Anya,310,50.0,3,False,Loss,0,0,0,0,0,0
+345,2024-12-28,ODI,Green,7,Medium,2,Anya,Rohan,312,30.0,1,True,Win,0,0,0,0,0,0
+346,2024-07-21,Test,Green,8,Hard,1,Sara,Leo,477,30.0,0,False,Win,1,0,0,0,0,0
+346,2024-07-21,Test,Green,8,Hard,2,Leo,Sara,363,30.0,2,True,Loss,0,0,0,0,0,0
+347,2024-03-13,Test,Dry,9,Medium,1,Vikram,Leo,537,50.0,0,False,Win,1,0,0,0,0,0
+347,2024-03-13,Test,Dry,9,Medium,2,Leo,Vikram,405,40.0,3,True,Loss,0,0,0,0,0,0
+348,2024-08-07,T20,Normal,10,Ultra Insane,1,Sid,Wizheart,158,10.0,1,False,Loss,0,0,0,0,0,0
+348,2024-08-07,T20,Normal,10,Ultra Insane,2,Wizheart,Sid,242,5.0,4,True,Win,0,0,0,0,0,0
+349,2024-07-09,T20,Green,11,Insane,1,Arjun,Wizheart,198,10.0,3,False,Loss,0,0,0,0,0,0
+349,2024-07-09,T20,Green,11,Insane,2,Wizheart,Arjun,204,15.0,1,True,Win,0,0,0,0,0,0
+350,2024-05-20,ODI,Normal,12,Insane,1,Karthik,Sara,322,20.0,2,False,Loss,0,0,0,0,0,0
+350,2024-05-20,ODI,Normal,12,Insane,2,Sara,Karthik,417,50.0,4,True,Win,0,0,0,0,0,0
+351,2024-06-11,T20,Normal,13,Insane,1,Ragz,Wizheart,194,20.0,0,False,Loss,0,0,0,0,0,0
+351,2024-06-11,T20,Normal,13,Insane,2,Wizheart,Ragz,280,5.0,3,True,Win,1,0,0,0,0,0
+352,2024-09-29,ODI,Dry,1,Hard,1,Sara,Sid,382,20.0,1,False,Win,0,0,0,0,0,0
+352,2024-09-29,ODI,Dry,1,Hard,2,Sid,Sara,350,40.0,1,True,Loss,0,0,0,0,0,0
+353,2024-12-02,T20,Green,2,Hard,1,Ragz,Zafi,218,15.0,3,False,Win,0,0,0,0,0,0
+353,2024-12-02,T20,Green,2,Hard,2,Zafi,Ragz,0,5.0,5,True,Loss,0,0,0,0,0,1
+354,2024-08-26,T20,Green,3,Medium,1,Arjun,Karthik,178,10.0,1,False,Loss,0,0,0,0,0,0
+354,2024-08-26,T20,Green,3,Medium,2,Karthik,Arjun,218,5.0,0,True,Win,0,0,0,0,0,0
+355,2024-12-17,Test,Bouncy,4,Medium,1,Anya,Arjun,306,30.0,2,False,Loss,0,0,0,0,0,0
+355,2024-12-17,Test,Bouncy,4,Medium,2,Arjun,Anya,375,50.0,3,True,Win,0,0,0,0,0,0
+356,2024-05-04,T20,Green,5,Ultra Insane,1,Arjun,Wizheart,148,5.0,1,False,Loss,0,0,0,0,0,0
+356,2024-05-04,T20,Green,5,Ultra Insane,2,Wizheart,Arjun,198,5.0,5,True,Win,0,0,0,0,0,0
+357,2024-05-01,T20,Bouncy,6,Insane,1,Anya,Wizheart,0,5.0,3,False,Loss,0,0,0,0,0,1
+357,2024-05-01,T20,Bouncy,6,Insane,2,Wizheart,Anya,176,20.0,4,True,Win,0,0,0,0,0,0
+358,2024-04-15,T20,Dry,7,Insane,1,Zafi,Anya,222,15.0,2,False,Win,0,0,0,0,0,0
+358,2024-04-15,T20,Dry,7,Insane,2,Anya,Zafi,210,20.0,5,True,Loss,0,0,0,0,0,0
+359,2024-09-07,ODI,Green,8,Ultra Insane,1,Nikita,Anya,297,30.0,4,False,Win,0,0,0,0,0,0
+359,2024-09-07,ODI,Green,8,Ultra Insane,2,Anya,Nikita,247,40.0,5,True,Loss,0,0,0,0,0,0
+360,2024-09-04,Test,Green,9,Ultra Insane,1,Anya,Vikram,375,60.0,4,False,Win,0,0,0,0,0,0
+360,2024-09-04,Test,Green,9,Ultra Insane,2,Vikram,Anya,369,50.0,2,True,Loss,0,0,0,0,0,0
+361,2024-01-11,ODI,Normal,10,Ultra Insane,1,Zafi,Nikita,265,20.0,3,False,Win,0,0,0,0,0,0
+361,2024-01-11,ODI,Normal,10,Ultra Insane,2,Nikita,Zafi,262,40.0,1,True,Loss,0,0,0,0,0,0
+362,2024-07-05,T20,Bouncy,11,Insane,1,Anya,Zafi,114,10.0,3,False,Loss,0,0,0,0,0,0
+362,2024-07-05,T20,Bouncy,11,Insane,2,Zafi,Anya,140,10.0,2,True,Win,0,0,0,0,0,0
+363,2024-09-19,Test,Dry,12,Insane,1,Arjun,Sid,354,50.0,0,False,Win,0,0,0,0,0,0
+363,2024-09-19,Test,Dry,12,Insane,2,Sid,Arjun,270,60.0,1,True,Loss,0,0,0,0,0,0
+364,2024-03-03,T20,Green,13,Hard,1,Leo,Sid,148,5.0,1,False,Loss,0,0,0,0,0,0
+364,2024-03-03,T20,Green,13,Hard,2,Sid,Leo,176,20.0,2,True,Win,0,0,0,0,0,0
+365,2024-05-30,ODI,Green,1,Medium,1,Leo,Anya,372,50.0,5,False,Win,0,0,0,0,0,0
+365,2024-05-30,ODI,Green,1,Medium,2,Anya,Leo,232,20.0,3,True,Loss,0,0,0,0,0,0
+366,2024-05-27,T20,Green,2,Insane,1,Sara,Wizheart,196,5.0,2,False,Win,0,0,0,0,0,0
+366,2024-05-27,T20,Green,2,Insane,2,Wizheart,Sara,166,20.0,3,True,Loss,0,0,0,0,0,0
+367,2024-08-08,Test,Green,3,Insane,1,Vikram,Sara,375,60.0,1,False,Loss,0,0,0,0,0,0
+367,2024-08-08,Test,Green,3,Insane,2,Sara,Vikram,414,50.0,2,True,Win,0,0,0,0,0,0
+368,2024-02-19,Test,Normal,4,Hard,1,Rohan,Sara,384,40.0,1,False,Loss,0,0,0,0,0,0
+368,2024-02-19,Test,Normal,4,Hard,2,Sara,Rohan,471,60.0,1,True,Win,1,0,0,0,0,0
+369,2024-10-24,ODI,Normal,5,Hard,1,Zafi,Karthik,365,20.0,3,False,Loss,0,0,0,0,0,0
+369,2024-10-24,ODI,Normal,5,Hard,2,Karthik,Zafi,435,50.0,3,True,Win,1,0,0,0,0,0
+370,2024-01-16,T20,Dry,6,Insane,1,Nikita,Rohan,180,10.0,1,False,Win,0,0,0,0,0,0
+370,2024-01-16,T20,Dry,6,Insane,2,Rohan,Nikita,172,5.0,1,True,Loss,0,0,0,0,0,0
+371,2024-11-01,Test,Bouncy,7,Ultra Insane,1,Anya,Leo,327,60.0,2,False,Win,0,0,0,0,0,0
+371,2024-11-01,Test,Bouncy,7,Ultra Insane,2,Leo,Anya,273,40.0,3,True,Loss,0,0,0,0,0,0
+372,2024-07-13,ODI,Normal,8,Hard,1,Vikram,Anya,390,30.0,2,False,Win,0,0,0,0,0,0
+372,2024-07-13,ODI,Normal,8,Hard,2,Anya,Vikram,287,40.0,0,True,Loss,0,0,0,0,0,0
+373,2024-07-26,ODI,Dry,9,Insane,1,Karthik,Zafi,385,20.0,0,False,Win,0,0,0,0,0,0
+373,2024-07-26,ODI,Dry,9,Insane,2,Zafi,Karthik,317,20.0,3,True,Loss,0,0,0,0,0,0
+374,2024-03-13,Test,Bouncy,10,Ultra Insane,1,Vikram,Nikita,384,60.0,6,False,Win,0,0,0,0,0,0
+374,2024-03-13,Test,Bouncy,10,Ultra Insane,2,Nikita,Vikram,303,40.0,2,True,Loss,0,0,0,0,0,0
+375,2024-01-12,T20,Normal,11,Insane,1,Arjun,Sid,212,5.0,1,False,Loss,0,0,0,0,0,0
+375,2024-01-12,T20,Normal,11,Insane,2,Sid,Arjun,258,10.0,2,True,Win,0,0,0,0,0,0
+376,2024-11-09,Test,Dry,12,Ultra Insane,1,Karthik,Zafi,378,60.0,7,False,Win,0,0,0,0,0,0
+376,2024-11-09,Test,Dry,12,Ultra Insane,2,Zafi,Karthik,306,40.0,1,True,Loss,0,0,0,0,0,0
+377,2024-05-02,Test,Normal,13,Ultra Insane,1,Ragz,Sid,360,60.0,2,False,Win,0,0,0,0,0,0
+377,2024-05-02,Test,Normal,13,Ultra Insane,2,Sid,Ragz,291,40.0,3,True,Loss,0,0,0,0,0,0
+378,2024-02-15,Test,Dry,1,Insane,1,Leo,Zafi,327,60.0,4,False,Win,0,0,0,0,0,0
+378,2024-02-15,Test,Dry,1,Insane,2,Zafi,Leo,0,50.0,0,True,Loss,0,0,0,0,0,1
+379,2024-10-13,T20,Dry,2,Insane,1,Ragz,Sara,134,15.0,0,False,Loss,0,0,0,0,0,0
+379,2024-10-13,T20,Dry,2,Insane,2,Sara,Ragz,198,15.0,7,True,Win,0,0,0,0,0,0
+380,2024-11-20,Test,Dry,3,Hard,1,Zafi,Karthik,324,60.0,1,False,Loss,0,0,0,0,0,0
+380,2024-11-20,Test,Dry,3,Hard,2,Karthik,Zafi,369,60.0,2,True,Win,0,0,0,0,0,0
+381,2024-02-23,Test,Bouncy,4,Ultra Insane,1,Wizheart,Anya,288,40.0,5,False,Win,0,0,0,0,0,0
+381,2024-02-23,Test,Bouncy,4,Ultra Insane,2,Anya,Wizheart,258,30.0,2,True,Loss,0,0,0,0,0,0
+382,2024-07-22,T20,Dry,5,Ultra Insane,1,Vikram,Ragz,220,20.0,4,False,Win,0,0,0,0,0,0
+382,2024-07-22,T20,Dry,5,Ultra Insane,2,Ragz,Vikram,202,20.0,4,True,Loss,0,0,0,0,0,0
+383,2024-07-18,T20,Normal,6,Medium,1,Arjun,Nikita,142,10.0,1,False,Loss,0,0,0,0,0,0
+383,2024-07-18,T20,Normal,6,Medium,2,Nikita,Arjun,212,5.0,0,True,Win,0,0,0,0,0,0
+384,2024-07-29,T20,Green,7,Ultra Insane,1,Nikita,Rohan,182,20.0,4,False,Win,0,0,0,0,0,0
+384,2024-07-29,T20,Green,7,Ultra Insane,2,Rohan,Nikita,146,15.0,3,True,Loss,0,0,0,0,0,0
+385,2024-08-07,Test,Bouncy,8,Insane,1,Sara,Zafi,453,30.0,2,False,Win,1,0,0,0,0,0
+385,2024-08-07,Test,Bouncy,8,Insane,2,Zafi,Sara,366,50.0,3,True,Loss,0,0,0,0,0,0
+386,2024-02-20,ODI,Green,9,Insane,1,Ragz,Vikram,387,20.0,7,False,Win,0,0,0,0,0,0
+386,2024-02-20,ODI,Green,9,Insane,2,Vikram,Ragz,355,30.0,2,True,Loss,0,0,0,0,0,0
+387,2024-10-05,T20,Bouncy,10,Hard,1,Nikita,Vikram,214,10.0,1,False,Loss,0,0,0,0,0,0
+387,2024-10-05,T20,Bouncy,10,Hard,2,Vikram,Nikita,224,15.0,0,True,Win,0,0,0,0,0,0
+388,2024-09-26,Test,Normal,11,Hard,1,Arjun,Ragz,345,40.0,1,False,Win,0,0,0,0,0,0
+388,2024-09-26,Test,Normal,11,Hard,2,Ragz,Arjun,333,60.0,1,True,Loss,0,0,0,0,0,0
+389,2024-08-04,Test,Dry,12,Hard,1,Anya,Vikram,267,50.0,2,False,Loss,0,0,0,0,0,0
+389,2024-08-04,Test,Dry,12,Hard,2,Vikram,Anya,528,50.0,2,True,Win,1,0,0,0,0,0
+390,2024-05-17,ODI,Normal,13,Insane,1,Karthik,Sara,400,20.0,2,False,Loss,0,0,0,0,0,0
+390,2024-05-17,ODI,Normal,13,Insane,2,Sara,Karthik,450,20.0,1,True,Win,1,0,0,0,0,0
+391,2024-05-11,T20,Dry,1,Hard,1,Sara,Arjun,206,15.0,0,False,Win,0,0,0,0,0,0
+391,2024-05-11,T20,Dry,1,Hard,2,Arjun,Sara,196,10.0,4,True,Loss,0,0,0,0,0,0
+392,2024-05-02,T20,Normal,2,Hard,1,Rohan,Leo,218,15.0,1,False,Win,0,0,0,0,0,0
+392,2024-05-02,T20,Normal,2,Hard,2,Leo,Rohan,188,20.0,4,True,Loss,0,0,0,0,0,0
+393,2024-02-08,Test,Bouncy,3,Insane,1,Rohan,Wizheart,453,30.0,4,False,Win,1,0,0,0,0,0
+393,2024-02-08,Test,Bouncy,3,Insane,2,Wizheart,Rohan,426,40.0,5,True,Loss,0,0,0,0,0,0
+394,2024-04-04,Test,Normal,4,Medium,1,Sara,Rohan,537,40.0,3,False,Win,1,0,0,0,0,0
+394,2024-04-04,Test,Normal,4,Medium,2,Rohan,Sara,426,30.0,1,True,Loss,0,0,0,0,0,0
+395,2024-01-29,ODI,Bouncy,5,Ultra Insane,1,Rohan,Sara,222,20.0,1,False,Loss,0,0,0,0,0,0
+395,2024-01-29,ODI,Bouncy,5,Ultra Insane,2,Sara,Rohan,385,50.0,1,True,Win,0,0,0,0,0,0
+396,2024-06-19,Test,Green,6,Insane,1,Sara,Arjun,387,40.0,1,False,Win,0,0,0,0,0,0
+396,2024-06-19,Test,Green,6,Insane,2,Arjun,Sara,303,40.0,2,True,Loss,0,0,0,0,0,0
+397,2024-04-07,ODI,Bouncy,7,Ultra Insane,1,Arjun,Sid,275,20.0,1,False,Loss,0,0,0,0,0,0
+397,2024-04-07,ODI,Bouncy,7,Ultra Insane,2,Sid,Arjun,337,40.0,4,True,Win,0,0,0,0,0,0
+398,2024-09-21,Test,Normal,8,Hard,1,Sid,Nikita,474,40.0,1,False,Win,1,0,0,0,0,0
+398,2024-09-21,Test,Normal,8,Hard,2,Nikita,Sid,417,50.0,2,True,Loss,0,0,0,0,0,0
+399,2024-12-04,ODI,Green,9,Hard,1,Anya,Rohan,262,30.0,0,False,Loss,0,0,0,0,0,0
+399,2024-12-04,ODI,Green,9,Hard,2,Rohan,Anya,280,40.0,4,True,Win,0,0,0,0,0,0
+400,2024-06-23,Test,Dry,10,Insane,1,Leo,Anya,381,60.0,3,False,Loss,0,0,0,0,0,0
+400,2024-06-23,Test,Dry,10,Insane,2,Anya,Leo,483,50.0,0,True,Win,1,0,0,0,0,0
+401,2024-04-11,ODI,Bouncy,11,Insane,1,Vikram,Leo,355,30.0,1,False,Win,0,0,0,0,0,0
+401,2024-04-11,ODI,Bouncy,11,Insane,2,Leo,Vikram,242,40.0,8,True,Loss,0,0,0,0,0,0
+402,2024-10-05,Test,Dry,12,Hard,1,Sid,Zafi,459,50.0,0,False,Win,1,0,0,0,0,0
+402,2024-10-05,Test,Dry,12,Hard,2,Zafi,Sid,423,40.0,2,True,Loss,0,0,0,0,0,0
+403,2024-11-14,ODI,Green,13,Hard,1,Ragz,Zafi,315,20.0,3,False,Win,0,0,0,0,0,0
+403,2024-11-14,ODI,Green,13,Hard,2,Zafi,Ragz,292,50.0,1,True,Loss,0,0,0,0,0,0
+404,2024-11-18,Test,Dry,1,Ultra Insane,1,Rohan,Nikita,396,40.0,2,False,Win,0,0,0,0,0,0
+404,2024-11-18,Test,Dry,1,Ultra Insane,2,Nikita,Rohan,375,30.0,1,True,Loss,0,0,0,0,0,0
+405,2024-12-03,Test,Bouncy,2,Insane,1,Rohan,Anya,312,40.0,3,False,Loss,0,0,0,0,0,0
+405,2024-12-03,Test,Bouncy,2,Insane,2,Anya,Rohan,315,50.0,5,True,Win,0,0,0,0,0,0
+406,2024-08-20,Test,Bouncy,3,Ultra Insane,1,Vikram,Sid,393,30.0,2,False,Win,0,0,0,0,0,0
+406,2024-08-20,Test,Bouncy,3,Ultra Insane,2,Sid,Vikram,345,50.0,3,True,Loss,0,0,0,0,0,0
+407,2024-06-28,ODI,Dry,4,Ultra Insane,1,Wizheart,Zafi,367,20.0,4,False,Win,0,0,0,0,0,0
+407,2024-06-28,ODI,Dry,4,Ultra Insane,2,Zafi,Wizheart,327,50.0,2,True,Loss,0,0,0,0,0,0
+408,2024-08-23,ODI,Green,5,Hard,1,Karthik,Rohan,337,40.0,2,False,Win,0,0,0,0,0,0
+408,2024-08-23,ODI,Green,5,Hard,2,Rohan,Karthik,285,30.0,2,True,Loss,0,0,0,0,0,0
+409,2024-11-08,ODI,Normal,6,Medium,1,Arjun,Sid,385,40.0,1,False,Loss,0,0,0,0,0,0
+409,2024-11-08,ODI,Normal,6,Medium,2,Sid,Arjun,427,50.0,0,True,Win,0,0,0,0,0,0
+410,2024-05-14,T20,Green,7,Insane,1,Vikram,Wizheart,208,10.0,2,False,Loss,0,0,0,0,0,0
+410,2024-05-14,T20,Green,7,Insane,2,Wizheart,Vikram,220,5.0,3,True,Win,0,0,0,0,0,0
+411,2024-04-10,Test,Green,8,Hard,1,Arjun,Anya,414,40.0,2,False,Win,0,0,0,0,0,0
+411,2024-04-10,Test,Green,8,Hard,2,Anya,Arjun,225,40.0,2,True,Loss,0,0,0,0,0,0
+412,2024-03-15,ODI,Dry,9,Medium,1,Nikita,Wizheart,302,30.0,0,False,Loss,0,0,0,0,0,0
+412,2024-03-15,ODI,Dry,9,Medium,2,Wizheart,Nikita,430,50.0,2,True,Win,1,0,0,0,0,0
+413,2024-07-08,T20,Bouncy,10,Insane,1,Vikram,Arjun,214,5.0,5,False,Win,0,0,0,0,0,0
+413,2024-07-08,T20,Bouncy,10,Insane,2,Arjun,Vikram,198,5.0,2,True,Loss,0,0,0,0,0,0
+414,2024-12-25,Test,Green,11,Ultra Insane,1,Vikram,Arjun,339,50.0,2,False,Win,0,0,0,0,0,0
+414,2024-12-25,Test,Green,11,Ultra Insane,2,Arjun,Vikram,222,30.0,1,True,Loss,0,0,0,0,0,0
+415,2024-01-10,T20,Normal,12,Hard,1,Zafi,Nikita,214,10.0,0,False,Loss,0,0,0,0,0,0
+415,2024-01-10,T20,Normal,12,Hard,2,Nikita,Zafi,272,5.0,1,True,Win,0,0,0,0,0,0
+416,2024-07-09,ODI,Dry,13,Insane,1,Ragz,Karthik,357,50.0,1,False,Loss,0,0,0,0,0,0
+416,2024-07-09,ODI,Dry,13,Insane,2,Karthik,Ragz,365,40.0,6,True,Win,0,0,0,0,0,0
+417,2024-04-18,T20,Green,1,Medium,1,Wizheart,Leo,238,10.0,2,False,Win,0,0,0,0,0,0
+417,2024-04-18,T20,Green,1,Medium,2,Leo,Wizheart,182,10.0,1,True,Loss,0,0,0,0,0,0
+418,2024-10-24,Test,Dry,2,Ultra Insane,1,Vikram,Sid,366,30.0,2,False,Win,0,0,0,0,0,0
+418,2024-10-24,Test,Dry,2,Ultra Insane,2,Sid,Vikram,279,50.0,2,True,Loss,0,0,0,0,0,0
+419,2024-10-22,Test,Bouncy,3,Insane,1,Rohan,Anya,378,60.0,5,False,Win,0,0,0,0,0,0
+419,2024-10-22,Test,Bouncy,3,Insane,2,Anya,Rohan,315,30.0,2,True,Loss,0,0,0,0,0,0
+420,2024-08-07,Test,Green,4,Insane,1,Rohan,Anya,318,40.0,1,False,Loss,0,0,0,0,0,0
+420,2024-08-07,Test,Green,4,Insane,2,Anya,Rohan,393,60.0,2,True,Win,0,0,0,0,0,0
+421,2024-11-13,T20,Green,5,Insane,1,Sid,Wizheart,208,20.0,3,False,Loss,0,0,0,0,0,0
+421,2024-11-13,T20,Green,5,Insane,2,Wizheart,Sid,244,15.0,3,True,Win,0,0,0,0,0,0
+422,2024-04-20,ODI,Dry,6,Medium,1,Nikita,Rohan,325,30.0,3,False,Loss,0,0,0,0,0,0
+422,2024-04-20,ODI,Dry,6,Medium,2,Rohan,Nikita,327,20.0,2,True,Win,0,0,0,0,0,0
+423,2024-01-06,ODI,Normal,7,Ultra Insane,1,Arjun,Sara,262,50.0,3,False,Loss,0,0,0,0,0,0
+423,2024-01-06,ODI,Normal,7,Ultra Insane,2,Sara,Arjun,342,50.0,4,True,Win,0,0,0,0,0,0
+424,2024-07-02,T20,Bouncy,8,Medium,1,Rohan,Sid,226,15.0,3,False,Loss,0,0,0,0,0,0
+424,2024-07-02,T20,Bouncy,8,Medium,2,Sid,Rohan,236,5.0,1,True,Win,0,0,0,0,0,0
+425,2024-07-14,Test,Green,9,Hard,1,Sara,Karthik,486,50.0,0,False,Win,1,0,0,0,0,0
+425,2024-07-14,Test,Green,9,Hard,2,Karthik,Sara,438,50.0,2,True,Loss,0,0,0,0,0,0
+426,2024-03-27,Test,Normal,10,Hard,1,Wizheart,Sid,528,30.0,3,False,Win,1,0,0,0,0,0
+426,2024-03-27,Test,Normal,10,Hard,2,Sid,Wizheart,453,30.0,4,True,Loss,1,0,0,0,0,0
+427,2024-04-25,ODI,Green,11,Hard,1,Nikita,Karthik,397,30.0,3,False,Loss,0,0,0,0,0,0
+427,2024-04-25,ODI,Green,11,Hard,2,Karthik,Nikita,405,30.0,1,True,Win,0,0,0,0,0,0
+428,2024-03-19,ODI,Green,12,Medium,1,Leo,Ragz,362,30.0,2,False,Win,0,0,0,0,0,0
+428,2024-03-19,ODI,Green,12,Medium,2,Ragz,Leo,322,20.0,0,True,Loss,0,0,0,0,0,0
+429,2024-12-17,T20,Bouncy,13,Insane,1,Sara,Sid,238,5.0,2,False,Win,0,0,0,0,0,0
+429,2024-12-17,T20,Bouncy,13,Insane,2,Sid,Sara,194,10.0,1,True,Loss,0,0,0,0,0,0
+430,2024-07-10,T20,Green,1,Insane,1,Ragz,Sid,156,5.0,2,False,Loss,0,0,0,0,0,0
+430,2024-07-10,T20,Green,1,Insane,2,Sid,Ragz,188,5.0,3,True,Win,0,0,0,0,0,0
+431,2024-10-17,T20,Dry,2,Insane,1,Sara,Leo,240,5.0,2,False,Win,0,0,0,0,0,0
+431,2024-10-17,T20,Dry,2,Insane,2,Leo,Sara,208,10.0,5,True,Loss,0,0,0,0,0,0
+432,2024-01-16,T20,Dry,3,Ultra Insane,1,Karthik,Leo,144,15.0,0,False,Loss,0,0,0,0,0,0
+432,2024-01-16,T20,Dry,3,Ultra Insane,2,Leo,Karthik,152,20.0,7,True,Win,0,0,0,0,0,0
+433,2024-01-01,ODI,Dry,4,Hard,1,Arjun,Leo,270,50.0,0,False,Loss,0,0,0,0,0,0
+433,2024-01-01,ODI,Dry,4,Hard,2,Leo,Arjun,280,40.0,2,True,Win,0,0,0,0,0,0
+434,2024-08-15,T20,Bouncy,5,Ultra Insane,1,Anya,Sid,150,20.0,4,False,Loss,0,0,0,0,0,0
+434,2024-08-15,T20,Bouncy,5,Ultra Insane,2,Sid,Anya,166,15.0,2,True,Win,0,0,0,0,0,0
+435,2024-12-19,ODI,Dry,6,Insane,1,Zafi,Rohan,335,30.0,5,False,Win,0,0,0,0,0,0
+435,2024-12-19,ODI,Dry,6,Insane,2,Rohan,Zafi,242,30.0,1,True,Loss,0,0,0,0,0,0
+436,2024-11-27,T20,Green,7,Ultra Insane,1,Anya,Ragz,184,10.0,2,False,Win,0,0,0,0,0,0
+436,2024-11-27,T20,Green,7,Ultra Insane,2,Ragz,Anya,150,5.0,2,True,Loss,0,0,0,0,0,0
+437,2024-03-23,ODI,Normal,8,Insane,1,Leo,Zafi,225,30.0,5,False,Loss,0,0,0,0,0,0
+437,2024-03-23,ODI,Normal,8,Insane,2,Zafi,Leo,325,30.0,5,True,Win,0,0,0,0,0,0
+438,2024-07-25,ODI,Green,9,Insane,1,Leo,Sid,305,30.0,2,False,Loss,0,0,0,0,0,0
+438,2024-07-25,ODI,Green,9,Insane,2,Sid,Leo,342,30.0,2,True,Win,0,0,0,0,0,0
+439,2024-11-16,Test,Bouncy,10,Insane,1,Vikram,Arjun,477,50.0,1,False,Win,1,0,0,0,0,0
+439,2024-11-16,Test,Bouncy,10,Insane,2,Arjun,Vikram,315,40.0,0,True,Loss,0,0,0,0,0,0
+440,2024-12-01,Test,Normal,11,Hard,1,Karthik,Wizheart,426,60.0,1,False,Loss,0,0,0,0,0,0
+440,2024-12-01,Test,Normal,11,Hard,2,Wizheart,Karthik,507,40.0,5,True,Win,1,0,0,0,0,0
+441,2024-03-21,T20,Bouncy,12,Hard,1,Wizheart,Zafi,260,5.0,2,False,Win,0,0,0,0,0,0
+441,2024-03-21,T20,Bouncy,12,Hard,2,Zafi,Wizheart,232,10.0,0,True,Loss,0,0,0,0,0,0
+442,2024-02-14,ODI,Dry,13,Ultra Insane,1,Zafi,Sara,262,20.0,3,False,Loss,0,0,0,0,0,0
+442,2024-02-14,ODI,Dry,13,Ultra Insane,2,Sara,Zafi,342,40.0,6,True,Win,0,0,0,0,0,0
+443,2024-02-03,Test,Normal,1,Hard,1,Nikita,Sara,396,30.0,1,False,Loss,0,0,0,0,0,0
+443,2024-02-03,Test,Normal,1,Hard,2,Sara,Nikita,534,30.0,6,True,Win,1,0,0,0,0,0
+444,2024-07-27,ODI,Green,2,Hard,1,Arjun,Anya,285,20.0,3,False,Win,0,0,0,0,0,0
+444,2024-07-27,ODI,Green,2,Hard,2,Anya,Arjun,250,40.0,2,True,Loss,0,0,0,0,0,0
+445,2024-07-05,ODI,Normal,3,Medium,1,Sara,Rohan,325,30.0,2,False,Draw,0,0,0,0,0,0
+445,2024-07-05,ODI,Normal,3,Medium,2,Rohan,Sara,325,50.0,0,True,Draw,0,0,0,0,0,0
+446,2024-07-21,Test,Normal,4,Hard,1,Nikita,Ragz,318,40.0,0,False,Loss,0,0,0,0,0,0
+446,2024-07-21,Test,Normal,4,Hard,2,Ragz,Nikita,450,30.0,0,True,Win,1,0,0,0,0,0
+447,2024-04-29,Test,Green,5,Ultra Insane,1,Ragz,Arjun,324,30.0,1,False,Win,0,0,0,0,0,0
+447,2024-04-29,Test,Green,5,Ultra Insane,2,Arjun,Ragz,291,30.0,3,True,Loss,0,0,0,0,0,0
+448,2024-12-06,Test,Normal,6,Insane,1,Rohan,Leo,279,30.0,1,False,Loss,0,0,0,0,0,0
+448,2024-12-06,Test,Normal,6,Insane,2,Leo,Rohan,309,40.0,3,True,Win,0,0,0,0,0,0
+449,2024-06-05,Test,Dry,7,Insane,1,Sid,Sara,378,50.0,2,False,Loss,0,0,0,0,0,0
+449,2024-06-05,Test,Dry,7,Insane,2,Sara,Sid,444,30.0,2,True,Win,0,0,0,0,0,0
+450,2024-01-19,T20,Green,8,Hard,1,Vikram,Sid,218,10.0,2,False,Loss,0,0,0,0,0,0
+450,2024-01-19,T20,Green,8,Hard,2,Sid,Vikram,230,5.0,2,True,Win,0,0,0,0,0,0
+451,2024-03-16,ODI,Bouncy,9,Medium,1,Anya,Ragz,362,20.0,5,False,Win,0,0,0,0,0,0
+451,2024-03-16,ODI,Bouncy,9,Medium,2,Ragz,Anya,295,50.0,2,True,Loss,0,0,0,0,0,0
+452,2024-02-18,T20,Green,10,Insane,1,Leo,Ragz,226,5.0,4,False,Win,0,0,0,0,0,0
+452,2024-02-18,T20,Green,10,Insane,2,Ragz,Leo,146,5.0,1,True,Loss,0,0,0,0,0,0
+453,2024-11-29,Test,Dry,11,Insane,1,Rohan,Sara,333,50.0,1,False,Loss,0,0,0,0,0,0
+453,2024-11-29,Test,Dry,11,Insane,2,Sara,Rohan,450,60.0,5,True,Win,1,0,0,0,0,0
+454,2024-09-25,Test,Bouncy,12,Ultra Insane,1,Nikita,Vikram,300,40.0,1,False,Loss,0,0,0,0,0,0
+454,2024-09-25,Test,Bouncy,12,Ultra Insane,2,Vikram,Nikita,321,60.0,0,True,Win,0,0,0,0,0,0
+455,2024-08-21,ODI,Normal,13,Ultra Insane,1,Sara,Zafi,290,20.0,2,False,Win,0,0,0,0,0,0
+455,2024-08-21,ODI,Normal,13,Ultra Insane,2,Zafi,Sara,220,50.0,7,True,Loss,0,0,0,0,0,0
+456,2024-05-13,Test,Bouncy,1,Ultra Insane,1,Anya,Karthik,348,30.0,4,False,Win,0,0,0,0,0,0
+456,2024-05-13,Test,Bouncy,1,Ultra Insane,2,Karthik,Anya,345,50.0,1,True,Loss,0,0,0,0,0,0
+457,2024-05-14,Test,Dry,2,Ultra Insane,1,Karthik,Sid,315,50.0,3,False,Loss,0,0,0,0,0,0
+457,2024-05-14,Test,Dry,2,Ultra Insane,2,Sid,Karthik,393,50.0,1,True,Win,0,0,0,0,0,0
+458,2024-11-23,ODI,Dry,3,Insane,1,Rohan,Leo,330,20.0,3,False,Draw,0,0,0,0,0,0
+458,2024-11-23,ODI,Dry,3,Insane,2,Leo,Rohan,330,30.0,3,True,Draw,0,0,0,0,0,0
+459,2024-05-01,Test,Dry,4,Insane,1,Leo,Karthik,315,30.0,3,False,Loss,0,0,0,0,0,0
+459,2024-05-01,Test,Dry,4,Insane,2,Karthik,Leo,369,40.0,3,True,Win,0,0,0,0,0,0
+460,2024-01-12,Test,Normal,5,Ultra Insane,1,Arjun,Ragz,270,30.0,2,False,Loss,0,0,0,0,0,0
+460,2024-01-12,Test,Normal,5,Ultra Insane,2,Ragz,Arjun,357,60.0,2,True,Win,0,0,0,0,0,0
+461,2024-11-04,ODI,Dry,6,Medium,1,Sara,Arjun,445,50.0,0,False,Win,1,0,0,0,0,0
+461,2024-11-04,ODI,Dry,6,Medium,2,Arjun,Sara,300,20.0,2,True,Loss,0,0,0,0,0,0
+462,2024-08-29,ODI,Bouncy,7,Hard,1,Ragz,Sid,307,20.0,0,False,Loss,0,0,0,0,0,0
+462,2024-08-29,ODI,Bouncy,7,Hard,2,Sid,Ragz,355,50.0,3,True,Win,0,0,0,0,0,0
+463,2024-09-02,Test,Green,8,Insane,1,Nikita,Vikram,201,30.0,1,False,Loss,0,0,0,0,0,0
+463,2024-09-02,Test,Green,8,Insane,2,Vikram,Nikita,402,30.0,1,True,Win,0,0,0,0,0,0
+464,2024-02-20,ODI,Bouncy,9,Hard,1,Sara,Rohan,347,30.0,1,False,Loss,0,0,0,0,0,0
+464,2024-02-20,ODI,Bouncy,9,Hard,2,Rohan,Sara,372,40.0,2,True,Win,0,0,0,0,0,0
+465,2024-11-08,Test,Green,10,Insane,1,Zafi,Rohan,306,60.0,3,False,Loss,0,0,0,0,0,0
+465,2024-11-08,Test,Green,10,Insane,2,Rohan,Zafi,381,40.0,3,True,Win,0,0,0,0,0,0
+466,2024-12-08,Test,Normal,11,Hard,1,Rohan,Vikram,396,30.0,2,False,Loss,0,0,0,0,0,0
+466,2024-12-08,Test,Normal,11,Hard,2,Vikram,Rohan,510,30.0,0,True,Win,1,0,0,0,0,0
+467,2024-10-17,Test,Bouncy,12,Insane,1,Vikram,Sid,477,50.0,1,False,Win,1,0,0,0,0,0
+467,2024-10-17,Test,Bouncy,12,Insane,2,Sid,Vikram,468,30.0,2,True,Loss,1,0,0,0,0,0
+468,2024-06-25,Test,Bouncy,13,Ultra Insane,1,Zafi,Vikram,327,50.0,5,False,Loss,0,0,0,0,0,0
+468,2024-06-25,Test,Bouncy,13,Ultra Insane,2,Vikram,Zafi,420,40.0,2,True,Win,0,0,0,0,0,0
+469,2024-10-06,ODI,Normal,1,Ultra Insane,1,Ragz,Vikram,290,30.0,3,False,Loss,0,0,0,0,0,0
+469,2024-10-06,ODI,Normal,1,Ultra Insane,2,Vikram,Ragz,305,20.0,2,True,Win,0,0,0,0,0,0
+470,2024-09-11,ODI,Green,2,Medium,1,Vikram,Sid,397,50.0,3,False,Win,0,0,0,0,0,0
+470,2024-09-11,ODI,Green,2,Medium,2,Sid,Vikram,377,40.0,2,True,Loss,0,0,0,0,0,0
+471,2024-09-10,T20,Dry,3,Medium,1,Nikita,Arjun,182,20.0,1,False,Loss,0,0,0,0,0,0
+471,2024-09-10,T20,Dry,3,Medium,2,Arjun,Nikita,198,20.0,1,True,Win,0,0,0,0,0,0
+472,2024-06-26,Test,Bouncy,4,Medium,1,Wizheart,Nikita,579,50.0,1,False,Win,1,0,0,0,0,0
+472,2024-06-26,Test,Bouncy,4,Medium,2,Nikita,Wizheart,483,30.0,1,True,Loss,1,0,0,0,0,0
+473,2024-04-17,ODI,Normal,5,Medium,1,Zafi,Sid,240,30.0,2,False,Loss,0,0,0,0,0,0
+473,2024-04-17,ODI,Normal,5,Medium,2,Sid,Zafi,347,40.0,0,True,Win,0,0,0,0,0,0
+474,2024-07-07,Test,Dry,6,Ultra Insane,1,Ragz,Leo,417,50.0,0,False,Win,0,0,0,0,0,0
+474,2024-07-07,Test,Dry,6,Ultra Insane,2,Leo,Ragz,219,30.0,0,True,Loss,0,0,0,0,0,0
+475,2024-03-30,T20,Green,7,Insane,1,Nikita,Sid,0,5.0,2,False,Loss,0,0,0,0,0,1
+475,2024-03-30,T20,Green,7,Insane,2,Sid,Nikita,198,10.0,6,True,Win,0,0,0,0,0,0
+476,2024-02-02,ODI,Green,8,Medium,1,Sara,Leo,465,40.0,1,False,Win,1,0,0,0,0,0
+476,2024-02-02,ODI,Green,8,Medium,2,Leo,Sara,355,20.0,1,True,Loss,0,0,0,0,0,0
+477,2024-08-08,T20,Bouncy,9,Insane,1,Zafi,Ragz,144,15.0,2,False,Loss,0,0,0,0,0,0
+477,2024-08-08,T20,Bouncy,9,Insane,2,Ragz,Zafi,158,20.0,4,True,Win,0,0,0,0,0,0
+478,2024-05-25,T20,Green,10,Hard,1,Leo,Karthik,220,15.0,4,False,Win,0,0,0,0,0,0
+478,2024-05-25,T20,Green,10,Hard,2,Karthik,Leo,190,20.0,1,True,Loss,0,0,0,0,0,0
+479,2024-01-01,Test,Normal,11,Insane,1,Sid,Sara,336,50.0,4,False,Loss,0,0,0,0,0,0
+479,2024-01-01,Test,Normal,11,Insane,2,Sara,Sid,468,40.0,4,True,Win,1,0,0,0,0,0
+480,2024-02-18,T20,Green,12,Ultra Insane,1,Karthik,Leo,200,20.0,3,False,Win,0,0,0,0,0,0
+480,2024-02-18,T20,Green,12,Ultra Insane,2,Leo,Karthik,154,15.0,7,True,Loss,0,0,0,0,0,0
+481,2024-07-13,ODI,Dry,13,Hard,1,Arjun,Karthik,330,30.0,2,False,Loss,0,0,0,0,0,0
+481,2024-07-13,ODI,Dry,13,Hard,2,Karthik,Arjun,377,20.0,2,True,Win,0,0,0,0,0,0
+482,2024-12-08,T20,Normal,1,Medium,1,Sara,Nikita,232,10.0,2,False,Win,0,0,0,0,0,0
+482,2024-12-08,T20,Normal,1,Medium,2,Nikita,Sara,208,10.0,3,True,Loss,0,0,0,0,0,0
+483,2024-12-21,T20,Normal,2,Hard,1,Karthik,Zafi,212,20.0,1,False,Loss,0,0,0,0,0,0
+483,2024-12-21,T20,Normal,2,Hard,2,Zafi,Karthik,254,20.0,2,True,Win,0,0,0,0,0,0
+484,2024-02-11,Test,Normal,3,Ultra Insane,1,Rohan,Sara,408,30.0,1,False,Win,0,0,0,0,0,0
+484,2024-02-11,Test,Normal,3,Ultra Insane,2,Sara,Rohan,396,60.0,4,True,Loss,0,0,0,0,0,0
+485,2024-05-24,T20,Normal,4,Hard,1,Leo,Wizheart,204,5.0,3,False,Loss,0,0,0,0,0,0
+485,2024-05-24,T20,Normal,4,Hard,2,Wizheart,Leo,234,20.0,4,True,Win,0,0,0,0,0,0
+486,2024-09-18,ODI,Green,5,Hard,1,Vikram,Karthik,360,20.0,4,False,Loss,0,0,0,0,0,0
+486,2024-09-18,ODI,Green,5,Hard,2,Karthik,Vikram,392,30.0,2,True,Win,0,0,0,0,0,0
+487,2024-07-16,Test,Bouncy,6,Insane,1,Karthik,Rohan,369,30.0,1,False,Win,0,0,0,0,0,0
+487,2024-07-16,Test,Bouncy,6,Insane,2,Rohan,Karthik,285,30.0,3,True,Loss,0,0,0,0,0,0
+488,2024-02-24,ODI,Dry,7,Hard,1,Arjun,Ragz,285,50.0,4,False,Loss,0,0,0,0,0,0
+488,2024-02-24,ODI,Dry,7,Hard,2,Ragz,Arjun,312,40.0,5,True,Win,0,0,0,0,0,0
+489,2024-11-10,T20,Bouncy,8,Ultra Insane,1,Arjun,Leo,210,20.0,4,False,Win,0,0,0,0,0,0
+489,2024-11-10,T20,Bouncy,8,Ultra Insane,2,Leo,Arjun,176,15.0,5,True,Loss,0,0,0,0,0,0
+490,2024-07-14,Test,Bouncy,9,Ultra Insane,1,Vikram,Sid,369,50.0,0,False,Win,0,0,0,0,0,0
+490,2024-07-14,Test,Bouncy,9,Ultra Insane,2,Sid,Vikram,318,50.0,3,True,Loss,0,0,0,0,0,0
+491,2024-07-27,Test,Dry,10,Ultra Insane,1,Vikram,Anya,348,30.0,4,False,Win,0,0,0,0,0,0
+491,2024-07-27,Test,Dry,10,Ultra Insane,2,Anya,Vikram,159,60.0,3,True,Loss,0,0,0,0,0,0
+492,2024-11-10,T20,Green,11,Ultra Insane,1,Ragz,Arjun,176,20.0,4,False,Loss,0,0,0,0,0,0
+492,2024-11-10,T20,Green,11,Ultra Insane,2,Arjun,Ragz,218,5.0,4,True,Win,0,0,0,0,0,0
+493,2024-02-07,ODI,Bouncy,12,Ultra Insane,1,Karthik,Leo,362,40.0,3,False,Win,0,0,0,0,0,0
+493,2024-02-07,ODI,Bouncy,12,Ultra Insane,2,Leo,Karthik,270,50.0,5,True,Loss,0,0,0,0,0,0
+494,2024-06-07,ODI,Bouncy,13,Ultra Insane,1,Wizheart,Vikram,332,40.0,2,False,Win,0,0,0,0,0,0
+494,2024-06-07,ODI,Bouncy,13,Ultra Insane,2,Vikram,Wizheart,315,40.0,2,True,Loss,0,0,0,0,0,0
+495,2024-06-26,ODI,Green,1,Hard,1,Nikita,Karthik,245,30.0,3,False,Loss,0,0,0,0,0,0
+495,2024-06-26,ODI,Green,1,Hard,2,Karthik,Nikita,275,40.0,2,True,Win,0,0,0,0,0,0
+496,2024-06-10,ODI,Bouncy,2,Insane,1,Sara,Zafi,387,30.0,3,False,Win,0,0,0,0,0,0
+496,2024-06-10,ODI,Bouncy,2,Insane,2,Zafi,Sara,300,20.0,2,True,Loss,0,0,0,0,0,0
+497,2024-03-14,ODI,Dry,3,Medium,1,Vikram,Karthik,427,40.0,1,False,Win,0,0,0,0,0,0
+497,2024-03-14,ODI,Dry,3,Medium,2,Karthik,Vikram,320,40.0,1,True,Loss,0,0,0,0,0,0
+498,2024-07-29,Test,Dry,4,Ultra Insane,1,Sara,Rohan,357,30.0,4,False,Win,0,0,0,0,0,0
+498,2024-07-29,Test,Dry,4,Ultra Insane,2,Rohan,Sara,330,60.0,2,True,Loss,0,0,0,0,0,0
+499,2024-10-22,T20,Normal,5,Medium,1,Karthik,Rohan,232,5.0,1,False,Win,0,0,0,0,0,0
+499,2024-10-22,T20,Normal,5,Medium,2,Rohan,Karthik,208,20.0,1,True,Loss,0,0,0,0,0,0
+500,2024-09-14,T20,Bouncy,6,Ultra Insane,1,Karthik,Anya,168,5.0,2,False,Loss,0,0,0,0,0,0
+500,2024-09-14,T20,Bouncy,6,Ultra Insane,2,Anya,Karthik,184,15.0,3,True,Win,0,0,0,0,0,0
