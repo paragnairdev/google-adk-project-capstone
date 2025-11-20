@@ -7,10 +7,9 @@ from .data_loader import matches_df
 
 # Helper to define test data
 TEST_PROFILE = {
-    "player_name": "Wizheart",
+    "player_name": "Joe", # Change this to the player's name you want to test with. All players are in vr_cricket_dataset/players.csv
     "team": "England",
-    "batting_style": "Moderate",
-    "role": "Player"
+    "batting_style": "Moderate" # Change this to the player's batting style. All batting styles are in vr_cricket_dataset/players.csv
 }
 
 
@@ -185,7 +184,7 @@ def get_player_stats(player_name: str, format: str):
     total_quadruple_hundreds = int(filtered['quadruple_hundreds'].sum())
     total_quintuple_hundreds = int(filtered['quintuple_hundreds'].sum())
     total_ducks = int(filtered['ducks'].sum())
-    
+
     # Calculate average (total runs / number of matches)
     average = round(total_runs / matches, 2) if matches > 0 else 0
     

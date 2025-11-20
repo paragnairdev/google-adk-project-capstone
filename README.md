@@ -32,10 +32,6 @@ A sophisticated cricket strategy assistant that provides tactical advice for var
 
 **Features:**
 - ✅ Data-driven analysis using CSV match history
-- ✅ Pitch condition analysis with weather considerations
-- ✅ Bowling change recommendations for different match phases
-- ✅ Simplified DLS calculations for rain-affected matches
-- ✅ Real-time cricket news and player form via Google Search
 - ✅ Strategic advice for Test, ODI, and T20 formats
 - ✅ Comprehensive test suite with pytest
 
