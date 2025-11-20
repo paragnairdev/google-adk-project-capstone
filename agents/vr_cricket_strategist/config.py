@@ -7,10 +7,23 @@ from google.genai import types
 # Load environment variables
 load_dotenv()
 
+# Clean up any previous logs
+for log_file in ["logger.log", "web.log", "tunnel.log"]:
+    if os.path.exists(log_file):
+        os.remove(log_file)
+        print(f"🧹 Cleaned up {log_file}")
+
 # Suppress ADK informational messages
 logging.getLogger('google.adk').setLevel(logging.ERROR)
 os.environ['GRPC_VERBOSITY'] = 'ERROR'
 os.environ['GLOG_minloglevel'] = '2'
+
+# Configure logging with DEBUG log level.
+logging.basicConfig(
+    filename="logger.log",
+    level=logging.DEBUG,
+    format="%(filename)s:%(lineno)s %(levelname)s:%(message)s",
+)
 
 # Verify API key is set
 if not os.getenv("GOOGLE_API_KEY"):
