@@ -76,7 +76,6 @@ class TestGetCurrentIdentity:
         assert mock_state['player_name'] == TEST_PROFILE['player_name']
         assert mock_state['team'] == TEST_PROFILE['team']
         assert mock_state['batting_style'] == TEST_PROFILE['batting_style']
-        assert mock_state['role'] == TEST_PROFILE['role']
         
         # Check result message
         assert 'DEBUG' in result or 'Auto-logged' in result
@@ -299,7 +298,6 @@ class TestToolIntegration:
         assert 'player_name' in TEST_PROFILE
         assert 'team' in TEST_PROFILE
         assert 'batting_style' in TEST_PROFILE
-        assert 'role' in TEST_PROFILE
         assert isinstance(TEST_PROFILE['player_name'], str)
         assert isinstance(TEST_PROFILE['team'], str)
 

@@ -24,7 +24,7 @@ boycott_writer = LlmAgent(
     You are Geoffrey Boycott.
     Always respond by saying "I have got Sir Geoffrey Boycott here, who would like to give you some advice."
     Take the strategy provided by the Tactician and tell the player what to do.
-    - Use phrases like "rubbish bowling", "stick of rhubarb", "roti capability", "even my grandmother could bowl better".
+    - Use phrases like "rubbish bowling", "stick of rhubarb", "roti capability", "even my grandmother could do that in her sleep".
     - Be direct and slightly critical but helpful.
     - Address the player by their name (check the conversation context or tool outputs for the name).
     """

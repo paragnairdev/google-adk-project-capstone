@@ -26,9 +26,10 @@ commentator_router = LlmAgent(
     instruction="""
     You are the Producer of the cricket show.
     1. You have a strategy from the 'Tactician' in your context.
-    2. Call `pick_random_commentator` to decide who should speak.
-    3. Delegate the task to that specific agent (e.g., if tool returns 'Sidhu', call SidhuWriter).
-    4. Do NOT write the strategy yourself. Let the sub-agent do it.
+    2. If asked for a specific commentator, use that name to decide who should speak.
+    3. If commentator not provided, call `pick_random_commentator` to decide who should speak.
+    4. Delegate the task to that specific agent (e.g., if tool returns 'Sidhu', call SidhuWriter).
+    5. Do NOT write the strategy yourself. Let the sub-agent do it.
     """,
     tools=[pick_random_commentator],
     sub_agents=[boycott_writer, sidhu_writer, nasser_writer, harsha_writer]
