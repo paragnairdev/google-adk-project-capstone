@@ -133,3 +133,81 @@ def get_head_to_head(player_name: str, opponent_name: str, format: str, pitch_ty
         "losses": losses,
         "avg_runs_scored": avg_runs_scored
     }
+
+
+def get_player_stats(player_name: str, format: str):
+    """
+    Returns the player's stats for a specific format.
+    
+    Args:
+        player_name: Name of the player
+        format: Match format (e.g., 'T20', 'ODI', 'Test')
+    
+    Returns:
+        Dictionary containing player stats including matches, runs, average, strike rate, etc.
+    """
+    # Filter matches by player_name and format
+    filtered = matches_df[
+        (matches_df['player_name'] == player_name) & 
+        (matches_df['format'] == format)
+    ]
+    
+    if len(filtered) == 0:
+        return {
+            "player_name": player_name,
+            "format": format,
+            "stats": {
+                "matches": 0,
+                "runs": 0,
+                "overs": 0,
+                "average": 0,
+                "strike_rate": 0,
+                "hundreds": 0,
+                "fifties": 0,
+                "wickets": 0,
+                "economy": 0,
+                "catches": 0,
+                "run_outs": 0,
+                "stumps": 0,
+            }
+        }
+    
+    # Calculate stats
+    matches = len(filtered)
+    total_runs = int(filtered['runs'].sum())
+    total_overs = int(filtered['overs'].sum())
+    total_wickets = int(filtered['wickets'].sum())
+    total_hundreds = int(filtered['hundreds'].sum())
+    
+    # Calculate average (total runs / number of matches)
+    average = round(total_runs / matches, 2) if matches > 0 else 0
+    
+    # Calculate strike rate (runs per 100 balls)
+    # Note: 1 over = 6 balls
+    total_balls = total_overs * 6
+    strike_rate = round((total_runs / total_balls) * 100, 2) if total_balls > 0 else 0
+    
+    # Calculate fifties (innings with 50-99 runs)
+    fifties = len(filtered[(filtered['runs'] >= 50) & (filtered['runs'] < 100)])
+    
+    # Calculate economy (runs conceded per over)
+    economy = round(total_runs / total_overs, 2) if total_overs > 0 else 0
+    
+    return {
+        "player_name": player_name,
+        "format": format,
+        "stats": {
+            "matches": matches,
+            "runs": total_runs,
+            "overs": total_overs,
+            "average": average,
+            "strike_rate": strike_rate,
+            "hundreds": total_hundreds,
+            "fifties": fifties,
+            "wickets": total_wickets,
+            "economy": economy,
+            "catches": 0,  # Not available in current dataset
+            "run_outs": 0,  # Not available in current dataset
+            "stumps": 0,  # Not available in current dataset
+        }
+    }

@@ -1,6 +1,6 @@
-# 🏏 VR Cricket Coach - Getting Started
+# 🏏 VR Cricket Strategist - Getting Started
 
-## Quick Launch (3 Seconds)
+## Quick Launch (Web UI)
 
 ```bash
 ./launch_web_ui.sh
@@ -8,45 +8,13 @@
 
 Open your browser: **http://localhost:8000**
 
-That's it! You now have a ChatGPT-like interface for your cricket coach.
+The `adk web` interface will show all available agents in the `agents/` directory.
 
 ---
 
-## What You Can Do
+## Setup
 
-### 1. Get Personalized Stats
-```
-You: Hi, I'm Karthik
-Coach: Welcome Karthik! Here are your stats...
-```
-
-### 2. Get Toss Decisions
-```
-You: Should I bat or bowl against Sid if I win the toss?
-Coach: Based on your data... [recommendation]
-```
-
-### 3. Calculate Safe Targets
-```
-You: What's a safe target against Ragz when batting first?
-Coach: Par score: 120, Competitive: 135, Safe: 150...
-```
-
----
-
-## Three Ways to Use It
-
-| Mode | Command | Interface | Best For |
-|------|---------|-----------|----------|
-| **Web UI** 🌐 | `./launch_web_ui.sh` | Browser chat | Demos, End users |
-| **Terminal** 💻 | `python vr_cricket_coach.py --interactive` | Command line | Development |
-| **Demo** 📋 | `python vr_cricket_coach.py` | Scripted | Learning |
-
----
-
-## First Time Setup
-
-1. **Check your virtual environment:**
+1. **Activate your virtual environment:**
    ```bash
    source venv/bin/activate
    ```
@@ -57,23 +25,70 @@ Coach: Par score: 120, Competitive: 135, Safe: 150...
    # Should show: GOOGLE_API_KEY=...
    ```
 
-3. **Launch:**
+3. **Install dependencies:**
    ```bash
-   ./launch_web_ui.sh
+   pip install -r requirements.txt
    ```
+
+---
+
+## What You Can Do
+
+### 1. Analyze Pitch Conditions
+```
+Query: "Analyze a green pitch with overcast conditions for a Test match"
+Strategist: [Provides detailed pitch analysis and strategy recommendations]
+```
+
+### 2. Get Bowling Change Recommendations
+```
+Query: "It's the death overs in a T20. Opposition needs 45 runs from 24 balls. What bowling changes should we use?"
+Strategist: [Recommends bowling rotations based on match situation]
+```
+
+### 3. Calculate DLS Targets
+```
+Query: "Calculate DLS target if we need to chase 180 in 15 overs instead of 20"
+Strategist: [Provides revised target using DLS calculations]
+```
+
+---
+
+## Usage
+
+### Web UI (Recommended)
+Launch the ADK web interface:
+```bash
+./launch_web_ui.sh
+# Or directly:
+python launch_web_ui.py
+```
+Then open http://localhost:8000 in your browser.
+
+### Run Demo Mode
+```bash
+python -m agents.vr_cricket_strategist.agent
+```
+
+### Run Tests
+```bash
+pytest agents/vr_cricket_strategist/tests/
+```
+
+### Run Tests with Coverage
+```bash
+pytest agents/vr_cricket_strategist/tests/ --cov=agents/vr_cricket_strategist --cov-report=html
+```
 
 ---
 
 ## Documentation Guide
 
-| File | Purpose | Read When |
-|------|---------|-----------|
-| **QUICK_START_WEB_UI.md** | Fast reference | You want to launch now |
-| **WEB_UI_FIX.md** | Fix details | Had ModuleNotFoundError? Fixed! |
-| **WEB_UI_INTEGRATION.md** | Complete overview | You want to understand everything |
-| **WEB_UI_GUIDE.md** | Detailed guide | You need configuration/troubleshooting |
-| **VR_CRICKET_COACH_GUIDE.md** | Agent architecture | You want to understand the agents |
-| **README.md** | Project overview | You want the big picture |
+| File | Purpose |
+|------|---------|
+| **START_HERE.md** | Quick start guide (you are here) |
+| **README.md** | Project overview |
+| **agents/vr_cricket_strategist/TEST_SUMMARY.md** | Test coverage and status |
 
 ---
 
@@ -100,66 +115,55 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Tests failing?
+```bash
+# Run tests with verbose output
+pytest agents/vr_cricket_strategist/tests/ -v
+```
+
 ---
 
 ## What Makes This Special?
 
-✅ **Multi-Agent System**: 4 specialized agents working together  
-✅ **Data-Driven**: Real match statistics, not generic advice  
-✅ **Memory**: Remembers context across conversations  
-✅ **Three Interfaces**: Web, terminal, and demo modes  
-✅ **Session Management**: Handles multiple concurrent users  
-✅ **Percentile Analysis**: Smart target calculations  
+✅ **Web UI**: Modern chat interface with `adk web`  
+✅ **Data-Driven**: Uses real match statistics for analysis  
+✅ **Comprehensive Tools**: Pitch analysis, DLS calculations, bowling changes  
+✅ **Well-Tested**: High test coverage with pytest  
+✅ **Flexible**: Works for Test, ODI, and T20 formats  
+✅ **Easy to Extend**: Modular architecture for adding new features  
 
 ---
 
 ## Quick Test
 
-After launching the web UI, try this conversation:
+Try running the tests to verify everything is working:
 
-```
-You: Hi, I'm Karthik
-Coach: [Shows your stats]
-
-You: I'm playing Sid tomorrow. Should I bat or bowl if I win the toss?
-Coach: [Analyzes your history vs Sid and provides recommendation]
-
-You: What if I'm batting first? What's a safe target?
-Coach: [Calculates percentile-based targets from opponent data]
+```bash
+pytest agents/vr_cricket_strategist/tests/ -v
 ```
 
----
-
-## Your System at a Glance
-
-```
-You (Browser) → Web UI → Multi-Agent System → Gemini API
-                          ├─ Identity Agent
-                          ├─ Intent Router
-                          ├─ Toss Strategy Agent
-                          └─ Root Orchestrator
-```
+You should see all tests passing with coverage information.
 
 ---
 
 ## Ready to Go!
 
-**Launch command:**
+**Launch web UI:**
 ```bash
 ./launch_web_ui.sh
 ```
 
-**URL:**
+**Open in browser:**
 ```
 http://localhost:8000
 ```
 
-**First message:**
-```
-Hi, I'm [Your Name]
+**Or run tests:**
+```bash
+pytest agents/vr_cricket_strategist/tests/
 ```
 
 ---
 
-**Questions?** Check WEB_UI_GUIDE.md or VR_CRICKET_COACH_GUIDE.md
+**Questions?** Check README.md or the test files in `agents/vr_cricket_strategist/tests/`
 

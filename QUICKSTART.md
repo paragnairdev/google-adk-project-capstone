@@ -42,7 +42,7 @@ Before running the agent, you need to authenticate with Google Cloud:
 
 Run predefined test queries:
 ```bash
-python vr_cricket_strategist.py
+python -m agents.vr_cricket_strategist.agent
 ```
 
 This will demonstrate:
@@ -50,11 +50,16 @@ This will demonstrate:
 - Death overs bowling strategy
 - DLS calculation for rain-affected matches
 
-### Interactive Mode
+### Running Tests
 
-Have a conversation with the cricket strategist:
+Run the test suite:
 ```bash
-python vr_cricket_strategist.py --interactive
+pytest agents/vr_cricket_strategist/tests/
+```
+
+Run tests with coverage:
+```bash
+pytest agents/vr_cricket_strategist/tests/ --cov=agents/vr_cricket_strategist --cov-report=html
 ```
 
 Then ask questions like:
@@ -102,10 +107,10 @@ Type `exit` or `quit` to end the session.
 
 ## Next Steps
 
-1. Modify the custom tools in `vr_cricket_strategist.py`
+1. Modify the custom tools in `agents/vr_cricket_strategist/tools.py`
 2. Add more cricket-specific functions (e.g., run rate calculators, player statistics)
 3. Integrate with cricket APIs for real-time match data
-4. Create a web interface using FastAPI (ADK supports this!)
+4. Extend the test suite with more scenarios
 5. Add multi-agent workflows (e.g., separate agents for batting, bowling, fielding strategies)
 
 ## Tips

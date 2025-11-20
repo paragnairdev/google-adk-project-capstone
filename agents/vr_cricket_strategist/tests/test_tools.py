@@ -9,6 +9,7 @@ from agents.vr_cricket_strategist.tools import (
     get_venue_trends,
     get_head_to_head,
     pick_random_commentator,
+    get_player_stats,
     TEST_PROFILE
 )
 
@@ -25,7 +26,17 @@ def sample_matches_data():
         'stadium': [1, 1, 2, 2, 1, 1, 3, 3],
         'innings_number': [1, 2, 1, 2, 1, 2, 1, 2],
         'runs': [180, 150, 160, 170, 280, 250, 260, 270],
-        'result': ['Win', 'Loss', 'Loss', 'Win', 'Win', 'Loss', 'Win', 'Loss']
+        'overs': [10, 10, 10, 10, 50, 50, 50, 50],
+        'wickets': [7, 10, 10, 7, 5, 8, 5, 8],
+        'is_chasing': [False, True, True, False, False, True, True, False],
+        'result': ['Win', 'Loss', 'Loss', 'Win', 'Win', 'Loss', 'Win', 'Loss'],
+        'hundreds': [1, 0, 0, 1, 1, 0, 1, 0],
+        'double_hundreds': [0, 0, 0, 0, 0, 0, 0, 0],
+        'triple_hundreds': [0, 0, 0, 0, 0, 0, 0, 0],
+        'quadruple_hundreds': [0, 0, 0, 0, 0, 0, 0, 0],
+        'quintuple_hundreds': [0, 0, 0, 0, 0, 0, 0, 0],
+        'ducks': [0, 0, 0, 0, 0, 0, 0, 0],
+        
     })
 
 
@@ -327,4 +338,154 @@ class TestPickRandomCommentator:
         # Verify it was called with the correct list
         called_with = mock_choice.call_args[0][0]
         assert set(called_with) == {"Boycott", "Sidhu", "Nasser", "Harsha"}
+
+
+class TestGetPlayerStats:
+    """Tests for get_player_stats function"""
+    
+    @patch('agents.vr_cricket_strategist.tools.matches_df')
+    def test_get_player_stats_basic(self, mock_df, sample_matches_data):
+        """Test basic player stats retrieval"""
+        with patch('agents.vr_cricket_strategist.tools.matches_df', sample_matches_data):
+            result = get_player_stats(player_name='Alice', format='T20')
+        
+        assert 'player_name' in result
+        assert 'format' in result
+        assert 'stats' in result
+        assert result['player_name'] == 'Alice'
+        assert result['format'] == 'T20'
+        assert isinstance(result['stats'], dict)
+    
+    @patch('agents.vr_cricket_strategist.tools.matches_df')
+    def test_get_player_stats_calculations(self, mock_df):
+        """Test accurate calculation of player stats"""
+        test_data = pd.DataFrame({
+            'player_name': ['Alice', 'Alice', 'Alice', 'Alice'],
+            'opponent_name': ['Bob', 'Bob', 'Charlie', 'Charlie'],
+            'format': ['T20', 'T20', 'T20', 'T20'],
+            'pitch_type': ['Dry', 'Dry', 'Dry', 'Dry'],
+            'stadium': [1, 1, 1, 1],
+            'innings_number': [1, 2, 1, 2],
+            'runs': [150, 100, 200, 50],
+            'overs': [10, 10, 10, 10],
+            'wickets': [2, 3, 1, 4],
+            'is_chasing': [False, True, False, True],
+            'result': ['Win', 'Loss', 'Win', 'Loss'],
+            'hundreds': [1, 1, 2, 0],
+            'double_hundreds': [0, 0, 0, 0],
+            'triple_hundreds': [0, 0, 0, 0],
+            'quadruple_hundreds': [0, 0, 0, 0],
+            'quintuple_hundreds': [0, 0, 0, 0],
+            'ducks': [0, 0, 0, 1]
+        })
+        with patch('agents.vr_cricket_strategist.tools.matches_df', test_data):
+            result = get_player_stats(player_name='Alice', format='T20')
+        
+        stats = result['stats']
+        # 4 innings
+        assert stats['matches'] == 4
+        # Total runs: 150 + 100 + 200 + 50 = 500
+        assert stats['runs'] == 500
+        # Total overs: 10 * 4 = 40
+        assert stats['overs'] == 40
+        # Average: 500 / 4 = 125.0
+        assert stats['average'] == 125.0
+        # Strike rate: (500 / (40 * 6)) * 100 = 208.33
+        assert abs(stats['strike_rate'] - 208.33) < 0.01
+        # Hundreds: 1 + 1 + 2 + 0 = 4
+        assert stats['hundreds'] == 4
+        # Fifties: only scores between 50-99 count (runs: 150, 100, 200, 50)
+        # Only the score of 50 qualifies as a fifty
+        assert stats['fifties'] == 1
+        # Total wickets: 2 + 3 + 1 + 4 = 10
+        assert stats['wickets'] == 10
+        # Economy: 500 / 40 = 12.5
+        assert stats['economy'] == 12.5
+    
+    @patch('agents.vr_cricket_strategist.tools.matches_df')
+    def test_get_player_stats_no_data(self, mock_df):
+        """Test when no data matches the filters"""
+        empty_df = pd.DataFrame(columns=['player_name', 'format', 'runs', 'overs', 'wickets', 'hundreds', 'ducks'])
+        with patch('agents.vr_cricket_strategist.tools.matches_df', empty_df):
+            result = get_player_stats(player_name='Unknown', format='T20')
+        
+        stats = result['stats']
+        assert stats['matches'] == 0
+        assert stats['runs'] == 0
+        assert stats['average'] == 0
+        assert stats['strike_rate'] == 0
+    
+    @patch('agents.vr_cricket_strategist.tools.matches_df')
+    def test_get_player_stats_different_formats(self, mock_df, sample_matches_data):
+        """Test that format filtering works correctly"""
+        with patch('agents.vr_cricket_strategist.tools.matches_df', sample_matches_data):
+            t20_result = get_player_stats(player_name='Alice', format='T20')
+            odi_result = get_player_stats(player_name='Bob', format='ODI')
+        
+        assert t20_result['format'] == 'T20'
+        assert odi_result['format'] == 'ODI'
+        # Stats should be different for different formats
+        assert isinstance(t20_result['stats'], dict)
+        assert isinstance(odi_result['stats'], dict)
+    
+    @patch('agents.vr_cricket_strategist.tools.matches_df')
+    def test_get_player_stats_zero_division_safety(self, mock_df):
+        """Test that function handles zero division gracefully"""
+        test_data = pd.DataFrame({
+            'player_name': ['Alice'],
+            'opponent_name': ['Bob'],
+            'format': ['T20'],
+            'pitch_type': ['Dry'],
+            'stadium': [1],
+            'innings_number': [1],
+            'runs': [0],
+            'overs': [0],
+            'wickets': [0],
+            'is_chasing': [False],
+            'result': ['Loss'],
+            'hundreds': [0],
+            'double_hundreds': [0],
+            'triple_hundreds': [0],
+            'quadruple_hundreds': [0],
+            'quintuple_hundreds': [0],
+            'ducks': [1]
+        })
+        with patch('agents.vr_cricket_strategist.tools.matches_df', test_data):
+            result = get_player_stats(player_name='Alice', format='T20')
+        
+        # Should not raise division by zero error
+        stats = result['stats']
+        assert stats['average'] == 0
+        assert stats['strike_rate'] == 0
+        assert stats['economy'] == 0
+    
+    @patch('agents.vr_cricket_strategist.tools.matches_df')
+    def test_get_player_stats_fifties_calculation(self, mock_df):
+        """Test accurate calculation of fifties (50-99 runs)"""
+        test_data = pd.DataFrame({
+            'player_name': ['Alice', 'Alice', 'Alice', 'Alice', 'Alice'],
+            'opponent_name': ['Bob', 'Bob', 'Bob', 'Bob', 'Bob'],
+            'format': ['T20', 'T20', 'T20', 'T20', 'T20'],
+            'pitch_type': ['Dry', 'Dry', 'Dry', 'Dry', 'Dry'],
+            'stadium': [1, 1, 1, 1, 1],
+            'innings_number': [1, 1, 1, 1, 1],
+            'runs': [49, 50, 75, 99, 100],  # Only 50, 75, 99 should count as fifties
+            'overs': [10, 10, 10, 10, 10],
+            'wickets': [0, 0, 0, 0, 0],
+            'is_chasing': [False, False, False, False, False],
+            'result': ['Loss', 'Win', 'Win', 'Win', 'Win'],
+            'hundreds': [0, 0, 0, 0, 1],
+            'double_hundreds': [0, 0, 0, 0, 0],
+            'triple_hundreds': [0, 0, 0, 0, 0],
+            'quadruple_hundreds': [0, 0, 0, 0, 0],
+            'quintuple_hundreds': [0, 0, 0, 0, 0],
+            'ducks': [0, 0, 0, 0, 0]
+        })
+        with patch('agents.vr_cricket_strategist.tools.matches_df', test_data):
+            result = get_player_stats(player_name='Alice', format='T20')
+        
+        stats = result['stats']
+        # Fifties: 50, 75, 99 (3 fifties, 100 is a hundred not a fifty)
+        assert stats['fifties'] == 3
+
 

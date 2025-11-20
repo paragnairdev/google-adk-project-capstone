@@ -27,7 +27,7 @@ class TestConfig:
         from agents.vr_cricket_strategist.config import APP_NAME
         assert APP_NAME is not None
         assert isinstance(APP_NAME, str)
-        assert APP_NAME == "vr_cricket_coach"
+        assert APP_NAME == "vr_cricket_strategist"
     
     def test_retry_config_exists(self):
         """Test that retry_config is defined"""
