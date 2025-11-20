@@ -233,33 +233,56 @@ class TestCompositeAgents:
         assert sub_agents[2] == commentator_router
     
     def test_root_agent_exists(self):
-        """Test that root_agent is defined"""
-        from agents.vr_cricket_strategist.agent import root_agent
+        """Test that root_agent and its components are defined"""
+        from agents.vr_cricket_strategist.agent import (
+            root_agent, orchestrator_agent, identity_agent
+        )
         assert root_agent is not None
+        assert orchestrator_agent is not None
+        assert identity_agent is not None
     
     def test_root_agent_configuration(self):
         """Test root_agent configuration"""
-        from agents.vr_cricket_strategist.agent import root_agent
+        from agents.vr_cricket_strategist.agent import root_agent, SequentialAgent
         
-        assert root_agent.name == "CricketCoachOrchestrator"
-        assert hasattr(root_agent, 'tools')
+        assert root_agent.name == "RootAgent"
+        assert isinstance(root_agent, SequentialAgent)
         assert hasattr(root_agent, 'sub_agents')
-        assert hasattr(root_agent, 'instruction')
-    
-    def test_root_agent_tools(self):
-        """Test that root_agent has identity tool"""
-        from agents.vr_cricket_strategist.agent import root_agent
+
+    def test_orchestrator_agent_configuration(self):
+        """Test orchestrator_agent configuration"""
+        from agents.vr_cricket_strategist.agent import orchestrator_agent
         
-        tool_names = [tool.__name__ for tool in root_agent.tools]
+        assert orchestrator_agent.name == "CricketCoachOrchestrator"
+        assert hasattr(orchestrator_agent, 'tools')
+        assert hasattr(orchestrator_agent, 'sub_agents')
+        assert hasattr(orchestrator_agent, 'instruction')
+    
+    def test_orchestrator_agent_tools(self):
+        """Test that orchestrator_agent has identity tool"""
+        from agents.vr_cricket_strategist.agent import orchestrator_agent
+        
+        tool_names = [tool.__name__ for tool in orchestrator_agent.tools]
         assert 'get_current_identity' in tool_names
     
     def test_root_agent_sub_agents(self):
         """Test that root_agent has correct sub-agents"""
         from agents.vr_cricket_strategist.agent import (
-            root_agent, game_plan_generator, stat_analyst, fallback_agent
+            root_agent, orchestrator_agent, identity_agent
         )
         
         sub_agents = root_agent.sub_agents
+        assert len(sub_agents) == 2
+        assert identity_agent in sub_agents
+        assert orchestrator_agent in sub_agents
+
+    def test_orchestrator_sub_agents(self):
+        """Test that orchestrator_agent has correct sub-agents"""
+        from agents.vr_cricket_strategist.agent import (
+            orchestrator_agent, game_plan_generator, stat_analyst, fallback_agent
+        )
+
+        sub_agents = orchestrator_agent.sub_agents
         assert len(sub_agents) == 3
         assert game_plan_generator in sub_agents
         assert stat_analyst in sub_agents
@@ -325,12 +348,15 @@ class TestAgentInstructions:
         assert 'tool' in instruction
     
     def test_root_agent_routing_logic(self):
-        """Test that root_agent has routing logic"""
-        from agents.vr_cricket_strategist.agent import root_agent
+        """Test that orchestrator_agent has routing logic"""
+        from agents.vr_cricket_strategist.agent import orchestrator_agent, identity_agent
         
-        instruction = root_agent.instruction
-        # Should mention identity check
-        assert 'get_current_identity' in instruction
+        # Identity agent should handle identity
+        assert 'get_current_identity' in identity_agent.instruction
+        
+        instruction = orchestrator_agent.instruction
+        # Should mention identity is established
+        assert 'identity' in instruction.lower()
         # Should mention routing
         assert 'route' in instruction.lower() or 'delegate' in instruction.lower()
 
@@ -343,14 +369,14 @@ class TestAgentDependencies:
         from agents.vr_cricket_strategist.agent import (
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router, 
-            stat_analyst, root_agent, fallback_agent
+            stat_analyst, orchestrator_agent, fallback_agent
         )
         
         # Main agents should have model_config
         agents_with_model = [
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, root_agent
+            stat_analyst, orchestrator_agent
         ]
         for agent in agents_with_model:
             assert hasattr(agent, 'model')
@@ -364,7 +390,7 @@ class TestAgentDependencies:
         from agents.vr_cricket_strategist.agent import (
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, root_agent, model_config
+            stat_analyst, orchestrator_agent, model_config
         )
         
         # Only test agents that should have model_config
@@ -372,7 +398,7 @@ class TestAgentDependencies:
         agents = [
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, root_agent
+            stat_analyst, orchestrator_agent
         ]
         for agent in agents:
             assert agent.model == model_config
@@ -399,13 +425,15 @@ class TestAgentNaming:
         from agents.vr_cricket_strategist.agent import (
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, game_plan_generator, root_agent, fallback_agent
+            stat_analyst, game_plan_generator, root_agent, fallback_agent,
+            orchestrator_agent, identity_agent
         )
         
         agents = [
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, game_plan_generator, root_agent, fallback_agent
+            stat_analyst, game_plan_generator, root_agent, fallback_agent,
+            orchestrator_agent, identity_agent
         ]
         names = [agent.name for agent in agents]
         
@@ -417,7 +445,7 @@ class TestAgentNaming:
         from agents.vr_cricket_strategist.agent import (
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, root_agent, fallback_agent
+            stat_analyst, orchestrator_agent, root_agent, fallback_agent
         )
         
         agents_and_roles = [
@@ -429,7 +457,8 @@ class TestAgentNaming:
             (harsha_writer, 'harsha'),
             (commentator_router, 'commentator'),
             (stat_analyst, 'stat'),
-            (root_agent, 'coach'),
+            (orchestrator_agent, 'coach'),
+            (root_agent, 'root'),
             (fallback_agent, 'responder')
         ]
         
@@ -443,10 +472,10 @@ class TestToolIntegration:
     def test_tools_are_callable(self):
         """Test that all tools assigned to agents are callable"""
         from agents.vr_cricket_strategist.agent import (
-            fact_finder, stat_analyst, commentator_router, root_agent
+            fact_finder, stat_analyst, commentator_router, orchestrator_agent
         )
         
-        agents_with_tools = [fact_finder, stat_analyst, commentator_router, root_agent]
+        agents_with_tools = [fact_finder, stat_analyst, commentator_router, orchestrator_agent]
         
         for agent in agents_with_tools:
             for tool in agent.tools:
@@ -455,10 +484,10 @@ class TestToolIntegration:
     def test_no_duplicate_tools_per_agent(self):
         """Test that agents don't have duplicate tools"""
         from agents.vr_cricket_strategist.agent import (
-            fact_finder, stat_analyst, commentator_router, root_agent
+            fact_finder, stat_analyst, commentator_router, orchestrator_agent
         )
         
-        agents_with_tools = [fact_finder, stat_analyst, commentator_router, root_agent]
+        agents_with_tools = [fact_finder, stat_analyst, commentator_router, orchestrator_agent]
         
         for agent in agents_with_tools:
             tool_names = [tool.__name__ for tool in agent.tools]

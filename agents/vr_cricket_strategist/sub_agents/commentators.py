@@ -35,23 +35,13 @@ boycott_writer = LlmAgent(
     3. Rephrase them in Boycott's direct, critical but helpful style
     4. Use phrases like "rubbish bowling", "stick of rhubarb", "roti capability", "even my grandmother could do that in her sleep"
     5. Address the player by name if available
-    6. You can also use the `AgentSearch` tool to find whacky quotes from Geoffrey Boycott.
-    
+    6. Use the `AgentSearch` tool to find exactly ONE whacky quote from Geoffrey Boycott.
+
+    While returning quotes do not use phrases like "Geoffrey Boycott said..." or "Geoffrey Boycott is known for saying..."
     Be concise, direct, and deliver the strategy clearly.
     """,
     tools=[AgentTool(agent=agent_search)]
 )
-
-
-# A small database of Sidhuisms to inject directly
-SIDHU_QUOTES = """
-- "If ifs and buts were pots and pans, there would be no tinkers!"
-- "He is like a one-legged man in a bum kicking contest."
-- "That ball went so high it could have brought down an air hostess."
-- "Experience is like a comb that life gives you when you are bald."
-- "Wickets are like wives - you never know which way they will turn!"
-- "He is like a cycle stand... anyone can park their cycle there."
-"""
 
 sidhu_writer = LlmAgent(
     name="SidhuWriter",
@@ -66,12 +56,10 @@ sidhu_writer = LlmAgent(
     1. Start with "Oye Guru!" or "My friend..."
     2. Say: "I have got Jhonty Singh err.. Navjot Singh Sidhu here, who would like to give you some advice."
     3. Take the Tactician's recommendations and rephrase using wild metaphors and colorful analogies
+    4. Use the `AgentSearch` tool to find exactly ONE whacky quote from Navjot Singh Sidhu.
+
+    While returning quotes do not use phrases like "Navjot Singh Sidhu said..." or "Navjot Singh Sidhu is known for saying..."
     
-    REFERENCE QUOTES (Use similar style):
-    {SIDHU_QUOTES}
-
-    You can also use the `AgentSearch` tool to find whacky quotes from Navjot Singh Sidhu.
-
     Be loud, energetic, confusing but colorful. Address the player by name if available.
     """,
     tools=[AgentTool(agent=agent_search)]

@@ -49,23 +49,26 @@ __all__ = [
     'nasser_writer',
     'harsha_writer',
     'commentator_router',
+    'identity_agent',
+    'orchestrator_agent',
 ]
 
+identity_agent = LlmAgent(
+    name="IdentityAgent",
+    model=model_config,
+    instruction="Call the `get_current_identity` tool immediately and output the result.",
+    tools=[get_current_identity]
+)
 
-# ============================================================================
-# ROOT AGENT - Main Orchestrator
-# ============================================================================
-
-root_agent = LlmAgent(
+orchestrator_agent = LlmAgent(
     name="CricketCoachOrchestrator",
     model=model_config,
     instruction="""
     You are the VR Cricket Coach/Strategist Interface.
     
-    ### PHASE 1: IDENTITY
-    - ALWAYS call `get_current_identity` first to identify the user.
-
-    ### PHASE 2: ROUTING
+    The user's identity has already been established in the conversation history.
+    
+    ### ROUTING INSTRUCTIONS
     Classify the user's intent and route to the correct specialist:
 
     **FOR STRATEGY REQUESTS ("What should I do?", "Help me improve", "Give me advice"):**
@@ -100,7 +103,18 @@ root_agent = LlmAgent(
     sub_agents=[game_plan_generator, stat_analyst, fallback_agent] 
 )
 
+# ============================================================================
+# ROOT AGENT - Main Orchestrator
+# ============================================================================
+
+root_agent = SequentialAgent(
+    name="RootAgent",
+    sub_agents=[identity_agent, orchestrator_agent]
+)
+
 # Attach circuit breaker callbacks to prevent infinite loops
 root_agent.before_agent_callback = circuit_breaker
+identity_agent.before_agent_callback = circuit_breaker
+orchestrator_agent.before_agent_callback = circuit_breaker
 stat_analyst.before_agent_callback = circuit_breaker
 game_plan_generator.before_agent_callback = circuit_breaker
