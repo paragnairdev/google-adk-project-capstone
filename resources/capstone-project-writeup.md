@@ -2,33 +2,31 @@
 
 ## Problem Statement
 
-**VR Cricket** is a competitive gaming phenomenon where players participate in virtual cricket tournaments. Unlike real cricket where teams control both batting and bowling, VR Cricket players face unique strategic constraints: they can only bat and make high-level decisions—the game engine handles bowling and fielding automatically.
+**VR Cricket** is a competitive gaming phenomenon where players participate in virtual tournaments. Unlike real cricket, VR Cricket has unique constraints: players only control batting and high-level decisions—the game engine handles bowling and fielding automatically.
 
-Players constantly face critical tournament decisions: Should I bat first or chase? What's a safe target to set on this pitch type? When should I declare my innings in a Test match? What are my chances of successfully chasing this target based on my historical performance?
+Players constantly face critical decisions: Should I bat first or chase? What's a safe target on this pitch type? When should I declare in a Test match? What are my chances of chasing this target?
 
-Professional esports teams employ data analysts with access to sophisticated tools and historical databases. However, casual VR Cricket tournament players lack this strategic intelligence. They're making crucial decisions that determine tournament advancement based purely on gut feeling.
+Professional esports teams employ data analysts with sophisticated tools and databases. Casual tournament players lack this intelligence. They make crucial decisions affecting tournament advancement based purely on gut feeling and limited memory of recent matches. They can't instantly recall statistical patterns across hundreds of games or access real-time, data-driven insights.
 
-The traditional approach relies on intuition and limited memory. Players might remember their last few matches but can't instantly recall statistical patterns across hundreds of virtual games. They need real-time, data-driven insights but lack resources to analyze complex performance datasets.
-
-This creates a gap: democratizing VR Cricket strategy. How do we bring esports-level analysis to casual tournament players, making data-driven decision-making accessible, instant, and personalized for the virtual cricket gaming community?
+**The gap**: How do we democratize VR Cricket strategy, bringing esports-level analysis to casual players with instant, personalized, data-driven decision-making?
 
 ## Why Agents?
 
-Agents are the perfect solution for VR Cricket tournament strategy because the problem requires orchestrating multiple specialized tasks that must work together intelligently.
+Agents perfectly solve VR Cricket strategy by orchestrating multiple specialized tasks intelligently.
 
-**Task Decomposition**: VR Cricket tournament strategy isn't a single query—it requires gathering historical tournament data, analyzing virtual pitch conditions, calculating win probabilities, formulating tactical advice (bat first vs. chase, when to declare), and delivering insights in an engaging way. Each is a distinct specialization. A multi-agent system creates focused experts: one agent retrieves data, another analyzes statistics, a third formulates strategy, and commentator agents deliver insights.
+**Task Decomposition**: Strategy requires gathering historical data, analyzing pitch conditions, calculating probabilities, formulating tactics (bat first vs. chase, declaration timing), and delivering engaging insights. A multi-agent system creates focused experts: data retrieval, statistical analysis, strategy formulation, and personality-driven delivery.
 
-**Dynamic Routing**: User queries vary wildly. One player might ask "What's my batting average in T20 tournaments?", while another asks "Should I bat first on a green pitch?" or "When should I declare?" A root orchestrator agent intelligently routes requests to the appropriate specialist, ensuring efficient responses without forcing a single monolithic LLM to handle all scenarios.
+**Dynamic Routing**: Queries vary wildly—from "What's my T20 batting average?" to "Should I bat first on green pitch?" or "When should I declare?" A root orchestrator intelligently routes requests to appropriate specialists without forcing a monolithic LLM to handle everything.
 
-**Sequential Workflows**: Strategic analysis follows a natural pipeline: gather tournament history → analyze patterns → formulate advice → deliver in engaging format. Sequential agents perfectly model this workflow, ensuring each step completes before the next begins.
+**Sequential Workflows**: Analysis follows a natural pipeline: gather history → analyze patterns → formulate advice → deliver engagingly. Sequential agents model this perfectly, ensuring each step completes before the next.
 
-**Personality & Engagement**: Gaming isn't just data—it's entertainment. By using multiple commentator agents (mimicking legends like Geoffrey Boycott, Navjot Sidhu, Nasser Hussain, and Harsha Bhogle), we deliver strategic insights with personality and flair, making the VR Cricket experience engaging rather than robotic.
+**Personality & Engagement**: Gaming is entertainment, not just data. Multiple commentator agents (Geoffrey Boycott, Navjot Sidhu, Nasser Hussain, Harsha Bhogle) deliver strategic insights with personality, making VR Cricket engaging rather than robotic.
 
-**Reliability & Observability**: Agents can fail or enter infinite loops. By using callbacks and circuit breakers, we monitor agent behavior, prevent ping-pong routing issues, and ensure system reliability—critical for tournament players making time-sensitive decisions.
+**Reliability & Observability**: Callbacks and circuit breakers monitor agent behavior, prevent ping-pong routing loops, and ensure reliability—critical for time-sensitive tournament decisions.
 
 ## What I Created
 
-**VR Cricket Strategist** is a production-ready multi-agent system built with Google's Agent Development Kit (ADK) and powered by Gemini 2.5 Flash. It provides personalized, data-driven tournament strategy for VR Cricket players through an intelligent hierarchy of specialized AI agents. The system helps players make critical decisions: bat first or chase, when to declare, and what targets are safe based on their historical tournament performance.
+**VR Cricket Strategist** is a production-ready multi-agent system built with Google's ADK and Gemini 2.5 Flash. It delivers personalized, data-driven tournament strategy through specialized AI agents, helping players decide: bat first or chase, when to declare, and safe target scores based on historical performance.
 
 ### Architecture Overview
 *(See architecture diagram)*
@@ -51,23 +49,17 @@ Agents are the perfect solution for VR Cricket tournament strategy because the p
 
 ### Sessions & State Management
 
-ADK's session management maintains user context. Session state stores user identity (player name, team, batting style), request history, retry counts, and last inputs for loop detection. This enables personalized responses tailored to individual playing styles.
+ADK's session management maintains user context: player identity, request history, retry counts, and last inputs for loop detection. This enables personalized, style-specific responses.
 
 ### Observability: Circuit Breaker Callback
 
-A custom `before_agent_callback` monitors agent transfers. If an agent receives the same input more than 5 times (indicating a ping-pong loop), the circuit breaker injects override instructions, forcing the agent to stop and apologize. This prevents infinite loops and ensures graceful failure.
+A custom `before_agent_callback` monitors agent transfers. If an agent receives identical input 5+ times (ping-pong loop), the circuit breaker injects override instructions to stop gracefully, preventing infinite loops.
 
-### Agent Evaluation & Testing
+### Testing & Technology
 
-**79 comprehensive tests** covering unit tests for all tools, agent configuration validation, data integrity, tool-agent integration, and edge case handling (empty data, missing values, invalid formats). Includes pytest configuration, HTML coverage reports, and test fixtures.
+**79 comprehensive tests** covering tools, agent configuration, data integrity, integration, and edge cases. Includes pytest configuration, HTML coverage reports, and fixtures.
 
-### Technology Stack
-- **Google ADK**: Multi-agent framework, session management, tool integration
-- **Gemini 2.5 Flash**: Powers all LLM agents with retry logic for reliability
-- **CSV Database**: 100+ historical VR Cricket tournament matches with players, teams, pitch types, venues, and results
-- **Web UI**: ADK's built-in playground for interactive testing during tournaments
-- **Python 3.13**: Modern Python with type hints and async support
-- **pytest**: Comprehensive testing framework
+**Stack**: Google ADK (orchestration, sessions, tools) • Gemini 2.5 Flash (with retry logic) • CSV Database (100+ matches) • ADK Web UI • Python 3.13 • pytest
 
 ## Demo
 
@@ -91,40 +83,34 @@ A custom `before_agent_callback` monitors agent transfers. If an agent receives 
 
 ### Development Process
 
-**Data Pipeline**: Created synthetic VR Cricket tournament data (Test/ODI/T20 formats, multiple pitch types, match outcomes).
+**Data Pipeline**: Created synthetic VR Cricket data (Test/ODI/T20, multiple pitch types, outcomes).
 
-**Tools & Agents**: Built 5 pandas-based tools, then implemented agents bottom-up—leaf agents (FactFinder, Tactician, Commentators) → orchestrators → composites → root.
+**Tools & Agents**: Built 5 pandas-based tools, then agents bottom-up—leaf agents (FactFinder, Tactician, Commentators) → orchestrators → root.
 
-**Session & Observability**: Integrated ADK's session service for user context and circuit breaker callback to prevent infinite loops.
+**Observability**: Integrated session service and circuit breaker callback preventing infinite loops.
 
-**Testing & UI**: Built 79-test suite with pytest; used ADK's web UI for demonstrations.
-
-### Key Technologies
-- **Google ADK**: Multi-agent orchestration, tool integration, session management
-- **Gemini 2.5 Flash**: With retry configuration for resilience
-- **Python Pandas**: Data analysis and CSV processing
-- **pytest**: Testing and coverage analysis
+**Testing**: Built 79-test suite with pytest; used ADK's web UI for demos.
 
 ### Key Challenges Solved
-- **Agent Loop Prevention**: Circuit breaker callback detects and stops infinite routing—critical for tournament players needing quick decisions
-- **Session State Management**: Maintaining user identity and tournament history across conversation turns
-- **Tool Parameter Inference**: Agents learn to extract parameters (format, pitch type, opponent) from natural language queries
-- **Personality Consistency**: Each commentator agent maintains distinct voice through carefully crafted instructions, making the VR Cricket experience entertaining
-- **Context-Aware Recommendations**: Agents understand the constraints of VR Cricket (batting-only decisions) and provide relevant strategic advice
+- **Agent Loop Prevention**: Circuit breaker detects and stops infinite routing—critical for quick tournament decisions
+- **Session State Management**: Maintaining user identity across conversation turns
+- **Tool Parameter Inference**: Extracting parameters (format, pitch, opponent) from natural language
+- **Personality Consistency**: Each commentator maintains distinct voice through crafted instructions
+- **Context-Aware Strategy**: Understanding VR Cricket constraints (batting-only decisions)
 
 ## If I Had More Time
 
-**ML Win Probability**: Implement models predicting chase success rates and optimal Test match declaration timing based on historical patterns.
+**ML Win Probability**: Implement models predicting chase success and optimal declaration timing.
 
-**Live Tournament Integration**: Connect to VR Cricket APIs for real-time in-game strategy suggestions and dynamic performance analysis between innings.
+**Live Tournament Integration**: Connect to VR Cricket APIs for real-time in-game strategy and dynamic analysis.
 
-**Voice Interface**: Add speech-to-text/text-to-speech, allowing players to verbally query strategies and receive audio responses—perfect for streaming.
+**Voice Interface**: Add speech-to-text/text-to-speech for verbal queries—perfect for streaming.
 
-**Discord Bot**: Deploy as a Discord bot for tournament communities with channel-integrated queries, tournament statistics, and leaderboards.
+**Discord Bot**: Deploy for tournament communities with integrated queries, statistics, and leaderboards.
 
-**Real Tournament Data**: Integrate with VR Cricket platforms to automatically import real tournament data, expanding beyond synthetic datasets.
+**Real Tournament Data**: Auto-import from VR Cricket platforms, expanding beyond synthetic datasets.
 
-**Agent Simulations**: Create scenarios where agents simulate matches based on historical data, predicting tournament bracket outcomes.
+**Agent Simulations**: Simulate matches based on historical data, predicting bracket outcomes.
 
 ---
 
