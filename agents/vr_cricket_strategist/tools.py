@@ -1,5 +1,6 @@
 # tools/identity_tools.py
 import os
+import random
 from typing import Optional
 from google.adk.tools import ToolContext
 from .data_loader import matches_df
@@ -11,6 +12,12 @@ TEST_PROFILE = {
     "batting_style": "Moderate",
     "role": "Player"
 }
+
+
+def pick_random_commentator() -> str:
+    """Randomly selects one cricket commentator name."""
+    options = ["Boycott", "Sidhu", "Nasser", "Harsha"]
+    return random.choice(options)
 
 def get_current_identity(tool_context: ToolContext):
     """
