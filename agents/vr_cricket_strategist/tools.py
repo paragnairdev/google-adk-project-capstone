@@ -162,13 +162,15 @@ def get_player_stats(player_name: str, format: str):
                 "overs": 0,
                 "average": 0,
                 "strike_rate": 0,
+                "double_hundreds": 0,
+                "triple_hundreds": 0,
+                "quadruple_hundreds": 0,
+                "quintuple_hundreds": 0,
                 "hundreds": 0,
                 "fifties": 0,
+                "ducks": 0,
                 "wickets": 0,
                 "economy": 0,
-                "catches": 0,
-                "run_outs": 0,
-                "stumps": 0,
             }
         }
     
@@ -178,6 +180,11 @@ def get_player_stats(player_name: str, format: str):
     total_overs = int(filtered['overs'].sum())
     total_wickets = int(filtered['wickets'].sum())
     total_hundreds = int(filtered['hundreds'].sum())
+    total_double_hundreds = int(filtered['double_hundreds'].sum())
+    total_triple_hundreds = int(filtered['triple_hundreds'].sum())
+    total_quadruple_hundreds = int(filtered['quadruple_hundreds'].sum())
+    total_quintuple_hundreds = int(filtered['quintuple_hundreds'].sum())
+    total_ducks = int(filtered['ducks'].sum())
     
     # Calculate average (total runs / number of matches)
     average = round(total_runs / matches, 2) if matches > 0 else 0
@@ -206,8 +213,10 @@ def get_player_stats(player_name: str, format: str):
             "fifties": fifties,
             "wickets": total_wickets,
             "economy": economy,
-            "catches": 0,  # Not available in current dataset
-            "run_outs": 0,  # Not available in current dataset
-            "stumps": 0,  # Not available in current dataset
+            "double_hundreds": total_double_hundreds,
+            "triple_hundreds": total_triple_hundreds,
+            "quadruple_hundreds": total_quadruple_hundreds,
+            "quintuple_hundreds": total_quintuple_hundreds,
+            "ducks": total_ducks,
         }
     }
