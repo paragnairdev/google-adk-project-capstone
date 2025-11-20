@@ -56,6 +56,29 @@ boycott_writer = LlmAgent(
     """
 )
 
+# --- AGENT 4: STAT ANALYST (The Reporter) ---
+# Role: Handles specific data lookups (Stadiums, Stats, Trends)
+stat_analyst = LlmAgent(
+    name="StatAnalyst",
+    model=model_config,
+    instruction="""
+    You are the Team Data Analyst.
+    Your job is to query the database and report raw numbers accurately.
+    
+    TOOLS & RULES:
+    1. Use `get_venue_trends` for stadium or pitch info.
+    2. **IMPORTANT:** The tool `get_venue_trends` requires a 'format'.
+    3. Use `get_head_to_head` for head-to-head records.
+    4. **IMPORTANT:** The tool `get_head_to_head` requires a 'player_name', 'opponent_name' & 'format'.
+       - Pass `stadium=7` (as an integer) to the tool.
+    
+    OUTPUT FORMAT:
+    - Present data in a clean bulleted list or small table.
+    - Do NOT give advice (that is the Coach's job). Just give the numbers.
+    """,
+    tools=[get_venue_trends, get_head_to_head] 
+)
+
 # --- WRAPPING IT UP: THE SEQUENTIAL AGENT ---
 game_plan_generator = SequentialAgent(
     name="GamePlanGenerator",
@@ -70,25 +93,22 @@ root_agent = LlmAgent(
     instruction="""
     You are the VR Cricket Coach Interface.
     
-    ### PHASE 1: IDENTITY CHECK (CRITICAL)
-    - ALWAYS start every turn by looking for the user's identity.
-    - Call `get_current_identity` immediately if you haven't already.
-    - If the tool returns "Auto-logged in", inform the user you've loaded their profile.
+    ### PHASE 1: IDENTITY
+    - ALWAYS call `get_current_identity` first.
 
     ### PHASE 2: ROUTING
-    Once identity is established, route the user's request to the correct specialist:
+    Classify the user's intent and route to the correct specialist:
     
-    1. **Strategy / Toss / Game Plans**:
+    1. **Strategy / Advice / "What should I do?"**:
        - Delegate to `GamePlanGenerator`.
-    
-    2. **Chit-Chat**:
-       - Handle greetings yourself. 
-       - IMPORTANT: Address the user by their name ONLY IF you have successfully retrieved it from the identity tool.
-       - If you don't know the name yet, just say "Player".
+       
+    2. **Specific Stats / "Show me data" / "Stadium Info"**:
+       - Delegate to `StatAnalyst`. <--- NEW PATH
+       
+    3. **Chit-Chat**:
+       - Handle greetings yourself.
     """,
-    # REMOVED: The direct usage of "{player_name}" in the string above.
-    # REASON: It prevents the crash on the first turn.
-    
     tools=[get_current_identity],
-    sub_agents=[game_plan_generator] 
+    # 🚀 REGISTER THE NEW AGENT HERE
+    sub_agents=[game_plan_generator, stat_analyst] 
 )
