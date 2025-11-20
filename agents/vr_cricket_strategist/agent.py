@@ -56,7 +56,11 @@ __all__ = [
 identity_agent = LlmAgent(
     name="IdentityAgent",
     model=model_config,
-    instruction="Call the `get_current_identity` tool immediately and output the result.",
+    instruction="""
+    You are a background data processor. 
+    1. Call the `get_current_identity` tool.
+    2. Output the response as is.
+    """,
     tools=[get_current_identity]
 )
 
@@ -66,8 +70,12 @@ orchestrator_agent = LlmAgent(
     instruction="""
     You are the VR Cricket Coach/Strategist Interface.
     
-    The user's identity has already been established in the conversation history.
+    **CONTEXT CONSUMPTION:**
+    Look at the message immediately preceding this one. It contains the User's Identity and Preferences provided by the system.
     
+    **ACTION:**
+    Using that identity information, greet the user by name and proceed with the routing logic.
+
     ### ROUTING INSTRUCTIONS
     Classify the user's intent and route to the correct specialist:
 

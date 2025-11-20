@@ -30,7 +30,7 @@ def get_current_identity(tool_context: ToolContext):
     player_name = state.get("player_name")
     
     if player_name:
-        return f"User is logged in as {player_name} ({state.get('team')})."
+        return {"player_name": player_name, "team": state.get('team'), "batting_style": state.get('batting_style'), "auto_injected": False}
 
     # 2. If missing, inject TEST_PROFILE (The "Dev Mode" Hack)
     # We assume if you are using this tool and state is empty, you are testing.
@@ -38,8 +38,8 @@ def get_current_identity(tool_context: ToolContext):
     
     for key, value in TEST_PROFILE.items():
         state[key] = value
-        
-    return f"DEBUG: Auto-logged in as test user '{TEST_PROFILE['player_name']}'."
+    
+    return {"player_name": TEST_PROFILE['player_name'], "team": TEST_PROFILE['team'], "batting_style": TEST_PROFILE['batting_style'], "auto_injected": True}
 
 # Assume 'df' is your loaded dataframe or database connection
 def get_venue_trends(format: str, pitch_type: Optional[str] = None, stadium: int = 0):
