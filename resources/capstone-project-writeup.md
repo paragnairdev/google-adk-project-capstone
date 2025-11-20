@@ -71,15 +71,15 @@ A custom `before_agent_callback` monitors agent transfers. If an agent receives 
 
 ## Demo
 
-**Example Query**: "I'm playing against Wizheart in a T20 VR Cricket tournament on a green pitch with overcast conditions. Should I bat first or chase?"
+**Example Query**: "I'm playing against Ragz in a T20 VR Cricket tournament on a green pitch with overcast conditions. Should I bat first or chase?"
 
 **System Flow**:
 1. Root agent calls `get_current_identity()` → identifies user as "Joe" from England
 2. Routes to GamePlanGenerator (sequential workflow begins)
-3. FactFinder calls `get_head_to_head("Joe", "Wizheart", "T20")` and `get_venue_trends("T20", "Green")`
-4. Tactician analyzes: Green pitch shows 58% win rate for teams batting second, Joe has won 3/7 matches chasing against Wizheart, average first innings score is 165
+3. FactFinder calls `get_head_to_head("Joe", "Ragz", "T20")` and `get_venue_trends("T20", "Green")`
+4. Tactician analyzes: Green pitch shows 58% win rate for teams batting second, Joe has won 3/7 matches chasing against Ragz, average first innings score is 165
 5. CommentatorRouter calls `pick_random_commentator()` → selects "Nasser"
-6. NasserWriter delivers: *"Right then, Joe. Looking at your tournament history, I'd strongly recommend bowling first here. Green pitches in VR Cricket show teams chasing win 58% of the time, and you've historically struggled setting targets against Wizheart—you've only defended successfully once in your last 5 encounters. The average first innings score is 165, so if you chase, aim for calculated aggression. Set a target of 15-20 runs above average in your powerplay, and you should be on track..."*
+6. NasserWriter delivers: *"Right then, Joe. Looking at your tournament history, I'd strongly recommend bowling first here. Green pitches in VR Cricket show teams chasing win 58% of the time, and you've historically struggled setting targets against Ragz—you've only defended successfully once in your last 5 encounters. The average first innings score is 165, so if you chase, aim for calculated aggression. Set a target of 15-20 runs above average in your powerplay, and you should be on track..."*
 
 **Example Query 2**: "I'm at 450/5 in a Test match after 100 overs. Should I declare or keep batting?"
 
