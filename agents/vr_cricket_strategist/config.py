@@ -23,10 +23,10 @@ os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "FALSE"
 
 # Configuration
 MODEL_NAME = "gemini-2.0-flash-lite"
-APP_NAME = "vr_cricket_coach"
+APP_NAME = "vr_cricket_strategist"
 
 # Dataset paths - go up to the workspace root
-# Assuming this file is in agents/vr_cricket_coach/
+# Assuming this file is in agents/vr_cricket_strategist/
 BASE_DIR = Path(__file__).parent.parent.parent
 DATASET_DIR = BASE_DIR / "vr_cricket_dataset"
 PLAYERS_CSV = DATASET_DIR / "players.csv"

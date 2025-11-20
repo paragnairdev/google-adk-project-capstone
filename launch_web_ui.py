@@ -1,7 +1,7 @@
 """
-VR Cricket Coach - Web UI Launcher
+VR Cricket Strategist - Web UI Launcher
 
-This script launches the ADK web interface for the VR Cricket Coach agent,
+This script launches the ADK web interface for the VR Cricket Strategist agent,
 providing a modern chat-like interface for interacting with the agent.
 
 Usage:
@@ -30,7 +30,7 @@ if not os.getenv("GOOGLE_API_KEY"):
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "FALSE"
 
 print("\n" + "="*80)
-print("🏏 VR CRICKET COACH - WEB UI")
+print("🏏 VR CRICKET STRATEGIST - WEB UI")
 print("="*80)
 print("\nStarting web interface...")
 print("The web UI will be available at: http://localhost:8000")
@@ -43,19 +43,27 @@ agents_dir = Path(__file__).parent / "agents"
 # Use ADK CLI to start the web UI
 if __name__ == "__main__":
     try:
-        subprocess.run(
-            [
-                "adk", "web",
-                str(agents_dir),
-                "--port", "8000",
-                "--host", "0.0.0.0",
-            ],
-            check=True,
-            env=os.environ.copy()
-        )
+        # Open log file for writing
+        log_file = Path(__file__).parent / "server.log"
+        
+        with open(log_file, "w") as log:
+            subprocess.run(
+                [
+                    "adk", "web",
+                    str(agents_dir),
+                    "--port", "8000",
+                    "--host", "0.0.0.0",
+                    "--session_service_uri", "sqlite:///cricket_strategist_sessions.db",
+                ],
+                check=True,
+                env=os.environ.copy(),
+                stdout=log,
+                stderr=subprocess.STDOUT
+            )
     except KeyboardInterrupt:
         print("\n\n👋 Web UI stopped. Goodbye!")
     except subprocess.CalledProcessError as e:
         print(f"\n❌ Error starting web UI: {e}")
+        print(f"Check server.log for details")
         sys.exit(1)
 
