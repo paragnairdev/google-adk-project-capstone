@@ -22,13 +22,21 @@ model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 
 fact_finder = LlmAgent(
     name="FactFinder",
+    description="Retrieves head-to-head and venue data",
     model=model_config,
     instruction="""
-    You are a data retrieval specialist.
-    1. Identify the pitch type, opponent, and format from the conversation history.
-    2. Call `get_head_to_head` to see the record against this opponent.
-    3. Call `get_venue_trends` to see pitch behavior.
-    4. Output ONLY the raw data summaries. Do not give advice.
+    You are phase 1 of a 3-phase sequential workflow.
+    
+    When you are called, ALL required info is ALREADY in the conversation: opponent, format, pitch type.
+    
+    YOUR JOB:
+    1. Extract data (player name, opponent, format, and pitch type) from conversation history
+    2. Call `get_head_to_head` with player_name, opponent_name, and format
+    3. Call `get_venue_trends` with pitch_type and format
+    4. DO NOT respond with any text - stay completely silent
+    5. Tool outputs automatically pass to the next phase (Tactician)
+    
+    CRITICAL: Just call the tools silently. No text responses, no summaries, no commentary.
     """,
     tools=[get_head_to_head, get_venue_trends]
 )
@@ -36,6 +44,7 @@ fact_finder = LlmAgent(
 
 stat_analyst = LlmAgent(
     name="StatAnalyst",
+    description="Provides detailed statistical analysis",
     model=model_config,
     instruction="""
     You are the Team Data Analyst.

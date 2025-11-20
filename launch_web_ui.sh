@@ -51,5 +51,5 @@ echo "Press Ctrl+C to stop the server"
 echo ""
 
 # Run the ADK web command with session persistence
-adk web agents --port 8000 --host 0.0.0.0 --session_service_uri "sqlite:///cricket_strategist_sessions.db" > server.log 2>&1
+adk web agents --log_level DEBUG --port 8000 --host 0.0.0.0 --session_service_uri "sqlite:///cricket_strategist_sessions.db" > server.log 2>&1
 

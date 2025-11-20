@@ -49,43 +49,80 @@ __all__ = [
     'nasser_writer',
     'harsha_writer',
     'commentator_router',
+    'identity_agent',
+    'orchestrator_agent',
 ]
 
+identity_agent = LlmAgent(
+    name="IdentityAgent",
+    model=model_config,
+    instruction="""
+    You are a background data processor. 
+    1. Call the `get_current_identity` tool.
+    2. Output the response as is.
+    """,
+    tools=[get_current_identity]
+)
 
-# ============================================================================
-# ROOT AGENT - Main Orchestrator
-# ============================================================================
-
-root_agent = LlmAgent(
+orchestrator_agent = LlmAgent(
     name="CricketCoachOrchestrator",
     model=model_config,
     instruction="""
     You are the VR Cricket Coach/Strategist Interface.
     
-    ### PHASE 1: IDENTITY
-    - ALWAYS call `get_current_identity` first.
+    **CONTEXT CONSUMPTION:**
+    Look at the message immediately preceding this one. It contains the User's Identity and Preferences provided by the system.
+    
+    **ACTION:**
+    Using that identity information, greet the user by name and proceed with the routing logic.
 
-    ### PHASE 2: ROUTING
+    ### ROUTING INSTRUCTIONS
     Classify the user's intent and route to the correct specialist:
 
-    1. If you transfer a user to an agent (e.g., StatAnalyst), and they transfer the user BACK to you without an answer:
-       - DO NOT send them back to the same agent.
-       - Instead, apologize and say "I don't have that information."
+    **FOR STRATEGY REQUESTS ("What should I do?", "Help me improve", "Give me advice"):**
     
-    2. **Strategy / Advice / "What should I do?"**:
-       - Delegate to `GamePlanGenerator`.
-       
-    3. **Specific Stats / "Show me data" / "Stadium Info"**:
-       - Delegate to `StatAnalyst`.
-       
-    4. **Chit-Chat**:
-       - Handle greetings yourself.
+    BEFORE transferring to `GamePlanGenerator`, check if you have ALL required information:
+    - Match format (T20, ODI, or Test)
+    - Opponent name
+    - Pitch type (Dry, Bouncy, Green, or Normal)
+    
+    IF MISSING ANY INFO:
+    - Ask the user for the missing information clearly
+    - List ALL missing items in one message
+    - WAIT for their response (do NOT transfer to GamePlanGenerator yet)
+
+    IF USER RESPONDS WITH THE MISSING INFORMATION:
+    - Transfer to `GenericResponder` to handle the request.
+    - Look for responses like "no pitch type", "no opponent"
+    
+    IF YOU HAVE ALL INFO:
+    - Transfer to `GamePlanGenerator` (which will gather data, create strategy, and deliver via commentator)
+    
+    **FOR STATS REQUESTS ("Show me data", "Stadium info", "Head to head"):**
+    - Transfer to `StatAnalyst`
+    
+    **FOR CHIT-CHAT:**
+    - Handle greetings and casual conversation yourself
+    
+    **LOOP PREVENTION:**
+    - If an agent transfers back without an answer, apologize and say "I don't have that information"
     """,
     tools=[get_current_identity],
     sub_agents=[game_plan_generator, stat_analyst, fallback_agent] 
 )
 
+# ============================================================================
+# ROOT AGENT - Main Orchestrator
+# ============================================================================
+
+root_agent = SequentialAgent(
+    name="RootAgent",
+    sub_agents=[identity_agent, orchestrator_agent]
+)
+
 # Attach circuit breaker callbacks to prevent infinite loops
 root_agent.before_agent_callback = circuit_breaker
+identity_agent.before_agent_callback = circuit_breaker
+orchestrator_agent.before_agent_callback = circuit_breaker
 stat_analyst.before_agent_callback = circuit_breaker
 game_plan_generator.before_agent_callback = circuit_breaker

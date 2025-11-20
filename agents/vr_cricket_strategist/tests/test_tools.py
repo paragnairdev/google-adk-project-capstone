@@ -50,16 +50,18 @@ class TestGetCurrentIdentity:
         mock_session = Mock()
         mock_state = {
             'player_name': 'TestPlayer',
-            'team': 'TestTeam'
+            'team': 'TestTeam',
+            'batting_style': 'Aggressive'
         }
         mock_session.state = mock_state
         mock_context.session = mock_session
         
         result = get_current_identity(mock_context)
         
-        assert 'TestPlayer' in result
-        assert 'TestTeam' in result
-        assert 'logged in' in result.lower()
+        assert result['player_name'] == 'TestPlayer'    
+        assert result['team'] == 'TestTeam'
+        assert result['batting_style'] == 'Aggressive'
+        assert result['auto_injected'] == False
     
     def test_identity_missing_auto_inject(self, capsys):
         """Test auto-injection of test profile when identity is missing"""
@@ -78,25 +80,27 @@ class TestGetCurrentIdentity:
         assert mock_state['batting_style'] == TEST_PROFILE['batting_style']
         
         # Check result message
-        assert 'DEBUG' in result or 'Auto-logged' in result
-        assert TEST_PROFILE['player_name'] in result
+        assert result['auto_injected'] == True
+        assert result['player_name'] == TEST_PROFILE['player_name']
+        assert result['team'] == TEST_PROFILE['team']
+        assert result['batting_style'] == TEST_PROFILE['batting_style']
         
-        # Check that debug message was printed
-        captured = capsys.readouterr()
-        assert 'DEV MODE' in captured.out or 'Auto-injecting' in captured.out
     
     def test_identity_partial_state(self):
         """Test when state has some but not all required fields"""
         mock_context = Mock()
         mock_session = Mock()
-        mock_state = {'player_name': 'ExistingPlayer'}
+        mock_state = {'player_name': 'ExistingPlayer', 'auto_injected': False}
         mock_session.state = mock_state
         mock_context.session = mock_session
         
         result = get_current_identity(mock_context)
         
         # Should use existing player_name
-        assert 'ExistingPlayer' in result
+        assert result['player_name'] == 'ExistingPlayer'
+        assert result['team'] is None
+        assert result['batting_style'] is None
+        assert result['auto_injected'] == False
 
 
 class TestGetVenueTrends:
