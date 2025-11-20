@@ -182,6 +182,21 @@ class TestSubAgents:
         tool_names = [tool.__name__ for tool in stat_analyst.tools]
         assert 'get_venue_trends' in tool_names
         assert 'get_head_to_head' in tool_names
+        assert 'get_player_stats' in tool_names
+    
+    def test_fallback_agent_exists(self):
+        """Test that fallback_agent is defined"""
+        from agents.vr_cricket_strategist.agent import fallback_agent
+        assert fallback_agent is not None
+    
+    def test_fallback_agent_configuration(self):
+        """Test fallback_agent configuration"""
+        from agents.vr_cricket_strategist.agent import fallback_agent
+        
+        assert fallback_agent.name == "GenericResponder"
+        assert hasattr(fallback_agent, 'instruction')
+        # Should mention fallback/handler
+        assert 'fallback' in fallback_agent.instruction.lower() or 'handler' in fallback_agent.instruction.lower()
 
 
 class TestCompositeAgents:
@@ -241,13 +256,14 @@ class TestCompositeAgents:
     def test_root_agent_sub_agents(self):
         """Test that root_agent has correct sub-agents"""
         from agents.vr_cricket_strategist.agent import (
-            root_agent, game_plan_generator, stat_analyst
+            root_agent, game_plan_generator, stat_analyst, fallback_agent
         )
         
         sub_agents = root_agent.sub_agents
-        assert len(sub_agents) == 2
+        assert len(sub_agents) == 3
         assert game_plan_generator in sub_agents
         assert stat_analyst in sub_agents
+        assert fallback_agent in sub_agents
 
 
 class TestAgentInstructions:
@@ -327,17 +343,21 @@ class TestAgentDependencies:
         from agents.vr_cricket_strategist.agent import (
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router, 
-            stat_analyst, root_agent
+            stat_analyst, root_agent, fallback_agent
         )
         
-        agents = [
+        # Main agents should have model_config
+        agents_with_model = [
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
             stat_analyst, root_agent
         ]
-        for agent in agents:
+        for agent in agents_with_model:
             assert hasattr(agent, 'model')
             assert agent.model is not None
+        
+        # Fallback agent also has a model attribute (even if empty string)
+        assert hasattr(fallback_agent, 'model')
     
     def test_agents_share_model_config(self):
         """Test that agents share the same model configuration"""
@@ -347,6 +367,8 @@ class TestAgentDependencies:
             stat_analyst, root_agent, model_config
         )
         
+        # Only test agents that should have model_config
+        # (fallback_agent doesn't have model_config)
         agents = [
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
@@ -377,13 +399,13 @@ class TestAgentNaming:
         from agents.vr_cricket_strategist.agent import (
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, game_plan_generator, root_agent
+            stat_analyst, game_plan_generator, root_agent, fallback_agent
         )
         
         agents = [
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, game_plan_generator, root_agent
+            stat_analyst, game_plan_generator, root_agent, fallback_agent
         ]
         names = [agent.name for agent in agents]
         
@@ -395,7 +417,7 @@ class TestAgentNaming:
         from agents.vr_cricket_strategist.agent import (
             fact_finder, tactician, boycott_writer, sidhu_writer,
             nasser_writer, harsha_writer, commentator_router,
-            stat_analyst, root_agent
+            stat_analyst, root_agent, fallback_agent
         )
         
         agents_and_roles = [
@@ -407,7 +429,8 @@ class TestAgentNaming:
             (harsha_writer, 'harsha'),
             (commentator_router, 'commentator'),
             (stat_analyst, 'stat'),
-            (root_agent, 'coach')
+            (root_agent, 'coach'),
+            (fallback_agent, 'responder')
         ]
         
         for agent, role_keyword in agents_and_roles:

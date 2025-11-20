@@ -1,13 +1,76 @@
 import random
 from google.adk.agents import LlmAgent, SequentialAgent
 from google.adk.models.google_llm import Gemini
+from google.adk.agents.invocation_context import InvocationContext
+
 
 # Import tools
-from .tools import get_current_identity, get_head_to_head, get_venue_trends, pick_random_commentator
+from .tools import get_current_identity, get_head_to_head, get_venue_trends, pick_random_commentator, get_player_stats
 from .config import retry_config
+
+# Configuration
+MAX_RETRIES_ON_SAME_INPUT = 5  # Stop after 5 agent transfers/steps
 
 # Common Model Config
 model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
+
+async def circuit_breaker(callback_context):
+    """
+    Failsafe: Prevents an agent from processing the exact same input repeatedly.
+    This detects 'Ping-Pong' loops (Root -> Agent -> Root).
+    """
+    # 1. Access Session & Agent Name
+    try:
+        session = callback_context._invocation_context.session
+        agent_name = callback_context.agent.name
+        
+        # Extract the input text safely
+        inputs = getattr(callback_context, 'inputs', {})
+        # Normalize input to string for comparison (handles dicts or strings)
+        current_input_str = str(inputs)
+        
+    except AttributeError:
+        # If context structure is different, just skip safety check
+        return
+
+    state = session.state
+    
+    # 2. Define keys for session state
+    # We store the last input seen by THIS specific agent
+    last_input_key = f"last_input_{agent_name}"
+    retry_count_key = f"retry_count_{agent_name}"
+    
+    # 3. Retrieve last input for this agent
+    last_input = state.get(last_input_key, "")
+    current_retries = state.get(retry_count_key, 0)
+    
+    # 4. Compare Logic
+    if current_input_str == last_input:
+        # SAME INPUT DETECTED: We are likely in a loop
+        current_retries += 1
+        print(f"🔄 Loop Warning: {agent_name} received duplicate input (Count: {current_retries})")
+    else:
+        # NEW INPUT: Reset counter
+        current_retries = 0
+        # Update the last input
+        state[last_input_key] = current_input_str
+    
+    # Save the count back to state
+    state[retry_count_key] = current_retries
+
+    # 5. Trigger Break
+    if current_retries > MAX_RETRIES_ON_SAME_INPUT:
+        print(f"🚨 CIRCUIT BREAKER: Stopping {agent_name} after {current_retries} duplicate inputs.")
+        
+        error_instruction = (
+            "\n\nSYSTEM OVERRIDE: You are in an infinite routing loop. "
+            "You have received the exact same request multiple times. "
+            "STOP. Do NOT transfer to another agent. "
+            "Apologize to the user and ask for clarification."
+        )
+        
+        # Force the instruction into the agent
+        callback_context.agent.instruction += error_instruction
 
 # --- AGENT 1: FACT FINDER (The Intern) ---
 # Role: Fetches raw data only. No opinions.
@@ -145,12 +208,14 @@ stat_analyst = LlmAgent(
     3. Use `get_head_to_head` for head-to-head records.
     4. **IMPORTANT:** The tool `get_head_to_head` requires a 'player_name', 'opponent_name' & 'format'.
        - Pass `stadium=7` (as an integer) to the tool.
-    
+    5. Use `get_player_stats` for player stats.
+    6. **IMPORTANT:** The tool `get_player_stats` requires a 'player_name' & 'format'.
+
     OUTPUT FORMAT:
     - Present data in a clean bulleted list or small table.
     - Do NOT give advice (that is the Coach's job). Just give the numbers.
     """,
-    tools=[get_venue_trends, get_head_to_head] 
+    tools=[get_venue_trends, get_head_to_head, get_player_stats] 
 )
 
 # --- WRAPPING IT UP: THE SEQUENTIAL AGENT ---
@@ -158,6 +223,17 @@ game_plan_generator = SequentialAgent(
     name="GamePlanGenerator",
     description="Generates a detailed match strategy using data analysis.",
     sub_agents=[fact_finder, tactician, commentator_router]
+)
+
+# --- FALLBACK AGENT ---
+fallback_agent = LlmAgent(
+    name="GenericResponder",
+    instruction="""
+    You are the fallback handler. 
+    If the user's request does not fit Strategy or Stats, or if other agents failed:
+    1. Tell the user you can only help with Cricket Strategy and Match Statistics.
+    2. Ask them to rephrase.
+    """
 )
 
 # --- THE ROOT AGENT ---
@@ -172,17 +248,26 @@ root_agent = LlmAgent(
 
     ### PHASE 2: ROUTING
     Classify the user's intent and route to the correct specialist:
+
+    1. If you transfer a user to an agent (e.g., StatAnalyst), and they transfer the user BACK to you without an answer:
+       - DO NOT send them back to the same agent.
+       - Instead, apologize and say "I don't have that information."
     
-    1. **Strategy / Advice / "What should I do?"**:
+    2. **Strategy / Advice / "What should I do?"**:
        - Delegate to `GamePlanGenerator`.
        
-    2. **Specific Stats / "Show me data" / "Stadium Info"**:
+    3. **Specific Stats / "Show me data" / "Stadium Info"**:
        - Delegate to `StatAnalyst`. <--- NEW PATH
        
-    3. **Chit-Chat**:
+    4. **Chit-Chat**:
        - Handle greetings yourself.
     """,
     tools=[get_current_identity],
     # 🚀 REGISTER THE NEW AGENT HERE
-    sub_agents=[game_plan_generator, stat_analyst] 
+    sub_agents=[game_plan_generator, stat_analyst, fallback_agent] 
 )
+
+# Attach the failsafe
+root_agent.before_agent_callback = circuit_breaker
+stat_analyst.before_agent_callback = circuit_breaker
+game_plan_generator.before_agent_callback = circuit_breaker

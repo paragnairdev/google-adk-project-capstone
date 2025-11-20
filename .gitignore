@@ -29,5 +29,3 @@ Thumbs.db
 *.log
 
 # Databases
-cricket_coach_sessions.db
-cricket_coach_memory.db
