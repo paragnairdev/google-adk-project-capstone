@@ -122,17 +122,11 @@ A custom `before_agent_callback` monitors agent transfers. If an agent receives 
 
 **Discord Bot**: Deploy as a Discord bot for tournament communities with channel-integrated queries, tournament statistics, and leaderboards.
 
-**Mobile App**: React Native companion with push notifications for tournament reminders, pre-match briefings, and post-game analysis.
-
 **Real Tournament Data**: Integrate with VR Cricket platforms to automatically import real tournament data, expanding beyond synthetic datasets.
-
-**Team Collaboration**: Multi-user support with shared session state for team strategy rooms and collaborative decision-making.
-
-**Replay Analysis**: Connect with VR Cricket replay systems to analyze batting patterns, identify weaknesses, and suggest improvements.
 
 **Agent Simulations**: Create scenarios where agents simulate matches based on historical data, predicting tournament bracket outcomes.
 
 ---
 
-**Repository**: github.com/[your-username]/google-adk (not shared publicly to protect API keys)
+**Repository**: github.com/paragnairdev/google-adk-project-capstone
 **Built with**: Google Agent Development Kit, Gemini 2.5 Flash, Python 3.13
