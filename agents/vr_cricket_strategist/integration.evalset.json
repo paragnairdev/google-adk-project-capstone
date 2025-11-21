@@ -1,0 +1,93 @@
+{
+    "eval_set_id": "vr_cricket_strategist_integration_suite",
+    "eval_cases": [
+        {
+            "eval_id": "initial_greeting",
+            "conversation": [
+                {
+                    "invocation_id": "e-94592ae5-05cd-4a8a-a3b6-1ae783055fe4",
+                    "user_content": {
+                        "parts": [
+                            {
+                                "text": "hi"
+                            }
+                        ],
+                        "role": "user"
+                    },
+                    "final_response": {
+                        "parts": [
+                            {
+                                "text": "Hello Joe! How can I help you with your cricket today?"
+                            }
+                        ],
+                        "role": "model"
+                    },
+                    "intermediate_data": {
+                        "invocation_events": [
+                            {
+                                "author": "IdentityAgent",
+                                "content": {
+                                    "parts": [
+                                        {
+                                            "function_call": {
+                                                "id": "adk-d50d6075-7c8c-4fa1-ae7f-835fbc8c8f83",
+                                                "args": {},
+                                                "name": "get_current_identity"
+                                            }
+                                        }
+                                    ],
+                                    "role": "model"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "eval_id": "identity_update",
+            "conversation": [
+                {
+                    "invocation_id": "e-94592ae5-05cd-4a8a-a3b6-1ae783055fe4",
+                    "user_content": {
+                        "parts": [
+                            {
+                                "text": "I am Ragz, not Joe"
+                            }
+                        ],
+                        "role": "user"
+                    },
+                    "final_response": {
+                        "parts": [
+                            {
+                                "text": "Hello Ragz! How can I help you with your cricket today?"
+                            }
+                        ],
+                        "role": "model"
+                    },
+                    "intermediate_data": {
+                        "invocation_events": [
+                            {
+                                "author": "IdentityAgent",
+                                "content": {
+                                    "parts": [
+                                        {
+                                            "function_call": {
+                                                "id": "adk-d50d6075-7c8c-4fa1-ae7f-835fbc8c8f83",
+                                                "args": {
+                                                    "player_name": "Ragz"
+                                                },
+                                                "name": "set_current_identity"
+                                            }
+                                        }
+                                    ],
+                                    "role": "model"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
