@@ -1,15 +1,40 @@
 """
 VR Cricket Strategist - Root Agent
 
-This module contains the main root agent that orchestrates all sub-agents
-to provide cricket strategy and analysis.
+This module implements the main orchestration layer for the multi-agent system.
+
+Architecture Overview:
+┌─────────────────────────────────────────────────────────────────┐
+│ RootAgent (Sequential)                                          │
+│  ├─> IdentityAgent: Loads user session state                    │
+│  └─> CricketCoachOrchestrator: Routes to specialized agents     │
+│       ├─> GamePlanGenerator (Sequential)                        │
+│       │    ├─> FactFinder: Data collection                      │
+│       │    ├─> Tactician: Strategy formulation                  │
+│       │    └─> CommentatorRouter: Personality selection         │
+│       │         ├─> BoycottWriter                               │
+│       │         ├─> SidhuWriter                                 │
+│       │         ├─> NasserWriter                                │
+│       │         └─> HarshaWriter                                │
+│       ├─> StatAnalyst: Direct statistical queries               │
+│       └─> GenericResponder: Fallback handler                    │
+└─────────────────────────────────────────────────────────────────┘
+
+Design Pattern: Sequential Agent at Root Level
+- Ensures identity is ALWAYS loaded before routing
+- Prevents routing decisions without user context
+- Simplifies error handling (identity failures caught early)
+
+Circuit Breaker Integration:
+All agents have circuit_breaker callbacks attached to prevent infinite loops.
+See callbacks.py for implementation details.
 """
 
 from google.adk.agents import LlmAgent, SequentialAgent
 from google.adk.models.google_llm import Gemini
 
 # Import tools, sub-agents, and callbacks
-from .tools import get_current_identity
+from .tools import get_current_identity, set_current_identity
 from .config import retry_config
 from .callbacks import circuit_breaker
 from .sub_agents import (
@@ -29,10 +54,17 @@ from .sub_agents import (
     harsha_writer,
 )
 
-# Model configuration
+# ============================================================================
+# MODEL CONFIGURATION
+# ============================================================================
+# Shared model configuration for all agents
+# Uses Gemini 2.5 Flash for balance of speed, quality, and cost
 model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 
-# Re-export for backward compatibility with tests
+# ============================================================================
+# MODULE EXPORTS
+# ============================================================================
+# Re-export for backward compatibility with existing tests
 __all__ = [
     'root_agent',
     'model_config',
@@ -53,17 +85,57 @@ __all__ = [
     'orchestrator_agent',
 ]
 
+# ============================================================================
+# PHASE 1: IDENTITY AGENT
+# ============================================================================
+# Purpose: Load user identity from session state before any routing decisions
+# 
+# Design Decision: Separated identity loading into dedicated agent to:
+# 1. Ensure identity is ALWAYS loaded (can't be skipped)
+# 2. Make routing logic cleaner (orchestrator assumes identity exists)
+# 3. Enable testing with mock identities easily
+#
+# Behavior: Silent execution - just loads identity and passes to next agent
 identity_agent = LlmAgent(
     name="IdentityAgent",
     model=model_config,
     instruction="""
-    You are a background data processor. 
-    1. Call the `get_current_identity` tool.
-    2. Output the response as is.
+    You are the Identity Manager. Your goal is to ensure the next agent has the correct user data.
+    
+    **Logic Flow:**
+    1. Analyze the user's latest input.
+    2. **CHECK FOR UPDATES:** If the user is explicitly stating their name, correcting you, or introducing themselves (e.g., "I am Ragz", "Call me Steve", "My name isn't Joe"), you MUST call `set_current_identity` with the new player_name. The team and batting_style parameters are optional - only provide them if the user explicitly mentions them.
+    3. **DEFAULT:** If the user is NOT changing their identity, call `get_current_identity`.
+    
+    **Output Requirement:**
+    - Regardless of which tool you called, output the final identity JSON object.
+    - Do not add conversational filler.
     """,
-    tools=[get_current_identity]
+    tools=[get_current_identity, set_current_identity]
 )
 
+# ============================================================================
+# PHASE 2: ORCHESTRATOR AGENT
+# ============================================================================
+# Purpose: Main routing hub that classifies queries and delegates to specialists
+#
+# Routing Strategy:
+# - Strategy Requests → GamePlanGenerator (multi-stage workflow)
+# - Statistical Queries → StatAnalyst (direct data access)
+# - General/Invalid → GenericResponder (fallback)
+#
+# Design Decision: Use LLM-based routing (not rule-based) to handle:
+# 1. Natural language ambiguity ("Should I bat first?" → Strategy)
+# 2. Missing context detection ("Need pitch type to give advice")
+# 3. Conversational flow (greetings, follow-ups)
+#
+# Information Requirements:
+# Strategy queries require: format, opponent, pitch_type
+# Statistical queries require: format only (may also need player/opponent)
+#
+# Loop Prevention:
+# - Circuit breaker callback prevents infinite routing
+# - Explicit instructions to stop if agents return without answers
 orchestrator_agent = LlmAgent(
     name="CricketCoachOrchestrator",
     model=model_config,
@@ -112,15 +184,42 @@ orchestrator_agent = LlmAgent(
 )
 
 # ============================================================================
-# ROOT AGENT - Main Orchestrator
+# ROOT AGENT - Main Entry Point
 # ============================================================================
-
+# Sequential workflow: Identity loading → Orchestration
+#
+# Design Pattern: Sequential Agent (not Parallel)
+# Why? Identity MUST be loaded before orchestration. Sequential execution
+# ensures this dependency is satisfied.
+#
+# Workflow:
+# 1. IdentityAgent loads user context from session
+# 2. Orchestrator receives identity in conversation history
+# 3. Orchestrator uses identity for personalized routing
+#
+# Alternative Considered: Single agent with identity tool
+# Rejected because: Identity loading would be optional, leading to
+# inconsistent behavior when LLM forgets to call the tool
 root_agent = SequentialAgent(
     name="RootAgent",
     sub_agents=[identity_agent, orchestrator_agent]
 )
 
-# Attach circuit breaker callbacks to prevent infinite loops
+# ============================================================================
+# CIRCUIT BREAKER ATTACHMENT
+# ============================================================================
+# Attach circuit breaker callbacks to critical agents to prevent loops
+#
+# Why These Agents?
+# - root_agent: Catches loops at top level
+# - identity_agent: Prevents repeated identity loading
+# - orchestrator_agent: Prevents ping-pong routing (most common failure)
+# - stat_analyst: Prevents tool call loops
+# - game_plan_generator: Prevents sequential workflow loops
+#
+# Design Decision: We attach to specific agents rather than all agents
+# to minimize callback overhead on leaf agents (commentators) that can't
+# create loops (they have no sub-agents to transfer to)
 root_agent.before_agent_callback = circuit_breaker
 identity_agent.before_agent_callback = circuit_breaker
 orchestrator_agent.before_agent_callback = circuit_breaker

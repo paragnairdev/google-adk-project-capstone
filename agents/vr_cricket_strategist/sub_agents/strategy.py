@@ -2,6 +2,18 @@
 Strategy Agent
 
 The Tactician analyzes data and formulates strategic recommendations.
+
+Design Pattern: Middle agent in 3-phase sequential workflow
+- Phase 1: FactFinder collects data
+- Phase 2: Tactician (this agent) analyzes and strategizes
+- Phase 3: CommentatorRouter delivers with personality
+
+Separation of Concerns:
+By isolating strategy formulation from data collection and delivery,
+we achieve:
+1. Testability: Can test strategy logic independently
+2. Consistency: Same strategy logic regardless of commentator
+3. Maintainability: Update decision logic without touching other phases
 """
 
 from google.adk.agents import LlmAgent
@@ -9,10 +21,34 @@ from google.adk.models.google_llm import Gemini
 
 from ..config import retry_config
 
-# Common Model Config
+# ============================================================================
+# MODEL CONFIGURATION
+# ============================================================================
 model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 
 
+# ============================================================================
+# TACTICIAN AGENT
+# ============================================================================
+# Purpose: Convert raw data into actionable strategic recommendations
+#
+# Input: Tool output from FactFinder (venue trends, head-to-head stats)
+# Output: Structured strategy document (factual, no personality)
+# 
+# Decision Algorithm:
+# The agent uses heuristics based on cricket strategy principles:
+# - Green pitches favor bowling first (movement for pace bowlers)
+# - Strong chasing record → recommend bowling first
+# - Weak opponent → aggressive targets
+# - Strong opponent (e.g., Wizheart) → conservative approach
+#
+# Design Decision: Instructions encode domain knowledge rather than
+# using ML models. For a prototype, this provides:
+# 1. Transparency: Strategy logic is auditable
+# 2. Predictability: Same inputs → same outputs
+# 3. Debuggability: Easy to understand why a recommendation was made
+#
+# Future Enhancement: Could integrate ML models for win probability
 tactician = LlmAgent(
     name="Tactician",
     description="Analyzes data and formulates strategic recommendations",

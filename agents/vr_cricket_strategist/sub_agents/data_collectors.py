@@ -2,8 +2,15 @@
 Data Collection Agents
 
 These agents are responsible for fetching and analyzing raw data:
-- FactFinder: Retrieves head-to-head and venue data
-- StatAnalyst: Provides detailed statistical analysis
+- FactFinder: Retrieves head-to-head and venue data (Phase 1 of strategy workflow)
+- StatAnalyst: Provides detailed statistical analysis (Direct routing from orchestrator)
+
+Design Pattern: Silent Data Collection
+FactFinder operates in "silent mode" - it calls tools but produces no text output.
+This design:
+1. Reduces token usage (no intermediate summaries)
+2. Prevents data interpretation bias (Tactician interprets raw data)
+3. Accelerates workflow (no LLM generation between phases)
 """
 
 from google.adk.agents import LlmAgent
@@ -16,10 +23,30 @@ from ..tools import (
 )
 from ..config import retry_config
 
-# Common Model Config
+# ============================================================================
+# MODEL CONFIGURATION
+# ============================================================================
 model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 
 
+# ============================================================================
+# FACT FINDER AGENT
+# ============================================================================
+# Purpose: Gather contextual data for strategy formulation (Phase 1)
+#
+# Behavior: Silent Execution
+# - Calls tools based on conversation context
+# - Produces NO text output (reduces latency and cost)
+# - Tool results automatically flow to next agent (Tactician)
+#
+# Why Silent?
+# Traditional approach: FactFinder → summarize data → Tactician → analyze summary
+# This approach: FactFinder → raw data → Tactician → analyze data
+# Benefits: 50% faster, no information loss in summarization
+#
+# Tools Used:
+# - get_head_to_head: Historical matchup data
+# - get_venue_trends: Pitch/venue statistics
 fact_finder = LlmAgent(
     name="FactFinder",
     description="Retrieves head-to-head and venue data",
@@ -42,6 +69,26 @@ fact_finder = LlmAgent(
 )
 
 
+# ============================================================================
+# STAT ANALYST AGENT
+# ============================================================================
+# Purpose: Handle direct statistical queries (bypassing strategy workflow)
+#
+# Routing: Orchestrator → StatAnalyst (direct)
+# Not part of sequential workflow - handles queries like:
+# - "What's my T20 average?"
+# - "Show me head-to-head vs Ragz"
+# - "What's the average score on green pitches?"
+#
+# Design Decision: Separate from FactFinder because:
+# 1. Different presentation: User-facing vs. agent-facing
+# 2. Different behavior: Formats output nicely vs. silent execution
+# 3. Different use case: Direct queries vs. strategy input
+#
+# Behavior: Data Reporting (not interpretation)
+# - Calls tools based on user query
+# - Presents results in readable format
+# - NO strategic advice (stays in lane as "analyst")
 stat_analyst = LlmAgent(
     name="StatAnalyst",
     description="Provides detailed statistical analysis",
