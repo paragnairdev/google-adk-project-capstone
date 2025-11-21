@@ -265,6 +265,11 @@ pytest --cov=agents.vr_cricket_strategist --cov-report=html
 open htmlcov/index.html
 ```
 
+### Run evaluations (Integration Tests)
+```bash
+bash run_evaluations.sh
+```
+
 ### Test Coverage
 **79 comprehensive tests** covering:
 - Tool functionality and edge cases

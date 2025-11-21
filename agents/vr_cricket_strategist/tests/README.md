@@ -57,12 +57,6 @@ pytest agents/vr_cricket_strategist/tests/ -m unit
 pytest agents/vr_cricket_strategist/tests/ -m integration
 ```
 
-### Run evaluations
-```bash
-bash run_evaluations.sh
-```
-
-
 ## Test Coverage
 
 ### test_tools.py
