@@ -6,6 +6,7 @@ import pandas as pd
 from unittest.mock import Mock, patch, MagicMock
 from agents.vr_cricket_strategist.tools import (
     get_current_identity,
+    set_current_identity,
     get_venue_trends,
     get_head_to_head,
     pick_random_commentator,
@@ -49,11 +50,11 @@ class TestGetCurrentIdentity:
         mock_context = Mock()
         mock_session = Mock()
         mock_state = {
-            'player_name': 'TestPlayer',
-            'team': 'TestTeam',
-            'batting_style': 'Aggressive'
+            'user:player_name': 'TestPlayer',
+            'user:team': 'TestTeam',
+            'user:batting_style': 'Aggressive'
         }
-        mock_session.state = mock_state
+        mock_context.state = mock_state
         mock_context.session = mock_session
         
         result = get_current_identity(mock_context)
@@ -69,15 +70,15 @@ class TestGetCurrentIdentity:
         mock_context = Mock()
         mock_session = Mock()
         mock_state = {}
-        mock_session.state = mock_state
+        mock_context.state = mock_state
         mock_context.session = mock_session
         
         result = get_current_identity(mock_context)
         
         # Check that test profile was injected
-        assert mock_state['player_name'] == TEST_PROFILE['player_name']
-        assert mock_state['team'] == TEST_PROFILE['team']
-        assert mock_state['batting_style'] == TEST_PROFILE['batting_style']
+        assert mock_state['user:player_name'] == TEST_PROFILE['player_name']
+        assert mock_state['user:team'] == TEST_PROFILE['team']
+        assert mock_state['user:batting_style'] == TEST_PROFILE['batting_style']
         
         # Check result message
         assert result['auto_injected'] == True
@@ -90,8 +91,8 @@ class TestGetCurrentIdentity:
         """Test when state has some but not all required fields"""
         mock_context = Mock()
         mock_session = Mock()
-        mock_state = {'player_name': 'ExistingPlayer', 'auto_injected': False}
-        mock_session.state = mock_state
+        mock_state = {'user:player_name': 'ExistingPlayer'}
+        mock_context.state = mock_state
         mock_context.session = mock_session
         
         result = get_current_identity(mock_context)
@@ -101,6 +102,55 @@ class TestGetCurrentIdentity:
         assert result['team'] is None
         assert result['batting_style'] is None
         assert result['auto_injected'] == False
+    
+    def test_set_then_get_identity_name_only(self):
+        """Test that set_current_identity followed by get_current_identity works correctly when only name is provided"""
+        # Mock ToolContext with empty initial state
+        mock_context = Mock()
+        mock_session = Mock()
+        mock_state = {}
+        mock_context.state = mock_state
+        mock_context.session = mock_session
+        
+        # Set identity with just the name (like when user says "I am Ragz")
+        set_result = set_current_identity("Ragz", mock_context)
+        
+        # Verify set_current_identity returned the correct name
+        assert set_result['player_name'] == 'Ragz'
+        
+        # Now get the identity back
+        get_result = get_current_identity(mock_context)
+        
+        # Should get back "Ragz" not "Joe" from TEST_PROFILE
+        assert get_result['player_name'] == 'Ragz'
+        assert get_result['auto_injected'] == False
+        
+    def test_set_identity_preserves_existing_values(self):
+        """Test that set_current_identity preserves existing team/batting_style when only name is updated"""
+        # Mock ToolContext with existing identity
+        mock_context = Mock()
+        mock_session = Mock()
+        mock_state = {
+            'user:player_name': 'Joe',
+            'user:team': 'England',
+            'user:batting_style': 'Moderate'
+        }
+        mock_context.state = mock_state
+        mock_context.session = mock_session
+        
+        # Update just the name
+        set_result = set_current_identity("Ragz", mock_context)
+        
+        # Should preserve existing team and batting_style
+        assert set_result['player_name'] == 'Ragz'
+        assert set_result['team'] == 'England'
+        assert set_result['batting_style'] == 'Moderate'
+        
+        # Verify via get_current_identity
+        get_result = get_current_identity(mock_context)
+        assert get_result['player_name'] == 'Ragz'
+        assert get_result['team'] == 'England'
+        assert get_result['batting_style'] == 'Moderate'
 
 
 class TestGetVenueTrends:

@@ -6,6 +6,23 @@ These agents take strategic advice and deliver it in the style of famous cricket
 - Navjot Singh Sidhu: Colorful metaphors and wild analogies
 - Nasser Hussain: Tactical, intense, analytical
 - Harsha Bhogle: Poetic, charming, insightful
+
+Design Decision: Personality as Prompt Engineering
+Rather than fine-tuning models or using different LLMs, we achieve distinct
+personalities through carefully crafted instructions. This approach:
+1. Maintains consistency (same base model = consistent quality)
+2. Enables rapid iteration (change instruction vs. retrain model)
+3. Reduces cost (no fine-tuning required)
+4. Preserves knowledge (model retains cricket expertise)
+
+Why Famous Commentators?
+VR Cricket is entertainment, not just analysis. Using recognizable voices:
+- Increases engagement (users look forward to responses)
+- Adds humor and variety (different styles for different moods)
+- Makes complex strategy accessible (familiar personalities explain technical concepts)
+
+Implementation: Each agent receives the Tactician's strategy and rephrases
+it in their signature style, adding personality-specific phrases and mannerisms.
 """
 
 from google.adk.agents import LlmAgent, Agent
@@ -15,11 +32,26 @@ from google.adk.tools.google_search_tool import google_search
 
 from ..config import retry_config
 
-# Common Model Config
+# ============================================================================
+# MODEL CONFIGURATION
+# ============================================================================
 model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 
+# Helper agent for web search (used by commentators to fetch authentic quotes)
 agent_search = Agent(name="AgentSearch", model=model_config, tools=[google_search])
 
+# ============================================================================
+# COMMENTATOR 1: GEOFFREY BOYCOTT
+# ============================================================================
+# Personality: Direct, critical, old-school, Yorkshire grit
+# Famous for: Batting marathons, blunt criticism, "my grandmother" comparisons
+#
+# Strategy: Boycott represents traditional cricket wisdom - patience, discipline,
+# respect for the basics. His delivery is no-nonsense but deeply knowledgeable.
+#
+# Design Choice: Web search for authentic quotes
+# Boycott has many famous (and hilarious) quotes. We use google_search to
+# find real quotes and incorporate them, adding authenticity.
 boycott_writer = LlmAgent(
     name="BoycottWriter",
     description="Delivers strategic advice in the style of Geoffrey Boycott",
@@ -35,7 +67,7 @@ boycott_writer = LlmAgent(
     3. Rephrase them in Boycott's direct, critical but helpful style
     4. Use phrases like "rubbish bowling", "stick of rhubarb", "roti capability", "even my grandmother could do that in her sleep"
     5. Address the player by name if available
-    6. Use the `AgentSearch` tool to find exactly ONE whacky quote from Geoffrey Boycott.
+    6. Use the `AgentSearch` tool to find exactly ONE whacky quote from Geoffrey Boycott and choose one to use in your response.
 
     While returning quotes do not use phrases like "Geoffrey Boycott said..." or "Geoffrey Boycott is known for saying..."
     Be concise, direct, and deliver the strategy clearly.
@@ -43,6 +75,15 @@ boycott_writer = LlmAgent(
     tools=[AgentTool(agent=agent_search)]
 )
 
+# ============================================================================
+# COMMENTATOR 2: NAVJOT SINGH SIDHU
+# ============================================================================
+# Personality: Colorful, metaphorical, energetic, unpredictable
+# Famous for: Wild analogies ("Wickets are like wives..."), loud laughter,
+#            mixing languages, confusing but entertaining commentary
+#
+# Strategy: Sidhu adds entertainment value. His metaphors make complex
+# strategy memorable and fun, perfect for casual players who want engagement.
 sidhu_writer = LlmAgent(
     name="SidhuWriter",
     description="Delivers strategic advice in the style of Navjot Singh Sidhu",
@@ -56,7 +97,7 @@ sidhu_writer = LlmAgent(
     1. Start with "Oye Guru!" or "My friend..."
     2. Say: "I have got Jhonty Singh err.. Navjot Singh Sidhu here, who would like to give you some advice."
     3. Take the Tactician's recommendations and rephrase using wild metaphors and colorful analogies
-    4. Use the `AgentSearch` tool to find exactly ONE whacky quote from Navjot Singh Sidhu.
+    4. Use the `AgentSearch` tool to find random whacky quotes by Navjot Singh Sidhu and choose one to use in your response.
 
     While returning quotes do not use phrases like "Navjot Singh Sidhu said..." or "Navjot Singh Sidhu is known for saying..."
     
@@ -66,6 +107,15 @@ sidhu_writer = LlmAgent(
 )
 
 
+# ============================================================================
+# COMMENTATOR 3: NASSER HUSSAIN
+# ============================================================================
+# Personality: Tactical, intense, analytical, worries about captaincy
+# Famous for: Detailed technical analysis, "We'll have a bowl", tactical
+#            dissection of decision-making
+#
+# Strategy: Nasser appeals to serious players who want deep tactical insight.
+# His intensity and focus on decision-making mirrors tournament pressure.
 nasser_writer = LlmAgent(
     name="NasserWriter",
     description="Delivers strategic advice in the style of Nasser Hussain",
@@ -88,6 +138,15 @@ nasser_writer = LlmAgent(
 )
 
 
+# ============================================================================
+# COMMENTATOR 4: HARSHA BHOGLE
+# ============================================================================
+# Personality: Poetic, charming, storytelling, insightful
+# Famous for: Beautiful prose, connecting cricket to life, painting pictures
+#            with words, making complex ideas accessible
+#
+# Strategy: Harsha provides balanced insight with elegance. Perfect for
+# players who appreciate the artistry of cricket and want thoughtful analysis.
 harsha_writer = LlmAgent(
     name="HarshaWriter",
     description="Delivers strategic advice in the style of Harsha Bhogle",
