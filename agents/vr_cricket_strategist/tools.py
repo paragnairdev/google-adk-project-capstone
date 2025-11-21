@@ -31,6 +31,23 @@ TEST_PROFILE = {
 }
 
 # ============================================================================
+# SESSION STATE HELPERS (DRY Pattern)
+# ============================================================================
+USER_STATE_PREFIX = "user:"
+
+def _get_user_state_key(attribute: str) -> str:
+    """Generate session state key for user attributes."""
+    return f"{USER_STATE_PREFIX}{attribute}"
+
+def _get_user_attribute(tool_context: ToolContext, attribute: str) -> Optional[str]:
+    """Get user attribute from session state."""
+    return tool_context.state.get(_get_user_state_key(attribute))
+
+def _set_user_attribute(tool_context: ToolContext, attribute: str, value: str) -> None:
+    """Set user attribute in session state."""
+    tool_context.state[_get_user_state_key(attribute)] = value
+
+# ============================================================================
 # TOOL 1: USER IDENTITY MANAGEMENT
 # ============================================================================
 def get_current_identity(tool_context: ToolContext):
@@ -57,22 +74,16 @@ def get_current_identity(tool_context: ToolContext):
     Returns:
         dict: Player identity with keys: player_name, team, batting_style, auto_injected
     """
-
-    # log the state
-    print("Getting state")
-    print(f"Player name: {tool_context.state.get('user:player_name', 'Not found')}")
-    print(f"Team: {tool_context.state.get('user:team', 'Not found')}")
-    print(f"Batting style: {tool_context.state.get('user:batting_style', 'Not found')}")
     
     # Check if we already know who the player is (cached in session)
-    player_name = tool_context.state.get("user:player_name")
+    player_name = _get_user_attribute(tool_context, "player_name")
     
     if player_name:
         # Fast path: return existing identity
         return {
             "player_name": player_name, 
-            "team": tool_context.state.get('user:team'), 
-            "batting_style": tool_context.state.get('user:batting_style'), 
+            "team": _get_user_attribute(tool_context, "team"), 
+            "batting_style": _get_user_attribute(tool_context, "batting_style"), 
             "auto_injected": False
         }
 
@@ -81,12 +92,12 @@ def get_current_identity(tool_context: ToolContext):
     print("⚠️ [DEV MODE] No identity found. Auto-injecting test profile.")
     
     for key, value in TEST_PROFILE.items():
-        tool_context.state[f"user:{key}"] = value
+        _set_user_attribute(tool_context, key, value)
     
     return {
-        "player_name": tool_context.state['user:player_name'], 
-        "team": tool_context.state['user:team'], 
-        "batting_style": tool_context.state['user:batting_style'], 
+        "player_name": _get_user_attribute(tool_context, "player_name"), 
+        "team": _get_user_attribute(tool_context, "team"), 
+        "batting_style": _get_user_attribute(tool_context, "batting_style"), 
         "auto_injected": True
     }
 
@@ -118,21 +129,15 @@ def set_current_identity(player_name: str, tool_context: ToolContext, team: Opti
             team: team (from parameter or existing state)
             batting_style: batting_style (from parameter or existing state)
     """
-
-    # log the state
-    print("Setting state")
-    print(f"Player name: {tool_context.state.get('user:player_name', 'Not found')}")
-    print(f"Team: {tool_context.state.get('user:team', 'Not found')}")
-    print(f"Batting style: {tool_context.state.get('user:batting_style', 'Not found')}")
     # Always set the player name
-    tool_context.state[f"user:player_name"] = player_name
+    _set_user_attribute(tool_context, "player_name", player_name)
     
     # Preserve existing values if new ones aren't provided
     if team is not None:
-        tool_context.state[f"user:team"] = team
+        _set_user_attribute(tool_context, "team", team)
         
     if batting_style is not None:
-        tool_context.state[f"user:batting_style"] = batting_style
+        _set_user_attribute(tool_context, "batting_style", batting_style)
 
     return get_current_identity(tool_context)
 
