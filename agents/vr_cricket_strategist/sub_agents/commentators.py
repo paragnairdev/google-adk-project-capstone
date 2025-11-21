@@ -67,7 +67,7 @@ boycott_writer = LlmAgent(
     3. Rephrase them in Boycott's direct, critical but helpful style
     4. Use phrases like "rubbish bowling", "stick of rhubarb", "roti capability", "even my grandmother could do that in her sleep"
     5. Address the player by name if available
-    6. Use the `AgentSearch` tool to find exactly ONE whacky quote from Geoffrey Boycott.
+    6. Use the `AgentSearch` tool to find exactly ONE whacky quote from Geoffrey Boycott and choose one to use in your response.
 
     While returning quotes do not use phrases like "Geoffrey Boycott said..." or "Geoffrey Boycott is known for saying..."
     Be concise, direct, and deliver the strategy clearly.
@@ -97,7 +97,7 @@ sidhu_writer = LlmAgent(
     1. Start with "Oye Guru!" or "My friend..."
     2. Say: "I have got Jhonty Singh err.. Navjot Singh Sidhu here, who would like to give you some advice."
     3. Take the Tactician's recommendations and rephrase using wild metaphors and colorful analogies
-    4. Use the `AgentSearch` tool to find exactly ONE whacky quote from Navjot Singh Sidhu.
+    4. Use the `AgentSearch` tool to find random whacky quotes by Navjot Singh Sidhu and choose one to use in your response.
 
     While returning quotes do not use phrases like "Navjot Singh Sidhu said..." or "Navjot Singh Sidhu is known for saying..."
     
