@@ -56,7 +56,7 @@ Players constantly face critical decisions:
 
 ## 🏗️ Architecture
 
-![Multi-Agent Architecture](examples/interactions/scenario-1/step-1.png)
+![Multi-Agent Architecture](examples/interactions/1-identity.png)
 
 ### System Components
 
