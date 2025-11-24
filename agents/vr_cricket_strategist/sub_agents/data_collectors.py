@@ -22,6 +22,7 @@ from ..tools import (
     get_player_stats
 )
 from ..config import retry_config
+from ..constants import FACT_FINDER_AGENT, STAT_ANALYST_AGENT
 
 # ============================================================================
 # MODEL CONFIGURATION
@@ -47,8 +48,8 @@ model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 # Tools Used:
 # - get_head_to_head: Historical matchup data
 # - get_venue_trends: Pitch/venue statistics
-fact_finder = LlmAgent(
-    name="FactFinder",
+fact_finder_agent = LlmAgent(
+    name=FACT_FINDER_AGENT,
     description="Retrieves head-to-head and venue data",
     model=model_config,
     instruction="""
@@ -89,8 +90,8 @@ fact_finder = LlmAgent(
 # - Calls tools based on user query
 # - Presents results in readable format
 # - NO strategic advice (stays in lane as "analyst")
-stat_analyst = LlmAgent(
-    name="StatAnalyst",
+stat_analyst_agent = LlmAgent(
+    name=STAT_ANALYST_AGENT,
     description="Provides detailed statistical analysis",
     model=model_config,
     instruction="""

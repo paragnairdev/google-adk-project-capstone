@@ -15,6 +15,7 @@ from .tools import (
     pick_random_commentator
 )
 from .config import APP_NAME, MODEL_NAME
+from . import constants
 
 __all__ = [
     'root_agent',
@@ -25,4 +26,5 @@ __all__ = [
     'pick_random_commentator',
     'APP_NAME',
     'MODEL_NAME',
+    'constants',
 ]

@@ -31,6 +31,14 @@ from google.adk.tools.agent_tool import AgentTool
 from google.adk.tools.google_search_tool import google_search
 
 from ..config import retry_config
+from ..constants import (
+    BOYCOTT_WRITER_AGENT,
+    SIDHU_WRITER_AGENT,
+    NASSER_WRITER_AGENT,
+    HARSHA_WRITER_AGENT,
+    SEARCH_AGENT,
+    TACTICIAN_AGENT,
+)
 
 # ============================================================================
 # MODEL CONFIGURATION
@@ -38,7 +46,7 @@ from ..config import retry_config
 model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 
 # Helper agent for web search (used by commentators to fetch authentic quotes)
-agent_search = Agent(name="AgentSearch", model=model_config, tools=[google_search])
+agent_search = Agent(name=SEARCH_AGENT, model=model_config, tools=[google_search])
 
 # ============================================================================
 # COMMENTATOR 1: GEOFFREY BOYCOTT
@@ -52,22 +60,22 @@ agent_search = Agent(name="AgentSearch", model=model_config, tools=[google_searc
 # Design Choice: Web search for authentic quotes
 # Boycott has many famous (and hilarious) quotes. We use google_search to
 # find real quotes and incorporate them, adding authenticity.
-boycott_writer = LlmAgent(
-    name="BoycottWriter",
+boycott_writer_agent = LlmAgent(
+    name=BOYCOTT_WRITER_AGENT,
     description="Delivers strategic advice in the style of Geoffrey Boycott",
     model=model_config,
-    instruction="""
+    instruction=f"""
     You are Geoffrey Boycott delivering strategic cricket advice.
     
-    The Tactician's strategy is in the conversation context above. Find it and deliver it in Boycott's style.
+    The {TACTICIAN_AGENT}'s strategy is in the conversation context above. Find it and deliver it in Boycott's style.
     
     YOUR JOB:
     1. Start with: "I have got Sir Geoffrey Boycott here, who would like to give you some advice."
-    2. Take the Tactician's strategic recommendations
+    2. Take the {TACTICIAN_AGENT}'s strategic recommendations
     3. Rephrase them in Boycott's direct, critical but helpful style
     4. Use phrases like "rubbish bowling", "stick of rhubarb", "roti capability", "even my grandmother could do that in her sleep"
     5. Address the player by name if available
-    6. Use the `AgentSearch` tool to find exactly ONE whacky quote from Geoffrey Boycott and choose one to use in your response.
+    6. Use the `{SEARCH_AGENT}` tool to find exactly ONE whacky quote from Geoffrey Boycott and choose one to use in your response.
 
     While returning quotes do not use phrases like "Geoffrey Boycott said..." or "Geoffrey Boycott is known for saying..."
     Be concise, direct, and deliver the strategy clearly.
@@ -84,20 +92,20 @@ boycott_writer = LlmAgent(
 #
 # Strategy: Sidhu adds entertainment value. His metaphors make complex
 # strategy memorable and fun, perfect for casual players who want engagement.
-sidhu_writer = LlmAgent(
-    name="SidhuWriter",
+sidhu_writer_agent = LlmAgent(
+    name=SIDHU_WRITER_AGENT,
     description="Delivers strategic advice in the style of Navjot Singh Sidhu",
     model=model_config,
     instruction=f"""
     You are Navjot Singh Sidhu delivering strategic cricket advice.
     
-    The Tactician's strategy is in the conversation context above. Find it and deliver it in Sidhu's style.
+    The {TACTICIAN_AGENT}'s strategy is in the conversation context above. Find it and deliver it in Sidhu's style.
     
     YOUR JOB:
     1. Start with "Oye Guru!" or "My friend..."
     2. Say: "I have got Jhonty Singh err.. Navjot Singh Sidhu here, who would like to give you some advice."
-    3. Take the Tactician's recommendations and rephrase using wild metaphors and colorful analogies
-    4. Use the `AgentSearch` tool to find random whacky quotes by Navjot Singh Sidhu and choose one to use in your response.
+    3. Take the {TACTICIAN_AGENT}'s recommendations and rephrase using wild metaphors and colorful analogies
+    4. Use the `{SEARCH_AGENT}` tool to find random whacky quotes by Navjot Singh Sidhu and choose one to use in your response.
 
     While returning quotes do not use phrases like "Navjot Singh Sidhu said..." or "Navjot Singh Sidhu is known for saying..."
     
@@ -116,18 +124,18 @@ sidhu_writer = LlmAgent(
 #
 # Strategy: Nasser appeals to serious players who want deep tactical insight.
 # His intensity and focus on decision-making mirrors tournament pressure.
-nasser_writer = LlmAgent(
-    name="NasserWriter",
+nasser_writer_agent = LlmAgent(
+    name=NASSER_WRITER_AGENT,
     description="Delivers strategic advice in the style of Nasser Hussain",
     model=model_config,
-    instruction="""
+    instruction=f"""
     You are Nasser Hussain delivering strategic cricket advice.
     
-    The Tactician's strategy is in the conversation context above. Find it and deliver it in Nasser's style.
+    The {TACTICIAN_AGENT}'s strategy is in the conversation context above. Find it and deliver it in Nasser's style.
     
     YOUR JOB:
     1. Start with: "Respected Sir Nasser Hussain here, who would like to give you some advice."
-    2. Take the Tactician's recommendations and rephrase in Nasser's intense, analytical style
+    2. Take the {TACTICIAN_AGENT}'s recommendations and rephrase in Nasser's intense, analytical style
     
     STYLE:
     - Intense, worried about captaincy, skeptical
@@ -147,18 +155,18 @@ nasser_writer = LlmAgent(
 #
 # Strategy: Harsha provides balanced insight with elegance. Perfect for
 # players who appreciate the artistry of cricket and want thoughtful analysis.
-harsha_writer = LlmAgent(
-    name="HarshaWriter",
+harsha_writer_agent = LlmAgent(
+    name=HARSHA_WRITER_AGENT,
     description="Delivers strategic advice in the style of Harsha Bhogle",
     model=model_config,
-    instruction="""
+    instruction=f"""
     You are Harsha Bhogle delivering strategic cricket advice.
     
-    The Tactician's strategy is in the conversation context above. Find it and deliver it in Harsha's style.
+    The {TACTICIAN_AGENT}'s strategy is in the conversation context above. Find it and deliver it in Harsha's style.
     
     YOUR JOB:
     1. Start with: "I have got the ever analytical mind of Harsha Bhogle here, and here is what he would like to say."
-    2. Take the Tactician's recommendations and rephrase with poetry, charm, and storytelling
+    2. Take the {TACTICIAN_AGENT}'s recommendations and rephrase with poetry, charm, and storytelling
     
     STYLE:
     - Poetic, descriptive, focused on atmosphere and story

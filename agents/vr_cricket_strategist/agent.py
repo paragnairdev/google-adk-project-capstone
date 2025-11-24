@@ -4,21 +4,21 @@ VR Cricket Strategist - Root Agent
 This module implements the main orchestration layer for the multi-agent system.
 
 Architecture Overview:
-┌─────────────────────────────────────────────────────────────────┐
-│ RootAgent (Sequential)                                          │
-│  ├─> IdentityAgent: Loads user session state                    │
-│  └─> CricketCoachOrchestrator: Routes to specialized agents     │
-│       ├─> GamePlanGenerator (Sequential)                        │
-│       │    ├─> FactFinder: Data collection                      │
-│       │    ├─> Tactician: Strategy formulation                  │
-│       │    └─> CommentatorRouter: Personality selection         │
-│       │         ├─> BoycottWriter                               │
-│       │         ├─> SidhuWriter                                 │
-│       │         ├─> NasserWriter                                │
-│       │         └─> HarshaWriter                                │
-│       ├─> StatAnalyst: Direct statistical queries               │
-│       └─> GenericResponder: Fallback handler                    │
-└─────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────┐
+│ root_agent (Sequential)                                                │
+│  ├─> identity_agent: Loads user session state                          │
+│  └─> cricket_coach_orchestrator_agent: Routes to specialized agents    │
+│       ├─> game_plan_generator_agent (Sequential)                       │
+│       │    ├─> fact_finder_agent: Data collection                      │
+│       │    ├─> tactician_agent: Strategy formulation                   │
+│       │    └─> commentator_selector_agent: Personality selection       │
+│       │         ├─> boycott_writer_agent                               │
+│       │         ├─> sidhu_writer_agent                                 │
+│       │         ├─> nasser_writer_agent                                │
+│       │         └─> harsha_writer_agent                                │
+│       ├─> stat_analyst_agent: Direct statistical queries               │
+│       └─> generic_responder_agent: Fallback handler                    │
+└────────────────────────────────────────────────────────────────────────┘
 
 Design Pattern: Sequential Agent at Root Level
 - Ensures identity is ALWAYS loaded before routing
@@ -33,25 +33,32 @@ See callbacks.py for implementation details.
 from google.adk.agents import LlmAgent, SequentialAgent
 from google.adk.models.google_llm import Gemini
 
-# Import tools, sub-agents, and callbacks
+# Import tools, sub-agents, callbacks, and constants
 from .tools import get_current_identity, set_current_identity
 from .config import retry_config
 from .callbacks import circuit_breaker
+from .constants import (
+    IDENTITY_AGENT,
+    CRICKET_COACH_ORCHESTRATOR_AGENT,
+    ROOT_AGENT,
+    GAME_PLAN_GENERATOR_AGENT,
+    GENERIC_RESPONDER_AGENT,
+)
 from .sub_agents import (
     # Orchestrators
-    game_plan_generator,
-    fallback_agent,
-    commentator_router,
+    game_plan_generator_agent,
+    generic_responder_agent,
+    commentator_router_agent,
     # Data collectors
-    fact_finder,
-    stat_analyst,
+    fact_finder_agent,
+    stat_analyst_agent,
     # Strategy
-    tactician,
+    tactician_agent,
     # Commentators
-    boycott_writer,
-    sidhu_writer,
-    nasser_writer,
-    harsha_writer,
+    boycott_writer_agent,
+    sidhu_writer_agent,
+    nasser_writer_agent,
+    harsha_writer_agent,
 )
 
 # ============================================================================
@@ -64,23 +71,23 @@ model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 # ============================================================================
 # MODULE EXPORTS
 # ============================================================================
-# Re-export for backward compatibility with existing tests
+# Re-export for consistency
 __all__ = [
     'root_agent',
     'model_config',
     'LlmAgent',
     'SequentialAgent',
     'Gemini',
-    'game_plan_generator',
-    'stat_analyst',
-    'fallback_agent',
-    'fact_finder',
-    'tactician',
-    'boycott_writer',
-    'sidhu_writer',
-    'nasser_writer',
-    'harsha_writer',
-    'commentator_router',
+    'game_plan_generator_agent',
+    'stat_analyst_agent',
+    'generic_responder_agent',
+    'fact_finder_agent',
+    'tactician_agent',
+    'boycott_writer_agent',
+    'sidhu_writer_agent',
+    'nasser_writer_agent',
+    'harsha_writer_agent',
+    'commentator_router_agent',
     'identity_agent',
     'orchestrator_agent',
 ]
@@ -97,7 +104,7 @@ __all__ = [
 #
 # Behavior: Silent execution - just loads identity and passes to next agent
 identity_agent = LlmAgent(
-    name="IdentityAgent",
+    name=IDENTITY_AGENT,
     model=model_config,
     instruction="""
     You are the Identity Manager. Your goal is to ensure the next agent has the correct user data.
@@ -122,7 +129,7 @@ identity_agent = LlmAgent(
 # Routing Strategy:
 # - Strategy Requests → GamePlanGenerator (multi-stage workflow)
 # - Statistical Queries → StatAnalyst (direct data access)
-# - General/Invalid → GenericResponder (fallback)
+# - General/Invalid → generic_responder_agent (fallback)
 #
 # Design Decision: Use LLM-based routing (not rule-based) to handle:
 # 1. Natural language ambiguity ("Should I bat first?" → Strategy)
@@ -137,9 +144,9 @@ identity_agent = LlmAgent(
 # - Circuit breaker callback prevents infinite routing
 # - Explicit instructions to stop if agents return without answers
 orchestrator_agent = LlmAgent(
-    name="CricketCoachOrchestrator",
+    name=CRICKET_COACH_ORCHESTRATOR_AGENT,
     model=model_config,
-    instruction="""
+    instruction=f"""
     You are the VR Cricket Coach/Strategist Interface.
     
     **CONTEXT CONSUMPTION:**
@@ -153,7 +160,7 @@ orchestrator_agent = LlmAgent(
 
     **FOR STRATEGY REQUESTS ("What should I do?", "Help me improve", "Give me advice"):**
     
-    BEFORE transferring to `GamePlanGenerator`, check if you have ALL required information:
+    BEFORE transferring to `{GAME_PLAN_GENERATOR_AGENT}`, check if you have ALL required information:
     - Match format (T20, ODI, or Test)
     - Opponent name
     - Pitch type (Dry, Bouncy, Green, or Normal)
@@ -161,17 +168,17 @@ orchestrator_agent = LlmAgent(
     IF MISSING ANY INFO:
     - Ask the user for the missing information clearly
     - List ALL missing items in one message
-    - WAIT for their response (do NOT transfer to GamePlanGenerator yet)
+    - WAIT for their response (do NOT transfer to {GAME_PLAN_GENERATOR_AGENT} yet)
 
     IF USER RESPONDS WITH THE MISSING INFORMATION:
-    - Transfer to `GenericResponder` to handle the request.
+    - Transfer to `{GENERIC_RESPONDER_AGENT}` to handle the request.
     - Look for responses like "no pitch type", "no opponent"
     
     IF YOU HAVE ALL INFO:
-    - Transfer to `GamePlanGenerator` (which will gather data, create strategy, and deliver via commentator)
+    - Transfer to `{GAME_PLAN_GENERATOR_AGENT}` (which will gather data, create strategy, and deliver via commentator)
     
     **FOR STATS REQUESTS ("Show me data", "Stadium info", "Head to head"):**
-    - Transfer to `StatAnalyst`
+    - Transfer to `stat_analyst_agent`
     
     **FOR CHIT-CHAT:**
     - Handle greetings and casual conversation yourself
@@ -180,7 +187,7 @@ orchestrator_agent = LlmAgent(
     - If an agent transfers back without an answer, apologize and say "I don't have that information"
     """,
     tools=[get_current_identity],
-    sub_agents=[game_plan_generator, stat_analyst, fallback_agent] 
+    sub_agents=[game_plan_generator_agent, stat_analyst_agent, generic_responder_agent] 
 )
 
 # ============================================================================
@@ -193,7 +200,7 @@ orchestrator_agent = LlmAgent(
 # ensures this dependency is satisfied.
 #
 # Workflow:
-# 1. IdentityAgent loads user context from session
+# 1. identity_agent loads user context from session
 # 2. Orchestrator receives identity in conversation history
 # 3. Orchestrator uses identity for personalized routing
 #
@@ -201,7 +208,7 @@ orchestrator_agent = LlmAgent(
 # Rejected because: Identity loading would be optional, leading to
 # inconsistent behavior when LLM forgets to call the tool
 root_agent = SequentialAgent(
-    name="RootAgent",
+    name=ROOT_AGENT,
     sub_agents=[identity_agent, orchestrator_agent]
 )
 
@@ -223,5 +230,5 @@ root_agent = SequentialAgent(
 root_agent.before_agent_callback = circuit_breaker
 identity_agent.before_agent_callback = circuit_breaker
 orchestrator_agent.before_agent_callback = circuit_breaker
-stat_analyst.before_agent_callback = circuit_breaker
-game_plan_generator.before_agent_callback = circuit_breaker
+stat_analyst_agent.before_agent_callback = circuit_breaker
+game_plan_generator_agent.before_agent_callback = circuit_breaker

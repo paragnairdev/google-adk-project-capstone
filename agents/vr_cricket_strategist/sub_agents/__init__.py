@@ -6,40 +6,40 @@ Each module focuses on a specific aspect of the system.
 """
 
 # Data collection agents
-from .data_collectors import fact_finder, stat_analyst
+from .data_collectors import fact_finder_agent, stat_analyst_agent
 
 # Strategy agents
-from .strategy import tactician
+from .strategy import tactician_agent
 
 # Commentator personalities
 from .commentators import (
-    boycott_writer,
-    sidhu_writer,
-    nasser_writer,
-    harsha_writer,
+    boycott_writer_agent,
+    sidhu_writer_agent,
+    nasser_writer_agent,
+    harsha_writer_agent,
 )
 
 # Orchestrator agents
 from .orchestrators import (
-    commentator_router,
-    game_plan_generator,
-    fallback_agent,
+    commentator_router_agent,
+    game_plan_generator_agent,
+    generic_responder_agent,
 )
 
 __all__ = [
     # Data collectors
-    'fact_finder',
-    'stat_analyst',
+    'fact_finder_agent',
+    'stat_analyst_agent',
     # Strategy
-    'tactician',
+    'tactician_agent',
     # Commentators
-    'boycott_writer',
-    'sidhu_writer',
-    'nasser_writer',
-    'harsha_writer',
+    'boycott_writer_agent',
+    'sidhu_writer_agent',
+    'nasser_writer_agent',
+    'harsha_writer_agent',
     # Orchestrators
-    'commentator_router',
-    'game_plan_generator',
-    'fallback_agent',
+    'commentator_router_agent',
+    'game_plan_generator_agent',
+    'generic_responder_agent',
 ]
 

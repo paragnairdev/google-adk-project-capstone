@@ -117,13 +117,13 @@ pytest agents/vr_cricket_strategist/tests/ -m integration
   - Agent existence and types
 
 - **TestSubAgents**: Tests for individual agents
-  - FactFinder configuration and tools
-  - Tactician configuration
-  - BoycottWriter persona
-  - StatAnalyst configuration and tools
+  - fact_finder_agent configuration and tools
+  - tactician_agent configuration
+  - boycott_writer_agent persona
+  - stat_analyst_agent configuration and tools
 
 - **TestCompositeAgents**: Tests for sequential/parallel agents
-  - GamePlanGenerator configuration
+  - game_plan_generator_agent configuration
   - Root agent configuration
   - Sub-agent ordering
 

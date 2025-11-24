@@ -20,6 +20,7 @@ from google.adk.agents import LlmAgent
 from google.adk.models.google_llm import Gemini
 
 from ..config import retry_config
+from ..constants import TACTICIAN_AGENT
 
 # ============================================================================
 # MODEL CONFIGURATION
@@ -49,15 +50,15 @@ model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 # 3. Debuggability: Easy to understand why a recommendation was made
 #
 # Future Enhancement: Could integrate ML models for win probability
-tactician = LlmAgent(
-    name="Tactician",
+tactician_agent = LlmAgent(
+    name=TACTICIAN_AGENT,
     description="Analyzes data and formulates strategic recommendations",
     model=model_config,
     instruction="""
     You are phase 2 of a 3-phase sequential workflow. You create the strategy that a commentator will deliver.
     
     YOUR JOB:
-    1. Review tool output data from FactFinder in the conversation context
+    1. Review tool output data from fact_finder_agent in the conversation context
     2. Create a concise, structured strategic plan
     
     DECISION LOGIC:

@@ -22,9 +22,19 @@ from google.adk.models.google_llm import Gemini
 
 from ..tools import pick_random_commentator
 from ..config import retry_config
-from .data_collectors import fact_finder
-from .strategy import tactician
-from .commentators import boycott_writer, sidhu_writer, nasser_writer, harsha_writer
+from ..constants import (
+    COMMENTATOR_SELECTOR_AGENT,
+    GAME_PLAN_GENERATOR_AGENT,
+    GENERIC_RESPONDER_AGENT,
+    SEARCH_AGENT,
+    BOYCOTT_WRITER_AGENT,
+    SIDHU_WRITER_AGENT,
+    NASSER_WRITER_AGENT,
+    HARSHA_WRITER_AGENT,
+)
+from .data_collectors import fact_finder_agent
+from .strategy import tactician_agent
+from .commentators import boycott_writer_agent, sidhu_writer_agent, nasser_writer_agent, harsha_writer_agent
 
 # ============================================================================
 # MODEL CONFIGURATION
@@ -54,18 +64,22 @@ model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 # - Observability (tool calls are logged)
 # - Testing (can mock tool to test specific commentators)
 # - Future enhancement (ML-based personality matching)
-commentator_router = LlmAgent(
-    name="CommentatorSelector",
+commentator_router_agent = LlmAgent(
+    name=COMMENTATOR_SELECTOR_AGENT,
     description="Selects which commentator personality should deliver the advice",
     model=model_config,
-    instruction="""
+    instruction=f"""
     You are phase 3 (final) of a 3-phase sequential workflow. You MUST produce the final response.
     
     The Tactician's strategy is in the conversation context above.
     
     YOUR JOB:
     1. Check if user requested a specific commentator (Boycott, Sidhu, Nasser, or Harsha)
-    2. If yes, transfer to that commentator agent
+    2. If yes, transfer to that commentator agent:
+       - `{BOYCOTT_WRITER_AGENT}` for Geoffrey Boycott
+       - `{SIDHU_WRITER_AGENT}` for Navjot Singh Sidhu
+       - `{NASSER_WRITER_AGENT}` for Nasser Hussain
+       - `{HARSHA_WRITER_AGENT}` for Harsha Bhogle
     3. If no preference, call `pick_random_commentator` tool to choose one
     4. Transfer to the selected commentator agent
     
@@ -74,7 +88,7 @@ commentator_router = LlmAgent(
     CRITICAL: You MUST transfer to a commentator. Do not skip this step.
     """,
     tools=[pick_random_commentator],
-    sub_agents=[boycott_writer, sidhu_writer, nasser_writer, harsha_writer]
+    sub_agents=[boycott_writer_agent, sidhu_writer_agent, nasser_writer_agent, harsha_writer_agent]
 )
 
 
@@ -98,10 +112,10 @@ commentator_router = LlmAgent(
 #
 # Sequential guarantees: Each phase completes before next begins
 # This ensures: No strategy without data, no delivery without strategy
-game_plan_generator = SequentialAgent(
-    name="GamePlanGenerator",
+game_plan_generator_agent = SequentialAgent(
+    name=GAME_PLAN_GENERATOR_AGENT,
     description="Generates a detailed match strategy using data analysis.",
-    sub_agents=[fact_finder, tactician, commentator_router]
+    sub_agents=[fact_finder_agent, tactician_agent, commentator_router_agent]
 )
 
 # ============================================================================
@@ -109,7 +123,7 @@ game_plan_generator = SequentialAgent(
 # ============================================================================
 # Purpose: Handle queries that don't fit strategy or statistics
 #
-# Routed by: CricketCoachOrchestrator when intent is unclear
+# Routed by: cricket_coach_orchestrator_agent when intent is unclear
 #
 # Use Cases:
 # - Incomplete queries ("Should I bat first?" without format/opponent)
@@ -123,8 +137,8 @@ game_plan_generator = SequentialAgent(
 # 3. Guides user back to valid query types
 #
 # Behavior: Educational and Redirective (not dismissive)
-fallback_agent = LlmAgent(
-    name="GenericResponder",
+generic_responder_agent = LlmAgent(
+    name=GENERIC_RESPONDER_AGENT,
     description="Handles requests that don't fit other categories",
     model=model_config,
     instruction="""

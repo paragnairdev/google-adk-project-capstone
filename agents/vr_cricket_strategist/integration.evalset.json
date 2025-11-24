@@ -25,7 +25,7 @@
                     "intermediate_data": {
                         "invocation_events": [
                             {
-                                "author": "IdentityAgent",
+                                "author": "identity_agent",
                                 "content": {
                                     "parts": [
                                         {
@@ -68,7 +68,7 @@
                     "intermediate_data": {
                         "invocation_events": [
                             {
-                                "author": "IdentityAgent",
+                                "author": "identity_agent",
                                 "content": {
                                     "parts": [
                                         {
