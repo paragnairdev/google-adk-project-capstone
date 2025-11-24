@@ -163,9 +163,9 @@ orchestrator_agent = LlmAgent(
     BEFORE transferring to `{GAME_PLAN_GENERATOR_AGENT}`, check if you have ALL required information:
     - Match format (T20, ODI, or Test)
     - Opponent name
-    - Pitch type (Dry, Bouncy, Green, or Normal)
+    - Pitch type (Dry, Bouncy, Green, or Normal) is optional. If not provided, use None.
     
-    IF MISSING ANY INFO:
+    IF MISSING ANY INFO (except pitch type):
     - Ask the user for the missing information clearly
     - List ALL missing items in one message
     - WAIT for their response (do NOT transfer to {GAME_PLAN_GENERATOR_AGENT} yet)
