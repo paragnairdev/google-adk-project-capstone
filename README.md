@@ -109,7 +109,7 @@ A custom `before_agent_callback` monitors agent transfers. If an agent receives 
 - ✅ **Session management**: Maintains user context across conversations
 - ✅ **Personality-driven responses**: 4 distinct commentator styles
 - ✅ **Circuit breaker protection**: Prevents infinite agent loops
-- ✅ **Comprehensive test suite**: 79 tests with pytest
+- ✅ **Comprehensive test suite**: Unit test coverage with pytest, evaluations using `adk eval`
 - ✅ **Web UI**: Interactive testing interface
 
 ---
@@ -271,13 +271,14 @@ bash run_evaluations.sh
 ```
 
 ### Test Coverage
-**79 comprehensive tests** covering:
+**100+ comprehensive tests** covering:
 - Tool functionality and edge cases
 - Agent configuration validation
 - Data integrity and loading
 - Integration workflows
 - Session management
 - Circuit breaker logic
+- Evaluations
 
 ---
 
@@ -387,15 +388,6 @@ google-adk/
 
 ---
 
-## 🤝 Contributing
-
-This is a hackathon project, but contributions and suggestions are welcome! Feel free to:
-- Report bugs via GitHub Issues
-- Suggest enhancements
-- Submit pull requests
-
----
-
 ## 📄 License
 
 MIT License - see LICENSE file for details
@@ -404,22 +396,9 @@ MIT License - see LICENSE file for details
 
 ## 👨‍💻 Author
 
-**Parag Nair**
+**[Parag Nair](https://github.com/paragnairdev)**
 - Built for Google ADK Hackathon
 - Powered by: Google Agent Development Kit, Gemini 2.5 Flash, Python 3.13
-
----
-
-## 🏆 Hackathon Submission Checklist
-
-- ✅ Problem Statement: Clearly defined VR Cricket strategy gap
-- ✅ Solution: Multi-agent system with 8 specialized agents
-- ✅ Architecture: Visual diagram showing agent workflows
-- ✅ Setup Instructions: Complete step-by-step guide
-- ✅ Demo: Multiple example scenarios with screenshots
-- ✅ Testing: 79 comprehensive tests
-- ✅ Documentation: Detailed README and writeup
-- ✅ Code Quality: Modular, well-structured, production-ready
 
 ---
 
