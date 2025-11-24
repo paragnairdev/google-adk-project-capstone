@@ -295,9 +295,17 @@ bash run_evaluations.sh
 
 ### Interactive Demo Screenshots
 
-View complete interaction flows in `examples/interactions/scenario-1/`:
-- step-1.png: Architecture diagram
-- step-2.png through step-7.png: Complete user interaction flows
+View complete interaction flows in `examples/interactions`:
+
+User prompt
+> "I have a ODI against Nikita on a Green pitch and I have been asked to bat. What sort of score should I be looking to post?"
+
+- ![Identity Agent](1-identity.png): Identifies the current player (Joe)
+- 2-orchestrator.png: Decides this needs the game planner as the request is for strategy
+- 3-fact-finder.png: Gets venue details and head-to-head statistics on Green pitches for Joe and Nikita
+- 4-tactician.png: Analyzes the matchup data and generates a strategy for Joe
+- 5-personality-selector.png: Decides who should be delivering the strategy in their own unique style. Decides it should be Sidhu
+- 6-quote-finder: Uses google search to look for whacky quotes from Najot Sign Sidhu to add some humour into the delivery
 
 ---
 
