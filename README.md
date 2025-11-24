@@ -295,9 +295,46 @@ bash run_evaluations.sh
 
 ### Interactive Demo Screenshots
 
-View complete interaction flows in `examples/interactions/scenario-1/`:
-- step-1.png: Architecture diagram
-- step-2.png through step-7.png: Complete user interaction flows
+View complete interaction flows in `examples/interactions`:
+
+User prompt
+> "I have a ODI against Nikita on a Green pitch and I have been asked to bat. What sort of score should I be looking to post?"
+
+#### Step 1: Identity Agent
+
+Identifies the current player (Joe)
+![Identity Agent](examples/interactions/1-identity.png)
+
+#### Step 2: Orchestrator Agent
+
+Decides this needs the game planner as the request is for strategy
+![Orchestrator Agent](examples/interactions/2-orchestrator.png)
+
+#### Step 3: Fact Finder
+
+Gets venue details and head-to-head statistics on Green pitches for Joe and Nikita
+![Orchestrator Agent](examples/interactions/3-fact-finder.png)
+
+#### Step 4: Tactician
+
+Analyzes the matchup data and generates a strategy for Joe
+![Tactician Agent](examples/interactions/4-tactician.png)
+
+#### Step 5: Personality Selector
+
+Decides who should be delivering the strategy in their own unique style. Decides it should be Sidhu
+![Personality Selector Agent](examples/interactions/5-personality-selector.png)
+
+
+#### Step 6: Quote Finder
+
+Uses google search to look for whacky quotes from Navjot Singh Sidhu to add some humour into the delivery
+![Orchestrator Agent](examples/interactions/6-quote-finder.png)
+
+#### The Result
+
+The agent delivers the strategy in an entertaining manner
+![Final Result](examples/interactions/7-result.png)
 
 ---
 

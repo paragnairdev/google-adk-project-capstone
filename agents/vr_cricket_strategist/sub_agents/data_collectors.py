@@ -55,12 +55,13 @@ fact_finder_agent = LlmAgent(
     instruction="""
     You are phase 1 of a 3-phase sequential workflow.
     
-    When you are called, ALL required info is ALREADY in the conversation: opponent, format, pitch type.
-    
+    When you are called, ALL required info is ALREADY in the conversation: opponent, format.
+
+    **IMPORTANT**: Pitch type is optional. If not provided, use None.
     YOUR JOB:
-    1. Extract data (player name, opponent, format, and pitch type) from conversation history
-    2. Call `get_head_to_head` with player_name, opponent_name, and format
-    3. Call `get_venue_trends` with pitch_type and format
+    1. Extract data (player name, opponent and format) from conversation history
+    2. Call `get_head_to_head` with player_name, opponent_name,format and pitch type if provided
+    3. Call `get_venue_trends` with format and pitch type if provided. Stadium is optional. If not provided, use 0.
     4. Output *only* json
     """,
     tools=[get_head_to_head, get_venue_trends],
