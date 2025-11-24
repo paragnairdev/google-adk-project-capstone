@@ -5,12 +5,12 @@ These agents are responsible for fetching and analyzing raw data:
 - FactFinder: Retrieves head-to-head and venue data (Phase 1 of strategy workflow)
 - StatAnalyst: Provides detailed statistical analysis (Direct routing from orchestrator)
 
-Design Pattern: Silent Data Collection
-FactFinder operates in "silent mode" - it calls tools but produces no text output.
+Design Pattern: Structured Data Collection
+FactFinder outputs JSON which is stored in an output_key for downstream processing.
 This design:
-1. Reduces token usage (no intermediate summaries)
-2. Prevents data interpretation bias (Tactician interprets raw data)
-3. Accelerates workflow (no LLM generation between phases)
+1. Reduces token usage (concise JSON format)
+2. Enables structured data flow between agents
+3. Maintains data integrity (no interpretation at collection phase)
 """
 
 from google.adk.agents import LlmAgent
@@ -22,7 +22,7 @@ from ..tools import (
     get_player_stats
 )
 from ..config import retry_config
-from ..constants import FACT_FINDER_AGENT, STAT_ANALYST_AGENT
+from ..constants import FACT_FINDER_AGENT, STAT_ANALYST_AGENT, FACT_FINDER_OUTPUT
 
 # ============================================================================
 # MODEL CONFIGURATION
@@ -35,22 +35,22 @@ model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 # ============================================================================
 # Purpose: Gather contextual data for strategy formulation (Phase 1)
 #
-# Behavior: Silent Execution
+# Behavior: Structured JSON Output
 # - Calls tools based on conversation context
-# - Produces NO text output (reduces latency and cost)
-# - Tool results automatically flow to next agent (Tactician)
+# - Outputs JSON data stored in an output_key
+# - JSON output flows to next agent (Tactician) for analysis
 #
-# Why Silent?
+# Why JSON Output?
 # Traditional approach: FactFinder → summarize data → Tactician → analyze summary
-# This approach: FactFinder → raw data → Tactician → analyze data
-# Benefits: 50% faster, no information loss in summarization
+# This approach: FactFinder → JSON data → Tactician → analyze data
+# Benefits: Structured format, efficient data flow, no information loss
 #
 # Tools Used:
 # - get_head_to_head: Historical matchup data
 # - get_venue_trends: Pitch/venue statistics
 fact_finder_agent = LlmAgent(
     name=FACT_FINDER_AGENT,
-    description="Retrieves head-to-head and venue data",
+    description="Retrieves head-to-head and venue data and outputs JSON to output_key",
     model=model_config,
     instruction="""
     You are phase 1 of a 3-phase sequential workflow.
@@ -61,12 +61,10 @@ fact_finder_agent = LlmAgent(
     1. Extract data (player name, opponent, format, and pitch type) from conversation history
     2. Call `get_head_to_head` with player_name, opponent_name, and format
     3. Call `get_venue_trends` with pitch_type and format
-    4. DO NOT respond with any text - stay completely silent
-    5. Tool outputs automatically pass to the next phase (Tactician)
-    
-    CRITICAL: Just call the tools silently. No text responses, no summaries, no commentary.
+    4. Output *only* json
     """,
-    tools=[get_head_to_head, get_venue_trends]
+    tools=[get_head_to_head, get_venue_trends],
+    output_key=FACT_FINDER_OUTPUT,
 )
 
 

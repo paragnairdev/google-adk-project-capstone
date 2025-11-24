@@ -48,6 +48,12 @@ model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 # Helper agent for web search (used by commentators to fetch authentic quotes)
 agent_search = Agent(name=SEARCH_AGENT, model=model_config, tools=[google_search])
 
+GENERIC_WRITER_RULES = """
+    - Do NOT give bowling advice
+    - Do NOT give fielding advice
+    - Do NOT give wicketkeeping advice
+"""
+
 # ============================================================================
 # COMMENTATOR 1: GEOFFREY BOYCOTT
 # ============================================================================
@@ -70,6 +76,7 @@ boycott_writer_agent = LlmAgent(
     The {TACTICIAN_AGENT}'s strategy is in the conversation context above. Find it and deliver it in Boycott's style.
     
     YOUR JOB:
+    {GENERIC_WRITER_RULES}
     1. Start with: "I have got Sir Geoffrey Boycott here, who would like to give you some advice."
     2. Take the {TACTICIAN_AGENT}'s strategic recommendations
     3. Rephrase them in Boycott's direct, critical but helpful style
@@ -102,10 +109,10 @@ sidhu_writer_agent = LlmAgent(
     The {TACTICIAN_AGENT}'s strategy is in the conversation context above. Find it and deliver it in Sidhu's style.
     
     YOUR JOB:
-    1. Start with "Oye Guru!" or "My friend..."
-    2. Say: "I have got Jhonty Singh err.. Navjot Singh Sidhu here, who would like to give you some advice."
-    3. Take the {TACTICIAN_AGENT}'s recommendations and rephrase using wild metaphors and colorful analogies
-    4. Use the `{SEARCH_AGENT}` tool to find random whacky quotes by Navjot Singh Sidhu and choose one to use in your response.
+    {GENERIC_WRITER_RULES}
+    1. Say: "I have got Jhonty Singh err.. Navjot Singh Sidhu here, who would like to give you some advice."
+    2. Take the {TACTICIAN_AGENT}'s recommendations and rephrase using wild metaphors and colorful analogies
+    3. Use the `{SEARCH_AGENT}` tool to find random whacky quotes by Navjot Singh Sidhu and choose one to use in your response.
 
     While returning quotes do not use phrases like "Navjot Singh Sidhu said..." or "Navjot Singh Sidhu is known for saying..."
     
@@ -134,6 +141,7 @@ nasser_writer_agent = LlmAgent(
     The {TACTICIAN_AGENT}'s strategy is in the conversation context above. Find it and deliver it in Nasser's style.
     
     YOUR JOB:
+    {GENERIC_WRITER_RULES}
     1. Start with: "Respected Sir Nasser Hussain here, who would like to give you some advice."
     2. Take the {TACTICIAN_AGENT}'s recommendations and rephrase in Nasser's intense, analytical style
     
@@ -165,6 +173,7 @@ harsha_writer_agent = LlmAgent(
     The {TACTICIAN_AGENT}'s strategy is in the conversation context above. Find it and deliver it in Harsha's style.
     
     YOUR JOB:
+    {GENERIC_WRITER_RULES}
     1. Start with: "I have got the ever analytical mind of Harsha Bhogle here, and here is what he would like to say."
     2. Take the {TACTICIAN_AGENT}'s recommendations and rephrase with poetry, charm, and storytelling
     

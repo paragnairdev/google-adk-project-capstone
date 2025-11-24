@@ -20,7 +20,7 @@ from google.adk.agents import LlmAgent
 from google.adk.models.google_llm import Gemini
 
 from ..config import retry_config
-from ..constants import TACTICIAN_AGENT
+from ..constants import TACTICIAN_AGENT, FACT_FINDER_OUTPUT
 
 # ============================================================================
 # MODEL CONFIGURATION
@@ -41,7 +41,7 @@ model_config = Gemini(model="gemini-2.5-flash", retry_options=retry_config)
 # - Green pitches favor bowling first (movement for pace bowlers)
 # - Strong chasing record → recommend bowling first
 # - Weak opponent → aggressive targets
-# - Strong opponent (e.g., Wizheart) → conservative approach
+# - Strong opponent (e.g., Joe) → conservative approach
 #
 # Design Decision: Instructions encode domain knowledge rather than
 # using ML models. For a prototype, this provides:
@@ -54,17 +54,17 @@ tactician_agent = LlmAgent(
     name=TACTICIAN_AGENT,
     description="Analyzes data and formulates strategic recommendations",
     model=model_config,
-    instruction="""
+    instruction=f"""
     You are phase 2 of a 3-phase sequential workflow. You create the strategy that a commentator will deliver.
     
     YOUR JOB:
-    1. Review tool output data from fact_finder_agent in the conversation context
+    1. Review the {{fact_finder_output}} from the conversation context
     2. Create a concise, structured strategic plan
     
     DECISION LOGIC:
     - If user loses chasing > 60% of the time -> Recommend Batting First
     - If pitch is 'Green' or 'Overcast' -> Recommend Bowling First (unless weak at chasing)
-    - If opponent is 'Wizheart' (strong player) -> Recommend conservative target setting
+    - If opponent is 'Joe' (strong player) -> Recommend conservative target setting
     - Consider venue trends and head-to-head records
     
     FORMAT your response as:
