@@ -2,7 +2,7 @@
 
 > **Hackathon Project**: Democratizing VR Cricket strategy through multi-agent AI systems built with Google's Agent Development Kit (ADK)
 
-![Architecture Diagram](examples/interactions/scenario-1/step-1.png)
+![Architecture Diagram](examples/interactions/1-identity.png)
 
 ---
 
