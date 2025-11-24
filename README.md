@@ -312,7 +312,7 @@ Decides this needs the game planner as the request is for strategy
 
 #### Step 3: Fact Finder
 
-![Orchestrator Agent](examples/interactions/3-fact-finder.png]
+![Orchestrator Agent](examples/interactions/3-fact-finder.png)
 Gets venue details and head-to-head statistics on Green pitches for Joe and Nikita
 
 #### Step 4: Tactician
