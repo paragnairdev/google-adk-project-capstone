@@ -46,4 +46,4 @@ echo ""
 
 
 # Run the ADK eval command
-adk eval agents/vr_cricket_strategist agents/vr_cricket_strategist/integration.evalset.json --config_file_path agents/vr_cricket_strategist/test_config.json --print_detailed_results
+adk eval agents/vr_cricket_strategist agents/vr_cricket_strategist/evaluations/profile.evalset.json --config_file_path agents/vr_cricket_strategist/evaluations/eval_config_default.json --print_detailed_results

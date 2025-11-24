@@ -181,28 +181,6 @@ The web UI provides:
 - Request/response history
 - Session management
 
-### Run Demo Mode (Predefined Queries)
-```bash
-python -m agents.vr_cricket_strategist.agent
-```
-
-### Programmatic Usage
-```python
-from google.adk import agent
-from agents.vr_cricket_strategist.agent import create_cricket_strategist_agent
-
-# Create agent instance
-cricket_agent = create_cricket_strategist_agent()
-
-# Send query
-response = cricket_agent.send_message(
-    "I'm playing against Ragz on a green pitch. Should I bat first?",
-    session_id="user_joe_tournament_2024"
-)
-
-print(response)
-```
-
 ---
 
 ## 🔧 Technical Details
@@ -214,11 +192,10 @@ print(response)
 - **Pandas**: Data processing and analysis
 - **SQLite**: Session state management
 - **pytest**: Testing framework
-- **FastAPI**: Web UI backend
 
 ### Data Pipeline
 - **matches.csv**: 1000+ match records (Test/ODI/T20)
-- **players.csv**: Player profiles and statistics
+- **players.csv**: Player profiles
 - Custom pandas-based tools for efficient querying
 
 ### Session Management
