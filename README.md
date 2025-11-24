@@ -302,35 +302,39 @@ User prompt
 
 #### Step 1: Identity Agent
 
-![Identity Agent](examples/interactions/1-identity.png)
 Identifies the current player (Joe)
+![Identity Agent](examples/interactions/1-identity.png)
 
 #### Step 2: Orchestrator Agent
 
-![Orchestrator Agent](examples/interactions/2-orchestrator.png)
 Decides this needs the game planner as the request is for strategy
+![Orchestrator Agent](examples/interactions/2-orchestrator.png)
 
 #### Step 3: Fact Finder
 
-![Orchestrator Agent](examples/interactions/3-fact-finder.png)
 Gets venue details and head-to-head statistics on Green pitches for Joe and Nikita
+![Orchestrator Agent](examples/interactions/3-fact-finder.png)
 
 #### Step 4: Tactician
 
-![Tactician Agent](examples/interactions/4-tactician.png)
 Analyzes the matchup data and generates a strategy for Joe
+![Tactician Agent](examples/interactions/4-tactician.png)
 
 #### Step 5: Personality Selector
-![Personality Selector Agent](examples/interactions/5-personality-selector.png)
+
 Decides who should be delivering the strategy in their own unique style. Decides it should be Sidhu
+![Personality Selector Agent](examples/interactions/5-personality-selector.png)
+
 
 #### Step 6: Quote Finder
-![Orchestrator Agent](examples/interactions/6-quote-finder.png)
+
 Uses google search to look for whacky quotes from Navjot Singh Sidhu to add some humour into the delivery
+![Orchestrator Agent](examples/interactions/6-quote-finder.png)
 
 #### The Result
-![Final Result](examples/interactions/7-result.png)
+
 The agent delivers the strategy in an entertaining manner
+![Final Result](examples/interactions/7-result.png)
 
 ---
 
