@@ -326,7 +326,11 @@ Decides who should be delivering the strategy in their own unique style. Decides
 
 #### Step 6: Quote Finder
 ![Orchestrator Agent](examples/interactions/6-quote-finder.png)
-Uses google search to look for whacky quotes from Najot Sign Sidhu to add some humour into the delivery
+Uses google search to look for whacky quotes from Navjot Singh Sidhu to add some humour into the delivery
+
+#### The Result
+![Final Result](examples/interactions/7-result.png)
+The agent delivers the strategy in an entertaining manner
 
 ---
 
