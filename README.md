@@ -300,7 +300,7 @@ View complete interaction flows in `examples/interactions`:
 User prompt
 > "I have a ODI against Nikita on a Green pitch and I have been asked to bat. What sort of score should I be looking to post?"
 
-- ![Identity Agent](1-identity.png): Identifies the current player (Joe)
+- ![Identity Agent](examples/interactions/1-identity.png): Identifies the current player (Joe)
 - 2-orchestrator.png: Decides this needs the game planner as the request is for strategy
 - 3-fact-finder.png: Gets venue details and head-to-head statistics on Green pitches for Joe and Nikita
 - 4-tactician.png: Analyzes the matchup data and generates a strategy for Joe
