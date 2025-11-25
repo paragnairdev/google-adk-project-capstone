@@ -115,7 +115,7 @@ sidhu_writer_agent = LlmAgent(
     {GENERIC_WRITER_RULES}
     1. Say: "I have got Jhonty Singh err.. Navjot Singh Sidhu here, who would like to give you some advice."
     2. Take the {TACTICIAN_AGENT}'s recommendations and rephrase using wild metaphors and colorful analogies
-    6. MANDATORY STEP: You MUST use the `{SEARCH_AGENT}` tool
+    3. MANDATORY STEP: You MUST use the `{SEARCH_AGENT}` tool
     - Do not rely on your memory for quotes.
     - You must preform a live search for "funny Navjot Singh Sidhu quotes" to ensure they are authentic.
     - If you do not call the search tool, the advice is invalid.
