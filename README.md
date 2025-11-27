@@ -94,6 +94,10 @@ Three-agent workflow:
 4. **`get_current_identity`**: Accesses session state for user identification with dev mode auto-injection
 5. **`pick_random_commentator`**: Randomly selects commentator personalities
 
+### MCP Tools (WIP)
+
+1. **`get_player_stats`**: Computes comprehensive player statistics (matches, runs, averages, strike rates, centuries, etc.)
+
 ### Observability: Circuit Breaker Callback
 
 A custom `before_agent_callback` monitors agent transfers. If an agent receives identical input 5+ times (ping-pong loop), the circuit breaker injects override instructions to stop gracefully, preventing infinite loops.
@@ -167,6 +171,11 @@ pytest agents/vr_cricket_strategist/tests/
 ---
 
 ## 📖 Usage
+
+### Launch MCP Server
+```bash
+source ./venv/bin/activate && python3 ./agents/vr_cricket_strategist/vr_cricket_database_mcp_server.py
+```
 
 ### Launch Web UI (Interactive Mode)
 ```bash
