@@ -34,7 +34,7 @@ from google.adk.agents import LlmAgent, SequentialAgent
 from google.adk.models.google_llm import Gemini
 
 # Import tools, sub-agents, callbacks, and constants
-from .tools import get_current_identity, set_current_identity
+from .vr_tools import get_current_identity, set_current_identity
 from .config import retry_config
 from .callbacks import circuit_breaker
 from .constants import (

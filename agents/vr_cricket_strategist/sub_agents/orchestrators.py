@@ -20,7 +20,7 @@ This layered approach provides:
 from google.adk.agents import LlmAgent, SequentialAgent, Agent
 from google.adk.models.google_llm import Gemini
 
-from ..tools import pick_random_commentator
+from ..vr_tools import pick_random_commentator
 from ..config import retry_config
 from ..constants import (
     COMMENTATOR_SELECTOR_AGENT,

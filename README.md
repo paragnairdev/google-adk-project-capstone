@@ -94,6 +94,10 @@ Three-agent workflow:
 4. **`get_current_identity`**: Accesses session state for user identification with dev mode auto-injection
 5. **`pick_random_commentator`**: Randomly selects commentator personalities
 
+### MCP Tools (WIP)
+
+1. **`get_player_stats`**: Computes comprehensive player statistics (matches, runs, averages, strike rates, centuries, etc.)
+
 ### Observability: Circuit Breaker Callback
 
 A custom `before_agent_callback` monitors agent transfers. If an agent receives identical input 5+ times (ping-pong loop), the circuit breaker injects override instructions to stop gracefully, preventing infinite loops.
@@ -129,8 +133,8 @@ cd google-adk-learning
 
 ### Step 2: Create Virtual Environment
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
 ### Step 3: Install Dependencies
@@ -155,6 +159,11 @@ export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/credentials.json"
 gcloud auth application-default login
 ```
 
+**Option D: Using .env file**
+```bash
+echo 'GOOGLE_API_KEY="your-api-key-here"' > .env
+```
+
 ### Step 5: Verify Setup
 ```bash
 # List available models
@@ -167,6 +176,11 @@ pytest agents/vr_cricket_strategist/tests/
 ---
 
 ## 📖 Usage
+
+### Launch MCP Server
+```bash
+source ./.venv/bin/activate && python3 vr_cricket_database_mcp_server.py
+```
 
 ### Launch Web UI (Interactive Mode)
 ```bash

@@ -16,7 +16,7 @@ This design:
 from google.adk.agents import LlmAgent
 from google.adk.models.google_llm import Gemini
 
-from ..tools import (
+from ..vr_tools import (
     get_head_to_head, 
     get_venue_trends, 
     get_player_stats

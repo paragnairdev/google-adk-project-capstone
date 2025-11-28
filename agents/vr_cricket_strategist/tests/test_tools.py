@@ -4,7 +4,7 @@ Tests for vr_cricket_strategist tools module
 import pytest
 import pandas as pd
 from unittest.mock import Mock, patch, MagicMock
-from agents.vr_cricket_strategist.tools import (
+from agents.vr_cricket_strategist.vr_tools import (
     get_current_identity,
     set_current_identity,
     get_venue_trends,
