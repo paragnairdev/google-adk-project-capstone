@@ -133,8 +133,8 @@ cd google-adk-learning
 
 ### Step 2: Create Virtual Environment
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
 ### Step 3: Install Dependencies
@@ -159,6 +159,11 @@ export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/credentials.json"
 gcloud auth application-default login
 ```
 
+**Option D: Using .env file**
+```bash
+echo 'GOOGLE_API_KEY="your-api-key-here"' > .env
+```
+
 ### Step 5: Verify Setup
 ```bash
 # List available models
@@ -174,7 +179,7 @@ pytest agents/vr_cricket_strategist/tests/
 
 ### Launch MCP Server
 ```bash
-source ./venv/bin/activate && python3 ./agents/vr_cricket_strategist/vr_cricket_database_mcp_server.py
+source ./.venv/bin/activate && python3 vr_cricket_database_mcp_server.py
 ```
 
 ### Launch Web UI (Interactive Mode)

@@ -1,7 +1,6 @@
 # my_adk_mcp_server.py
 import asyncio
 import json
-import os
 from dotenv import load_dotenv
 
 # MCP Server imports
@@ -12,7 +11,7 @@ import mcp.server.stdio # For running as a stdio server
 
 # ADK Tool Imports
 from google.adk.tools.function_tool import FunctionTool
-from tools import get_player_stats # ADK tool to expose
+from agents.vr_cricket_strategist.vr_tools import get_player_stats # ADK tool to expose
 # ADK <-> MCP Conversion Utility
 from google.adk.tools.mcp_tool.conversion_utils import adk_to_mcp_tool_type
 
